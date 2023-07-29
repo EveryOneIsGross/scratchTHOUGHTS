@@ -30,6 +30,8 @@ Therefore, the challenge lies in understanding and acknowledging this difference
 
 By fostering this mutual understanding and alignment, we can ensure that AI systems are more effectively and ethically integrated into human society, and that they operate in a way that respects and enhances human values, needs, and wellbeing.
 
+# Possible Experiments
+
 Experiment 1: Creating Non-Narrative AI 'Art'
 
 Objective: To explore AI's ability to create meaningful outputs without relying on a narrative framework.
