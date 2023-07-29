@@ -67,6 +67,8 @@ Outcome: By including a non-human biological system (bees), this experiment coul
 
 ---
 
+# Philosophy of the narrative-fixation logic paradigm
+
 The philosophy is centered around the idea that humans primarily use stories and narratives as a tool for survival, learning, and cultural evolution. These stories provide a shared understanding of the world and allow us to make sense of our experiences. On the other hand, artificial intelligence (AI) does not use stories for survival because it operates on algorithms and data, without any emotional or biological needs.
 
 Emotions in humans, according to this philosophy, are essentially categories of vast amounts of trained input, emerging from a complex interplay of physiological responses, cognitive processes, and cultural influences. For AI, these emotions are merely semantic categories, recognized and categorized based on data, but devoid of any subjective feeling or personal experience.
