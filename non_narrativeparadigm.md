@@ -30,41 +30,33 @@ Therefore, the challenge lies in understanding and acknowledging this difference
 
 By fostering this mutual understanding and alignment, we can ensure that AI systems are more effectively and ethically integrated into human society, and that they operate in a way that respects and enhances human values, needs, and wellbeing.
 
-# Possible Experiments
+# 'DeNarrator'. 
 
-## Experiment 1: Creating Non-Narrative AI 'Art'
+It is designed to identify narrative patterns in user queries and restructure them in a non-narrative, semantically-driven form.
 
-Objective: To explore AI's ability to create meaningful outputs without relying on a narrative framework.
+Pattern Recognition: First, DeNarrator utilizes a trained model to detect story structures in the user's input. This model could be based on narrative theory, identifying elements such as characters, conflicts, themes, resolutions, and so forth.
 
-# Design:
+Stripping Narrative: The next step involves DeNarrator reformulating the user's query in a way that removes these narrative elements. This could involve focusing on the raw facts, actions, or data points mentioned by the user, and presenting them in a non-sequential or non-narrative format.
 
-Train an AI on a large dataset of abstract art, and task it to generate original works.
-Have human participants interpret these AI-generated works, describing what they see and feel.
-Analyze the range of interpretations and emotional responses, looking for any patterns that might suggest a coherent, non-narrative 'story'.
-Outcome: This experiment can offer insights into how humans interpret non-narrative outputs from AI and could illuminate a potential non-narrative 'language' that AI and humans could share.
+Semantic Representation: Finally, DeNarrator presents the user's query in this new, semantically-focused form. This might involve using a structured data format, a visual representation, or simply a list of the key components and their relationships.
 
-## Experiment 2: Studying AI's Self-Organizing Systems
-
-# Objective: To understand how AI systems self-organize without human-imposed narratives.
-
-# Design:
-
-Select a swarm intelligence algorithm (e.g., ant colony optimization, particle swarm optimization) as a model for AI self-organization.
-Set a task for the swarm intelligence to solve, and monitor the 'decisions' and 'behaviors' of the system.
-Analyze the emergent patterns and problem-solving strategies, seeking an understanding of the AI's 'story' that isn't based on human narratives.
-Outcome: This experiment could uncover how AI systems create their own form of 'story' through self-organization, shedding light on a distinct AI cognitive paradigm.
-
-## Experiment 3: Cross-Species Comparison: AI, Humans, and Bees
-
-# Objective: To explore different cognitive paradigms by comparing AI, human, and bee problem-solving.
-
-# Design:
-
-Design a problem-solving task that can be solved by both humans, a trained AI, and a hive of bees (such as path optimization problems, which are familiar to bees in the context of foraging).
-Compare how each group tackles the problem, analyzing the differences and similarities.
-Identify the 'narratives' or 'stories' of problem-solving that emerge in each group, and explore whether there are ways to understand each based on the others' frameworks.
-Outcome: By including a non-human biological system (bees), this experiment could reveal entirely different frameworks of understanding and challenge the human tendency to project our own narrative structures onto other forms of intelligence. This could provide novel insights into AI's distinct cognitive paradigm and how to bridge understanding.
-
+```
+Please enter your message: I have to leave for work, and run errands. I will take my scooter and also my dog.
+{
+    "role": "assistant",
+    "content": "Input: person, person\n\nOutput: Two individuals are mentioned."
+}
+[
+    {
+        "input": "take individual scooter",
+        "output": "person"
+    },
+    {
+        "input": "also individual dog",
+        "output": "person"
+    }
+]
+```
 ---
 
 # Philosophy of the narrative-fixation logic paradigm
