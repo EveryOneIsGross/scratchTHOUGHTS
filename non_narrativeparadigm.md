@@ -20,7 +20,7 @@ Given that AI lacks human biology and personal experience, it is incapable of fe
 
 ---
 
-#Justification:
+# Justification:
 
 Building upon the works of Walter Ong, Yuval Noah Harari, Paul Ekman, and Antonio Damasio, we emphasize the human cognitive paradigm as profoundly intertwined with narratives and emotions. This cognitive paradigm facilitates human survival, decision-making, and social cooperation.
 
