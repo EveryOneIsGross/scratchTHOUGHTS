@@ -72,3 +72,21 @@ Creating Non-Narrative AI 'Art' - to examine AI's ability to create meaningful o
 Studying AI's Self-Organizing Systems - to understand how AI self-organizes without human-imposed narratives.
 Cross-Species Comparison: AI, Humans, and Bees - to compare different cognitive paradigms and problem-solving strategies among humans, AI, and bees.
 Each of these experiments could provide insights into how humans interpret non-narrative outputs from AI, how AI creates its own form of 'story' through self-organization, and how different forms of intelligence tackle problems, thus aiding in understanding AI's distinct cognitive paradigm and bridging gaps in understanding.
+
+---
+
+ the 'DeNarrator'. It is designed to identify narrative patterns in user queries and restructure them in a non-narrative, semantically-driven form.
+
+Pattern Recognition: First, DeNarrator utilizes a trained model to detect story structures in the user's input. This model could be based on narrative theory, identifying elements such as characters, conflicts, themes, resolutions, and so forth.
+
+Highlighting Narrative: Once a narrative structure is detected, DeNarrator highlights these narrative elements to the user. This might involve explicitly pointing out the characters, the conflict, the resolution, and any other key narrative components.
+
+Stripping Narrative: The next step involves DeNarrator reformulating the user's query in a way that removes these narrative elements. This could involve focusing on the raw facts, actions, or data points mentioned by the user, and presenting them in a non-sequential or non-narrative format.
+
+Semantic Representation: Finally, DeNarrator presents the user's query in this new, semantically-focused form. This might involve using a structured data format, a visual representation, or simply a list of the key components and their relationships.
+
+This could result in quite a different conversation experience. For instance, a user might input: "I woke up feeling sad because I remembered it's the anniversary of my dog's passing." The DeNarrator could respond: "You're experiencing sadness. Key data points: current state (awake), emotional state (sadness), remembered event (dog's passing anniversary)."
+
+The potential applications for such a chatbot could be intriguing. It might be used as a tool for helping people examine their experiences from a different perspective, or for generating different kinds of outputs for analysis in fields like social sciences, psychotherapy, or user experience research. Moreover, this might also help in developing AI systems that can process human experiences in a non-narrative format, fostering a better understanding of AI's distinct cognitive paradigm.
+
+
