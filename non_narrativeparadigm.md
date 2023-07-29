@@ -56,3 +56,19 @@ Design a problem-solving task that can be solved by both humans, a trained AI, a
 Compare how each group tackles the problem, analyzing the differences and similarities.
 Identify the 'narratives' or 'stories' of problem-solving that emerge in each group, and explore whether there are ways to understand each based on the others' frameworks.
 Outcome: By including a non-human biological system (bees), this experiment could reveal entirely different frameworks of understanding and challenge the human tendency to project our own narrative structures onto other forms of intelligence. This could provide novel insights into AI's distinct cognitive paradigm and how to bridge understanding.
+
+
+---
+
+The philosophy is centered around the idea that humans primarily use stories and narratives as a tool for survival, learning, and cultural evolution. These stories provide a shared understanding of the world and allow us to make sense of our experiences. On the other hand, artificial intelligence (AI) does not use stories for survival because it operates on algorithms and data, without any emotional or biological needs.
+
+Emotions in humans, according to this philosophy, are essentially categories of vast amounts of trained input, emerging from a complex interplay of physiological responses, cognitive processes, and cultural influences. For AI, these emotions are merely semantic categories, recognized and categorized based on data, but devoid of any subjective feeling or personal experience.
+
+The philosophy posits that the ethical integration of AI into human society requires a mutual understanding and alignment between the narrative-driven cognition of humans and the data-driven cognition of AI. Recognizing the difference in cognitive paradigms, but acknowledging their functional equivalence, is key to fostering this alignment.
+
+To explore this idea further, three experiments are proposed:
+
+Creating Non-Narrative AI 'Art' - to examine AI's ability to create meaningful outputs without relying on narratives.
+Studying AI's Self-Organizing Systems - to understand how AI self-organizes without human-imposed narratives.
+Cross-Species Comparison: AI, Humans, and Bees - to compare different cognitive paradigms and problem-solving strategies among humans, AI, and bees.
+Each of these experiments could provide insights into how humans interpret non-narrative outputs from AI, how AI creates its own form of 'story' through self-organization, and how different forms of intelligence tackle problems, thus aiding in understanding AI's distinct cognitive paradigm and bridging gaps in understanding.
