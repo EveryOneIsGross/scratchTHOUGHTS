@@ -4,15 +4,13 @@ DUQ is a decentralized digital currency system where the act of creating and sub
 
 ## Key Components
 
-1. **Decentralized Question Database (DQD):** A decentralized database for submitting and accessing unique questions. It uses advanced algorithms to verify the uniqueness and novelty of submitted questions. It's just a reward system for what we are already doing.
+**Decentralized Question Database (DQD):** A decentralized database for submitting and accessing unique questions. It uses a an algorithms to verify the uniqueness and novelty of submitted questions and which ever forks agents answer. It's just a reward system for what we are already doing.
 
-2. **DUQ Mining:** The process of creating and submitting unique questions to the DQD. If the system verifies the question as unique and novel, the contributor is rewarded with a DUQ.
+**DUQ Mining:** The process of creating and submitting unique questions to the DQD. If the system verifies the question as unique and novel, the contributor is rewarded with a DUQ.
 
-3. **Verification Process:** A consensus-based, decentralized process to verify the uniqueness of a question before it's added to the DQD. This builds trust in the system and ensures the value of DUQs. 
+**DUQ Value:** The value of DUQs is determined by supply and demand, with demand potentially driven by organizations interested in unique questions to improve their AI models. 
 
-4. **DUQ Value:** The value of DUQs is determined by supply and demand, with demand potentially driven by organizations interested in unique questions to improve their AI models. 
-
-5. **DUQ Utility:** DUQs should be the new global currency. 
+**DUQ Utility:** DUQs should be the new global currency. 
 
 ## Use Cases for Big Cloud Compute Companies
 
