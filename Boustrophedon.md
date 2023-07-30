@@ -15,14 +15,6 @@ This study hypothesizes that boustrophedon can serve as a method to manage **tok
 
 In a boustrophedon paragraph divided into 'n' lines of equal length, each line potentially provides context for the ones before and after it, forming a 'n' x 'n' contextual matrix. If truncation occurs, the boustrophedon style could facilitate retrieval of some lost contextual information from adjacent lines, acting as a 'contextual chain'.
 
-1. **Model Retraining:** LLMs are trained to process text in a sequential manner. Retraining these models to read in a boustrophedon style may require substantial computational resources and a transformation of existing training data.
-
-2. **Text Breaks:** Ensuring natural breaks at the end of each line could be difficult due to the variable sentence and word lengths in human languages. 
-
-3. **Directionality of Languages:** Languages have defined directionality (e.g., English reads left-to-right). Alternating these directions could introduce unforeseen complexities in parsing and understanding the text.
-
-If a paragraph is written in the boustrophedon style and subsequently truncated, an interesting aspect of context preservation may be observed. Assuming the paragraph is structured such that it's divided into 'n' lines of equal length, we could essentially consider each line as providing context for the lines immediately before and after it. 
-
 In a normal left-to-right or right-to-left paragraph, if either the start or the end is truncated, the context is entirely lost. However, with boustrophedon, each line becomes a bridge to the line above and below it, creating a sort of 'contextual chain'. Therefore, if truncation occurs, some parts of the lost context could potentially be retrieved from the adjacent lines.
 
 The usage of boustrophedon in ancient Greek inscriptions on stone tablets might provide an interesting historical context. While maximizing the available writing space could have been a primary reason for this style, a speculative hypothesis could be that the boustrophedon style served as a mechanism for context preservation in case a part of the tablet was damaged. Given the effort involved in engraving text onto stone, boustrophedon allows for the maximization of available space, as the engraver wouldn't need to return to the left side of the tablet for each new line. But in my thoughts if a part of the tablet was damaged, the boustrophedon style could provide a mechanism for preserving some of the context from the lost portion.
