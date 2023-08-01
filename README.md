@@ -20,3 +20,7 @@ non narrative human philosophy, the pivotal role of narratives in human cognitio
 ## boustrophedon
 
 boustrophedon formatting to avoid token truncation of start and end of text bodies as a way of retaining sentence articles context.
+
+---
+
+## Using chatbot conversational "context" frameworks for augmenting patients who suffer cognitive loss. Using the same way we feed "memories" of the conversation back into agents prompts for context tracking, except spoken or displayed to the patient as they do things. 
