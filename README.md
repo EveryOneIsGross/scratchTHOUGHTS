@@ -23,4 +23,6 @@ boustrophedon formatting to avoid token truncation of start and end of text bodi
 
 ---
 
-## Using chatbot conversational "context" frameworks for augmenting patients who suffer cognitive loss. Using the same way we feed "memories" of the conversation back into agents prompts for context tracking, except spoken or displayed to the patient as they do things. 
+## Using chatbot conversational "context" frameworks for augmenting patients who suffer cognitive loss. 
+
+By using the same way we feed "memories" of the conversation back into agents prompts for context tracking, except spoken or displayed to the patient as they do things, helping them with their context.
