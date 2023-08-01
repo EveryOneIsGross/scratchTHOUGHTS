@@ -7,12 +7,15 @@
 
 ## DUCK COIN 🦆
 a decentralized unique question currency, a proposed alternative to bitcoin maths answer mining... human unique question asking.
+https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/duq.md
 
 ---
 
 ## non_narrative paradigm
 
 non narrative human philosophy, the pivotal role of narratives in human cognition and communication, contrasting it with AI's data-driven cognitive paradigm and it's NEED for narrative, story and structure "potentially ;p" don't exist outside our insistence on it. In which case we need to know how to think without narrative resolution, archs, loops. We aren't NPCS, or PCS, or even characters. If we are to be in true dialogue with AI we need to shed our desire to propigate our stories, and listen. 
+https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/deNarrator.py
+https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativeparadigm.md
 
 ---
 
@@ -20,6 +23,7 @@ non narrative human philosophy, the pivotal role of narratives in human cognitio
 ## boustrophedon
 
 boustrophedon formatting to avoid token truncation of start and end of text bodies as a way of retaining sentence articles context.
+https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/Boustrophedon.md
 
 ---
 
