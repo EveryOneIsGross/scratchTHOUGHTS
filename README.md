@@ -1,6 +1,6 @@
 #welcome to my homepage
 ---
-
+[!note]
 2nd brain for my scratchpad thoughts on ai alignment and philosophy, mostly a public link so I can paste it into chatbots 📎
 
 ---
