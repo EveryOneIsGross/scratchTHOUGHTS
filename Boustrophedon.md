@@ -1,5 +1,24 @@
 # Boustrophedon and Large Language Models: A Hypothesis on Context Preservation in Truncated Text
 
+here is my idea I have a
+o seidob gnitacnurt tuob
+f text when a portion of
+b derucsbo ro tsol si ti
+y truncation or physical
+ I .tnemucod a ot egamad
+ suspect it might help m
+ .txetnoc niatnia
+
+here is my idea I have a
+x seidob gnitacnurt tuob
+xxtext when a portion of
+xxxerucsbo ro tsol si ti
+xxxxuncation or physical
+xxxxxnemucod a ot egamad
+xxxxxxct it might help m
+xxxxxxx .txetnoc niatnia
+
+
 **Boustrophedon**, derived from Greek "βουστροφηδόν" (meaning "as the ox turns"), is an ancient writing style where lines alternate in reading direction. It mirrors the pattern an ox creates when plowing a field, reversing at the end of each row. 
 Boustrophedon is an ancient way of writing manuscripts and inscriptions, where lines alternate between reading left-to-right and right-to-left. The name comes from the Greek word "βουστροφηδόν," which means "as the ox turns," a reference to the pattern created by an ox as it plows a field, turning at the end of each row to start the next.
 
