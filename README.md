@@ -5,7 +5,7 @@
 
 ---
 
-## Ai hallucination is a feature not a bug. 
+## Ai hallucination is a feature not a bug
 
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/hallucinationeaturenotbug.md
 
