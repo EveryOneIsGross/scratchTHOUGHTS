@@ -1,9 +1,11 @@
-using context reinforcement in humans
+## using context reinforcement in humans
 ---
 
-# Conversational Context in Chatbot Architectures used for Alzheimer's and Dementia Patients: A Focused Memory Retention and Recollection
+Conversational Context in Chatbot Architectures used for Alzheimer's and Dementia Patients: A Focused Memory Retention and Recollection
 
-Hypothesis: If the technology used for augmenting conversational context in chatbot architectures is tailored for a specific use case, such as tracking the conversations of dementia and Alzheimer's patients and providing them with summarized reminders of ongoing events, it could potentially enhance their memory retention and recollection, thereby improving their conversational fluency and overall cognitive function.
+---
+
+If the technology used for augmenting conversational context in chatbot architectures is tailored for a specific use case, such as tracking the conversations of dementia and Alzheimer's patients and providing them with summarized reminders of ongoing events, it could potentially enhance their memory retention and recollection, thereby improving their conversational fluency and overall cognitive function.
 
 Rationale: The memory deficits associated with Alzheimer's and dementia often manifest in the patients' conversations. They can lose track of the context, forget what they've previously mentioned, or fail to recall recent events. Utilizing the technology of conversational context augmentation, currently applied in chatbots, could be a novel approach to address these issues.
 
