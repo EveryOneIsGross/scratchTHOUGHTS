@@ -1,7 +1,7 @@
 #welcome to my homepage
 ---
 
-2nd brain for my scratchpad thoughts on ai alignment and philosophy, mostly a public link so I can paste it into chatbots 📎
+2nd brain for my scratchpad thoughts so I can paste it into chatbots 📎
 
 ---
 
