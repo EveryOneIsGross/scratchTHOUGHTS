@@ -1,7 +1,7 @@
-## using context reinforcement in humans
+## using context reinforcement prompting for humans
 ---
 
-Conversational Context in Chatbot Architectures used for Alzheimer's and Dementia Patients: Focused Memory Retention and Recollection
+Conversational Context in Chatbot Architectures used for Alzheimer's and Dementia Patients
 
 ---
 
