@@ -1,4 +1,4 @@
-## Augmenting Conversational Context in Chatbot Architectures for Alzheimer's and Dementia Patients: A Focused Approach to Enhancing Memory Retention and Recollection
+## Principles of Solving Conversational Context in Chatbot Architectures used for Alzheimer's and Dementia Patients: A Focused Approach to Enhancing Memory Retention and Recollection
 
 Hypothesis: If the technology used for augmenting conversational context in chatbot architectures is tailored for a specific use case, such as tracking the conversations of dementia and Alzheimer's patients and providing them with summarized reminders of ongoing events, it could potentially enhance their memory retention and recollection, thereby improving their conversational fluency and overall cognitive function.
 
