@@ -5,6 +5,13 @@
 
 ---
 
+## Ai hallucination is a feature not a bug. 
+
+
+I posit ai hallucination is not a bug but a feature. we have asked ai to replicate humans, humans I know do the same with fuzzy facts when they need to respond to conversation. I would say it resembles "thought of it on the fly for the first time" trad dad confidence. Making up shit cause they haven't considered the stakes of errors compounded by being confident with their answers even when just including their own speculation.  
+
+---
+
 ## DUCK COIN 🦆
 a decentralized unique question currency, a proposed alternative to bitcoin maths answer mining... human unique question asking.
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/duq.md
