@@ -1,0 +1,94 @@
+# Combining the logic from both scripts
+
+# Import necessary libraries
+import json
+import openai
+from textblob import TextBlob
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.feature_extraction.text import CountVectorizer
+from rake_nltk import Rake
+
+# API setup from chatCBT_02.py
+# NOTE: We'll comment out the API key setup since it's not applicable here.
+# openai.api_key = "..."
+
+# State class from chatCBT_01.py
+class State:
+    def __init__(self, thought, feeling, behavior, memory):
+        self.thought = thought
+        self.feeling = feeling
+        self.behavior = behavior
+        self.memory = memory
+
+    def save(self):
+        with open('state.json', 'w') as f:
+            json.dump(self.__dict__, f)
+
+    @classmethod
+    def load(cls):
+        with open('state.json', 'r') as f:
+            data = json.load(f)
+            return cls(**data)
+
+# Sentiment analysis function from chatCBT_01.py
+def analyze_sentiment(text):
+    analysis = TextBlob(text)
+    if analysis.sentiment.polarity > 0:
+        return 'positive'
+    elif analysis.sentiment.polarity < 0:
+        return 'negative'
+    else:
+        return 'neutral'
+
+# Function to compare responses from chatCBT_01.py
+def compare_responses(text1, text2):
+    vectorizer = CountVectorizer().fit_transform([text1, text2])
+    vectors = vectorizer.toarray()
+    return cosine_similarity(vectors)[0][1]
+
+# Chatbot function modified to incorporate logic from chatCBT_02.py
+def chatbot(message, state):
+    # Thought generation from chatCBT_02.py
+    # Here, we are assuming that the "message" parameter is the user query.
+    prompt = f"User query: {message}\\n\\nSome thoughts on this query are:\\n"
+    completion = openai.Completion.create(
+        engine="gpt-3.5-turbo",
+        prompt=prompt,
+        max_tokens=100,
+        temperature=0.8,
+        top_p=0.9,
+        stop="\\n\\n"
+    )
+    thought = completion["choices"][0]["text"]
+    state.thought = thought
+
+    # Sentiment analysis for feeling determination from chatCBT_02.py
+    state.feeling = analyze_sentiment(thought)
+
+    # Behavior adjustment from chatCBT_01.py
+    thought_sentiment = analyze_sentiment(state.thought)
+    feeling_sentiment = analyze_sentiment(state.feeling)
+
+    if thought_sentiment == feeling_sentiment:
+        state.behavior += 0.1
+    else:
+        state.behavior -= 0.1
+
+    # Message generation from chatCBT_01.py
+    state_representation = f"Thought: {state.thought}, Feeling: {state.feeling}, Behavior: {state.behavior}"
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "system", "content": state_representation},
+            {"role": "user", "content": message}
+        ],
+        temperature=state.behavior
+    )
+
+    response_content = response.choices[0].message.content
+    match_score = compare_responses(message, response_content)
+    state.memory.append({"message": message, "response": response_content, "match_score": match_score})
+    state.save()
+
+    return response_content
