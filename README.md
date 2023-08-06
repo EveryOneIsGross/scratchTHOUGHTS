@@ -4,6 +4,11 @@
 2nd brain for my scratchpad thoughts so I can paste it into chatbots 📎
 
 ---
+## all data has metadata embedded with agent instructions/prompts
+
+Too sleepy to explain, like themelic html markdown where you embed your intent for the code or data. 
+
+---
 
 ## Ai hallucination is a feature not a bug
 
