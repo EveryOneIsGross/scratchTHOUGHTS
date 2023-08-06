@@ -7,7 +7,8 @@
 07.08.23
 ## ChatCBT 
 
-Chatbot framework that regulates it's "feelings" with behaviour recording. It's a 3 node archetecture of Thoughts, Feelings and Behavour. 
+Chatbot framework that regulates it's "feelings" with behaviour recording. It's a 3 node archetecture of Thoughts, Feelings and Behavour.
+https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/chatCBT.py
 
 ---
 07.08.23
