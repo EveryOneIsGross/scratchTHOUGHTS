@@ -4,9 +4,10 @@
 2nd brain for my scratchpad thoughts so I can paste it into chatbots 📎
 
 ---
+07.08.23
 ## all data has metadata embedded with agent instructions/prompts
 
-Too sleepy to explain, like themelic html markdown where you embed your intent for the code or data. 
+All recorded data has instructions on how it can be used by ai agents. Too sleepy to explain, like my themelic html markdown (write up that project tomorrow too) where you embed your intent for the code/data.  
 
 ---
 
