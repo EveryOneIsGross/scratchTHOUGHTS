@@ -4,6 +4,11 @@
 2nd brain for my scratchpad thoughts so I can paste it into chatbots 📎
 
 ---
+## Token starvation stressor experiment
+
+https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/flatworm_in_bromide.py
+
+---
 07.08.23
 ## ChatCBT 
 
