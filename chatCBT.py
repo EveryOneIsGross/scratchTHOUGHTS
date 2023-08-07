@@ -7,10 +7,12 @@ from textblob import TextBlob
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 from rake_nltk import Rake
+import dotenv
+import os
 
-# API setup from chatCBT_02.py
-# NOTE: We'll comment out the API key setup since it's not applicable here.
-# openai.api_key = "..."
+# Load the .env file
+dotenv.load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # State class from chatCBT_01.py
 class State:
@@ -52,7 +54,7 @@ def chatbot(message, state):
     # Here, we are assuming that the "message" parameter is the user query.
     prompt = f"User query: {message}\\n\\nSome thoughts on this query are:\\n"
     completion = openai.Completion.create(
-        engine="gpt-3.5-turbo",
+        engine="text-davinci-001",
         prompt=prompt,
         max_tokens=100,
         temperature=0.8,
@@ -92,3 +94,27 @@ def chatbot(message, state):
     state.save()
 
     return response_content
+
+
+
+def main():
+    # Initialize a default state for the agent
+    state = State(thought="", feeling="", behavior=0.5, memory=[])
+
+    print("Welcome to the CBT Chatbot! Type 'exit' or 'quit' to end the conversation.")
+    while True:
+        # Get user input
+        message = input("You: ")
+        
+        # Check if user wants to exit
+        if message.lower() in ["exit", "quit"]:
+            print("Exiting the chat. Have a great day!")
+            break
+        
+        # Get response from chatbot and display it
+        response = chatbot(message, state)
+        print("Chatbot:", response)
+
+if __name__ == "__main__":
+    main()
+
