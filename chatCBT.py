@@ -14,7 +14,6 @@ import os
 dotenv.load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# State class from chatCBT_01.py
 class State:
     def __init__(self, thought, feeling, behavior, memory):
         self.thought = thought
@@ -32,7 +31,7 @@ class State:
             data = json.load(f)
             return cls(**data)
 
-# Sentiment analysis function from chatCBT_01.py
+# Sentiment analysis
 def analyze_sentiment(text):
     analysis = TextBlob(text)
     if analysis.sentiment.polarity > 0:
@@ -42,15 +41,15 @@ def analyze_sentiment(text):
     else:
         return 'neutral'
 
-# Function to compare responses from chatCBT_01.py
+# Function to compare responses
 def compare_responses(text1, text2):
     vectorizer = CountVectorizer().fit_transform([text1, text2])
     vectors = vectorizer.toarray()
     return cosine_similarity(vectors)[0][1]
 
-# Chatbot function modified to incorporate logic from chatCBT_02.py
+
 def chatbot(message, state):
-    # Thought generation from chatCBT_02.py
+    # Thought generation
     # Here, we are assuming that the "message" parameter is the user query.
     prompt = f"User query: {message}\\n\\nSome thoughts on this query are:\\n"
     completion = openai.Completion.create(
@@ -64,10 +63,10 @@ def chatbot(message, state):
     thought = completion["choices"][0]["text"]
     state.thought = thought
 
-    # Sentiment analysis for feeling determination from chatCBT_02.py
+    # Sentiment analysis for feeling determination
     state.feeling = analyze_sentiment(thought)
 
-    # Behavior adjustment from chatCBT_01.py
+    # Behavior adjustment
     thought_sentiment = analyze_sentiment(state.thought)
     feeling_sentiment = analyze_sentiment(state.feeling)
 
@@ -76,7 +75,7 @@ def chatbot(message, state):
     else:
         state.behavior -= 0.1
 
-    # Message generation from chatCBT_01.py
+    # Message generation
     state_representation = f"Thought: {state.thought}, Feeling: {state.feeling}, Behavior: {state.behavior}"
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
