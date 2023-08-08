@@ -6,7 +6,7 @@
 ---
 ## Token starvation stressor experiment
 
-https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/flatworm_in_bromide.py
+https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/flatworm.py
 
 ---
 07.08.23
