@@ -9,6 +9,9 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ```
 
 ---
+I have terrible version control of my thoughts. 
+
+---
 09.08.23
 ## Token starvation stressor experiment
 ![worm_ripple_animation](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/22647437-4da7-483b-9089-4dcbdcf9b55e)
