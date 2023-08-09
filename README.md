@@ -1,12 +1,10 @@
 # welcome to my homepage
 
-![worm_ripple_animation](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/22647437-4da7-483b-9089-4dcbdcf9b55e)
-
-2nd brain for my scratchpad thoughts so I can paste it easily into chatbots 📎
+This is my 2nd brain scratch disk for stray ideas so I can paste it easily into chatbots when I need them 📎
 
 ---
 ## Token starvation stressor experiment
-
+![worm_ripple_animation](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/22647437-4da7-483b-9089-4dcbdcf9b55e)
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/flatworm.py
 
 ---
