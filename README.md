@@ -1,11 +1,12 @@
 # welcome to my homepage
 ---
 
+![worm_ripple_animation](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/22647437-4da7-483b-9089-4dcbdcf9b55e)
+
 2nd brain for my scratchpad thoughts so I can paste it into chatbots 📎
 
 ---
 ## Token starvation stressor experiment
-![worm_ripple_animation](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/63f2a625-9f00-4631-8a5a-4c17cb6d72a6)
 
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/flatworm.py
 
