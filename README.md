@@ -52,10 +52,9 @@ boustrophedon formatting to avoid token truncation of start and end of text bodi
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/Boustrophedon.md
 
 ---
-## Using chatbot conversational "context" frameworks for augmenting patients who suffer cognitive loss. 
+## chatbot conversational "context reinforcement" frameworks for augmenting ppl who suffer cognitive loss. 
 
-By using the same way we feed "memories" of the conversation back into agents prompts for context tracking, except spoken or displayed to the patient as they do things, helping them with their context.
-This was after my nana's funeral. <3/\ She couldn't keep context at the end. This won't help my mum's mum either. This is why a call for a pause is priviledged bullshit. 
+By using the same way we feed "memories" of the conversation back into agents prompts for context tracking, except provided to a person as they do things, helping them with their context.
 
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/context%20frameworks%20for%20cognitive%20loss%20patients.md
 
