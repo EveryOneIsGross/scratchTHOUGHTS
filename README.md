@@ -68,6 +68,7 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/Boustrophedon.md
 ---
 
 
+## EXECUTABLE PROJECTS:
 
 - mnemosyneBOT: A simple offline chat agent with dynamic contextual memory recall and "forgetting". [Link](https://github.com/EveryOneIsGross/mnemosyneBOT)
 - embedsumBOT: Bot that embeds, recalls summaries of a .txt w/ sentiment and keyword extraction. [Link](https://github.com/EveryOneIsGross/embedsumBOT)
