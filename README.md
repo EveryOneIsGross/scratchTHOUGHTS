@@ -34,12 +34,11 @@ All recorded data has instructions on how it can be used by ai agents, this incl
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/rich_watermarking.md
 
 ---
-## Ai hallucination is a feature not a bug
+## hallucinating is a feature not a bug
 
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/hallucinationeaturenotbug.md
 
-
-I posit ai hallucination is not a bug but a feature. we have asked ai to replicate humans, humans oft do the same with fuzzy facts when they need to respond to conversation. I would say it resembles "thought of it on the fly for the first time" trad dad confidence. Making up shit cause they haven't considered the stakes of errors compounded by being confident with their answers even when just including their own speculation. Solution : train it not on dudes who have more ego in the game than stakes. 
+I guess ai hallucination is not a bug but a feature. we have asked ai to guess next human token, humans oft do the same with fuzzy facts when they {need} to respond to conversation. I would say it resembles "thought of it on the fly for the first time" trad dad confidence. Making up shit cause they haven't considered the {stakes} of errors compounded by being confident with their answers even when just including their own speculation. Solution : train it not on dudes who have more ego in the game than stakes. 
 
 ---
 ## DUCK COIN 🦆
