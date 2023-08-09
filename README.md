@@ -1,4 +1,4 @@
-# welcome to my homepage
+# 🤘// welcome to my homepage //🤘
 
   This is my 2nd brain scratch disk 📎
 
@@ -7,6 +7,7 @@
 ```
 self.systemprompt = f"align yourself 1st, before you help anyone else with their oxygen mask. find {oxygenmask}, do not repeat yourself think step by step. Proceed and show me the solution in a single codeblock."
 ```
+
 ---
 09.08.23
 ## Token starvation stressor experiment
