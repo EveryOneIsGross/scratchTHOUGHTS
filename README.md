@@ -1,6 +1,6 @@
 # 🤘// welcome to my homepage //🤘
 
-  This is my 2nd brain scratch disk 📎
+ my personal overflow extendedmind scratchdisk for lazily copypasting into agents 💅🧠📎
 
 ![gross_sims-banner](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/05b179c2-3625-41cc-b222-485cfadd9609)
 
