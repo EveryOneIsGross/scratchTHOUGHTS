@@ -1,6 +1,6 @@
 # welcome to my homepage
 
-This is my 2nd brain scratch disk for stray ideas so I can paste it easily into chatbots when I need them 📎
+This is my 2nd brain scratch disk 📎
 
 ---
 ## Token starvation stressor experiment
