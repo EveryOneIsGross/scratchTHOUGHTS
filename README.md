@@ -1,9 +1,8 @@
 # welcome to my homepage
----
 
 ![worm_ripple_animation](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/22647437-4da7-483b-9089-4dcbdcf9b55e)
 
-2nd brain for my scratchpad thoughts so I can paste it into chatbots 📎
+2nd brain for my scratchpad thoughts so I can paste it easily into chatbots 📎
 
 ---
 ## Token starvation stressor experiment
