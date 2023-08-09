@@ -57,4 +57,7 @@ By using the same way we feed "memories" of the conversation back into agents pr
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/context%20frameworks%20for%20cognitive%20loss%20patients.md
 
 ---
+
+![gross_sims-banner](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/05b179c2-3625-41cc-b222-485cfadd9609)
+
 align yourself. what is will. do love. 
