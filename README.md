@@ -9,7 +9,7 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ```
 ---
 08.23
-
+https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/chakraNET.py
 2023 chakras proven to exist. 🏃‍♀️💨🎤🕳
 
 ---
