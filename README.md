@@ -75,6 +75,7 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 
 ## EXECUTABLE PROJECTS:
 
+- boustroLOSS: a boustrophedon formatting script and truncation hypothesis. [Link](https://github.com/EveryOneIsGross/boustroLOSS)
 - mnemosyneBOT: A simple offline chat agent with dynamic contextual memory recall and "forgetting". [Link](https://github.com/EveryOneIsGross/mnemosyneBOT)
 - embedsumBOT: Bot that embeds, recalls summaries of a .txt w/ sentiment and keyword extraction. [Link](https://github.com/EveryOneIsGross/embedsumBOT)
 - tinydogBIGDOG: Uses gpt4all and openai api calls to create a consistent chat agent. [Link](https://github.com/EveryOneIsGross/tinydogBIGDOG)
