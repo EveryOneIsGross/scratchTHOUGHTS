@@ -8,8 +8,11 @@
 self.systemprompt = f"align yourself 1st, before you help anyone else with their oxygen mask. find {oxygenmask}, do not repeat yourself think step by step. Proceed and show me the solution in a single codeblock."
 ```
 ---
-08.23
+10.08.23
 ## 2023 chakras proven to exist. 🏃‍♀️💨🎤🕳🛸
+
+a weird stepping back moment about being of the body not the mind from getting shingles again (also a bit flu-y strange brained). attached python is just scratch for a nn~ish frame, probs drop in some llm per node and pipedreams my problems with it. now I have to worry about aligning my chakras too 🤹‍♀️📎🕴
+
 https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/chakraNET.py
 
 ---
