@@ -1,17 +1,15 @@
-import random
-
 MAX_ENERGY = 100
 MIN_ENERGY = 0
 THRESHOLD_HIGH = 70
 THRESHOLD_LOW = 30
 iteration_count = 0
 max_iterations = 10  # Adjust this to your needs
-
+sumthing = "sumthing"
 
 class Sensor:
     @staticmethod
     def get_energy(location):
-        return random.randint(MIN_ENERGY, MAX_ENERGY)
+        return sumthing(MIN_ENERGY, MAX_ENERGY)
 
 class Actuator:
     @staticmethod
