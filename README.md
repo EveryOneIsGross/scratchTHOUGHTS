@@ -9,8 +9,8 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ```
 ---
 08.23
+## 2023 chakras proven to exist. 🏃‍♀️💨🎤🕳🛸
 https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/chakraNET.py
-2023 chakras proven to exist. 🏃‍♀️💨🎤🕳
 
 ---
 I have terrible version control of my thoughts. 
@@ -18,6 +18,7 @@ I have terrible version control of my thoughts.
 ---
 09.08.23
 ## Token starvation stressor experiment
+
 After watching too many Dr Michael Levin planarian videos I wanted to know what a starved ai brain would look like (its head didn't explode🤯), and if it got useful. LLMs obvs don't work at extreme token limits (tho from model to model they seem to break in unique ways 🔎🧐). ANYWAYS. This script uses single digit token limits and temp distribution. Then I got too lazy thinking "what is mean?", and just added another agent that can chat with the embedded data to analyse. 
 
 ![worm_ripple_animation](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/22647437-4da7-483b-9089-4dcbdcf9b55e)
