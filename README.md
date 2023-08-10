@@ -16,6 +16,8 @@ a weird stepping back moment about being of the body not the mind from getting s
 https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/chakraNET.py
 
 ---
+08.08.23
+
 I have terrible version control of my thoughts. 
 
 ---
