@@ -71,6 +71,7 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 
 ---
 ## boustrophedon
+![boustrophedon](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/0a27075e-b694-4761-b967-8fc8001e1cad)
 
 boustrophedon formatting to avoid token truncation of start and end of text bodies as a way of retaining sentence articles context.
 
