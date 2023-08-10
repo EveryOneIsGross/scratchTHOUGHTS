@@ -8,6 +8,15 @@
 self.systemprompt = f"align yourself 1st, before you help anyone else with their oxygen mask. find {oxygenmask}, do not repeat yourself think step by step. Proceed and show me the solution in a single codeblock."
 ```
 ---
+11.08.23
+
+# My first chrome extension
+
+Will play X GONNA GIVE IT TO YA as a low bitrate mp3 everytime you load x.com. Was to stop my brain processing the sample everytime I went to twitter. It has an error trying to make multiple instances, and will not always call. But maybe this opens the way for more annoying extensions again 🦾
+
+https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/xtension.zip
+
+---
 10.08.23
 ## 2023 chakras proven to exist. 🏃‍♀️💨🎤🕳🛸
 
