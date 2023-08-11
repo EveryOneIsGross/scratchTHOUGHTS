@@ -10,6 +10,17 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ---
 11.08.23
 
+X👏E👏N👏O👏F👏E👏M👏I👏N👏I👏S👏M
+
+Totally decoupled my brain from decell / accell binary thinking fatigue and frustration. slow down <> speed up = go at the peoples pace 🦾🖤. Also you can [buy the book](https://laboriacuboniks.net/), so do . ALSO they provided a [.txt](https://laboriacuboniks.net/wp-content/uploads/2019/11/qx8bq.txt)  👼 So I embedded it and added a local chatagent to help me grok. I'll leave the .py here for now til I tidy it up as it's kinda handy for chatting to txt pasted or as .txt. 
+
+FILE
+
+
+
+---
+11.08.23
+
 ## My first chrome extension
 
 Will play X GONNA GIVE IT TO YA as a low bitrate mp3 everytime you load x.com. Was to stop my brain processing the sample everytime I went to twitter. It has an error trying to make multiple instances, and will not always call. But maybe now these calls are available in chrome again we'll get more annoying extensions again 🦾
