@@ -14,7 +14,7 @@ X👏E👏N👏O👏F👏E👏M👏I👏N👏I👏S👏M
 
 Totally decoupled my brain from decell / accell binary thinking fatigue and frustration. slow down <> speed up = go at the peoples pace 🦾🖤. Also you can [buy the book](https://laboriacuboniks.net/), so do . ALSO they provided a [.txt](https://laboriacuboniks.net/wp-content/uploads/2019/11/qx8bq.txt)  👼 So I embedded it and added a local chatagent to help me grok. I'll leave the .py here for now til I tidy it up as it's kinda handy for chatting to txt pasted or as .txt. 
 
-FILE
+[txtembedCHAT.py](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/txtembedCHAT.py)
 
 
 
