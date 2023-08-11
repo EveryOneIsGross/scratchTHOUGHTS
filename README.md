@@ -1,6 +1,6 @@
 # 🤘// welcome to my homepage //🤘
 
- my personal overflow extendedmind scratchdisk for lazily copypasting into agents 💅🧠📎
+ my personal overflow extendedmind scratchdisk for lazily copypasting into agents and self() 💅🧠📎
 
 ![gross_sims-banner](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/05b179c2-3625-41cc-b222-485cfadd9609)
 
