@@ -12,7 +12,7 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 ## My first chrome extension
 
-Will play X GONNA GIVE IT TO YA as a low bitrate mp3 everytime you load x.com. Was to stop my brain processing the sample everytime I went to twitter. It has an error trying to make multiple instances, and will not always call. But maybe this opens the way for more annoying extensions again 🦾
+Will play X GONNA GIVE IT TO YA as a low bitrate mp3 everytime you load x.com. Was to stop my brain processing the sample everytime I went to twitter. It has an error trying to make multiple instances, and will not always call. But maybe now these calls are available in chrome again we'll get more annoying extensions again 🦾
 
 https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/xtension.zip
 
@@ -81,6 +81,11 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/deNarrator.py
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativeparadigm.md
 
 ---
+
+## 🔥HOT LINKS🔥
+
+https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/documents/Whitepaper-The-future-of-AI-is-hybrid-Part-2-Qualcomm-is-uniquely-positioned-to-scale-hybrid-AI.pdf
+https://laboriacuboniks.net/manifesto/xenofeminism-a-politics-for-alienation/
 
 
 
