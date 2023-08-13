@@ -23,8 +23,6 @@ a prescription or a dogma, but an invitation to imagine and create a future
 within which we want to live.
 You:
 ```
-
-[txtembedCHAT.py](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/txtembedCHAT.py)
 [shadowFACTS is the  finished chatagent for talking to the .txt ](https://github.com/EveryOneIsGross/shadowFACTS)
 
 
