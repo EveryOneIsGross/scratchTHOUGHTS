@@ -10,7 +10,7 @@ my personal overflow extendedmind scratchdisk for lazily copypasting into agents
 self.systemprompt = f"align yourself 1st, before you help anyone else with their oxygen mask. find {oxygenmask}, do not repeat yourself think step by step. Proceed and show me the solution in a single codeblock."
 ```
 ---
-11.08.23
+13.08.23
 
 X👏E👏N👏O👏F👏E👏M👏I👏N👏I👏S👏M
 
@@ -25,7 +25,7 @@ You:
 ```
 
 [txtembedCHAT.py](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/txtembedCHAT.py)
-
+[shadowFACTS is the  finished chatagent for talking to the .txt ](https://github.com/EveryOneIsGross/shadowFACTS)
 
 
 ---
