@@ -1,5 +1,6 @@
+=================================
 # 🤘// welcome to my homepage //🤘
-
+=================================
  my personal overflow extendedmind scratchdisk for lazily copypasting into agents and self() 💅🧠📎
 
 ![gross_sims-banner](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/05b179c2-3625-41cc-b222-485cfadd9609)
@@ -102,6 +103,7 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 ---
 
 ## 🔥HOT LINKS🔥
+================
 
 [https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/documents/Whitepaper-The-future-of-AI-is-hybrid-Part-2-Qualcomm-is-uniquely-positioned-to-scale-hybrid-AI.pdf](https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/documents/Whitepaper-The-future-of-AI-is-hybrid-Part-2-Qualcomm-is-uniquely-positioned-to-scale-hybrid-AI.pdf)
 
@@ -110,7 +112,9 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 
 
 ## EXECUTABLE PROJECTS:
+=======================
 
+- shadowFACTS: a chatbot for embedding .txt documents for conversational understanding. [Link](https://github.com/EveryOneIsGross/shadowFACTS)
 - boustroLOSS: a boustrophedon formatting script and truncation hypothesis. [Link](https://github.com/EveryOneIsGross/boustroLOSS)
 - mnemosyneBOT: A simple offline chat agent with dynamic contextual memory recall and "forgetting". [Link](https://github.com/EveryOneIsGross/mnemosyneBOT)
 - embedsumBOT: Bot that embeds, recalls summaries of a .txt w/ sentiment and keyword extraction. [Link](https://github.com/EveryOneIsGross/embedsumBOT)
