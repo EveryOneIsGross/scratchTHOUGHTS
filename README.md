@@ -10,6 +10,14 @@ my personal overflow extendedmind scratchdisk for lazily copypasting into agents
 self.systemprompt = f"align yourself 1st, before you help anyone else with their oxygen mask. find {oxygenmask}, do not repeat yourself think step by step. Proceed and show me the solution in a single codeblock."
 ```
 ---
+14.08.23
+
+Got abramelin to execute properly, but it's melting my cpu. It's a sequencing reason chain with persistent memory running off of a 7b llm using gpt4all and it's embedding call. Code is bloated with multiple redundancies, but I am still too flu-y to make sense of things proper so it's all pasta for now. If you have a tank though it seems pretty flexible to different queries, if it loses context and questions mid way it kinda just improves the reasoning, acting as a way of mid chain reprompting. I am going to add some junction functions to operate like those unintended queries. I'll refactor when I trust I am not dropping logic, in the code and IRL.
+
+[HERE](https://github.com/EveryOneIsGross/abrameLINK)
+
+
+---
 13.08.23
 
 X👏E👏N👏O👏F👏E👏M👏I👏N👏I👏S👏M
