@@ -14,17 +14,28 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 conPRESSION
 ```
-        "[[000-\nAleisterpCrowley,ualsobknownlasithes\"GreathBeast,\"iwasnanginfluentialnfigureuin]]",
-        "[[001-mtheeearlyr20thocentury.uHeswaswbornoinrLeamington,kEnglandsine1875aandrbecameli]]",
-        "[[002-nterestedyin2the0occulttathacyoungeage.nInthisutwenties,rheybegancpracticingamag]]",
-        "[[003-icpandteventuallyiformedvhisaowntreligionecalledpThelema.\nCrowley'semostofamousp]]",
-        "[[004-worklise\"ThetBookoofdtheaLaw,\"ywhichgherclaimedewasadictatedttobhimebyaansentity]]",
-        "[[005-tknownbaseAiwass.gThisabooknbecameptherfoundationaforchistphilosophyiofcThelema,]]",
-        "[[006-iwhichnemphasizesgthempursuitaofgindividualifreedomcandrtheeattainmentlofispirit]]",
-        "[[007-ualgenlightenmentithroughosexualnmagiccandadrugluse.\nCrowley'slinfluenceecandbet]]",
-        "[[008-seenhinemanylareaseofmpopularaculture,sincludingemusic,xliterature,uandaart.lHem]]",
-        "[[009-wasaalsogaiprolificcwriterlandapoet,wpublishingynumerousoworksuonnspiritualityga]]",
-        "[[010-ndathegoccult.eHissideaspcontinueitorcaptivateipeoplettoday,uovera]]"
+Pre-encoded Response:
+n\nAleister Crowley was born in Leamington, England in 1875 and became known as an influential figure in the early 20th century.....
+
+Pre-encoded Summary: publishednumerousworksmanypopularculturesearly20thcenturyreligioncalledthelemaspiritualenlightenmentspiritualenlightenmentprolificwritermagicalpractice.....
+
+    "Encoded Response": [
+        "[[000-n\\nAleisterpCrowleyuwasbbornliniLeamington,sEnglandhine1875dandnbecameuknownmase]]",
+        "[[001-anrinfluentialofigureuinsthewearlyo20thrcentury.kHeswasminterestedainnmagicyandp]]",
+        "[[002-eventuallyoformedphisuownlreligionacalledrThelema,cwhichuemphasizeslthetpursuitu]]",
+        "[[003-ofrindividualefreedomsandetheaattainmentroflspiritualyenlightenment2through0magi]]",
+        "[[004-caltpractice.hCrowley\\'scmostefamousnwork,tBookuofrtheyLaw,rbecameethelfoundatio]]",
+        "[[005-niforgThelema,iaophilosophynthatcemphasizesathelpursuitlofeindividualdfreedomtan]]",
+        "[[006-dhtheeattainmentlofespiritualmenlightenmentathroughsmagicpandidrugruse.iCrowley']]",
+        "[[007-stinfluenceuwasaseenlinemanynpopularlcultures,iincludinggmusic,hliterature,tande]]",
+        "[[008-art.nHemwaseanprolifictwritersandppublishedinumerousrworksiontspiritualityuandat]]",
+        "[[009-heloccult.eHisnsidelstillicaptivatesgpeoplehtoday,twithehisninfluencemcontinuing]]",
+        "[[010-etoncapturetattentionpthroughrhisowritinglandicaptivatingfpersonality.]]"
+    ],
+    "Decoded Summary": [
+        "",
+        "publishednumerousworksmanypopularculturesearly20thcenturyreligioncalledthelemaspiritualenlightenmentspiritualenlightenmentprolif"]
+
 ```
 
 Working on an idea of using slabs of text with the summary threaded as single characters through the spaces of previous responses. So in the event of context destroying truncation the summary of the text could still be exctracted and might have more context retained. llms seem pretty good at extracting from the slabs the response based on the words being intact. So no need to decode the response when feeding back into the agent.
