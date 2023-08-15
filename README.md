@@ -13,6 +13,19 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 18.08.23
 
 conPRESSION
+```
+        "[[000-\nAleisterpCrowley,ualsobknownlasithes\"GreathBeast,\"iwasnanginfluentialnfigureuin]]",
+        "[[001-mtheeearlyr20thocentury.uHeswaswbornoinrLeamington,kEnglandsine1875aandrbecameli]]",
+        "[[002-nterestedyin2the0occulttathacyoungeage.nInthisutwenties,rheybegancpracticingamag]]",
+        "[[003-icpandteventuallyiformedvhisaowntreligionecalledpThelema.\nCrowley'semostofamousp]]",
+        "[[004-worklise\"ThetBookoofdtheaLaw,\"ywhichgherclaimedewasadictatedttobhimebyaansentity]]",
+        "[[005-tknownbaseAiwass.gThisabooknbecameptherfoundationaforchistphilosophyiofcThelema,]]",
+        "[[006-iwhichnemphasizesgthempursuitaofgindividualifreedomcandrtheeattainmentlofispirit]]",
+        "[[007-ualgenlightenmentithroughosexualnmagiccandadrugluse.\nCrowley'slinfluenceecandbet]]",
+        "[[008-seenhinemanylareaseofmpopularaculture,sincludingemusic,xliterature,uandaart.lHem]]",
+        "[[009-wasaalsogaiprolificcwriterlandapoet,wpublishingynumerousoworksuonnspiritualityga]]",
+        "[[010-ndathegoccult.eHissideaspcontinueitorcaptivateipeoplettoday,uovera]]"
+```
 
 Working on an idea of using slabs of text with the summary threaded as single characters through the spaces of previous responses. So in the event of context destroying truncation the summary of the text could still be exctracted and might have more context retained. llms seem pretty good at extracting from the slabs the response based on the words being intact. So no need to decode the response when feeding back into the agent.
 
