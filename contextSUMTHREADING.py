@@ -15,7 +15,7 @@ Reverse Encoding: For more obfuscation, the summary can be threaded backward int
 Objective: To retrieve the original response using the provided summary.
 Formula:
 For each character in the encoded text, if it matches a character from the summary, replace it with a space.
-
+Any "X" characters are also reverted back to spaces.
 3. Summary Generation:
 Uses a combination of simple truncation and keyword extraction methods to generate a summary.
 Initially, it tries to fit as many initial characters from the response as there are spaces available.
@@ -40,6 +40,35 @@ Lightweight Encryption: The encoded message has a form of obfuscation which can 
 Managing Token Truncation: The column method, combined with the encoding approach, ensures that even if the start or end of a segment is lost, the adjacent segments provide some context, aiding in information retrieval.
 
 In summary, this method offers a blend of compression, encryption, and efficient storage, making it a potentially valuable tool for chat agents or any system that requires context-rich interactions in a limited space.'''
+'''
+It seems like you're suggesting an alternative approach for the decoding process. Your idea involves extracting keywords from columns of encoded text, removing those keywords from the string, and then attempting to decode in both forward and backward directions if necessary. This approach aims to recover the original response by leveraging the presence or absence of keywords.
+
+Here's a high-level explanation of how this alternative decoding method might work:
+
+Extract Keywords from Columns:
+
+For each column in the encoded response, extract keywords using a keyword extraction algorithm.
+Store the extracted keywords for each column.
+Remove Keywords:
+
+Remove the extracted keywords from the encoded text to obtain a string without those keywords.
+Decoding Attempt - Forward Direction:
+
+Attempt to decode the string in the forward direction using the summary.
+If successful, you have recovered the original response.
+Decoding Attempt - Backward Direction:
+
+If the forward decoding attempt fails, attempt to decode the string in the backward direction using the summary.
+If successful, you have recovered the original response.'''
+'''
+Simple explanation:
+ You have an idea for a chat agent that can talk to people and remember the context of the conversation. To do this, you use a special method that makes the chat agents messages shorter and smarter. You make the chat agent say the main idea of the message in a few words, and then you hide those words in the rest of the message by replacing some spaces with them. This way, you can save space and keep the context of the conversation. You also divide the chat agents messages into smaller parts, so that they are easier to store and process. You call this method chat agent summary context encoding.
+
+Intermediate explanation:
+ You have developed a novel method for compressing, encrypting, and storing information for chat agents. Your method leverages a unique way of embedding a summary directly into the original response, capitalizing on the spaces within the text. Its a dual-layered approach that provides both the primary response and its associated summary. You also use a column method that partitions the long encoded response into smaller segments, or “columns.” This segmented approach resembles the storage of data in “tablets” of dense text. By doing so, you can achieve efficiency in storage, dual context retrieval, lightweight encryption, and managing token truncation. You call this method chat agent summary context encoding.
+
+Advanced explanation:
+You have designed and implemented a chat agent summary context encoding method that offers a blend of compression, encryption, and efficient storage for chat agents or any system that requires context-rich interactions in a limited space. Your method consists of three main components: encoding, decoding, and summary generation. The encoding component embeds the summary into the original response by replacing each space in the response with a character from the summary. If the summary is shorter than the available spaces, it fills the remaining spaces with extracted keywords. The encoding component also uses a reverse encoding technique for more obfuscation, which threads the summary backward into the response. The decoding component retrieves the original response using the provided summary by replacing each character in the encoded text that matches a character from the summary with a space. The summary generation component uses a combination of simple truncation and keyword extraction methods to generate a summary. It initially tries to fit as many initial characters from the response as there are spaces available. If thats too long, it uses the RAKE algorithm to extract keywords from the response. If the result is still too long, it uses a basic keyword extraction method that favors longer words. The column method partitions the long encoded response into smaller segments based on a column limit. It also adds markers and column indices to each segment for easier identification and retrieval. You call this method chat agent summary context encoding.'''
 
 import gpt4all
 import json
