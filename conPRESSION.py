@@ -4,10 +4,14 @@ import gpt4all
 import json
 from rake_nltk import Rake
 import string
+import math
+import json
+
 
 # Global markers for encoding
 marker_start = "[["
 marker_end = "]]"
+recorded_data = []
 
 
 # Initialize models
@@ -18,19 +22,14 @@ def strip_punctuation(text):
     """Removes punctuation from the text."""
     return text.translate(str.maketrans('', '', string.punctuation))
 
-def encode(text, summary, reverse=False):
-    """Encodes a summary into the spaces of a given text."""
-    summary = strip_punctuation(summary)
+def encode(text, summary):
+    if not summary:
+        return text
     encoded = list(text)
-    summary_chars = list(summary)[:text.count(" ")]
     space_indices = [i for i, char in enumerate(encoded) if char == " "]
-    if reverse:
-        summary_chars = summary_chars[::-1]
-        space_indices = space_indices[::-1]
-
-    for idx in space_indices:
-        encoded[idx] = summary_chars.pop(0) if summary_chars else " "
-
+    for idx, space_idx in enumerate(space_indices):
+        char_to_insert = summary[idx % len(summary)]
+        encoded[space_idx] = char_to_insert
     return ''.join(encoded)
 
 def basic_keyword_extraction(text):
@@ -38,34 +37,20 @@ def basic_keyword_extraction(text):
     return ' '.join(keywords)
 
 def decode(encoded_response, marker_start, marker_end):
-    """Decodes a summary and keywords from the encoded response."""
-    # Split the encoded response into columns using markers
     columns = [col[len(marker_start)+4:-len(marker_end)] for col in encoded_response]
-    
-    # Extract keywords using the basic_keyword_extraction function
     extracted_keywords = [basic_keyword_extraction(col) for col in columns]
-    
-    # Create a list of "extracted encoded keywords"
     keyword_list = []
     for col, keyword in zip(columns, extracted_keywords):
         for word in keyword.split():
-            # Check for punctuation next to the keyword and append it
             index = col.find(word)
             punctuation_before = "" if index == 0 or col[index-1].isalnum() else col[index-1]
             punctuation_after = "" if index+len(word) == len(col) or col[index+len(word)].isalnum() else col[index+len(word)]
             keyword_list.append(punctuation_before + word + punctuation_after)
-    
-    # Write the keywords to a new string
     keyword_string = ' '.join(keyword_list)
-    
-    # Remove the list of "extracted encoded keywords" from the "Encoded Response"
     for keyword in keyword_list:
         encoded_response = encoded_response.replace(keyword, '', 1)
-    
     decoded_summary = ''.join(encoded_response)
-    
     return keyword_string, decoded_summary
-
 
 class ChatAgentResponse:
     def __init__(self, model):
@@ -91,19 +76,52 @@ def rake_keyword_extraction(text):
     keywords = r.get_ranked_phrases()
     return ''.join(keywords)
 
+def pad_encoded_response(encoded_response):
+    """Pad the encoded response to achieve a square slab shape."""
+    total_chars = len(encoded_response)
+    n = math.ceil(math.sqrt(total_chars))  # Determine the side length
+    required_chars = n * n
+    padding_needed = required_chars - total_chars
+    return encoded_response + '.' * padding_needed  # Padding with dots
+
+
+def find_nearest_square_factors_for_length(length):
+    """Find two factors of the given length that are closest to each other."""
+    for i in range(int(length**0.5), 0, -1):
+        if length % i == 0:
+            return i, length // i
+    return 1, length  # Shouldn't happen, but just in case
+
+def determine_column_limit_based_on_spaces_and_length(encoded_response):
+    """Determine the optimal column limit based on the number of spaces and total length."""
+    num_spaces = encoded_response.count(" ")
+    total_length = len(encoded_response)
+    
+    width, height = find_nearest_square_factors_for_length(total_length)
+    
+    # To decide which one (width or height) to use for the column limit, 
+    # choose the one that's closer to the square root of total_length.
+    if abs(width - total_length**0.5) < abs(height - total_length**0.5):
+        return width
+    else:
+        return height
+
 def chat_agent():
     context = ""
     summary = ""  
-    column_limit = 80
 
     response_agent = ChatAgentResponse(model)
     summary_agent = ChatAgentSummary(model)
 
     while True:
         user_input = input("User: ")
-        decoded_context = decode(context, marker_start, marker_end)
-
         
+        # Only decode if context is not empty
+        if context:
+            decoded_context, _ = decode(context, marker_start, marker_end)
+        else:
+            decoded_context = ""
+
         response = response_agent.generate_response(user_input, decoded_context)
         summary = strip_punctuation(summary_agent.generate_summary(response))
 
@@ -111,23 +129,34 @@ def chat_agent():
         print("Pre-encoded Summary:", summary)
 
         encoded_response = encode(response, summary)
-        encoded_lines = [f"{marker_start}{index:03}-{encoded_response[i:i+column_limit]}{marker_end}"
-                         for index, i in enumerate(range(0, len(encoded_response), column_limit))]
+        padded_encoded_response = pad_encoded_response(encoded_response)
+        column_limit = determine_column_limit_based_on_spaces_and_length(padded_encoded_response)
+        
+        # Split the padded encoded response based on the determined column size
+        encoded_lines = [f"[[{column_limit}x{column_limit}-{index:03}]-{padded_encoded_response[i:i+column_limit]}{marker_end}"
+                         for index, i in enumerate(range(0, len(padded_encoded_response), column_limit))]
 
         encoded_input = encode(user_input, summary)
         encoded_summary = encode(summary, summary)
         
         data = {
             "User": encoded_input,
-            "Response": encoded_response,
+            "Response": padded_encoded_response,
             "Summary": encoded_summary,
             "Encoded Response": encoded_lines,
             "Decoded Summary": decode(encoded_summary, marker_start, marker_end)
-
         }
+        recorded_data.append(data)
+        with open("recorded_data.json", "w") as json_file:
+            json.dump(recorded_data, json_file, indent=4)
+
 
         print(json.dumps(data, indent=4))
-        context = ''.join([chunk[len(marker_start)+4:-len(marker_end)] for chunk in encoded_lines])
+        
+        # Update the context with the actual response
+        context = response
+
+
 
 if __name__ == "__main__":
     chat_agent()
