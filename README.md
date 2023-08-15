@@ -93,7 +93,7 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/flatworm.py
 07.08.23
 ## ChatCBT 
 
-Chatbot framework that regulates it's "feelings" with behaviour recording. It's a 3 node archetecture of Thoughts, Feelings and Behavour. Total scratch code. Just put here so I make a repo later and properly make a nn style logic based on the three nodes interactions. 
+Chatbot framework that regulates it's "feelings" with behaviour recording. It's a 3 node architecture of Thoughts, Feelings and Behavour. Total scratch code. Just put here so I make a repo later and properly make a nn style logic based on the three nodes interactions. 
 
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/chatCBT.py
 
