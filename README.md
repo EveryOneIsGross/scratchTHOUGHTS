@@ -15,9 +15,12 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 conPRESSION
 ```
 Pre-encoded Response:
+
 n\nAleister Crowley was born in Leamington, England in 1875 and became known as an influential figure in the early 20th century.....
 
-Pre-encoded Summary: publishednumerousworksmanypopularculturesearly20thcenturyreligioncalledthelemaspiritualenlightenmentspiritualenlightenmentprolificwritermagicalpractice.....
+Pre-encoded Summary:
+
+publishednumerousworksmanypopularculturesearly20thcenturyreligioncalledthelemaspiritualenlightenmentspiritualenlightenmentprolificwritermagicalpractice.....
 
     "Encoded Response": [
         "[[000-n\\nAleisterpCrowleyuwasbbornliniLeamington,sEnglandhine1875dandnbecameuknownmase]]",
@@ -32,6 +35,7 @@ Pre-encoded Summary: publishednumerousworksmanypopularculturesearly20thcenturyre
         "[[009-heloccult.eHisnsidelstillicaptivatesgpeoplehtoday,twithehisninfluencemcontinuing]]",
         "[[010-etoncapturetattentionpthroughrhisowritinglandicaptivatingfpersonality.]]"
     ],
+
     "Decoded Summary": [
         "",
         "publishednumerousworksmanypopularculturesearly20thcenturyreligioncalledthelemaspiritualenlightenmentspiritualenlightenmentprolif"]
