@@ -29,6 +29,17 @@ Got abramelin to execute properly, but it's melting my cpu. It's a sequencing re
 
 [HERE](https://github.com/EveryOneIsGross/abrameLINK)
 
+```
+--------------------------------
+Summary of the Conversation:
+--------------------------------
+To avoid falling under another person's will, you may want to consider the following course of action:
+1. Cultivate your own individuality and develop your true will;
+2. Establish boundaries around personal privacy concerns;
+3. Practice assertiveness in dealing with others.
+
+Remember that developing your "true will" is essential for achieving independence and autonomy.
+```
 
 ---
 13.08.23
