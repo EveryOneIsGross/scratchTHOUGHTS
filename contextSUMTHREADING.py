@@ -15,7 +15,7 @@ Reverse Encoding: For more obfuscation, the summary can be threaded backward int
 Objective: To retrieve the original response using the provided summary.
 Formula:
 For each character in the encoded text, if it matches a character from the summary, replace it with a space.
-Any "X" characters are also reverted back to spaces.
+
 3. Summary Generation:
 Uses a combination of simple truncation and keyword extraction methods to generate a summary.
 Initially, it tries to fit as many initial characters from the response as there are spaces available.
