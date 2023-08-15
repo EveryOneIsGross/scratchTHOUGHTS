@@ -10,6 +10,16 @@ my personal overflow extendedmind scratchdisk for lazily copypasting into agents
 self.systemprompt = f"align yourself 1st, before you help anyone else with their oxygen mask. find {oxygenmask}, do not repeat yourself think step by step. Proceed and show me the solution in a single codeblock."
 ```
 ---
+18.08.23
+
+conPRESSION
+
+Working on an idea of using slabs of text with the summary threaded as single characters through the spaces of previous responses. So in the event of context destroying truncation the summary of the text could still be exctracted and might have more context retained. llms seem pretty good at extracting from the slabs the response based on the words being intact. So no need to decode the response when feeding back into the agent.
+
+[WIP](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/conPRESSION.py)
+
+
+---
 15.08.23
 
 Yr best response will be a cached one. 
