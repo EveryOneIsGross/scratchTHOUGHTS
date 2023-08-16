@@ -185,6 +185,7 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 ## EXECUTABLE PROJECTS:
 =======================
 
+- conPRESSION: slabs of compressed dual context packets for use with agents. [Link](https://github.com/EveryOneIsGross/conPRESSION)
 - shadowFACTS: a chatbot for embedding .txt documents for conversational understanding. [Link](https://github.com/EveryOneIsGross/shadowFACTS)
 - boustroLOSS: a boustrophedon formatting script and truncation hypothesis. [Link](https://github.com/EveryOneIsGross/boustroLOSS)
 - mnemosyneBOT: A simple offline chat agent with dynamic contextual memory recall and "forgetting". [Link](https://github.com/EveryOneIsGross/mnemosyneBOT)
