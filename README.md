@@ -44,7 +44,9 @@ publishednumerousworksmanypopularculturesearly20thcenturyreligioncalledthelemasp
 
 Working on an idea of storing slabs of text with the summary threaded as single characters through the spaces of previous responses. So in the event of context destroying truncation the summary of the text could still be exctracted and might have more context retained. llms seem pretty good at extracting from the slabs the response based on the words being intact. So no need to decode the response when feeding back into the agent. Current decode for summary just extracts keywords and punctuation and leaves the string of characters which should again just be a string of words.
 
-[WIP](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/conPRESSION.py)
+ADDED REPO 
+
+[WIP](https://github.com/EveryOneIsGross/conPRESSION)
 
 
 ---
