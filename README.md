@@ -62,7 +62,7 @@ Yr best response will be a cached one.
 ---
 15.08.23
 
-Preparing for teh last daze of the internet. Cyberpunk asf thinking about the philosophy of being Post-Chrome. 
+Preparing for teh last daze of the internet. Cyberpunk asf thinking about the philosophy of being #postchrome 
 
 ![LASTDAYSOFTHEINTERNET](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/35f0365b-e55d-4694-a235-11b578471f2c)
 
