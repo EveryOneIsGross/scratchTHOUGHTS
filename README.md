@@ -16,6 +16,8 @@ script for chunking .txt or .epubs and using system tts to read chunks. haz the 
 
 [babelSUMBOOKS](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/babelSUMBOOKS.py)
 
+![babelsumbooks](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/dbf44b5f-1113-48b9-9d33-160acc952022)
+
 ---
 
 19.08.23
