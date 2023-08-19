@@ -5,6 +5,7 @@ import os
 import threading
 import queue
 import pickle
+import re
 from gpt4all import GPT4All, Embed4All
 
 # Delimiter to separate embeddings in the string
@@ -41,12 +42,12 @@ def adjust_voice_settings(engine):
     engine.setProperty('voice', selected_voice_id)
 
     # User sets the volume
-    volume = float(input("Enter volume (0.0 to 1.0, where 1.0 is the loudest): "))
-    while volume < 0.0 or volume > 1.0:
-        print("Invalid volume. Please enter a value between 0.0 and 1.0.")
-        volume = float(input("Enter volume (0.0 to 1.0): "))
-    
-    engine.setProperty('volume', volume)
+    #volume = float(input("Enter volume (0.0 to 1.0, where 1.0 is the loudest): "))
+    #while volume < 0.0 or volume > 1.0:
+    #    print("Invalid volume. Please enter a value between 0.0 and 1.0.")
+    #    volume = float(input("Enter volume (0.0 to 1.0): "))
+    #
+    #engine.setProperty('volume', volume)
 
     # User sets the speech rate
     rate = int(input("Enter speech rate (words per minute, e.g., 150): "))
@@ -100,41 +101,48 @@ def get_input(q):
         pass
 
 
+def remove_html_tags(text):
+    clean = re.compile('<.*?>')
+    return re.sub(clean, '', text)
+
+
 # Global list to store spoken chunks
 spoken_chunks = []
 
 def chat_with_agent():
     """Use the last 4 spoken chunks to converse with the agent and return its response."""
-    model = GPT4All("orca-mini-3b.ggmlv3.q4_0.bin")
+    model = GPT4All("C://AI_MODELS//openorca-platypus2-13b.ggmlv3.q4_1.bin")
     # Get all the chunks
     # input_text = "Summarise what we have covered: " + ' '.join(spoken_chunks)
-    # Get the last 4 chunks or fewer if there are less than 4
-    input_text_chunks = spoken_chunks[-4:]
+    # Get the last 4 chunks or fewer if there are less than 2
+    input_text_chunks = spoken_chunks[-2:]
     input_text = "Summarise what we have covered: " + ' '.join(input_text_chunks)
     
-    response = model.generate(input_text, max_tokens=500)
+    response = model.generate(input_text, max_tokens=1500)
     return response
 
 def speak_chunk(engine, chunk, q):
     """Speak the chunk using the engine, embed it, and handle user inputs."""
     
-    print("\nReading Chunk:", chunk)  # Display the chunk content
+    # Remove HTML tags from the chunk
+    clean_chunk = remove_html_tags(chunk)
+    
+    print("\nReading Chunk:", clean_chunk)  # Display the cleaned chunk content
     
     # Embed the chunk after speaking
-    embedding = embed_text(chunk)
+    embedding = embed_text(clean_chunk)
     embeddings.append(embedding)
     
-    engine.say(chunk)
+    engine.say(clean_chunk)
     engine.runAndWait()
 
     # Store the spoken chunk
-    spoken_chunks.append(chunk)
+    spoken_chunks.append(clean_chunk)
 
     # Check if there's any input from the user
     if not q.empty():
         return q.get()
     return None
-
 
 
 
