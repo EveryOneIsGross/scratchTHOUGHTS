@@ -10,6 +10,13 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+19.08.23
+
+script for chunking .txt or .epubs and using system tts to read chunks with the ability to skip to chunks or get a summary from a local llm of segment history, assigning different voices to reader and summary bot.
+
+
+
+---
 
 19.08.23
 
