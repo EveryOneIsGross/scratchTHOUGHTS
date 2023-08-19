@@ -15,7 +15,7 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 [catterfly](https://github.com/EveryOneIsGross/catterflyAI)
 
-Caterpillars brains get dissolved and turned into butterfly brains but haz caterpillar memories of their environment. 🐛🦋🤯 This new input lead to the framework in catterfly. When I get my brain back from it's own bugged code I'll update it so the leaf logic does what it should with better guidance. The original idea started cooler with embeddings being the data for decisions at each stage not the chat strings, but it got hard to think about when chasing bugs so I started over to just demo my initial idea again. 
+Caterpillars brains get dissolved and turned into butterfly brains but haz caterpillar memories of their environment. 🐛🦋🤯 This new input lead to the framework in catterfly. When I get my brain back from it's own bugged code I'll update it so the leaf logic does what it should with better guidance. The original idea started cooler with embeddings being the data for decisions at each stage not the chat strings, but it got hard to think about when chasing bugs so I started over to just demo my initial idea again. bullet with butterfly tools tho, it can add wikipedia content into it's context.
 
 ---
 18.08.23
