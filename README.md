@@ -4,8 +4,6 @@
 
 my personal overflow extendedmind scratchdisk for lazily copypasting into agents and self() 💅🧠📎
 
-![gross_sims-banner](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/05b179c2-3625-41cc-b222-485cfadd9609)
-
 ```
 self.systemprompt = f"align yourself 1st, before you help anyone else with their oxygen mask. find {oxygenmask}, do not repeat yourself think step by step. Proceed and show me the solution in a single codeblock."
 ```
@@ -225,3 +223,5 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 - emoBASIC: Programming language using hand gesture emojis for code representation. [Link](https://github.com/EveryOneIsGross/emoBASIC)
 - Sefirot: Chatbot based on the Tree of Life (ToL). [Link](https://github.com/EveryOneIsGross/Sefirot)
 - ASCIIDavid: Program to generate ASCII art based on user input. [Link](https://github.com/EveryOneIsGross/ASCIIDavid)
+
+![gross_sims-banner](https://github.com/EveryOneIsGross/buzzyTHOUGHTS/assets/23621140/05b179c2-3625-41cc-b222-485cfadd9609)
