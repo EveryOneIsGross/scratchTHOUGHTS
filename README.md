@@ -12,9 +12,9 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ---
 19.08.23
 
-script for chunking .txt or .epubs and using system tts to read chunks with the ability to skip to chunks or get a summary from a local llm of segment history, assigning different voices to reader and summary bot.
+script for chunking .txt or .epubs and using system tts to read chunks with the ability to skip to chunks or get a summary from a local llm of segment history, assigning different voices to reader and summary bot. just a rough util. As soon as I get a GPU I'll try something like BARK and use my tinydog BIGDOG frame to swicth between bark and elevenlabs free api. agent isn't well designed or is there any prompt guidance. less prompt good prompt.
 
-
+[babelSUMBOOKS](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/babelSUMBOOKS.py)
 
 ---
 
