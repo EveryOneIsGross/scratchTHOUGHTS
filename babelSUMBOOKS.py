@@ -7,16 +7,27 @@ import queue
 import pickle
 import re
 from gpt4all import GPT4All, Embed4All
+import PyPDF2
+from collections import deque
+from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
+from elevenlabs import generate, play, set_api_key
+import os
+#os.environ['PATH'] += os.pathsep + 'c:/ffmpeg/bin/' #if you gte ffmpeg error
 
+set_api_key("key")
+
+# Initialize the embedding model at the beginning of the script
+embedder = Embed4All()
 # Delimiter to separate embeddings in the string
 EMBEDDING_DELIMITER = ','
 # Global list to store embeddings
-
 embeddings = []
 selected_voice = None
 voices = []  # Add this global declaration
 # Add a global flag at the beginning of your code
 program_running = True
+
 
 
 def adjust_voice_settings(engine):
@@ -31,15 +42,18 @@ def adjust_voice_settings(engine):
     for index, voice in enumerate(voices):
         print(f"{index}. Name: {voice.name}, Languages: {voice.languages}")
 
-    # User selects a voice
-    
+    # Add ElevenLabs as an additional option
+    print(f"{len(voices)}. ElevenLabs TTS API")
+
     voice_selection = int(input("Enter the number of the voice you want to use: "))
-    while voice_selection < 0 or voice_selection >= len(voices):
+    while voice_selection < 0 or voice_selection > len(voices):  # <-- Adjusted this condition
         print("Invalid selection. Please choose a number from the list.")
         voice_selection = int(input("Enter the number of the voice you want to use: "))
+
     selected_voice = voice_selection
-    selected_voice_id = voices[voice_selection].id
-    engine.setProperty('voice', selected_voice_id)
+    if voice_selection < len(voices):  # If it's not ElevenLabs TTS API
+        selected_voice_id = voices[voice_selection].id
+        engine.setProperty('voice', selected_voice_id)
 
     # User sets the volume
     #volume = float(input("Enter volume (0.0 to 1.0, where 1.0 is the loudest): "))
@@ -78,6 +92,13 @@ def extract_text_from_epub(file_path):
             content.append(item.content.decode('utf-8'))
     return ' '.join(content)
 
+def extract_text_from_pdf(file_path):
+    """Extract text content from a PDF file."""
+    with open(file_path, 'rb') as file:
+        reader = PyPDF2.PdfReader(file)
+        text = [page.extract_text() for page in reader.pages]
+    return ' '.join(text)
+
 def save_to_json(filename, chunks):
     """Save chunks to a JSON file."""
     json_filename = os.path.splitext(filename)[0] + '.json'
@@ -106,36 +127,78 @@ def remove_html_tags(text):
     return re.sub(clean, '', text)
 
 
+def chat_with_agent():
+    """Obtain a concise summary of the last spoken chunks using an AI model."""
+    
+    # Initialize the AI model
+    model = GPT4All("C://AI_MODELS//orca-mini-3b.ggmlv3.q4_0.bin")
+    
+    # Extract the recent chunks to be summarized
+    input_text_chunks = spoken_chunks[-1:]  # Getting the last spoken chunk
+    
+    # Construct the prompt with clear instructions for the AI model
+    input_text = (
+        "### System:\n"
+        "You are an assistant that summarises spoken text. Summarise: \n\n"
+        "### User:\n" + 
+        ' '.join(input_text_chunks)
+    )
+    
+    # Generate the summary response
+    response = model.generate(input_text, max_tokens=1200, temp=0.7)
+    
+    # Print the agent's response first
+    print("\nAgent's response:", response)
+    
+    # Store the original voice ID
+    original_voice_id = engine.getProperty('voice')
+    
+    # Switch to an alternate local voice for the agent
+    if original_voice_id == voices[0].id:
+        engine.setProperty('voice', voices[1].id)  # Switching to voice 1
+    else:
+        engine.setProperty('voice', voices[0].id)  # Switching to voice 0
+    
+    # Read the response out loud
+    engine.say(response)
+    engine.runAndWait()
+
+    # Restore the original voice
+    engine.setProperty('voice', original_voice_id)
+
+    return response
+
+
 # Global list to store spoken chunks
 spoken_chunks = []
-
-def chat_with_agent():
-    """Use the last 4 spoken chunks to converse with the agent and return its response."""
-    model = GPT4All("C://AI_MODELS//openorca-platypus2-13b.ggmlv3.q4_1.bin")
-    # Get all the chunks
-    # input_text = "Summarise what we have covered: " + ' '.join(spoken_chunks)
-    # Get the last 4 chunks or fewer if there are less than 2
-    input_text_chunks = spoken_chunks[-2:]
-    input_text = "Summarise what we have covered: " + ' '.join(input_text_chunks)
-    
-    response = model.generate(input_text, max_tokens=1500)
-    return response
 
 def speak_chunk(engine, chunk, q):
     """Speak the chunk using the engine, embed it, and handle user inputs."""
     
     # Remove HTML tags from the chunk
     clean_chunk = remove_html_tags(chunk)
-    
     print("\nReading Chunk:", clean_chunk)  # Display the cleaned chunk content
     
-    # Embed the chunk after speaking
-    embedding = embed_text(clean_chunk)
-    embeddings.append(embedding)
+    # If ElevenLabs TTS API is selected
+    if selected_voice == len(voices):
+        try:
+            audio = generate(text=clean_chunk, voice="Bella", model="eleven_monolingual_v1")
+            play(audio)
+        except Exception as e:  # Catch errors from ElevenLabs
+            print(f"Error using ElevenLabs: {e}")
+            print("Reverting to an alternative voice.")
+            
+            # Revert to the first available pyttsx3 voice as an example
+            engine.setProperty('voice', voices[0].id)
+            engine.say(clean_chunk)
+            engine.runAndWait()
+    else:
+        engine.say(clean_chunk)
+        engine.runAndWait()
     
-    engine.say(clean_chunk)
-    engine.runAndWait()
-
+    # Embed the chunk after speaking
+    embedding = embed_text(clean_chunk, embedder)
+    
     # Store the spoken chunk
     spoken_chunks.append(clean_chunk)
 
@@ -143,6 +206,7 @@ def speak_chunk(engine, chunk, q):
     if not q.empty():
         return q.get()
     return None
+
 
 
 
@@ -157,22 +221,43 @@ def load_embeddings(filename):
         embeddings = pickle.load(file)
     return embeddings
 
-def embed_text(text):
+def embed_text(text, embedder):
     """Embed the given text using Embed4All and return the embedding."""
-    embedder = Embed4All()
     return EMBEDDING_DELIMITER.join(map(str, embedder.embed(text)))
 
 def main(engine):
-    global voices
-    global program_running
-    # Initialize TTS engine
+    global voices, program_running, embeddings
+    playback_queue = deque()
 
-    # Get file path from user
-    file_path = input("Enter the path to the txt or epub file: ")
+
+
+    def search_chunks(query, chunks, full_text_embedding, embedder):
+        """Search for chunks using cosine similarity and return the index of the top match."""
+        query_embedding = embed_text(query, embedder)
+        similarities = []
+
+        # Calculate cosine similarity for each chunk
+        for chunk in chunks:
+            chunk_embedding = embed_text(chunk, embedder)
+            similarity = cosine_similarity(
+                np.array(query_embedding.split(EMBEDDING_DELIMITER)).reshape(1, -1),
+                np.array(chunk_embedding.split(EMBEDDING_DELIMITER)).reshape(1, -1)
+            )
+            similarities.append(similarity[0][0])
+
+        # Get the index of the top match
+        top_match = np.argmax(similarities)
+        return [top_match]
+
+
+        # Get file path from user
+    file_path = input("Enter the path to the txt, epub, or pdf file: ")
 
     # Extract text based on file extension
     if file_path.endswith('.epub'):
         text = extract_text_from_epub(file_path)
+    elif file_path.endswith('.pdf'):
+        text = extract_text_from_pdf(file_path)
     else:
         with open(file_path, 'r') as file:
             text = file.read()
@@ -185,6 +270,10 @@ def main(engine):
 
     # Divide the text into chunks
     chunks = read_chunks(text, chunk_size)
+
+    # Clean the extracted text of any potential HTML tags
+    text = remove_html_tags(text)
+    full_text_embedding = embed_text(text, embedder)
 
     # Save chunks to a JSON file
     json_filename = save_to_json(file_path, chunks)
@@ -204,53 +293,55 @@ def main(engine):
     segment = input(f"Enter a segment number (0-{len(loaded_chunks)-1}) or press Enter to start from the beginning: ").strip()
     i = 0 if not segment else int(segment)
 
-    print("Type a number to jump to a segment or type 'exit' to quit.")
+    print("Type a number to jump to a segment, 'search QUERY' to search, or type 'exit' to quit.")
     q = queue.Queue()
     t = threading.Thread(target=get_input, args=(q,))
     t.start()
 
-    while i < len(loaded_chunks):
-        print(f"\nSegment Number: {i}")  # Display the segment number
+    while i < len(loaded_chunks) or playback_queue:
+        print(f"\nSegment Number: {i}")  # Display the segment number before determining next chunk
+
+        # Determine the next chunk to play
+        if playback_queue:
+            i = playback_queue.popleft()
+        elif i >= len(loaded_chunks):
+            break
+
         user_input = speak_chunk(engine, loaded_chunks[i], q)
-        # Save embeddings to a pickle file
         save_embeddings(embeddings, embeddings_filename)
+
         if user_input == "exit":
             print("\nExiting program.")
-            save_embeddings(embeddings, embeddings_filename)  # Save embeddings before exiting
-            
-            # Set the flag to False to stop the get_input thread
+            save_embeddings(embeddings, embeddings_filename)
             program_running = False
-
-            # Join the thread to ensure it terminates
             t.join()
-            
             return
 
-        elif user_input == "chat":
-            response = chat_with_agent()
-            
-            # Print the agent's response first
-            print("\nAgent's response:", response)
-            
-            # Then set the engine to a different voice for the chat response
-            if selected_voice == 0:
-                engine.setProperty('voice', voices[1].id)
+        if user_input and user_input.startswith("search "):
+            query = user_input[len("search "):]
+            matches = search_chunks(query, loaded_chunks, full_text_embedding, embedder)
+
+
+            if matches:
+                playback_queue.extend([match - 1 for match in matches])
+
+                print(f"Found a match in segment {matches[0]}. Adding to playback queue.")
             else:
-                engine.setProperty('voice', voices[0].id)
+                print("No matches found.")
 
-            # Read the response out loud
-            engine.say(response)
-            engine.runAndWait()
+        elif user_input == "chat":
+            chat_with_agent()
+            
 
-            # Revert back to the user's chosen voice for the next chunk
-            engine.setProperty('voice', voices[selected_voice].id)
+            
         elif user_input and user_input.isdigit():
-            i = int(user_input)
-            if i >= len(loaded_chunks):
+            i = int(user_input) - 1  # Subtract 1 to counteract the increment at the end of the loop
+            if i >= len(loaded_chunks) or i < 0:
                 print(f"Invalid segment number. There are only {len(loaded_chunks)} segments.")
-                i = len(loaded_chunks) - 1
-        else:
-            i += 1
+                i = max(0, min(len(loaded_chunks) - 1, i))  # Clamp it between 0 and the last segment
+
+
+        i += 1  # Increment the segment number at the end of the loop
 
 if __name__ == "__main__":
     main(engine)
