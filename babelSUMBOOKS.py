@@ -13,8 +13,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 from elevenlabs import generate, play, set_api_key
 import os
-# ffmpeg is messed up on my system, this was the solution
-#os.environ['PATH'] += os.pathsep + 'c:/ffmpeg/bin/'
+os.environ['PATH'] += os.pathsep + 'c:/ffmpeg/bin/'
 
 # Initialize the embedding model at the beginning of the script
 embedder = Embed4All()
