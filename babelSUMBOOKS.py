@@ -13,9 +13,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 from elevenlabs import generate, play, set_api_key
 import os
-#os.environ['PATH'] += os.pathsep + 'c:/ffmpeg/bin/' #if you gte ffmpeg error
-
-set_api_key("key")
+os.environ['PATH'] += os.pathsep + 'c:/ffmpeg/bin/'
 
 # Initialize the embedding model at the beginning of the script
 embedder = Embed4All()
@@ -27,7 +25,31 @@ selected_voice = None
 voices = []  # Add this global declaration
 # Add a global flag at the beginning of your code
 program_running = True
+# Global list to store chat responses
+chat_responses = []
 
+
+# Splash screen and introduction
+def splash_intro():
+
+    print("_|_|_________|_|________|_|/_____|_|__|_|__\\/__|")
+    print("_|_|_________|_|________|_|_(____|_|__|_|_\\__/_|")
+    print("_|_'__\\_/__`_|_'__\\_/___\\_|\____\\|_|__|_|_|\\/|_|")
+    print("_|_|_)_|_(_|_|_|_)_|____/_|____)_|_|__|_|_|__|_|")
+    print("_|_.__/_\\__,_|_.__/_\\___|_|_____/_\\____/|_|__|_|")
+
+    print("\n")
+    print("Instructions:")
+    print("- You'll be prompted to choose a voice for reading.")
+    print("- Provide the path to your txt, epub, or pdf file.")
+    print("- Define the desired chunk size for reading.")
+    print("- Interact with the reader by typing commands like 'search', 'chat', or 'exit'.")
+    print("- Enter a number to jump to a specific segment.")
+    print("- Typing 'chat' will prompt the local llm to summarize the last spoken chunk.")
+    print("\n")
+
+# Call the splash and intro function at the beginning
+splash_intro()
 
 
 def adjust_voice_settings(engine):
@@ -54,6 +76,10 @@ def adjust_voice_settings(engine):
     if voice_selection < len(voices):  # If it's not ElevenLabs TTS API
         selected_voice_id = voices[voice_selection].id
         engine.setProperty('voice', selected_voice_id)
+    else:
+        # Prompt the user for the ElevenLabs API key
+        elevenlabs_api_key = input("Enter your ElevenLabs API key: ").strip()
+        set_api_key(elevenlabs_api_key)
 
     # User sets the volume
     #volume = float(input("Enter volume (0.0 to 1.0, where 1.0 is the loudest): "))
@@ -77,11 +103,64 @@ def adjust_voice_settings(engine):
 # Example usage:
 engine = pyttsx3.init()
 adjust_voice_settings(engine)
+spoken_chunks = []
+
+def speak_chunk(engine, chunk, q):
+    """Speak the chunk using the engine, embed it, and handle user inputs."""
+    
+    # Remove HTML tags from the chunk
+    clean_chunk = remove_html_tags(chunk)
+    print("\nReading Chunk:", clean_chunk)  # Display the cleaned chunk content
+    
+    # If ElevenLabs TTS API is selected
+    if selected_voice == len(voices):
+        try:
+            audio = generate(text=clean_chunk, voice="Bella", model="eleven_monolingual_v1")
+            play(audio)
+        except Exception as e:  # Catch errors from ElevenLabs
+            print(f"Error using ElevenLabs: {e}")
+            print("Reverting to an alternative voice.")
+            
+            # Revert to the first available pyttsx3 voice as an example
+            engine.setProperty('voice', voices[0].id)
+            engine.say(clean_chunk)
+            engine.runAndWait()
+    else:
+        engine.say(clean_chunk)
+        engine.runAndWait()
+    
+    # Embed the chunk after speaking
+    embedding = embed_text(clean_chunk, embedder)
+    
+    # Store the spoken chunk
+    spoken_chunks.append(clean_chunk)
+
+    # Check if there's any input from the user
+    if not q.empty():
+        return q.get()
+    return None
 
 
-def read_chunks(text, chunk_size=150):
-    """Divide the text into chunks."""
-    return [text[i:i+chunk_size] for i in range(0, len(text), chunk_size)]
+def read_chunks(text, max_chunk_size=150):
+    """Divide the text into chunks at every '.\n' or based on max_chunk_size."""
+    
+    # Split the text at every '.\n'
+    preliminary_chunks = text.split('.\n')
+
+    # Check if any of the preliminary chunks exceed the max_chunk_size
+    # and further divide them if necessary.
+    chunks = []
+    for pre_chunk in preliminary_chunks:
+        while len(pre_chunk) > max_chunk_size:
+            pos = pre_chunk.rfind(' ', 0, max_chunk_size)
+            if pos == -1:
+                pos = max_chunk_size
+            chunks.append(pre_chunk[:pos])
+            pre_chunk = pre_chunk[pos:].lstrip()
+        chunks.append(pre_chunk)
+
+    return chunks
+
 
 def extract_text_from_epub(file_path):
     """Extract text content from an epub file."""
@@ -135,7 +214,7 @@ def chat_with_agent():
     
     # Extract the recent chunks to be summarized
     input_text_chunks = spoken_chunks[-1:]  # Getting the last spoken chunk
-    
+    print("\nInput text chunks:", input_text_chunks)
     # Construct the prompt with clear instructions for the AI model
     input_text = (
         "### System:\n"
@@ -146,6 +225,8 @@ def chat_with_agent():
     
     # Generate the summary response
     response = model.generate(input_text, max_tokens=1200, temp=0.7)
+    # Append the response to the chat_responses list
+    chat_responses.append(response)
     
     # Print the agent's response first
     print("\nAgent's response:", response)
@@ -169,43 +250,6 @@ def chat_with_agent():
     return response
 
 
-# Global list to store spoken chunks
-spoken_chunks = []
-
-def speak_chunk(engine, chunk, q):
-    """Speak the chunk using the engine, embed it, and handle user inputs."""
-    
-    # Remove HTML tags from the chunk
-    clean_chunk = remove_html_tags(chunk)
-    print("\nReading Chunk:", clean_chunk)  # Display the cleaned chunk content
-    
-    # If ElevenLabs TTS API is selected
-    if selected_voice == len(voices):
-        try:
-            audio = generate(text=clean_chunk, voice="Bella", model="eleven_monolingual_v1")
-            play(audio)
-        except Exception as e:  # Catch errors from ElevenLabs
-            print(f"Error using ElevenLabs: {e}")
-            print("Reverting to an alternative voice.")
-            
-            # Revert to the first available pyttsx3 voice as an example
-            engine.setProperty('voice', voices[0].id)
-            engine.say(clean_chunk)
-            engine.runAndWait()
-    else:
-        engine.say(clean_chunk)
-        engine.runAndWait()
-    
-    # Embed the chunk after speaking
-    embedding = embed_text(clean_chunk, embedder)
-    
-    # Store the spoken chunk
-    spoken_chunks.append(clean_chunk)
-
-    # Check if there's any input from the user
-    if not q.empty():
-        return q.get()
-    return None
 
 
 
@@ -315,7 +359,7 @@ def main(engine):
             save_embeddings(embeddings, embeddings_filename)
             program_running = False
             t.join()
-            return
+            return file_path, chunk_size, i
 
         if user_input and user_input.startswith("search "):
             query = user_input[len("search "):]
@@ -340,8 +384,29 @@ def main(engine):
                 print(f"Invalid segment number. There are only {len(loaded_chunks)} segments.")
                 i = max(0, min(len(loaded_chunks) - 1, i))  # Clamp it between 0 and the last segment
 
-
         i += 1  # Increment the segment number at the end of the loop
 
+
+def print_summary(file_path, chunk_size, i):
+    """Print a summary of the book read, chat responses, and other details."""
+    print("\n===== SUMMARY =====")
+    # Summary of the book read
+    print(f"\nBook Path: {file_path}")
+    
+    # Chat responses
+    print("\nChat Responses:")
+    for idx, response in enumerate(chat_responses, 1):  # Start the enumeration from 1
+        print(f"{idx}. {response}")
+    
+    # Chunk size and last segment listened
+    print(f"\nChunk Size: {chunk_size}")
+    print(f"Last Segment Listened: {i}")
+
+
+
 if __name__ == "__main__":
-    main(engine)
+    try:
+        file_path, chunk_size, i = main(engine)
+    finally:
+        # Always print the summary, even if there was an error or exception.
+        print_summary(file_path, chunk_size, i)
