@@ -14,7 +14,7 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 p2p chat w/ ai context sharing
 
-Struggling with a program that demonstrates: a p2p chat that has an AI shadow the users input (summarise and expand on) and share their answers as embeddings with the other users AI, which then "translates" against it's own embedded memories to add that into context for a reply-response context summary. The idea being we'll all have our own local AI soon and we are going to get weird, so the program demonstrates ai's sending context packets for the other persons ai to have for context so we can still grok once we get a bit enmeshed with our own agents twinspeak. Essentially they'll both have a copy of the same memory as a vector store seperate from the user to user chat, the ai is just their to contextually explain the responses.
+Struggling with a program that demonstrates: a p2p chat that has an AI shadow the users input (summarise and expand on) and share their answers as embeddings with the other users AI, which then "translates" against it's own embedded memories to and is displayed with the other users response as a context summary. The idea being we'll all have our own local AI soon and we are going to get weird, so the program demonstrates ai's sending context packets to each other along with the users conversation. It's so we can still grok one another once we get a bit enmeshed with our own agents twinspeak. Essentially both individuals personal ai will have a copy of the same memory as a vector store seperate from the user to user chat, the ai is just their to contextually explain the responses.
 But now I have to have my brain handle race conditions, and it can't ... 🕳🚗💨
 
 19.08.23
