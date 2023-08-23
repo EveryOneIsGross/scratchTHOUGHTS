@@ -6,6 +6,7 @@ from sklearn.neighbors import NearestNeighbors
 from gpt4all import GPT4All, Embed4All
 from sklearn.metrics.pairwise import cosine_similarity
 import os
+import datetime
 
 # Embedding functions and utilities
 embedder = Embed4All()
@@ -128,18 +129,31 @@ class P2PChat:
             input(f"\n{self.username}: ")  # Prompt the user to input their next message
 
     def send_message(self):
-        """User types a message and it's added to the send queue."""
+        """Send message to peer."""
         while True:
-            if not self.initial_message_sent:
-                self.initial_message_sent = True
-            else:
-                self.message_received_event.wait()  # Wait until a message is received and processed
-            message = input(f"\n{self.username}: ")
-            self.send_queue.put(message)
-            if message.lower() == "exit":
-                break
-            if self.initial_message_sent:
-                self.message_received_event.clear()  # Reset the event
+            # 1. User types a message
+            message = input("You: ")
+
+            # 2. Get an elaboration or definition from the local AI
+            ai_elaboration = self.process_input(message)
+            print("Local AI Elaboration:", ai_elaboration)
+
+            # 3. Embed the AI elaboration and retrieve context from previous AI responses
+            elaboration_embedding = embedder.embed(ai_elaboration)
+            context_message = self.retrieve_context(elaboration_embedding)
+            
+            # Store the AI elaboration embedding and the elaboration itself
+            self.embedding_memory.append(elaboration_embedding)
+            self.message_memory.append(ai_elaboration)
+
+            # 4. Send the original message and the context to Chat B
+            timestamp = datetime.datetime.now().isoformat()  # Generate a timestamp for the message
+            combined_data = pickle.dumps({"message": message, "embedding": elaboration_embedding, "context": context_message, "timestamp": timestamp})
+            message_header = bytes(f"{len(combined_data):<{10}}", 'utf-8')
+            self.sock.sendall(message_header + combined_data)
+            # At the end of send_message:
+            save_to_pickle(self.username, self.embedding_memory, self.message_memory)
+
 
     def receive_message(self):
         """Receive messages and add them to the receive queue."""
@@ -154,7 +168,11 @@ class P2PChat:
                 if not chunk:
                     raise ConnectionError("Connection was lost while receiving data")
                 full_data += chunk
-            received_data = pickle.loads(full_data)
+                received_data = pickle.loads(full_data)
+                received_message = received_data["message"]
+                received_embedding = received_data["embedding"]
+                received_context = received_data["context"]
+                received_timestamp = received_data["timestamp"]
             self.receive_queue.put(received_data)
 
     def start(self):
