@@ -19,7 +19,7 @@ But now I have to have my brain handle race conditions, and it can't ... ðŸ•³ðŸš
 
 [totaltrashcodethatsortofworks](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/p2pchatwAI_CONTEXT.py)
 
-Attached script: You'll be able to run a 'server' and 'client' instance locally with their own llms and it will create databases for each username and with AI sending their embeddings etc. Just need to create a properly relay cause right now it all falls out of sync, and I have some leaky loops.
+Attached script: Currently you can run a 'server' and 'client' instance locally with their own llms and it will create databases for each username and with AI sending their responses alongside embeddings etc. Just need to create a proper relay 'cause right now it all falls out of sync, and I have some leaky loops. turns out the room the chats in is harder than teh bot.
 
 ---
 19.08.23
