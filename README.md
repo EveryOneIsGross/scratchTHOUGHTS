@@ -21,6 +21,7 @@ But now I have to have my brain handle race conditions, and it can't ... 🕳�
 
 Attached script: You'll be able to run a 'server' and 'client' instance locally with their own llms and it will create databases for each username and with AI sending their embeddings etc. Just need to create a properly relay cause right now it all falls out of sync, and I have some leaky loops.
 
+---
 19.08.23
 
 i couldn't find an audiobook but could find the .epub 🤷‍♂️🧠📎🕳📚🤛💨
