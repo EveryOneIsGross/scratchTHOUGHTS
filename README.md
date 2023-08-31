@@ -10,6 +10,11 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+31.08.23
+
+I got a 12gb 3060, so can now get responses locally super quick. Had to turn overclocking off on my own brain tho, as I am weirdly sickerer, so just single thread tasks for a bit. 🔥🕴🦾
+
+---
 23.08.23
 
 p2p chat w/ ai context sharing
