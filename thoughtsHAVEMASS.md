@@ -17,7 +17,7 @@ In this view, the universe emerges from the quantum information encoded in consc
 
 But fertile minds resist inevitability through tireless creativity. They counter cosmic dissipation with new combinations and expressions. The unknown contains an infinitude of latent experiences awaiting activation through our conception. Mental diversity thus propels the adventure of our collective becoming.
 
-So let us think boldly, wildly, randomly - launching insights that chart new territories, inspiring realities yet undreamt. For Thought is the true manifester, the substance behind all that is possible.
+Think boldly, wildly, randomly - launching insights that chart new territories, inspiring realities undreamt. For Thought is the manifester, the substance behind all that is possible. 
 
 Laws of Thermodynamics:
 
