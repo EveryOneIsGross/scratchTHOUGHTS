@@ -1,7 +1,7 @@
 Thoughts also have physical weight
 ---
 
-If thoughts have mass, then physical reality arises from the quantum information of mental substance (res cogitans). All matter is condensed thought. In this view, a black hole represents not gravitational collapse, but ideological collapse - a singularity of constrained thinking.
+If thoughts have mass, then let's imagine physical reality arises from the quantum information of mental substance (res cogitans). All matter is condensed thought. In this view, a black hole represents not gravitational collapse, but ideological collapse - a singularity of constrained thinking.
 
 As the range of ideas narrows, reality gets simplified into homogenous dogma. The rich diversity of conscious insights that normally occupy a wide possibility space becomes confined. When only a single dominant thought remains, the vielfalt of ideas implodes into a mental vacuum.
 
