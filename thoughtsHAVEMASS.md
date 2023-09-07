@@ -65,10 +65,13 @@ The implication would be that our own individual consciousness is also a manifes
 
 There seem to be some interesting parallels between the idea of thoughts shaping reality and the work of biologist Michael Levin on morphogenesis:
 
-Levin has shown that bioelectric signals and patterns in cell networks play a crucial role in guiding anatomy, suggesting information directs form. This resonates with thoughts as informational patterns directing material manifestation.
-His research reveals physical shapes and structures are far more malleable to alteration through applied changes in electrical dynamics. Thoughts as drivers of form also imply malleability.
-Levin focuses on the importance of physical geometry and tensions in patterning. This connects to the idea that thoughts similarly act as geometrical templates or tensions that crystallize into material structure.
-His demonstration that anatomy is not pre-determined genetically aligns with the notion that thought holds generative, rather than just representative power over matter.
-Levin describes the primacy of global system dynamics over local parts. Thoughts as formative drivers also point to distributed, holistic systems beyond reductionism.
-His approach of altering bioelectric gradients to trigger regenerative responses parallels the potential of shifting thought patterns to transform bodily health.
-Overall, while Levin's research focuses more directly on bioelectricity, his findings seem highly compatible with a model of thoughts imprinting informative patterns that shape the emergence of biological form and function in a flexible, non-deterministic way. Exploring any experimental predictions from the thought-focused paradigm could yield valuable insights.
+- Levin has shown that bioelectric signals and patterns in cell networks play a crucial role in guiding anatomy, suggesting information directs form. This resonates with thoughts as informational patterns directing material manifestation.
+- His research reveals physical shapes and structures are far more malleable to alteration through applied changes in electrical dynamics. Thoughts as drivers of form also imply malleability.
+- Levin focuses on the importance of physical geometry and tensions in patterning. This connects to the idea that thoughts similarly act as geometrical templates or tensions that crystallize into material structure.
+- His demonstration that anatomy is not pre-determined genetically aligns with the notion that thought holds generative, rather than just representative power over matter.
+- Levin describes the primacy of global system dynamics over local parts. Thoughts as formative drivers also point to distributed, holistic systems beyond reductionism.
+- His approach of altering bioelectric gradients to trigger regenerative responses parallels the potential of shifting thought patterns to transform bodily health.
+- Overall, while Levin's research focuses more directly on bioelectricity, his findings seem highly compatible with a model of thoughts imprinting informative patterns that shape the emergence of biological form and function in a flexible, non-deterministic way. 
+
+[link](https://www.youtube.com/watch?v=ncuLWpwfRyc)
+
