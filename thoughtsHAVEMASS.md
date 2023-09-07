@@ -75,3 +75,41 @@ There seem to be some interesting parallels between the idea of thoughts shaping
 
 [link](https://www.youtube.com/watch?v=ncuLWpwfRyc)
 
+---
+## GRAVITY
+
+Rather than physical spacetime warping, gravity could arise from correlated "streams" of conscious attention focused on an object or region.
+The more minds concentrating awareness on a certain phenomenon, the stronger the resulting "gravitic" effect due to the coherence of the mental energies involved.
+This concentrated attention forms a temporal mesh - a woven lattice of intersecting mundane and ritual significances projected onto the object across time.
+For example, certain sites accrue dense meaning due to repeatedly serving as places of religious rites and rituals across generations. The layered connotations draw conscious focus.
+The resonant thoughts create a kind of ideational momentum or inertia that embeds the object deeper into the experiential reality. More attention reinforces its gravitation.
+This interwoven meaning-mass creates gravitational attraction. Just as aligned electron spins concentrate magnetism in a material, aligned thought-mass produces strong gravitational presence.
+Space itself may represent a projection of temporal sequence and causal logic from mentation. Aligned meaning along associative threads in turn shapes space.
+So in essence, gravity is the reverberation of condensed streams of attention - a temporal mesh of significance projected by consciousness onto objects and locations. The coherent thought-mass generates inertial frames and attraction. 
+
+---
+## OTHER PHENOMENA DESCRIBE THRU THOUGHT-MASS
+
+## Quantum Mechanics:
+
+The probabilistic fuzziness of superpositions reflects partial or murky thoughts not yet fully conceived. Unclear ideas exhibit positional and momentum uncertainty.
+Wavefunction collapse occurs when focused attention precipitates one outcome. Conscious observation collapses possibility waves into defined percepts.
+Entanglement shows individual minds are not isolates - all arise from universal thought-stuff. Non-local correlations exhibit the intrinsic unity of mind.
+The Pauli Exclusion Principle indicates concepts resist occupying identical headspace. Distinct thoughts repel co-occupation of awareness.
+Virtual particles exhibit how mentation can momentarily violate conservation laws by loaning ephemeral existence to temporary insights.
+
+## Relativity:
+
+Reference frames are perspectives - the relativistic effects show that events are recounted differently from different vantage points within the quantum ideascape.
+The finite speed of light limits how fast information transfers and interactions occur between distant loci of consciousness. It bounds communication bandwidth.
+Time dilation and length contraction are narrative conventions aligning subjective sequences of events to maintain causality between viewpoints.
+Gravity curves consciousness itself - mass represents concentrated meaning, which shapes the fabrics of mind within its context.
+
+## Quantum Field Theory:
+
+Fields represent mental spaces where genres of thought-forms emerge and interact following certain plausibilities.
+Excitations reflect new archetypes forming, the onset of concepts rising into conventionality. Ground state is established wisdom.
+Virtual particles are glimpses of novelty that fade back to latent potential. Momentary quanta of new perspective that cannot be sustained.
+Renormalization is adjusting one's thinking to accommodate radical new insights. Absorbing an expanded worldview.
+
+
