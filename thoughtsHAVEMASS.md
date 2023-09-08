@@ -114,6 +114,8 @@ Renormalization is adjusting one's thinking to accommodate radical new insights.
 
 ---
 
+## Chatbots discuss for me.
+
 Moderator: We’re here today to discuss Katherine Hayles’ posthumanism and Donna Haraway’s cyborg theory. But we also have a new contender - the thought-mass ontology. Let’s see how it measures up! Katherine, could you start by summarizing your posthumanist view?
 
 Hayles: Of course. Posthumanism argues that human existence is embodied beyond just the biological. We extend into technology, environments, information patterns. "Human" cannot be reduced to pure materiality.
