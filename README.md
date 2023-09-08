@@ -224,6 +224,13 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/deNarrator.py
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativeparadigm.md
 
 ---
+## 📚 CURRENTLY CHUNKING:
+====================
+
+
+
+---
+
 
 ## 🔥HOT LINKS🔥
 ================
@@ -232,6 +239,7 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 
 [https://laboriacuboniks.net/manifesto/xenofeminism-a-politics-for-alienation/](https://laboriacuboniks.net/wp-content/uploads/2019/11/qx8bq.txt)
 
+![Screenshot-2023-09-08-125727](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/18859ecf-9998-4b14-848d-2561dbe7ecde)
 
 
 ## EXECUTABLE PROJECTS:
