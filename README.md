@@ -10,6 +10,13 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+08.09.23
+
+⌨🐒🚬 if ai fails or "her"-style bails we can fall back on 'n' monkeys in a reinforcement framework maybe.
+
+[idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/infinitemonkeysGRADIENT.md)
+
+---
 07.09.23
 
 Having thoughts about heavy thoughts : [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/thoughtsHAVEMASS.md)
