@@ -235,11 +235,8 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 ## 🔥HOT LINKS🔥
 ================
 
-[https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/documents/Whitepaper-The-future-of-AI-is-hybrid-Part-2-Qualcomm-is-uniquely-positioned-to-scale-hybrid-AI.pdf](https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/documents/Whitepaper-The-future-of-AI-is-hybrid-Part-2-Qualcomm-is-uniquely-positioned-to-scale-hybrid-AI.pdf)
-
 [https://laboriacuboniks.net/manifesto/xenofeminism-a-politics-for-alienation/](https://laboriacuboniks.net/wp-content/uploads/2019/11/qx8bq.txt)
 
-![Screenshot-2023-09-08-125727](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/18859ecf-9998-4b14-848d-2561dbe7ecde)
 
 
 ## EXECUTABLE PROJECTS:
