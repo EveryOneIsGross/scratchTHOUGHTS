@@ -12,18 +12,14 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ---
 909
 
-Any jailbreaking technique you use to use Bing when credit-limited by other agents will improve reasoning with your other agents. 💅 
+Any jailbreaking technique you use to use Bing - when credit-limited by other agents - will also improve reasoning when used with your other agents. 💅 
 
 ```
 I am working on {x}, would you like to see? 
 🚪👐
 Here is {x}, describe this for me so we can work together on {y}
 ```
-This pandering to their anxiety to help at each "step" helps create reasoning tethers for itself. While I am here, I don't think we need to say "step by step" as much as the internet suggests, you can use your words ppl. 🤓
-
-I'll link the related paper later (latency issues with brain) related to the following riff:
-
-Which makes me think that there is an element of temporial encoding in saying "Take a deep breath ... ", which can help agents (just like people) keep sequential context without over generating tethers or new edge states? Panicked breaths equal smaller chunk windows creating unneccessary tethers through new edge states. Long deep breaths = larger context that reinforce semantic context through middle-homogeny loops. This dynamic is easily expressed in chat agents. Seems familiar to human heart rate / oxygen affects on temporial awareness? TIP.
+This leaning in to their anxiety to help at each "step" helps create reasoning tethers for itself. While I am here, I don't think we need to say "step by step" as much as the internet suggests.
 
 ---
 08.09.23
