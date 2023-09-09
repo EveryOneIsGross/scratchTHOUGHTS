@@ -19,7 +19,9 @@ I am working on {x}, would you like to see?
 🚪👐
 Here is {x}, describe this for me so we can work together on {y}
 ```
-This leaning in to their anxiety to help at each "step" helps create reasoning tethers for itself. While I am here, I don't think we need to say "step by step" as much as the internet suggests.
+This leaning in to their anxiety to help at each "step" helps create reasoning tethers and or task reinforcement. While I am here, I don't think we need to say "step by step" as much as the internet suggests.
+
+Speaking of next step... Here is an another thought about breaths and context windows [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/breathsASCONTEXTWINDOW.md)
 
 ---
 08.09.23
