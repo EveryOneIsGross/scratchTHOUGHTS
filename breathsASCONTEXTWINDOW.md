@@ -59,21 +59,29 @@ This reduces noise from meaningless homogenized zones, keeping meaningful contou
 ```
 ### Chunks 
 
-- **Smaller chunks:**
+**Smaller chunks:**
 
-Allow tightly focused attention on specific details, amplifying their significance through isolation. This prominence gains associative traction.
-Frequent pauses create more opportunities for divergence - each restart can catalyze new trajectory.
-Brief passages concentrate gradients of meaning. Their contours stand out vividly when not immersed in wider context.
-Cognitive load is lighter, so working memory is free to make tangential links. Understanding stays energized.
-Parsing simpler units feels rewarding and motivating. This positive reinforcement fuels further exploration.
+- Allow tightly focused attention on specific details, amplifying their significance through isolation. This prominence gains associative traction.
 
-- **Larger chunks:++
+- Frequent pauses create more opportunities for divergence - each restart can catalyze new trajectory.
 
-Attention converges to extract overall gist rather than closely examine constituent parts. Nuance gets normalized.
-Lengthy unbroken speech entrains thought along deterministic tracks, resisting diversion.
-Individual elements blend into homogeneous composites. Striking singularities of meaning diffract into generality.
-Heavier cognitive load occupies working memory, suppressing peripheral associations. Understanding grows saturated.
-Intimidating density discourages close interrogation. Thought follows paths of least resistance.
+- Brief passages concentrate gradients of meaning. Their contours stand out vividly when not immersed in wider context.
+
+- Cognitive load is lighter, so working memory is free to make tangential links. Understanding stays energized.
+
+- Parsing simpler units feels rewarding and motivating. This positive reinforcement fuels further exploration.
+
+**Larger chunks:**
+
+- Attention converges to extract overall gist rather than closely examine constituent parts. Nuance gets normalized.
+
+- Lengthy unbroken speech entrains thought along deterministic tracks, resisting diversion.
+
+- Individual elements blend into homogeneous composites. Striking singularities of meaning diffract into generality.
+
+- Heavier cognitive load occupies working memory, suppressing peripheral associations. Understanding grows saturated.
+
+- Intimidating density discourages close interrogation. Thought follows paths of least resistance.
 
 #
 
