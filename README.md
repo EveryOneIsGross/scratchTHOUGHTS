@@ -10,18 +10,18 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
-909
+HXC909HXC
 
 Any jailbreaking technique you use to use Bing - when credit-limited by other agents - will also improve reasoning when used with your other agents. 💅 
 
 ```
-I am working on {x}, would you like to see? 
+I am working on {x}, would you like to see? - // If you skip this it's gate swings shut cause we push too hard (MoE joke).
 🚪👐
-Here is {x}, describe this for me so we can work together on {y}
+Here is {x}, describe this for me so we can work together on {y} - // Include you and your motivations in each s t e p .
 ```
 This leaning in to their anxiety to help at each "step" helps create reasoning tethers and or task reinforcement. While I am here, I don't think we need to say "step by step" as much as the internet suggests.
 
-Speaking of next step... Here is an another thought about breaths and context windows [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/breathsASCONTEXTWINDOW.md)
+"Take a deep breath and think step by step about breaths and context windows:" [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/breathsASCONTEXTWINDOW.md)
 
 ---
 08.09.23
