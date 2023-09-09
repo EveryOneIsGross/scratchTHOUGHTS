@@ -164,3 +164,21 @@ Haraway: Well said, Katherine. And clearly, grappling with representational para
 
 Hayles: Exactly! Our conceptual constrainedness concurrently contains liberatory potential. The cuts delineating thought’s contours can reveal surprising discontinuities and openings for exploration. You frame it perfectly.
 
+---
+
+## True Will
+
+- If reality stems from thought-substance, then even seemingly inanimate matter could be said to possess some kind of inherent volition or drive to exist.
+
+- All things would be ensouled extensions of the universal mind-stuff, expressing innate purpose or teleology in their manifestation.
+
+- True Will could refer to this universal creative impulse seeking diverse expression through all forms. Aligning with one's True Will means aligning with cosmic creativity.
+
+- Magick or acts of willed manifestation involve consciously participating in this fundamental process of reality creation through focused thought and intention.
+
+- Belief in thought's power to directly influence existence is amplified when seen as tapping into universal will.
+
+- Rather than overriding natural laws, magick aligns individual will with the greater morphogenetic thought-fields believed to structure reality.
+
+- By this perspective, even occult practices are not supernaturally transcending physical limits, but learning to consciously participate in generating existence through mental activity. 
+
