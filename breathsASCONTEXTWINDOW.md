@@ -1,3 +1,6 @@
+
+![thoughtmass_graph](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/27fca7bd-04be-4c60-9128-80446658f376)
+
 # thinking about context loss in large texts due to homogenization of conceptual space
 # do chunk edges contain more teathering potential than core content?
 # do humans experience various sized chunking in different states, meditative, vs heightened awareness. do small chunks under adrenaline create more opportunities for creative potential when under threat, assuming the following is kinda valid...
