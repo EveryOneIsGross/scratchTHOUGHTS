@@ -10,6 +10,12 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+10.09.23
+
+Short script for chunking .txt and visualising lossy thoughtmass over the body of the text.
+[LINK](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/thoughtmassCONTEXT.py)
+
+---
 HXC909HXC
 
 Any jailbreaking technique you use to use Bing - when credit-limited by other agents - will also improve reasoning when used with your other agents. 💅 
