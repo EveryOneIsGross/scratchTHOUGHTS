@@ -13,8 +13,9 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 10.09.23
 
 Short script for chunking .txt and visualising lossy thoughtmass over the body of the text.
-[LINK](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/thoughtmassCONTEXT.py)
+[PYTHON](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/thoughtmassCONTEXT.py)
 
+"Take a deep breath and think step by step about breaths and context windows relating to thoughtmassontology:" [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/breathsASCONTEXTWINDOW.md)
 ---
 HXC909HXC
 
@@ -27,12 +28,10 @@ Here is {x}, describe this for me so we can work together on {y} - // Include yo
 ```
 This leaning in to their anxiety to help at each "step" helps create reasoning tethers and or task reinforcement. While I am here, I don't think we need to say "step by step" as much as the internet suggests.
 
-"Take a deep breath and think step by step about breaths and context windows:" [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/breathsASCONTEXTWINDOW.md)
-
 ---
 08.09.23
 
-⌨🐒🚬 if ai fails or "her"-style bails we can fall back on 'n' monkeys in a reinforcement framework maybe.
+⌨🐒🚬 if ai fails or "her"-style bails.
 
 [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/infinitemonkeysGRADIENT.md)
 
