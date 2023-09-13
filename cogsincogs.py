@@ -478,3 +478,58 @@ model_path = 'C://AI_MODELS//llama2_7b_chat_uncensored.ggmlv3.q4_0.bin'
 lang_model = GPTModel(model_path)
 # Run the agent loop for 10 iterations for demonstration purposes
 agent_loop(lang_model, max_iterations=3)
+
+
+'''
+Cognition is a complex and multidimensional phenomenon that involves various mental processes such as perception, attention, memory, reasoning, problem-solving, and language.
+
+If we use the WAIS as an example, we could represent cognition as a four-dimensional vector with the four index scores as its components. For instance, if a person has a Verbal Comprehension score of 110, a Perceptual Reasoning score of 95, a Working Memory score of 105, and a Processing Speed score of 90, their cognition vector would be (110, 95, 105, 90). To find the cosine of the angle between two cognition vectors, we would need to use the formula:
+
+cosθ=∥u∥∥v∥u⋅v​
+
+import numpy as np
+
+def calculate_cosine_similarity(vector1, vector2):
+    """Calculate cosine similarity between two vectors."""
+    dot_product = np.dot(vector1, vector2)
+    magnitude1 = np.linalg.norm(vector1)
+    magnitude2 = np.linalg.norm(vector2)
+    
+    if magnitude1 == 0 or magnitude2 == 0:
+        return 0.0  # Handle division by zero
+    
+    similarity = dot_product / (magnitude1 * magnitude2)
+    return similarity
+
+def analyze_similarity(similarity):
+    """Analyze the cosine similarity value."""
+    if similarity == 1:
+        return "Perfect similarity. The vectors are identical."
+    elif similarity >= 0.9:
+        return "Very high similarity. The vectors are highly similar."
+    elif similarity >= 0.7:
+        return "High similarity. The vectors are somewhat similar."
+    elif similarity >= 0.5:
+        return "Moderate similarity. The vectors have some similarity."
+    elif similarity >= 0.3:
+        return "Low similarity. The vectors are dissimilar."
+    elif similarity >= 0.1:
+        return "Very low similarity. The vectors are highly dissimilar."
+    else:
+        return "Perfect dissimilarity. The vectors are orthogonal (completely dissimilar)."
+
+# Input cognition vectors (replace with your values)
+vector1 = np.array([110, 95, 105, 90])
+vector2 = np.array([100, 100, 100, 100])
+
+# Calculate cosine similarity
+cosine_similarity = calculate_cosine_similarity(vector1, vector2)
+
+# Analyze the similarity
+analysis_result = analyze_similarity(cosine_similarity)
+
+# Print the results
+print(f"Cosine Similarity: {cosine_similarity:.2f}")
+print(f"Analysis: {analysis_result}")
+
+'''
