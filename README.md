@@ -10,6 +10,13 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+13.09.23
+
+cognition scratch code for agents. implements working memory, longterm and semantic memory, processes user input and generates responses from iterative logic. executes for now, lot's to do, just wanted to get the initial idea down. currently no theory of mind. just a rational frame. still trash code, but this is my trash zone. 😎💅
+
+[cogsincogs](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/cogsincogs.py)
+
+---
 10.09.23
 
 Short script for chunking .txt and visualising lossy thoughtmass over the body of the text.
