@@ -16,9 +16,14 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 running phi 1-5 on my cpu. i had 2 return my gpu to the shop cause of maybe losing the dye lottery. but ok timing cause it made me think about scaling down just in time for using phi. 
 
+THOUGHTS:
+
 [Cascading Scale in LLMS](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/phinetuning.md)
 
+CODE:
+
 wip, probably isn't working right now, chat will work, the corpus expansion is mostly placeholder for now.
+
 [selfPHINETUNE](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/selfPHINETUNE.py)
 
 ---
