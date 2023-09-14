@@ -10,6 +10,17 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+15.09.23
+
+# what if it's more about forgetting?
+
+running phi 1-5 on my cpu. i had 2 return my gpu to the shop cause of maybe losing the dye lottery. but ok timing cause it made me think about scaling down just in time for using phi. 
+
+[Cascading Scale in LLMS](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/phinetuning.md)
+
+scratch code incoming...
+
+---
 14.09.23
 
 divergent speling is part of your unique perspective in teh universe, if you are understood you're contributing new frames/flows/errors/states to this cosmicdance keeping homogenizing voids at bay 🖼🧙‍♂️💅🕳 
