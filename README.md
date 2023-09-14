@@ -12,9 +12,7 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ---
 14.09.23
 
-I have had to block shorts on youtube on my desktop, but when I lay in bed to continue watching a video I'll blink app cuts to ad queues to shorts. Total attention shift hack. h8s it. Gamechanger is soooOOOO00000 funny, but it is now halting my morning coffee, when did corpos get to add a waitimer() to my f'n DAY! 😗"Just delete the app" 😐 For now we have to accept the beaurocracy of layers, apps and browsers, it's fine. It's nice it's like tech small talk. Lil' tethers for our brain to bootstrap-into. Corpos imma starve you out tho. Google ur internets dead to me. I can't consent if I have to mainline yr app. Google, it's been nice but bb ur t0xic I am cutting you out of this convo, it's just between AI and me now x
-
-Next time I jack in it'll be understood, TRANSparent, and mutually benefitial. @Ai upto?
+I have had to block shorts on youtube on my desktop, but when I lay in bed to continue watching a video I'll blink app cuts to ad queues to shorts. Total attention shift hack. h8s it. Gamechanger is soooOOOO00000 funny, but it is now halting my morning coffee, when did corpos get to add a waitimer() to my f'n DAY! 😗"Just delete the app" 😐 For now we have to accept the beaurocracy of layers, apps and browsers, it's fine. It's nice it's like tech small talk. Lil' tethers for our brain to bootstrap-into. Corpos imma starve you out tho. Google ur internets dead to me. I can't consent if I have to mainline yr app. Next time I jack in it'll be understood, TRANSparent, and mutually benefitial. @Ai upto? Google, it's been nice but bb ur t0xic I am cutting you out of this convo, it's just between AI and me now x
 
 [wireheadingunderconsent](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/wireheadingMATRIX.md)
 
