@@ -18,7 +18,8 @@ running phi 1-5 on my cpu. i had 2 return my gpu to the shop cause of maybe losi
 
 [Cascading Scale in LLMS](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/phinetuning.md)
 
-scratch code incoming...
+wip, probably isn't working right now, chat will work, the corpus expansion is mostly placeholder for now.
+[selfPHINETUNE](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/selfPHINETUNE.py)
 
 ---
 14.09.23
