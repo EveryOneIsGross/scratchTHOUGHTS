@@ -12,11 +12,9 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ---
 16.09.23
 
-15.09.23
-
 Using descriptions of breathing techniques, mindfulness and meditation frameworks for bootstrapping llm prompts. 
 
-[embody.py]()
+[embody.py](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/embody.py)
 
 ---
 15.09.23
