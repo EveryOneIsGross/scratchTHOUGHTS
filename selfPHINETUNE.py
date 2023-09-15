@@ -4,7 +4,6 @@ chat with phi, 'exit' generates a phinetuning corpus from chat history for futur
 
 shame phi doesn't support beam search
 '''
-
 import torch
 import torch.nn.functional as F
 from transformers import AutoModelForCausalLM, AutoTokenizer, AdamW, get_linear_schedule_with_warmup
@@ -147,3 +146,4 @@ expand_corpus()
 
 # Fine-tuning
 cascading_model.fine_tune(chat_history)
+
