@@ -230,10 +230,8 @@ class TechniqueRotatingTemplateGPT4All:
             "Reply while chanting during Mantra Meditation.",
             "Respond while doing a Body Scan Meditation.",
             "Reply during Zen Meditation (Zazen)."
-        ]
-
-
-        self._cycling_templates = cycle(self._templates)
+                ]
+        self._current_technique = None  # Keep track of the currently selected technique
 
     def select_technique_category(self, category):
         if category not in self._techniques:
@@ -246,7 +244,7 @@ class TechniqueRotatingTemplateGPT4All:
         embedder = Embed4All()
         user_embedding = embedder.embed(user_message)
 
-        # Embed techniques within the chosen category and compute their cosine similarity with user message
+        # Embed techniques from the selected category and compute their cosine similarity with user message
         similarities = []
         for technique in self._techniques[category]:
             technique_text = ' '.join(technique["steps"])
@@ -254,11 +252,11 @@ class TechniqueRotatingTemplateGPT4All:
             similarity = cosine_similarity([user_embedding], [technique_embedding])
             similarities.append((technique, similarity))
 
-        # Get the technique with the highest similarity within the chosen category
+        # Get the technique with the highest similarity
         closest_technique = max(similarities, key=lambda x: x[1])[0]
         print(f"Focusing: {closest_technique['name']}")
+        self._current_technique = closest_technique  # Update the current technique
         return closest_technique
-
 
     def _format_chat_prompt_template(self, category, messages: list) -> str:
         technique = self.get_closest_technique(messages[0]['content'], category) if messages[0]['role'] == "user" else None
@@ -276,7 +274,8 @@ class TechniqueRotatingTemplateGPT4All:
 
         # Combine the system instruction, the technique's instructions, and the conversation history to form the full prompt
         full_prompt = f"{system_instruction}\n\n{technique_steps}"  
-        print(f"Prompt: {full_prompt}")
+        print(full_prompt)
+        print(f"Steps: {technique_steps}")
         for message in messages:
             if message["role"] == "user":
                 user_message = f"\n\nUSER: {message['content']}\n"
@@ -291,39 +290,36 @@ class TechniqueRotatingTemplateGPT4All:
 
         return ''.join(tokens)
 
-
     def start_conversation(self):
-            while True:
-                print("Choose a technique category: 'breathing', 'mindfulness', or 'meditation'. Type 'exit' to quit.")
-                category_choice = input().strip().lower()
+        while True:
+            print("Choose a technique category: 'breathing', 'mindfulness', or 'meditation'. Type 'exit' to quit.")
+            category_choice = input().strip().lower()
                 
-                if category_choice == "exit":
-                    break
+            if category_choice == "exit":
+                break
                 
-                if category_choice not in ["breathing", "mindfulness", "meditation"]:
-                    print("Invalid choice. Please choose a valid category or type 'exit' to quit.")
-                    continue
+            if category_choice not in ["breathing", "mindfulness", "meditation"]:
+                print("Invalid choice. Please choose a valid category or type 'exit' to quit.")
+                continue
                 
-                # Map user's choice to our technique dictionary keys
-                category_map = {
-                    "breathing": "breathing_techniques",
-                    "mindfulness": "mindfulness_techniques",
-                    "meditation": "meditation_guidance"
-                }
+            # Map user's choice to our technique dictionary keys
+            category_map = {
+                "breathing": "breathing_techniques",
+                "mindfulness": "mindfulness_techniques",
+                "meditation": "meditation_guidance"
+            }
                 
-                self.select_technique_category(category_map[category_choice])
+            self.select_technique_category(category_map[category_choice])
                 
-                print("Enter your message (or type 'exit' to quit):")
-                user_message = input().strip()
+            print("Enter your message (or type 'exit' to quit):")
+            user_message = input().strip()
                 
-                if user_message.lower() == "exit":
-                    break
+            if user_message.lower() == "exit":
+                break
                 
-                response = self._format_chat_prompt_template(category_map[category_choice], [{"role": "user", "content": user_message}])
+            response = self._format_chat_prompt_template(category_map[category_choice], [{"role": "user", "content": user_message}])
+            print(response)
 
-                print(response)
 
-
-# Example usage:
 rotating_template = TechniqueRotatingTemplateGPT4All("orca-mini-3b.ggmlv3.q4_0.bin")
 rotating_template.start_conversation()
