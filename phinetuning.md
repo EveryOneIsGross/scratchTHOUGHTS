@@ -1,3 +1,6 @@
+RE: [https://arxiv.org/pdf/2309.05463.pdf](https://arxiv.org/abs/2305.07759)
+RE: [https://arxiv.org/abs/2309.05463](https://arxiv.org/abs/2309.05463)
+
 Cascading Model Paradigm
 
 At its core, the paradigm revolves around a two-step process:
