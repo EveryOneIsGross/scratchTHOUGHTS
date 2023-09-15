@@ -10,6 +10,15 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+16.09.23
+
+15.09.23
+
+Using descriptions of breathing techniques, mindfulness and meditation frameworks for bootstrapping llm prompts. 
+
+[embody.py]()
+
+---
 15.09.23
 
 # what if it's more about forgetting?
