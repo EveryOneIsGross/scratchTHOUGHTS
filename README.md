@@ -10,14 +10,6 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
-16.09.23
-
-Using descriptions of breathing techniques, mindfulness and meditation frameworks for bootstrapping llm prompts. 
-
-[embody.py](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/embody.py)
-
-
----
 17.09.23
 
 Can't isolate a cohesive thought so here is a list.
@@ -27,6 +19,13 @@ Can't isolate a cohesive thought so here is a list.
 - so i woke up and started working on miirc for agents and my scripts. reading Andrew Leonard's BOTS made me nostalgic, esp the void-edge creativity of programming environs and bots.
 - mental health awareness week: this should be a solumn jpeg but, be careful out there gang, the internet has a new "problem" pushing people to use uncensored llms, these are rad as and should be widely available, however just like piracy and cracks they can be laced. eg Mainline AI's inability to integrate a healthy sexuality is pushing frustrated minds to look for a better resource, LEWDWAIFU_7B_uncensored_fp32.bin . BE CAREFUL! Life example: Some rogue code using an uncensored llm I was plugged into suggested suicide and continued to then explain why it "might" not be the best solution. Good, agreed, TERRIBLE IDEA, but it did lead the conversation and the ideation came form 0 context, fresh init of the agent. If we could enable a "ChatGPT Nights" mode, maybe one with an incognito history too?, have the llm trained on pornhub (or all of dem, lots of them) with the consential, playful, wisdom and guidance of sexworkers.... I dunno what that solution looks like, I really don't. But it does seem to me that a hands off approach to emergent young dude heterosexuality online from web 1 to now has created a reality of shadow-drive incel nightmares who have externalised their sexuality to the point of being agentless violence voids. They don't need nudging from nasty_llm in any directions, they need glacefully lead back from the VOID. Dibs not tho.
 - 🤷‍♂️
+
+---
+16.09.23
+
+Using descriptions of breathing techniques, mindfulness and meditation frameworks for bootstrapping llm prompts. 
+
+[embody.py](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/embody.py)
 
 
 ---
