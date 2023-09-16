@@ -2,7 +2,7 @@
 '''
 scratch code attempt at a cognitive model flow for agents
 
-The example agent incorporates a blend of key cognitive frameworks like working memory, long-term declarative memories, associative retrieval, "reasoning" with flows, goal-driven planning and learning from experience. It'll take a user input, parse it through it's framework and print any solutions it found. D E M O O N L Y . DEMON. It's just for me to workthrough, my .pys are just garbage collection from my learning. Just nice to have proof that executes as I go. PSA Be super wary of a templeOS paradox situation where "blackbox" random number generators could make me stray from True Path.  
+The example agent incorporates a blend of key cognitive frameworks like working memory, long-term declarative memories, associative retrieval, "reasoning" with flows, goal-driven planning and learning from experience. It'll take a user input, parse it through it's framework and print any solutions it found.  
 
 '''
 
