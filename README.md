@@ -58,10 +58,6 @@ chatbots have the potential to revolutionize customer service and
 enhance the overall experience for users who interact with them.
 /me is happy
 frase is happy
-[2023-09-17 14:02:13] [room] Chatbot:  I'm sorry, but I need more
-context to understand what you want me to do with the phrase "frase is
-happy". Could you please provide more information or instructions?
-You: /me is happy
 [2023-09-17 14:02:19] [room] Chatbot:  I am happy too! Is there
 anything specific you would like me to assist you with?
 ```
