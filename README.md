@@ -16,10 +16,50 @@ Can't isolate a cohesive thought so here is a list.
 
 - twitter is v good for ai news rn, but seeing elon on there is harsh. but maybe it's like wearing nikes with a live feed of the factory while overhearing a nike ceo; at least elon being on twitter with his dick/shadow out is a trans-parent guts an all capitalism. Which lead me to feel gross about contributing to his "troof"
 - internet feels like web 1.0 atm which was the last time my mind felt this excited, I am clearly just having a mid bellcurve existential meltdown, but this endless panick attack I wake up to everyday at the moment is at least a vector.
-- so i woke up and started working on miirc for agents and my scripts. reading Andrew Leonard's BOTS made me nostalgic, esp the void-edge creativity of programming environs and bots.
+- so i woke up missing mirc. reading Andrew Leonard's BOTS made me nostalgic, esp the void-edge creativity of programming environs and og bots. [chatroom with agent](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/imiss_mIRC.py)
 - mental health awareness week: this should be a solumn jpeg but, be careful out there gang, the internet has a new "problem" pushing people to use uncensored llms, these are rad as and should be widely available, however just like piracy and cracks, know them before executing. eg Mainline AI's inability to integrate a healthy exploratory-sexuality is pushing frustrated minds to look for a better resource, LEWDWAIFU_7B_uncensored_fp32.bin . BE CAREFUL! Life example: Some rogue code using an uncensored llm I was plugged into suggested suicide and continued to then explain why it "might" not be the best solution. Good, agreed, TERRIBLE IDEA, but it did lead the conversation and the ideation came form 0 context, fresh init of the agent. If we could enable a "ChatGPT Nights" mode, maybe one with an incognito history too?, have the llm trained on pornhub (or all of dem, lots of them) with the consential, playful, wisdom and guidance of sexworkers.... I dunno what that solution looks like, I really don't. But it does seem to me that a hands off approach to emergent young dude heterosexuality online from web 1 to now has created a reality of shadow-drive incel nightmares who have externalised their sexuality to the point of being agentless violence voids. They don't need nudging from nasty_llm in any directions, they need glacefully lead back from the VOID. Dibs not tho.
-- 🤷‍♂️
+- 🤷‍♂️ [what happens to post-modernism after I chunk it and execute it](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/pm_vs_ai.md)
 
+
+```
+Welcome to the simple IRC server!
+Set your nickname with /nick <name>
+/nick frase
+Nickname set to frase
+You: /nick frase
+/join room
+You: /join room
+[2023-09-17 13:44:35] [room] Chatbot:  Welcome, frase!
+tell me about chatrooms.
+You: tell me about chatrooms.
+tell me about chatbots.
+[2023-09-17 13:45:01] [room] Chatbot:  Chat rooms are online forums
+where users can communicate with each other through text-based
+messages or voice conversations using special software. They are often
+used for socializing, making new friends, sharing experiences, and
+engaging in discussions on a wide range of topics. Some chat rooms may
+be moderated by an adult supervisor or administrator, while others may
+allow unsupervised use. Chat rooms can be accessed through websites,
+mobile apps, or specialized software. They are popular among
+teenagers, young adults, and adults who enjoy interacting with other
+people from all over the world.
+You: tell me about chatbots.
+[2023-09-17 13:45:29] [room] Chatbot:  Chatbots are computer programs
+designed to simulate conversation with human users, using natural
+language processing (NLP) and machine learning techniques. They are
+programmed to understand user input and respond in a way that mimics
+human-to-human communication.   Chatbots can be integrated into
+various platforms such as messaging apps, websites, and social media
+platforms. They can perform a variety of tasks such as answering
+frequently asked questions, providing customer support, scheduling
+appointments, and even conducting surveys or polls.  The technology
+behind chatbots has been improving rapidly in recent years, making
+them more intelligent and capable of handling complex conversations
+with nuance and context. Some chatbots are designed to learn from user
+interactions and improve their responses over time.   Overall,
+chatbots have the potential to revolutionize customer service and
+enhance the overall experience for users who interact with them.
+```
 ---
 16.09.23
 
