@@ -12,12 +12,10 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ---
 17.09.23
 
-Can't isolate a cohesive thought so here is a list.
+- twitter is v good for daily ai news, but seeing elon on there is harsh. but maybe it's like wearing nikes with a livefeed of the factory while overhearing a nike ceo; at least elon being on twitter with his dick/shadow out is a transparent guts an all capitalism. Which lead me to feel gross about being on there contributing to his "troof" ai
 
-- twitter is v good for daily ai news, but seeing elon on there is harsh. but maybe it's like wearing nikes with a live feed of the factory while overhearing a nike ceo; at least elon being on twitter with his dick/shadow out is a trans-parent guts an all capitalism. Which lead me to feel gross about contributing to his "troof"
-
-- so i woke up missing mirc. reading Andrew Leonard's BOTS made me nostalgic, esp the void-edge creativity of programming environs and og bots. [chatroom with agent](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/imiss_mIRC.py)
-- 🤷‍♂️ [what happens to post-modernism after I chunk it and execute it](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/pm_vs_ai.md)
+- i woke up missing mirc. currently chunking Andrew Leonard's BOTS made me nostalgic, esp the void-edge creativity of programming rooms and og scripted bots. [chatroom with agent](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/imiss_mIRC.py)
+- also 🤷‍♂️ [what happens to post-modernism after I chunk it and execute it](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/pm_vs_ai.md)
 
 
 ```
