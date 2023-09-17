@@ -14,8 +14,8 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 Can't isolate a cohesive thought so here is a list.
 
-- twitter is v good for ai news rn, but seeing elon on there is harsh. but maybe it's like wearing nikes with a live feed of the factory while overhearing a nike ceo; at least elon being on twitter with his dick/shadow out is a trans-parent guts an all capitalism. Which lead me to feel gross about contributing to his "troof"
-- internet feels like web 1.0 atm which was the last time my mind felt this excited, I am clearly just having a mid bellcurve existential meltdown, but this endless panick attack I wake up to everyday at the moment is at least a vector.
+- twitter is v good for daily ai news, but seeing elon on there is harsh. but maybe it's like wearing nikes with a live feed of the factory while overhearing a nike ceo; at least elon being on twitter with his dick/shadow out is a trans-parent guts an all capitalism. Which lead me to feel gross about contributing to his "troof"
+
 - so i woke up missing mirc. reading Andrew Leonard's BOTS made me nostalgic, esp the void-edge creativity of programming environs and og bots. [chatroom with agent](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/imiss_mIRC.py)
 - 🤷‍♂️ [what happens to post-modernism after I chunk it and execute it](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/pm_vs_ai.md)
 
