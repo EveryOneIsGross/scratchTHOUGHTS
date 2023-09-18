@@ -10,6 +10,13 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+18.09.23
+
+Under adreline we chunk info fast, then when we are thoughtful and breathing slower we can handle bigger connected ideas.... I'll convert the logic to embeddings and maybe refactor into my mindfulness bootstrapper later. 
+
+[dunno what to call it yet](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/fastthinkslowthinkAGENT.py)
+
+---
 17.09.23
 
 - twitter is v good for daily ai news, but seeing elon on there is harsh. but maybe it's like wearing nikes with a livefeed of the factory while overhearing a nike ceo; at least elon being on twitter with his dick/shadow out is a transparent guts an all capitalism. Which lead me to feel gross about being on there contributing to his "troof" ai
