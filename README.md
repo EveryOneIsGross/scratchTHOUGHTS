@@ -347,6 +347,12 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/deNarrator.py
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativeparadigm.md
 
 ---
+## GAME-ZONE
+=========
+
+<iframe src=https://isitsports.neocities.org/connectgame/connect" width="400" height="600"></iframe>
+
+---
 ## 📚 CURRENTLY CHUNKING:
 ====================
 
