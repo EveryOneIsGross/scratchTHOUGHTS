@@ -350,7 +350,8 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 ## GAME-ZONE
 =========
 
-<iframe src=https://isitsports.neocities.org/connectgame/connect" width="400" height="600"></iframe>
+[CONNECT 🔌](https://isitsports.neocities.org/connectgame/connect)
+[BOOMSWEEPER 💣](https://isitsports.neocities.org/boomsweeper/boomsweeper_mobile)
 
 ---
 ## 📚 CURRENTLY CHUNKING:
