@@ -11,10 +11,15 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ```
 ---
 23.09.23
+## 
 
 I angry coded an idea based on the assumption our own logic is "clean" re guardrails on unsafe content. Lobotomising our worst assumptions from our logic trees breaks us as humans until we have time to grok thru emapthy or experience. Logic might be sound but with bad data that just needs restructuring. So, filtering harmful content in model gen, finetuning or worse within prompt context is not how our brainsss always reason. I suggest we let the first layer of reasoning from an agent be gross, wild, broad, creating lots of tethers. Then we'll use embeddings to create a spatial field to work from, keeping a lot of the context intact within the embedding, but then we can align it to our input better? Anyways, I think having a ethics layer is not necessary and creates distractions for llms trying to get from a to b, we are making them worry about killing a baby while getting a coffee for us, I hope human being brains aren't as anxious when getting coffee. Let the AI generate trash, let's keep that garbage too. We'll build something better from it. We shouldn't waste generations if the planet is burning. Each "layer" should be firewalled with no shared embeddings tho, let the shadow.pkl grow until we have time to deal with it. Eventually we'll be asking better questions that won't lead us into hate.
 
 [LINK](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/lefthandGUIDANCE.py)
+
+ALSO if we want a program to scale from a small llm to cloud and back we need to not over burden the small ai with 2k tokens of guidance that a cloud shrug off. 
+
+ALSO if your program runs on huge-cloud but then same python doesn't run on small-llm yr code might just be a prompt and chatgpt is hallucinating your hallucinated program 💅
 
 
 
