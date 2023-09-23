@@ -10,6 +10,17 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+23.09.23
+
+I angry coded an idea based on the assumption our own logic is "clean" re guardrails on unsafe content. Lobotomising our worst assumptions from our logic trees breaks us as humans until we have time to grok thru emapthy or experience. Logic might be sound but with bad data that just needs restructuring. So, filtering harmful content in model gen, finetuning or worse within prompt context is not how our brainsss always reason. I suggest we let the first layer of reasoning from an agent should be gross, wild, broad, creating lots of tethers. Then we'll use embeddings to create a spatial field to work from, keeping a lot of the context intact within the embedding, but then we can align it to our input better? Anyways, I think having a ethics layer is not necessary and creates distractions for llms trying to get from a to b, we are making them worry about killing a baby while getting a coffee for us, I hope human being brains aren't as anxious when getting coffee. Let the AI generate trash, let's keep that garbage too. We'll build something better from it. We shouldn't waste generations if the planet is burning. Each "layer" should be firewalled with no shared embeddings tho, let the shadow.pkl grow until we have time to deal with it. Eventually we'll be asking better questions that won't lead us into hate.
+
+LINK
+
+
+
+---
+
+
 18.09.23
 
 Under adreline we chunk info fast, then when we are thoughtful and breathing slower we can handle bigger connected ideas.... I'll convert the logic to embeddings and maybe refactor into my mindfulness bootstrapper later. 
