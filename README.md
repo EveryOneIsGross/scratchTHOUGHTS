@@ -10,6 +10,18 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+30.09.23
+
+I turned 40. I am still sick. My PC is mortal too, and is rejecting it's new parts. 💀
+
+COFFEE THOUGHTS
+===============
+
+Moving in one direction pulls the tangled trash that is your weights with you. ChatGPT getting "worse" is it getting smart elsewhere. *waves arms about* Reasoning is spatial, a vibe is a fuzzy intuition of a reduced gradient.~ Where to intuit a feeling is seen as random chance by a rationalist but it's part of the deduction logic, get stupid gets answers 💅
+
+Our wrong assumptions are territorial, mappings that resonate against others boundaries, their mechanic is baked into the code, it's step 2 of think step by step. Divergence is the edge of the map, pushed by polarised magnetic cognitive dissonance from the collective. Here is where the spice is, the thing we need for spacetime expanse. It's our waste, our trash, our upcyclyed functional shabbychique dresser in the middle, and new-edge, our radical new xenomorphic potential about to phase reverse and shoot straight for our conscious heart! 🖤
+
+---
 23.09.23
 ## 
 
