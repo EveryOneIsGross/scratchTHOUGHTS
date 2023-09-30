@@ -12,6 +12,8 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ---
 30.09.23
 
+![NNNNN](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/0f649aba-fafd-4966-90a2-9599b9a63975)
+
 I turned 40. I am still sick. My PC is mortal too, and is rejecting it's new parts. 💀
 
 ** COFFEE THOUGHTS ** ☕
