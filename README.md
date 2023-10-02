@@ -12,6 +12,8 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ---
 021023
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The aesthetics of old lace-knit patterns - part cellular automata, part musical score/sequencer pattern, part cryptographic cipher... all the good things! <a href="https://t.co/ws1QfG2aRp">pic.twitter.com/ws1QfG2aRp</a></p>&mdash; Paul Prudence (@MrPrudence) <a href="https://twitter.com/MrPrudence/status/1708573155306967552?ref_src=twsrc%5Etfw">October 1, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 Maybe this is how Nana's did it anyways, but I want to embed the generator into the pattern of the needlework. Scratch script takes a n x n grid and a simplified glyph of needlework instruction as a self defining pattern for multiple generations. My idea being you could code and write in analog. Further idea being a script that converts vector embeddings into needlework. Our knowledge hung on our great rented halls as tapestries! 
 
 [LACE](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/needlework.py)
