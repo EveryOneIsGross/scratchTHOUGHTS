@@ -7,15 +7,16 @@ def print_intro():
     print("Welcome to the Needlework Pattern Creator!")
     print("Create beautiful needlework patterns based on user-defined initial states and rules.\n")
     print("Glossary of Stitches:")
-    print("C: Chain Stitch - Represents a loop or iteration in programming.")
-    print("X: Cross Stitch - Represents a decision point or condition in programming.")
-    print("R: Running Stitch - Represents a simple statement or instruction in programming.")
-    print("K: Knot Stitch - Represents a variable or a data point in programming.")
-    print("I: Import Stitch - Represents an import statement in programming.")
-    print("T: Return Stitch - Represents a return statement in programming.")
-    print("S: Structure Stitch - Represents a class definition in programming.")
-    print("E: Empty Space - Represents a space with no stitch.")
+    print("∞: Chain Stitch (C) - Represents a loop or iteration in programming.")
+    print("×: Cross Stitch (X) - Represents a decision point or condition in programming.")
+    print("–: Running Stitch (R) - Represents a simple statement or instruction in programming.")
+    print("•: Knot Stitch (K) - Represents a variable or a data point in programming.")
+    print("↑: Import Stitch (I) - Represents an import statement in programming.")
+    print("↓: Return Stitch (T) - Represents a return statement in programming.")
+    print("§: Structure Stitch (S) - Represents a class definition in programming.")
+    print(".: Empty Space (E) - Represents a space with no stitch.")
     print("\nEnter the initial state as a string of stitches and observe how it evolves to create intricate needlework patterns.\n")
+
 
     
 
