@@ -10,7 +10,14 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
-30.09.23
+021023
+
+Maybe this is how Nana's did it anyways, but I want to embed the generator into the pattern of the needlework. Scratch script takes a n x n grid and a simplified glyph of needlework instruction as a self defining pattern for multiple generations. My idea being you could code and write in analog. Further idea being a script that converts vector embeddings into needlework. 
+
+[LACE](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/needlework.py)
+
+---
+300923
 
 ![NNNNN](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/0f649aba-fafd-4966-90a2-9599b9a63975)
 
