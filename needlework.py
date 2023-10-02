@@ -17,7 +17,6 @@ def print_intro():
     print(".: Empty Space (E) - Represents a space with no stitch.")
     print("\nEnter the initial state as a string of stitches and observe how it evolves to create intricate needlework patterns.\n")
 
-
     
 
 def initialize_grid(grid_size, initial_state):
@@ -28,37 +27,24 @@ def initialize_grid(grid_size, initial_state):
 def apply_rules(grid):
     new_grid = grid.copy()
     grid_size = len(grid)
-    for i in range(grid_size):
+    for i in range(1, grid_size):
         for j in range(grid_size):
-            # Get the values of the neighboring cells
-            # Use modulo arithmetic to wrap around the edges of the grid
-            left = grid[i, (j - 1) % grid_size]
-            right = grid[i, (j + 1) % grid_size]
-            top = grid[(i - 1) % grid_size, j]
-            bottom = grid[(i + 1) % grid_size, j]
-            top_left = grid[(i - 1) % grid_size, (j - 1) % grid_size]
-            top_right = grid[(i - 1) % grid_size, (j + 1) % grid_size]
-            bottom_left = grid[(i + 1) % grid_size, (j - 1) % grid_size]
-            bottom_right = grid[(i + 1) % grid_size, (j + 1) % grid_size]
-
-            # Apply some rules based on the values of the neighboring cells
-            # You can modify these rules as you like to create different patterns
-            if left == 'C' or right == 'C':
+            above_glyph = grid[i - 1, j]
+            if above_glyph == 'C':
                 new_grid[i, j] = 'X'
-            elif top == 'X' or bottom == 'X':
+            elif above_glyph == 'X':
                 new_grid[i, j] = 'R'
-            elif top_left == 'R' or bottom_right == 'R':
+            elif above_glyph == 'R':
                 new_grid[i, j] = 'C'
-            elif top_right == 'K' or bottom_left == 'K':
+            elif above_glyph == 'K':
                 new_grid[i, j] = 'K'
-            elif left == 'I' or right == 'I':
+            elif above_glyph == 'I':
                 new_grid[i, j] = 'C'
-            elif top == 'T' or bottom == 'T':
+            elif above_glyph == 'T':
                 new_grid[i, j] = 'X'
-            elif top_left == 'S' or bottom_right == 'S':
+            elif above_glyph == 'S':
                 new_grid[i, j] = 'R'
     return new_grid
-
 
 def visualize_grid_with_color(grid):
     fig, ax = plt.subplots(figsize=(6, 6))
