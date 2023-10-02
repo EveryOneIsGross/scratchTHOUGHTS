@@ -1,3 +1,29 @@
+'''Carefully read the input string character-by-character, referring to the provided glossary to understand what each symbol represents in terms of programming constructs.
+
+Mentally parse the input string into a coherent sequence of programming logic based on the glossary translation.
+
+Visually map out on paper how that sequence would expand by applying the defined rules. For example:
+
+A loop symbol means repeat the contained sequence
+A condition symbol means there will be two branching paths
+Variables and returns mean certain symbols will propagate
+Etc.
+Manually draw out the grid showing how the pattern expands by applying the rules to each construct.
+
+For each row, iterate through the previous row applying rules based on the symbol:
+
+Loop symbols cause their contents to repeat
+Conditionals branch into two paths
+Returns lead to stitches propagating backwards
+Variables copy stitches diagonally
+Mentally keep track of scope, nesting, and scale of the patterns
+
+Fill in the grid for as many generations as desired by applying rules
+
+Transcribe the final grid back into a string encoding the pattern
+
+This manual process would require meticulous care, attention to detail, and methodical application of the rules. But a human could plausibly replicate the program's output given time and effort. '''
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
@@ -15,7 +41,8 @@ def print_intro():
     print("↓: Return Stitch (T) - Represents a return statement in programming.")
     print("§: Structure Stitch (S) - Represents a class definition in programming.")
     print(".: Empty Space (E) - Represents a space with no stitch.")
-    print("\nEnter the initial state as a string of stitches and observe how it evolves to create intricate needlework patterns.\n")
+    print("\nEnter the initial state as a string of stitches and observe how it evolves to create intrica
+    te needlework patterns.\n")
 
     
 
