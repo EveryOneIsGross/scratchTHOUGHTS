@@ -27,7 +27,21 @@ This manual process would require meticulous care, attention to detail, and meth
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
+from mpl_toolkits.mplot3d import Axes3D
 import os
+import time
+import uuid
+import imageio
+from PIL import Image
+
+def resize_images(images, width, height):
+    resized_images = []
+    for image_path in images:
+        img = Image.open(image_path)
+        img_resized = img.resize((width, height))
+        resized_images.append(img_resized)
+    return resized_images
+
 
 def print_intro():
     print("Welcome to the Needlework Pattern Creator!")
@@ -41,44 +55,63 @@ def print_intro():
     print("↓: Return Stitch (T) - Represents a return statement in programming.")
     print("§: Structure Stitch (S) - Represents a class definition in programming.")
     print(".: Empty Space (E) - Represents a space with no stitch.")
-    print("\nEnter the initial state as a string of stitches and observe how it evolves to create intrica
-    te needlework patterns.\n")
+    print("\nEnter the initial state as a string of stitches and observe how it evolves to create intricate needlework patterns.\n")
+
 
     
 
+
 def initialize_grid(grid_size, initial_state):
     grid = np.full((grid_size, grid_size), 'E', dtype='<U1')
-    grid[0, :len(initial_state)] = list(initial_state)
+    effective_state = (initial_state[:grid_size] + 'E' * grid_size)[:grid_size]
+    grid[0, :len(effective_state)] = list(effective_state)
     return grid
 
 def apply_rules(grid):
     new_grid = grid.copy()
     grid_size = len(grid)
-    for i in range(1, grid_size):
+    for i in range(grid_size):
         for j in range(grid_size):
-            above_glyph = grid[i - 1, j]
-            if above_glyph == 'C':
+            # Get the values of the neighboring cells
+            # Use modulo arithmetic to wrap around the edges of the grid
+            left = grid[i, (j - 1) % grid_size]
+            right = grid[i, (j + 1) % grid_size]
+            top = grid[(i - 1) % grid_size, j]
+            bottom = grid[(i + 1) % grid_size, j]
+            top_left = grid[(i - 1) % grid_size, (j - 1) % grid_size]
+            top_right = grid[(i - 1) % grid_size, (j + 1) % grid_size]
+            bottom_left = grid[(i + 1) % grid_size, (j - 1) % grid_size]
+            bottom_right = grid[(i + 1) % grid_size, (j + 1) % grid_size]
+
+            # Apply some rules based on the values of the neighboring cells
+            # You can modify these rules as you like to create different patterns
+            if left == 'C' or right == 'C':
                 new_grid[i, j] = 'X'
-            elif above_glyph == 'X':
+            elif top == 'X' or bottom == 'X':
                 new_grid[i, j] = 'R'
-            elif above_glyph == 'R':
+            elif top_left == 'R' or bottom_right == 'R':
                 new_grid[i, j] = 'C'
-            elif above_glyph == 'K':
+            elif top_right == 'K' or bottom_left == 'K':
                 new_grid[i, j] = 'K'
-            elif above_glyph == 'I':
-                new_grid[i, j] = 'C'
-            elif above_glyph == 'T':
-                new_grid[i, j] = 'X'
-            elif above_glyph == 'S':
+            elif left == 'I' or right == 'I':
+                new_grid[i, j] = 'T'
+            elif top == 'T' or bottom == 'T':
+                new_grid[i, j] = 'I'
+            elif top_left == 'S' or bottom_right == 'S':
                 new_grid[i, j] = 'R'
     return new_grid
 
-def visualize_grid_with_color(grid):
-    fig, ax = plt.subplots(figsize=(6, 6))
+
+def visualize_grid_with_color(grid, file_name):
+    fig, ax = plt.subplots(figsize=(6, 6))  # Ensure that the figure size is consistent for all images
     grid_size = len(grid)
     ax.set_xlim(0, grid_size)
     ax.set_ylim(0, grid_size)
     ax.axis('off')
+    
+    # Ensure that the figure size remains consistent, which is important for creating GIFs
+    ax.set_aspect('equal', adjustable='box')
+    
     glyph_colors = {'C': 'blue', 'X': 'red', 'R': 'green', 'K': 'black', 'I': 'purple', 'T': 'orange', 'S': 'brown', 'E': 'white'}
     for i in range(grid_size):
         for j in range(grid_size):
@@ -88,7 +121,8 @@ def visualize_grid_with_color(grid):
             ax.add_patch(rect)
             if glyph != 'E':
                 ax.text(j + 0.5, grid_size - i - 0.5, glyph, color='black', ha='center', va='center', fontsize=12, family='monospace')
-    plt.show()
+    plt.savefig(file_name, bbox_inches='tight')
+    plt.close(fig)  # Close the figure to release the memory
 
 def generate_explanations(grid):
     explanation_mapping = {'C': 'A loop or iteration is initiated.', 'X': 'A decision point or condition is checked.',
@@ -132,11 +166,16 @@ def save_to_file(grid_size, initial_state, generations, explanations_list, file_
 
 
 def visualize_grid_with_color(grid, file_name):
-    fig, ax = plt.subplots(figsize=(6, 6))
+    fig, ax = plt.subplots(figsize=(6, 6))  # Consistent figure size
     grid_size = len(grid)
+    
+    # Set consistent plot limits
     ax.set_xlim(0, grid_size)
     ax.set_ylim(0, grid_size)
-    ax.axis('off')
+    
+    ax.set_aspect('equal', 'box')  # Equal aspect ratio
+    ax.axis('off')  # No axes for a clean look
+    
     glyph_colors = {'C': 'blue', 'X': 'red', 'R': 'green', 'K': 'black', 'I': 'purple', 'T': 'orange', 'S': 'brown', 'E': 'white'}
     for i in range(grid_size):
         for j in range(grid_size):
@@ -146,38 +185,114 @@ def visualize_grid_with_color(grid, file_name):
             ax.add_patch(rect)
             if glyph != 'E':
                 ax.text(j + 0.5, grid_size - i - 0.5, glyph, color='black', ha='center', va='center', fontsize=12, family='monospace')
-    plt.savefig(file_name, bbox_inches='tight')
-    plt.close(fig)  # Close the figure
+    
+    plt.tight_layout()  # Remove excess whitespace
+    plt.savefig(file_name)  # Save with minimal padding
+    plt.close(fig)  # Close the figure to release the memory
 
-# Modify the main loop to call the function with the appropriate file name
+
+def plot_3d(generations, base_file_name):
+    fig = plt.figure(figsize=(8, 8))
+    ax = fig.add_subplot(111, projection='3d')
+    
+    glyph_colors = {'C': 'blue', 'X': 'red', 'R': 'green', 'K': 'black', 'I': 'purple', 'T': 'orange', 'S': 'brown', 'E': 'white'}
+    grid_size = len(generations[0])
+    
+    for z, generation in enumerate(generations):
+        for x in range(grid_size):
+            for y in range(grid_size):
+                glyph = generation[x, y]
+                color = glyph_colors.get(glyph, 'white')
+                if glyph != 'E':  # Skip plotting empty spaces
+                    ax.scatter(y, grid_size - x - 1, z, c=color, s=50)  # s denotes the size of the point in the scatter plot
+    
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Generation')
+    
+    plt.savefig(f"{base_file_name}_3d_plot.png")
+    plt.close(fig)
+
+def generate_needlework_instructions(grid):
+    needlework_mapping = {
+        'C': 'Perform a Chain Stitch at',
+        'X': 'Perform a Cross Stitch at',
+        'R': 'Perform a Running Stitch at',
+        'K': 'Perform a Knot Stitch at',
+        'I': 'Perform an Import Stitch at',
+        'T': 'Perform a Return Stitch at',
+        'S': 'Perform a Structure Stitch at',
+        'E': 'Leave an Empty Space at'
+    }
+    
+    instructions = []
+    grid_size = len(grid)
+    input_positions = []
+    return_positions = []
+    
+    for i in range(grid_size):
+        for j in range(grid_size):
+            glyph = grid[i, j]
+            instruction = needlework_mapping.get(glyph, 'Unknown operation.')
+            if glyph != 'E':  # Skip instructions for Empty Space
+                instructions.append(f"{instruction} position ({i + 1}, {j + 1}).")
+            
+            if glyph == 'I':
+                input_positions.append((i, j))
+            elif glyph == 'T':
+                return_positions.append((i, j))
+    
+    # Generate instructions to tie threads between 'I' and 'T'
+    connection_instructions = []
+    for i_pos in input_positions:
+        for t_pos in return_positions:
+            connection_instructions.append(f"Connect a thread from position {i_pos[0] + 1, i_pos[1] + 1} to position {t_pos[0] + 1, t_pos[1] + 1}.")
+    
+    # Append connection instructions last
+    instructions.extend(connection_instructions)
+    
+    return instructions
+
+
+def save_needlework_instructions(instructions, file_name):
+    with open(file_name, 'w') as file:
+        file.write("\n".join(instructions))
+
+
 def main():
     print_intro()
     grid_size = int(input("Enter the grid size (n): "))
-    initial_state = input(f"Enter the initial state as a string of {grid_size} stitches (e.g. 'CXRIKTS'): ")
+    initial_state = input(f"Enter the initial state as a string of stitches (e.g. 'CXRIKTS'): ")
+    num_generations = int(input("Enter the number of generations you want to generate: "))
+    
+    unique_id = str(uuid.uuid4())
+    timestamp = time.strftime("%Y%m%d-%H%M%S")
+    base_file_name = f"{initial_state}_{timestamp}_{unique_id}"
+    
     grid = initialize_grid(grid_size, initial_state)
     
     generations = [grid.copy()]  # List to store each generation
-    explanations_list = [generate_explanations(grid)]  # List to store the explanations corresponding to each generation
+    images = []  # List to store the paths of the image files
     
-    gen_num = 0
-    while True:
-        img_file_name = f"needlework_pattern_gen_{gen_num}.png"
+    for gen_num in range(num_generations):
+        img_file_name = f"{base_file_name}_gen_{gen_num}.png"
         visualize_grid_with_color(grid, img_file_name)  # Save the visual representation of the grid as a .png file
+        images.append(img_file_name)  # Append the image file path to the list
         
-        print_explanations(grid)
+        if gen_num < num_generations - 1:  # Skip applying rules for the last generation
+            grid = apply_rules(grid)  # Apply rules to get the next generation
+            generations.append(grid.copy())  # Store the new generation
         
-        continue_generation = input("Would you like to continue to the next generation? (y/n): ").lower()
-        if continue_generation != 'y':
-            break
-        
-        grid = apply_rules(grid)  # Apply rules to get the next generation
-        generations.append(grid.copy())  # Store the new generation
-        explanations_list.append(generate_explanations(grid))  # Store the explanations of the new generation
-        
-        gen_num += 1
-    
-    txt_file_name = "needlework_pattern.txt"
-    save_to_file(grid_size, initial_state, generations, explanations_list, txt_file_name)  # Save the text representation and explanations of each generation to a .txt file
+    plot_3d(generations, base_file_name)  # Create a 3D plot after all generations have been created
+    gif_file_name = f"{base_file_name}_animated.gif"
+    imageio.mimsave(gif_file_name, [imageio.imread(image) for image in images], duration=1)  # Create GIF after all generations have been created
+    needlework_instructions = generate_needlework_instructions(grid)
+    needlework_file_name = f"{base_file_name}_needlework_instructions.txt"
+    save_needlework_instructions(needlework_instructions, needlework_file_name)
+
+
+    txt_file_name = f"{base_file_name}_pattern.txt"
+    save_to_file(grid_size, initial_state, generations, [generate_explanations(grid) for grid in generations], txt_file_name)  # Save the text representation and explanations of each generation to a .txt file
 
 if __name__ == "__main__":
     main()
