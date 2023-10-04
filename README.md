@@ -10,6 +10,43 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+051023
+
+Still working on the knitted hypercube graph. Even if it is just a fun art way of looking at processes. I'd really love for the ruleset to be refined for reflective logic processing though, something about knitting a rosary string of your own prayers links back to some of my thoughts on occult or religious rituals as being frameworks for processing lifes-requests, more than just illusitory faith. Those days we choose to walk down a street we haven't before etc. 
+
+Initial State: EEEIKXIKXITE
+Grid Size: 8
+
+Interpretation of the Initial State:
+An empty space, no operation is performed here. An empty space, no operation is performed here. An empty space, no operation is performed here. An inference or query is made on the knowledge graph. A key data point or fact in a knowledge graph is encountered. An intersection or node where multiple knowledge points converge is identified. An inference or query is made on the knowledge graph. A key data point or fact in a knowledge graph is encountered.
+
+==================================================
+Generation 1 Grid:
+E E E I K X I K
+E E E E E E E E
+E E E E E E E E
+E E E E E E E E
+E E E E E E E E
+E E E E E E E E
+E E E E E E E E
+E E E E E E E E
+
+Weaving Instructions for Generation 1:
+Perform an Import Stitch at position (1, 4) in generation 1.
+Perform a Knot Stitch at position (1, 5) in generation 1.
+Perform a Cross Stitch at position (1, 6) in generation 1.
+Perform an Import Stitch at position (1, 7) in generation 1.
+Perform a Knot Stitch at position (1, 8) in generation 1.
+Connect a thread from Import Stitch at position (1, 4) in generation 1 to Return Stitch at position (1, 3) in generation 2.
+Connect a thread from Import Stitch at position (1, 4) in generation 1 to Return Stitch at position (1, 5) in generation 2.
+Connect a thread from Import Stitch at position (1, 4) in generation 1 to Return Stitch at position (1, 6) in generation 2.
+Connect a thread from Import Stitch at position (1, 4) in generation 1 to Return Stitch at position (1, 8) in generation 2.
+Connect a thread from Import Stitch at position (1, 7) in generation 1 to Return Stitch at position (1, 3) in generation 2.
+Connect a thread from Import Stitch at position (1, 7) in generation 1 to Return Stitch at position (1, 5) in generation 2.
+Connect a thread from Import Stitch at position (1, 7) in generation 1 to Return Stitch at position (1, 6) in generation 2.
+Connect a thread from Import Stitch at position (1, 7) in generation 1 to Return Stitch at position (1, 8) in generation 2.
+
+---
 021023
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The aesthetics of old lace-knit patterns - part cellular automata, part musical score/sequencer pattern, part cryptographic cipher... all the good things! <a href="https://t.co/ws1QfG2aRp">pic.twitter.com/ws1QfG2aRp</a></p>&mdash; (@MrPrudence) <a href="https://twitter.com/MrPrudence/status/1708573155306967552?ref_src=twsrc%5Etfw">October 1, 2023</a></blockquote> 
