@@ -21,8 +21,10 @@ Interpretation of the Initial State:
 An empty space, no operation is performed here. An empty space, no operation is performed here. An empty space, no operation is performed here. An inference or query is made on the knowledge graph. A key data point or fact in a knowledge graph is encountered. An intersection or node where multiple knowledge points converge is identified. An inference or query is made on the knowledge graph. A key data point or fact in a knowledge graph is encountered.
 
 ==================================================
-'''
+
+```
 Generation 1 Grid:
+
 E E E I K X I K
 E E E E E E E E
 E E E E E E E E
@@ -31,7 +33,8 @@ E E E E E E E E
 E E E E E E E E
 E E E E E E E E
 E E E E E E E E
-'''
+```
+
 Weaving Instructions for Generation 1:
 Perform an Import Stitch at position (1, 4) in generation 1.
 Perform a Knot Stitch at position (1, 5) in generation 1.
