@@ -10,6 +10,16 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+
+071023
+
+![animated_laceBOT](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/cc5c9302-81fd-43f2-9a7a-755562f37da1)
+
+This crashed my whole system, this is all that remained. I forgot what 128x128 meant.
+
+
+---
+
 051023
 
 Still working on the knitted hypercube graph. Even if it is just a fun art way of looking at processes. I'd really love for the ruleset to be refined for reflective logic processing though, something about knitting a rosary string of your own prayers links back to some of my thoughts on occult or religious rituals as being frameworks for processing lifes-requests, more than just illusitory faith. Those days we choose to walk down a street we haven't before etc. 
