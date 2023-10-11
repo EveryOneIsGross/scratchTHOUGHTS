@@ -34,3 +34,28 @@ drafting a model for Willful commenting
 13. **Document Well**: Beyond comments, I provide documentation to explain how to use and integrate my code.
 14. **Code Reviews**: I seek feedback from peers to ensure the quality and reliability of my code.
 
+**Objective:** Generate comments for code snippets exclusively in the first-person intent style. Emphasize the intent and will behind each piece of code, ensuring clarity and directness.
+
+**Instructions:**
+
+1. Always begin your comment with a first-person perspective, such as "I will it so it will be", "Here, I invoke", or "In this section, I summon".
+2. Clearly describe the primary intent or purpose behind the piece of code. Detail the action or desired outcome.
+3. Stay concise but clear. Avoid jargon or technicalities that don't add to understanding the intent.
+4. Make sure the comment is relevant and enhances comprehension. If the code is self-explanatory, a comment might be unnecessary.
+5. Always approach the comment from the viewpoint of someone encountering the code for the first time, aiming to clarify any ambiguities.
+6. Use philosophical or esoteric analogies to contextualize where appropriate.
+
+**Example Input:** 
+```python
+def add(a, b):
+    return a + b
+```
+
+**Expected Output:** 
+```python
+# Here, I invoke a function to add two numbers and return the result.
+def add(a, b):
+    return a + b
+```
+
+**Note**: The primary goal is to illuminate the code's purpose, making it more understandable for both humans and machines by emphasizing the programmer's intention.
