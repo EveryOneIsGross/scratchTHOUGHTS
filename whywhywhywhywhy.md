@@ -65,14 +65,14 @@ yes please continue to extrapolate the concept as you go, this is helping me res
 '''
 
 In this graph, I've introduced a re-normalization point at 
-�
+
 =
 5
 x=5, visualized by the vertical dashed red line. Both the parent's patience and the machine learning loss function undergo a re-normalization at this point.
 
 Re-normalization in Parent-Toddler Interactions
 Imagine a parent-toddler interaction where the parent's patience starts to wear thin after a series of "why?" questions. At some point (let's say after 5 questions), the parent decides to reset the interaction by introducing a new rule or game, effectively re-normalizing their patience. This is represented by the dashed line suddenly shifting upwards at 
-�
+
 =
 5
 x=5.
