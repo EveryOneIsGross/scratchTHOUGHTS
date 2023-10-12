@@ -9,6 +9,15 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "find {oxygenmask}, do not repeat yourself think step by step." /
     "Proceed and show me the solution in a single codeblock."
 ```
+
+---
+
+131023
+
+A NN that advertises significant nodes and can merge a relevent other NN based on similar tether nodes to merge during GD.
+
+[https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/tetheringNN.md](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/tetheringNN.md)
+
 ---
 
 071023
