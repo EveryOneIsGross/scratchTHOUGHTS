@@ -1,3 +1,15 @@
+In this section, I summon the essence of a proposed neural network architecture where each layer has its unique tethers spanning multiple dimensions, potentially even forming tensors. The idea revolves around two core concepts:
+
+1. **Tethering Function with Layers:**
+   Here, I introduce a function \( \theta \), which adjusts the weights \( W^{(l)} \) of each layer \( l \) based on a tether tensor \( \mathcal{T}^{(l)} \). The intention is for these tethers to have a guiding influence on the weights, possibly making them more adaptive or better structured.
+
+2. **Inter-Model Communication:**
+   Imagining a scenario with \( M \) distinct models, each model \( i \) possesses its own tether tensor at layer \( l \), represented as \( \mathcal{T}_{i}^{(l)} \). I then define a connection function \( h \) to gauge the compatibility between tethers of disparate models. Should this compatibility surpass a set threshold, the models are permitted to "connect" or share information.
+
+3. **Dynamic Merging and Drifting:**
+   Diving deeper into the philosophy of fluidity and adaptiveness, I propose that based on the aforementioned compatibility function \( C \), models have the capability to either merge their states or drift away from one another. This action would be contingent on whether their compatibility lies above or below a specified threshold. The central idea here is akin to a dance where partners either come together or move apart based on their compatibility or tune. 
+
+In essence, I'm envisioning a system where models, guided by tethers, can dynamically collaborate or remain isolated, thereby creating models that realign in real-time. Such a conceptualization not only challenges the current static nature of neural networks but also paints a picture of a more adaptive and interconnected future for machine learning. It's as if each model is a star in a galaxy, and their tethers are the gravitational forces that pull them together or push them apart, resulting in a harmonious celestial dance.
 ```
 import torch
 import torch.nn as nn
@@ -5,6 +17,26 @@ import torch.optim as optim
 import random
 import numpy as np
 import copy
+import os
+from matplotlib import cm
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+# Initialize an array to keep track of tether merge points
+merge_points = []
+
+# Initialize arrays to store additional statistics
+mean_fc1_weights = []
+std_fc1_weights = []
+mean_fc2_weights = []
+std_fc2_weights = []
+# Initialize an array to store epoch numbers for visualization
+epoch_numbers = []
+
+# Initialize arrays to store values for visualization
+loss_values = []
+param1_values = []
+param2_values = []
 
 # Define a list to store tether generations for comparison.
 tether_generations = []
@@ -58,7 +90,12 @@ print("Model and initial tethers saved.")
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters())
 
-import os
+# Additional variables to track loss and/or gradients
+prev_loss = float('inf')
+loss_threshold = 0.1  # Replace with a suitable value
+gradient_threshold = 0.1  # Replace with a suitable value
+
+
 
 # Here, I define a function to read data from a text file and convert it to a PyTorch tensor.
 def read_data_from_file(file_path, shape, default_data=None):
@@ -88,32 +125,96 @@ default_tether_tensor_other_model = torch.rand((64, 64))
 dataloader = [read_data_from_file('data_input.txt', (32, 128), default_dataloader) for _ in range(100)]
 
 # Here, I replace the dummy labels with labels read from a text file, or create a file if it doesn't exist.
-labels = read_data_from_file('labels_input.txt', (32,), default_labels)
+labels = read_data_from_file('labels_input.txt', (32,), default_labels).long()
 
 # Here, I replace the placeholder tether tensor with a tether tensor read from a text file, or create a file if it doesn't exist.
 tether_tensor_other_model = read_tether_from_file('tether_other_model.txt', (64, 64), default_tether_tensor_other_model)
+
+# Initialize a variable to set the maximum number of tether merges per epoch
+max_tether_merges_per_epoch = 5  # You can set this to any integer value
 
 
 # Now, I start the training loop.
 for epoch in range(10):
     print(f"Epoch {epoch+1} started.")
+    
+    # Initialize a counter for the number of tether merges in this epoch
+    current_tether_merges = 0
+    
     for i, batch in enumerate(dataloader):
         outputs = model(batch)
         loss = criterion(outputs, labels)
-
+        
+        # Here, I calculate the gradient norm before zeroing the gradient.
+        total_grad_norm = sum(p.grad.data.norm(2).item() for p in model.parameters() if p.grad is not None)
+        
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
 
-        # Here, I calculate the compatibility between tethers of two models.
-        comp = compatibility(model.tether_fc2, tether_tensor_other_model)
-        print(f"Batch {i+1}: Compatibility = {comp.item()}")
+        # For demonstration, let's say we choose two weight values as our parameters
+        param1, param2 = model.fc1.weight.data[0, 0].item(), model.fc2.weight.data[0, 0].item()
+        
+        # Store them for visualization
+        loss_values.append(loss.item())
+        param1_values.append(param1)
+        param2_values.append(param2)
+        
+        # Add the current epoch number to epoch_numbers
+        epoch_numbers.append(epoch + 1)  # Adding 1 because epochs are 1-indexed in the print statement
 
-        # If compatibility exceeds a certain threshold, I merge the tethers and save the state.
-        if comp > 50:
-            model.tether_fc2 = (model.tether_fc2 + tether_tensor_other_model) / 2
-            tether_generations.append(copy.deepcopy(model.state_dict()))
-            print(f"Batch {i+1}: Tethers merged due to high compatibility. State saved.")
+        # Here, I decide if we should check for tether compatibility based on loss and/or gradient.
+        if abs(prev_loss - loss.item()) < loss_threshold or total_grad_norm < gradient_threshold:
+            # Here, I calculate the compatibility between tethers of two models.
+            comp = compatibility(model.tether_fc2, tether_tensor_other_model)
+            print(f"Batch {i+1}: Compatibility = {comp.item()}")
+            
+            # If compatibility exceeds a certain threshold and we haven't reached the max merges, I merge the tethers.
+            if comp > 50 and current_tether_merges < max_tether_merges_per_epoch:
+                model.tether_fc2 = (model.tether_fc2 + tether_tensor_other_model) / 2
+                tether_generations.append(copy.deepcopy(model.state_dict()))
+                print(f"Batch {i+1}: Tethers merged due to high compatibility. State saved.")
+                
+                # Record the index for visualization
+                merge_points.append(len(loss_values) - 1)
+                
+                # Increment the counter for tether merges
+                current_tether_merges += 1
+                
+        prev_loss = loss.item()
+
+
+
+
+# Create a color map based on the epoch number
+norm = plt.Normalize(min(epoch_numbers), max(epoch_numbers))
+cmap = cm.viridis
+
+# After the training loop, plot the 3D surface
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+# Scatter plot with color-coded epochs
+sc = ax.scatter(param1_values, loss_values, param2_values, c=epoch_numbers, cmap=cmap, norm=norm)
+
+# Highlight the merge points with a different marker and color
+if merge_points:
+    ax.scatter([param1_values[i] for i in merge_points], 
+               [loss_values[i] for i in merge_points], 
+               [param2_values[i] for i in merge_points], 
+               c='red', marker='x', label='Tether Merge Points')
+
+# Add a color bar to indicate epoch numbers
+cbar = plt.colorbar(sc, ax=ax)
+cbar.set_label('Epoch Number')
+
+ax.set_xlabel('Parameter 1')
+ax.set_ylabel('Loss')
+ax.set_zlabel('Parameter 2')
+ax.legend()  # Show legend to label merge points
+
+plt.show()
+
 ```
 
 
