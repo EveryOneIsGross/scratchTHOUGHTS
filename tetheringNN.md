@@ -1,6 +1,4 @@
-Here is a plain language explanation of the key ideas:
-
-The proposed neural network architecture has tether nodes in each layer that can connect within and between models. 
+DTNN architecture has tether nodes in each layer that can connect within and between models. 
 
 1. Tethering Function with Layers
 
