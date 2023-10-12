@@ -1,15 +1,35 @@
-In this section, I summon the essence of a proposed neural network architecture where each layer has its unique tethers spanning multiple dimensions, potentially even forming tensors. The idea revolves around two core concepts:
+Here is a plain language explanation of the key ideas:
 
-1. **Tethering Function with Layers:**
-   Here, I introduce a function \( \theta \), which adjusts the weights \( W^{(l)} \) of each layer \( l \) based on a tether tensor \( \mathcal{T}^{(l)} \). The intention is for these tethers to have a guiding influence on the weights, possibly making them more adaptive or better structured.
+The proposed neural network architecture has tether nodes in each layer that can connect within and between models. 
 
-2. **Inter-Model Communication:**
-   Imagining a scenario with \( M \) distinct models, each model \( i \) possesses its own tether tensor at layer \( l \), represented as \( \mathcal{T}_{i}^{(l)} \). I then define a connection function \( h \) to gauge the compatibility between tethers of disparate models. Should this compatibility surpass a set threshold, the models are permitted to "connect" or share information.
+1. Tethering Function with Layers
 
-3. **Dynamic Merging and Drifting:**
-   Diving deeper into the philosophy of fluidity and adaptiveness, I propose that based on the aforementioned compatibility function \( C \), models have the capability to either merge their states or drift away from one another. This action would be contingent on whether their compatibility lies above or below a specified threshold. The central idea here is akin to a dance where partners either come together or move apart based on their compatibility or tune. 
+- Certain nodes become "tether" nodes based on their importance. 
+- These tether nodes allow models to align with each other when suitable, based on the loss function.
+- This helps avoid losing information from repeated similar inputs.
 
-In essence, I'm envisioning a system where models, guided by tethers, can dynamically collaborate or remain isolated, thereby creating models that realign in real-time. Such a conceptualization not only challenges the current static nature of neural networks but also paints a picture of a more adaptive and interconnected future for machine learning. It's as if each model is a star in a galaxy, and their tethers are the gravitational forces that pull them together or push them apart, resulting in a harmonious celestial dance.
+2. Inter-Model Communication 
+
+- With multiple models, each model has its own tether nodes per layer.
+- A connection function calculates compatibility between tether nodes of different models.
+- If compatibility is high, the models can connect and share information.
+
+3. Dynamic Merging and Drifting
+
+- Based on compatibility, models can merge states or drift apart.
+- High compatibility causes them to merge and align.
+- Low compatibility causes them to drift apart and diverge.
+
+In summary, tether nodes allow dynamic connecting and disconnecting of models, creating an ensemble that can adapt in real-time. The models attract or repel each other like celestial bodies, choreographing an evolving network.
+
+The key aspects are:
+
+- Tether nodes for alignment
+- Inter-model compatibility scoring 
+- Dynamic merging and drifting of models
+- Adaptive ensemble creation
+
+Let me know if any part needs more explanation! I aimed to convey the technical ideas in a simplified plain language form.
 ```
 import torch
 import torch.nn as nn
