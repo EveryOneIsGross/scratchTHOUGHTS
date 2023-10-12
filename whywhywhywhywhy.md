@@ -1,3 +1,122 @@
+```
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import random
+import numpy as np
+import copy
+
+# Define a list to store tether generations for comparison.
+tether_generations = []
+
+# Here, I create a function that allows user input for tether tensor.
+def input_tether(shape):
+    return torch.tensor(np.random.rand(*shape), dtype=torch.float32, requires_grad=False)
+
+# Here, I define a function to perform tethering on layer weights.
+def theta(weights, tether_tensor):
+    return weights * tether_tensor
+
+# Here, I define a function to calculate the compatibility between tethers.
+def compatibility(tether_i, tether_j):
+    return torch.sum(tether_i * tether_j)
+
+# In this section, I establish the architecture of our neural network model.
+class Net(nn.Module):
+    def __init__(self, n_inputs, n_hiddens, n_outputs):
+        super(Net, self).__init__()
+        
+        # Here, I initialize tether tensors for each layer.
+        self.tether_fc1 = input_tether((n_hiddens, n_inputs))
+        self.tether_fc2 = input_tether((n_hiddens, n_hiddens))
+        self.tether_out = input_tether((n_outputs, n_hiddens))
+
+        # Here, I initialize the layers of the network.
+        self.fc1 = nn.Linear(n_inputs, n_hiddens)
+        self.fc2 = nn.Linear(n_hiddens, n_hiddens)
+        self.out = nn.Linear(n_hiddens, n_outputs)
+        
+    def forward(self, x):
+        # Here, I apply the tethering function to each layer's weights.
+        self.fc1.weight.data = theta(self.fc1.weight.data, self.tether_fc1)
+        self.fc2.weight.data = theta(self.fc2.weight.data, self.tether_fc2)
+        self.out.weight.data = theta(self.out.weight.data, self.tether_out)
+
+        # Now, I proceed with the forward pass through the network.
+        x = torch.relu(self.fc1(x))
+        x = torch.relu(self.fc2(x))
+        x = self.out(x)
+        return x
+
+# Here, I initialize the model and store its initial tethers.
+model = Net(n_inputs=128, n_hiddens=64, n_outputs=10)
+initial_tethers = copy.deepcopy(model.state_dict())
+tether_generations.append(initial_tethers)
+print("Model and initial tethers saved.")
+
+# Here, I set up the loss function and optimizer.
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters())
+
+import os
+
+# Here, I define a function to read data from a text file and convert it to a PyTorch tensor.
+def read_data_from_file(file_path, shape, default_data=None):
+    if not os.path.exists(file_path):
+        with open(file_path, 'w') as f:
+            if default_data is not None:
+                f.write(' '.join(map(str, default_data.view(-1).tolist())))
+        return default_data
+    else:
+        with open(file_path, 'r') as f:
+            flat_list = list(map(float, f.read().strip().split()))
+            if not flat_list:
+                return default_data
+            tensor_data = torch.tensor(flat_list, dtype=torch.float32).view(*shape)
+        return tensor_data
+
+# Here, I define a function to read tether tensor from a text file.
+def read_tether_from_file(file_path, shape, default_data=None):
+    return read_data_from_file(file_path, shape, default_data)
+
+# Here, I prepare some dummy data and labels for demonstration as default data.
+default_dataloader = torch.rand((32, 128))
+default_labels = torch.randint(0, 10, (32,))
+default_tether_tensor_other_model = torch.rand((64, 64))
+
+# Here, I replace the dummy data with data read from a text file, or create a file if it doesn't exist.
+dataloader = [read_data_from_file('data_input.txt', (32, 128), default_dataloader) for _ in range(100)]
+
+# Here, I replace the dummy labels with labels read from a text file, or create a file if it doesn't exist.
+labels = read_data_from_file('labels_input.txt', (32,), default_labels)
+
+# Here, I replace the placeholder tether tensor with a tether tensor read from a text file, or create a file if it doesn't exist.
+tether_tensor_other_model = read_tether_from_file('tether_other_model.txt', (64, 64), default_tether_tensor_other_model)
+
+
+# Now, I start the training loop.
+for epoch in range(10):
+    print(f"Epoch {epoch+1} started.")
+    for i, batch in enumerate(dataloader):
+        outputs = model(batch)
+        loss = criterion(outputs, labels)
+
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+
+        # Here, I calculate the compatibility between tethers of two models.
+        comp = compatibility(model.tether_fc2, tether_tensor_other_model)
+        print(f"Batch {i+1}: Compatibility = {comp.item()}")
+
+        # If compatibility exceeds a certain threshold, I merge the tethers and save the state.
+        if comp > 50:
+            model.tether_fc2 = (model.tether_fc2 + tether_tensor_other_model) / 2
+            tether_generations.append(copy.deepcopy(model.state_dict()))
+            print(f"Batch {i+1}: Tethers merged due to high compatibility. State saved.")
+```
+
+
 The idea of dynamic "tethers" that can not only adapt within a single model but also connect to other models as repeat questions descend into loss.
 
 ### Multi-Layered, Multi-Dimensional Tethers
