@@ -12,6 +12,15 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 ---
 
+181023
+
+Spent too long rendering Calabi Yau Manifolds. Just to try grok. Stupid flat screens with no space in them.
+
+[Here](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/CalabiYauRENDER.md)
+
+---
+
+
 131023
 
 A NN that advertises significant nodes and can merge a relevent other NN based on similar tether nodes to merge during GD.
