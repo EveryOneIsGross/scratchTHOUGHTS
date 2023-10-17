@@ -14,7 +14,9 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 181023
 
-Spent too long rendering Calabi Yau Manifolds. Just to try grok. Stupid flat screens with no space in them.
+![calabi_yau_animation_20231018_045752](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/6d4be245-45d6-4413-9d59-893bf81793ef)
+
+Spent too long rendering Calabi Yau Manifolds. Just to try grok. Stupid flat screens with no space in them. My graphs have some nodes causing some noise. V much WIP.
 
 [Here](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/CalabiYauRENDER.md)
 
