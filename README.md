@@ -14,11 +14,40 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 201023
 
+RIP TWITTER, you are probs all downloading yr twitter archives atm, so why not chat to them locally? 
+
+'''
+Chat with the agent! (Type 'exit' to stop)
+You: how many shows did i play?
+Shape of input_embedding: (1, 384)
+Shape of self.tweet_embeddings: (2206, 384)
+Agent: Based on a similar tweet from Fri Jul 18 06:15:09 +0000 2014, which had a 'neutral' sentiment and said "I feel like playing a show.", I'd say: "(Song: "Neutral")
+You're on the stage with me, but you're just a prop.
+Everything's going by so fast; it makes me stop.
+So let's pretend we're in a different spot.
+I feel like playing a show."
+You: search shows
+
+Top similar tweets based on your query:
+- neutral: I feel like playing a show.
+
+- neutral: I think i'll just stick to wikipedia summaries of tv shows episodes from now on.
+
+- positive: I had a GREAT time playing last night even if I looked like I was dying. If anyone wants me to play a show I will.
+
+- neutral: I'm back in AUSTRALIA this Friday, Sydney show this Saturday.. I'll post once I find the link.
+
+- neutral: Nothing is going to get done until I finish watching this show. #streamingforever
+
+You:
+'''
+---
+
 A limbic system for AGENTS. 
 
 [🤪](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/limbicFRAME.py)
 
-ALSO:
+---
 
 Explain it to me like I am a bunch of smart ppl rather than 1 n00b.
 
