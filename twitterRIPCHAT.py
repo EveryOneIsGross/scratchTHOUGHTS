@@ -155,7 +155,7 @@ class ConversationalAgent:
                 print("Agent:", response)
 
 # Initialize the agent
-csv_path = "C:\\Users\\frase\\Desktop\\CODE\\mytwitterhistoryBOT\\twitter_data_processed.csv"
+csv_path = "twitter_data_processed.csv"
 
 agent = ConversationalAgent(csv_path)
 agent.chat()
