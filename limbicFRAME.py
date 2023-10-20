@@ -44,6 +44,9 @@
 In essence, this system is an attempt to computationally model and simulate some aspects of human emotional processing and decision-making. By integrating various cognitive and emotional elements, it seeks to generate human-like responses to given inputs.
 '''
 
+# WORK IN PROGRESS, THIS IS A DRAFT THAT ISN'T YET WORKING RIGHT
+
+
 import pickle
 import os
 from typing import Dict, Any, Tuple
@@ -54,6 +57,13 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 import openai
 from gpt4all import GPT4All, Embed4All
 import numpy as np
+
+openai.api_base = "http://localhost:4892/v1"
+openai.api_key = "null"
+
+# Define constants
+model = "mistral trismegistus"
+OPENAI_ENGINE = "model"
 
 # Ensure necessary nltk resources are downloaded
 nltk.download('vader_lexicon')
@@ -89,7 +99,7 @@ class EmotionRecognition:
         sentiment, sentiment_score = SentimentExtraction().extract_sentiment(input_data)
         temperature, _ = get_temperature_and_chunk_size(sentiment, sentiment_score)
         response = openai.Completion.create(
-            engine="davinci", 
+            model=model, 
             prompt=f"Identify the emotion from the following text: {input_data}", 
             temperature=temperature
         )
@@ -120,7 +130,7 @@ class DecisionMaking:
         prompt = f"Given the context: '{chunked_input}', what would be the best course of action?"
         
         response = openai.Completion.create(
-            engine="davinci", 
+            model=model, 
             prompt=prompt, 
             temperature=temperature
         )
@@ -148,13 +158,13 @@ class SocialInteraction:
     def process(self, input_data: str) -> str:
         """Generate human-like social interaction based on the input data using GPT-3."""
         prompt = f"Generate a human-like social interaction based on: '{input_data}'"
-        response = openai.Completion.create(engine="davinci", prompt=prompt)
+        response = openai.Completion.create(model=model, prompt=prompt)
         return response.choices[0].text.strip()
 
 class InterfaceNode:
     def preprocess_input(self, input_data: str) -> str:
         """Clean and normalize user input."""
-        input_data = InterfaceNode().preprocess_input(input_data)
+        #input_data = InterfaceNode().preprocess_input(input_data)
 
         return input_data.strip()
 
@@ -169,7 +179,7 @@ class InterfaceNode:
     def generate_response(self, input_data: str) -> str:
         """Generate a response based on mood and user input using GPT-3."""
         prompt = f"Given a mood score of {MoodModulation.mood_score}, how should I respond to: '{input_data}'?"
-        response = openai.Completion.create(engine="davinci", prompt=prompt)
+        response = openai.Completion.create(model=model, prompt=prompt)
         return response.choices[0].text.strip()
 
 
@@ -177,7 +187,7 @@ class ActionSuggestion:
     def suggest(self, emotional_state: str) -> str:
         """Suggest actions based on emotional state using GPT-3."""
         prompt = f"Given that someone is feeling {emotional_state}, what would be a good course of action or suggestion for them?"
-        response = openai.Completion.create(engine="davinci", prompt=prompt)
+        response = openai.Completion.create(model=model, prompt=prompt)
         suggested_action = response.choices[0].text.strip()
         return suggested_action
 
@@ -334,9 +344,10 @@ def process_input(input_data: str) -> Dict[str, Any]:
     }
 
 
+# ... [Your existing code here] ...
+
 if __name__ == "__main__":
-    # Test or demonstrate the LiNN here
-    input_data = "I feel so happy today!"
+    # Wait for user input
+    input_data = input("Please enter your input: ")
     result = process_input(input_data)
     print(result)
-
