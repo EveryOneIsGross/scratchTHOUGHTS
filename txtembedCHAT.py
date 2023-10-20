@@ -1,3 +1,66 @@
+'''
+HERE IS THE INJEST AND CSV CREATING SCRIPT, JUST SUPPLY THE PATH TO YR DOWNLOADED.ZIP
+
+import os
+import zipfile
+import json
+import pandas as pd
+from textblob import TextBlob
+
+def get_sentiment(text):
+    """Determine the sentiment of a given text."""
+    analysis = TextBlob(text)
+    # Classifying the polarity of the text
+    if analysis.sentiment.polarity > 0:
+        return 'positive'
+    elif analysis.sentiment.polarity == 0:
+        return 'neutral'
+    else:
+        return 'negative'
+
+def process_twitter_archive(zip_file_path, output_folder_path):
+    # Extract the archive
+    with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
+        zip_ref.extractall(output_folder_path)
+
+    # Read the contents of the 'tweets.js' file
+    tweets_file_path = os.path.join(output_folder_path, "data", "tweets.js")
+
+    with open(tweets_file_path, 'r', encoding='utf-8') as file:
+        tweets_data = file.read()
+
+    # Convert the content to valid JSON format
+    tweets_json_str = tweets_data.replace('window.YTD.tweets.part0 = ', '')
+    tweets_json = json.loads(tweets_json_str)
+    tweets_list = [tweet['tweet'] for tweet in tweets_json]
+
+    # Extract details and sentiments from each tweet
+    tweet_texts = [tweet['full_text'] for tweet in tweets_list]
+    sentiments = [get_sentiment(tweet) for tweet in tweet_texts]
+
+    # Creating a DataFrame to structure the data
+    tweets_df = pd.DataFrame({
+        'Date': [tweet['created_at'] for tweet in tweets_list],
+        'Tweet': tweet_texts,
+        'Sentiment': sentiments
+    })
+
+    # Save the DataFrame to a CSV file
+    csv_path = os.path.join(output_folder_path, "twitter_data_processed.csv")
+    tweets_df.to_csv(csv_path, index=False)
+
+    print(f"Processed data saved to: {csv_path}")
+
+if __name__ == "__main__":
+    input_zip_path = input("Please provide the path to your Twitter archive .zip file: ").strip()
+    output_directory = input("Where would you like to save the processed CSV? (e.g., C:\\path_to_folder): ").strip()
+
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+
+    process_twitter_archive(input_zip_path, output_directory)
+
+'''
 import os
 import pickle
 import json
