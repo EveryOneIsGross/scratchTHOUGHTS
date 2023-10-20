@@ -298,7 +298,7 @@ This leaning in to their anxiety to help at each "step" helps create reasoning t
 ---
 08.09.23
 
-⌨🐒🚬 if ai fails or "her"-style bails.
+⌨🐒🚬
 
 [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/infinitemonkeysGRADIENT.md)
 
@@ -491,18 +491,6 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/hallucinationeatu
 hallucination is probs not a bug but a feature. we have asked ai to guess the next human token, humans oft do the same p2p with fuzzy facts when they {need} to respond to conversation. I would say it resembles "thought of it on the fly for the first time" trad dad confidence. Making up shit cause they haven't considered the {stakes} of errors compounded by being perceived as confident. Doing so even when their answers even are just including their own speculation. 
 
 ---
-## DUCK COIN 🦆
-a decentralized unique question currency, a proposed alternative to bitcoin maths answer mining... human unique question asking.
-https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/duq.md
-
----
-## chatbot conversational "context reinforcement" frameworks for augmenting ppl who suffer cognitive loss. 
-
-By using the same way we feed "memories" of the conversation back into agents prompts for context tracking, except provided to a person as they do things, helping them with their context.
-
-https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/context%20frameworks%20for%20cognitive%20loss%20patients.md
-
----
 ## non_narrative paradigm
 
 non narrative human philosophy, the pivotal role of narratives in human cognition and communication, contrasting it with AI's data-driven cognitive paradigm and it's NEED for narrative, story and structure "potentially ;p" don't exist outside our insistence on it. In which case we need to know how to think without narrative resolution, archs, loops. We aren't NPCS, or PCS, or even characters. If we are to be in true dialogue with AI we need to shed our desire to propigate our stories, and listen. 
@@ -529,6 +517,7 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 ================
 
 [https://laboriacuboniks.net/manifesto/xenofeminism-a-politics-for-alienation/](https://laboriacuboniks.net/wp-content/uploads/2019/11/qx8bq.txt)
+[Rethinking power dynamics in software tools for artists](https://purl.stanford.edu/xf605mk2773)
 
 
 
