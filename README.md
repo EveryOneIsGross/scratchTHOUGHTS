@@ -16,7 +16,7 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 RIP TWITTER, you are probs all downloading yr twitter archive .zips atm, so why not chat to them locally? 
 
-[👻](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/txtembedCHAT.py)
+[👻](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/twitterRIPCHAT.py)
 
 ```
 Chat with the agent! (Type 'exit' to stop)
