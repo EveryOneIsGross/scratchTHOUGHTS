@@ -24,6 +24,8 @@ Explain it to me like I am a bunch of smart ppl rather than 1 n00b.
 
 "Explain it to me like I'm 9" < "explain {input} for an audience familar with {topic}"
 
+When explaining a concept to a broad, topic-familiar audience the communication inherently includes elements of simplification akin to the "Explain it to me like I'm 9" approach, as if the 9yr old were in attendance. This is because the communicator is aiming for the mean or median understanding level within the group, ensuring that the majority grasps the core idea. Explain it to me like I'm lots. 🤷‍♂️
+
 ---
 
 181023
