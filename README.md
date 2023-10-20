@@ -12,6 +12,20 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 ---
 
+201023
+
+A limbic system for AGENTS. 
+
+[🤪](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/limbicFRAME.py)
+
+ALSO:
+
+Explain it to me like I am a bunch of smart ppl rather than 1 n00b.
+
+"Explain it to me like I'm 9" < "explain {input} for an audience familar with {topic}"
+
+---
+
 181023
 
 ![calabi_yau_animation_20231018_045752](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/6d4be245-45d6-4413-9d59-893bf81793ef)
