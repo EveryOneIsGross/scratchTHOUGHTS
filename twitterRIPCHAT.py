@@ -61,193 +61,101 @@ if __name__ == "__main__":
     process_twitter_archive(input_zip_path, output_directory)
 
 '''
-import os
-import pickle
-import json
-from datetime import datetime
+import openai
 from gpt4all import GPT4All, Embed4All
 from sklearn.metrics.pairwise import cosine_similarity
-from rake_nltk import Rake
-from textblob import TextBlob
-from gensim import corpora, models
-
-# Global variable to store context
-context_history = []
-
-guiding_prompt = "I am a Q&A bot with knowledge from the embedded text. Based on this knowledge, "
+import numpy as np
+import pandas as pd
+import zipfile
+import os
+import pickle
 
 
+openai.api_base = "http://localhost:4892/v1"
+openai.api_key = "null"
 
-def get_text_input():
-    """Get text input from the user either from a .txt file or directly."""
-    choice = input("Do you want to input a .txt file or directly type the text? (Enter 'file' or 'text'): ")
+# Define constants
+model = "mistral trismegistus"
+OPENAI_ENGINE = "model"
 
-    if choice == 'file':
-        file_path = input("Enter the path to your .txt file: ")
-        with open(file_path, 'r') as f:
-            return f.read()
-    elif choice == 'text':
-        return input("Enter your text: ")
-    else:
-        print("Invalid choice. Please enter 'file' or 'text'.")
-        return get_text_input()
-
-def chunk_text(text, max_length):
-    """Chunk the text into smaller pieces of max_length."""
-    return [text[i:i+max_length] for i in range(0, len(text), max_length)]
-
-def get_most_similar_texts(query, embeddings, texts, top_n=2):
-    """Find the most similar texts based on cosine similarity."""
-    embedder = Embed4All()
-    query_embedding = embedder.embed(query)
-    
-    # Calculate cosine similarities
-    similarities = [cosine_similarity([query_embedding], [emb])[0][0] for emb in embeddings]
-    
-    # Get indices of top N most similar texts
-    top_indices = sorted(range(len(similarities)), key=lambda i: similarities[i], reverse=True)[:top_n]
-    
-    return [texts[i] for i in top_indices]
-
-def simple_search(query, texts):
-    """Search through the texts for the user's query and return matching results."""
-    results = [text for text in texts if query.lower() in text.lower()]
-    return results
-
-def update_context(user_input, response, max_length=5):
-    global context_history
-    context_history.append((user_input, response))
-    if len(context_history) > max_length:
-        context_history.pop(0)
-
-
-# Extract main topics from the conversation history
-def extract_topics():
-    global context_history
-    texts = [input + " " + response for input, response in context_history]
-    texts = [text.split() for text in texts]
-    dictionary = corpora.Dictionary(texts)
-    corpus = [dictionary.doc2bow(text) for text in texts]
-    ldamodel = models.LdaModel(corpus, num_topics=3, id2word=dictionary, passes=15)
-    topics = ldamodel.print_topics(num_words=3)
-    return topics
-
-
-def main():
-    # Check if there's an existing embedding
-    if os.path.exists("embedding.pkl"):
-        with open("embedding.pkl", 'rb') as f:
-            embeddings = pickle.load(f)
-        choice = input("An existing embedding was found. Do you want to start a new one or continue with the last? (Enter 'new' or 'continue'): ")
-        if choice == 'new':
-            text = get_text_input()
-            # Chunk the text
-            chunks = chunk_text(text, 1000)
-            
-            # Save the original text chunks
-            with open("texts.pkl", 'wb') as f:
-                pickle.dump(chunks, f)
-            
-            embeddings = []
-            embedder = Embed4All()
-            for chunk in chunks:
-                embedding = embedder.embed(chunk)
-                embeddings.append(embedding)
-            with open("embedding.pkl", 'wb') as f:
-                pickle.dump(embeddings, f)
-        elif choice == 'continue':
-            with open("embedding.pkl", 'rb') as f:
-                embeddings = pickle.load(f)
-
-    else:
-        text = get_text_input()
-        chunks = chunk_text(text, 1000)
+class ConversationalAgent:
+    def __init__(self, csv_path):
+        # Initialize the embedder
+        self.embedder = Embed4All()
         
-        # Save the original text chunks
-        with open("texts.pkl", 'wb') as f:
-            pickle.dump(chunks, f)
+        # Load the CSV data
+        self.data = pd.read_csv(csv_path)
         
-        embeddings = []
-        embedder = Embed4All()
-        for chunk in chunks:
-            embedding = embedder.embed(chunk)
-            embeddings.append(embedding)
-        with open("embedding.pkl", 'wb') as f:
-            pickle.dump(embeddings, f)
+        # Define the pickle file name
+        pickle_filename = csv_path.split('\\')[-1].replace('.csv', '_embeddings.pkl')
+        
+        if os.path.exists(pickle_filename):
+            with open(pickle_filename, 'rb') as f:
+                self.tweet_embeddings = pickle.load(f)
+        else:
+            # Embed the tweets
+            embeddings = [self.embedder.embed(tweet) for tweet in self.data['Tweet']]
+            self.tweet_embeddings = np.vstack(embeddings)
+            
+            # Save the embeddings to the pickle file
+            with open(pickle_filename, 'wb') as f:
+                pickle.dump(self.tweet_embeddings, f)
 
-    # Load the original texts (chunks)
-    with open("texts.pkl", 'rb') as f:
-        texts = pickle.load(f)
+    def find_most_similar_tweet(self, input_text):
+        # Embed the user input
+        input_embedding = np.array(self.embedder.embed(input_text)).reshape(1, -1)
+        
+        # Print shapes for debugging
+        print("Shape of input_embedding:", input_embedding.shape)
+        print("Shape of self.tweet_embeddings:", self.tweet_embeddings.shape)
+        
+        # Calculate cosine similarity between input and tweet embeddings
+        similarities = cosine_similarity(input_embedding, self.tweet_embeddings)
+        # Get the index of the most similar tweet
+        most_similar_idx = np.argmax(similarities)
+        return self.data.iloc[most_similar_idx]
 
-    # Initialize RAKE for keyword extraction
-    rake = Rake()
+    def find_top_similar_tweets(self, query, top_n=5):
+        # Embed the query
+        query_embedding = np.array(self.embedder.embed(query)).reshape(1, -1)
+        # Calculate cosine similarity between the query and tweet embeddings
+        similarities = cosine_similarity(query_embedding, self.tweet_embeddings)
+        # Get the indices of the top n most similar tweets
+        top_indices = similarities[0].argsort()[-top_n:][::-1]
+        return self.data.iloc[top_indices]
 
-    # JSON structure for recording conversation
-    conversation_log = []
 
-    # Start chatbot conversation using the embedding as knowledge base
-    model = GPT4All(model_name='orca-mini-3b.ggmlv3.q4_0.bin')
-    with model.chat_session():
+        
+    def generate_response(self, user_input):
+        # Find the most similar tweet to the user's input
+        similar_tweet = self.find_most_similar_tweet(user_input)
+        # Use the sentiment, historical data, and tweet content to craft a response prompt
+        prompt = (f"Based on a similar tweet from {similar_tweet['Date']}, "
+                f"which had a '{similar_tweet['Sentiment']}' sentiment "
+                f"and said \"{similar_tweet['Tweet']}\", I'd say: ")
+        # Use OpenAI to generate a continuation of the response
+        response = openai.Completion.create(model=model, prompt=prompt, max_tokens=100)
+        return prompt + response.choices[0].text
+    
+    def chat(self):
+        print("Chat with the agent! (Type 'exit' to stop)")
         while True:
             user_input = input("You: ")
-            if user_input.lower().startswith("search:"):
-                # Extract the actual search query from the user's input
-                search_query = user_input[len("search:"):].strip()
-                search_results = simple_search(search_query, texts)
-                
-                # Display the search results
-                if search_results:
-                    response_content = "\n".join(search_results)
-                    print(f"Search Results:\n{response_content}")
-                else:
-                    response_content = "No results found for your search query."
-                    print(response_content)
+            if user_input.lower() == 'exit':
+                print("Agent: Goodbye!")
+                break
+            elif user_input.lower().startswith('search'):
+                query = user_input[7:]  # Remove the 'search ' part
+                similar_tweets = self.find_top_similar_tweets(query)
+                print("\nTop similar tweets based on your query:")
+                for idx, row in similar_tweets.iterrows():
+                    print(f"- {row['Sentiment']}: {row['Tweet']}\n")
             else:
-                if user_input.lower() in ['exit', 'quit']:
-                    break
+                response = self.generate_response(user_input)
+                print("Agent:", response)
 
-            # Extract keywords from user input
-            rake.extract_keywords_from_text(user_input)
-            keywords = rake.get_ranked_phrases()
+# Initialize the agent
+csv_path = "C:\\Users\\frase\\Desktop\\CODE\\mytwitterhistoryBOT\\twitter_data_processed.csv"
 
-            # Sentiment analysis
-            blob = TextBlob(user_input)
-            sentiment = blob.sentiment.polarity
-
-            # Get the most similar texts based on user input
-            context_texts = get_most_similar_texts(user_input, embeddings, texts)
-            context = " ".join(context_texts)
-
-            # Construct the full prompt
-            full_prompt = guiding_prompt + context + " " + user_input
-
-            response = model.generate(prompt=full_prompt, temp=0)
-            if isinstance(response, dict) and 'content' in response:
-                print(f"Chatbot: {response['content']}")
-                response_content = response['content']
-            else:
-                print(f"Chatbot: {response}")
-                response_content = response
-            
-            # Update context after generating a response
-            update_context(user_input, response_content)
-
-            # Record to JSON
-
-            timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            entry = {
-                "timestamp": timestamp,
-                "user_input": user_input,
-                "keywords": keywords,
-                "sentiment": "positive" if sentiment > 0 else "negative" if sentiment < 0 else "neutral",
-                "response": response_content
-            }
-            conversation_log.append(entry)
-
-
-    # Save conversation log to JSON file
-    with open("conversation_log.json", "w") as f:
-        json.dump(conversation_log, f, indent=4)
-
-if __name__ == "__main__":
-    main()
+agent = ConversationalAgent(csv_path)
+agent.chat()
