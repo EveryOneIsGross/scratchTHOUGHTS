@@ -46,7 +46,6 @@ In essence, this system is an attempt to computationally model and simulate some
 
 # WORK IN PROGRESS, THIS IS A DRAFT THAT ISN'T YET WORKING RIGHT
 
-
 import pickle
 import os
 from typing import Dict, Any, Tuple
@@ -57,6 +56,8 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 import openai
 from gpt4all import GPT4All, Embed4All
 import numpy as np
+import string
+import re
 
 openai.api_base = "http://localhost:4892/v1"
 openai.api_key = "null"
@@ -75,11 +76,21 @@ openai.api_key = "YOUR_OPENAI_API_KEY"
 
 # Set threshold value for emotion vector magnitude
 THRESHOLD_VALUE = 0.5
+MAX_TOKENS=100
 
 def embed(input_data: str) -> Any:
     """Function to generate embeddings for given text."""
     embedder = Embed4All()
     return embedder.embed(input_data)
+
+
+def sanitize_filename(filename):
+    # Remove invalid characters
+    valid_chars = "-_.() %s%s" % (string.ascii_letters, string.digits)
+    sanitized = ''.join(c for c in filename if c in valid_chars)
+    # Truncate long filenames
+    return sanitized[:50]
+
 
 def get_temperature_and_chunk_size(sentiment: str, sentiment_score: float) -> Tuple[float, int]:
     """Determine temperature and chunk size based on sentiment."""
@@ -100,7 +111,8 @@ class EmotionRecognition:
         temperature, _ = get_temperature_and_chunk_size(sentiment, sentiment_score)
         response = openai.Completion.create(
             model=model, 
-            prompt=f"Identify the emotion from the following text: {input_data}", 
+            prompt=f"Identify the emotion from the following text: {input_data}",
+            max_tokens=MAX_TOKENS,
             temperature=temperature
         )
         
@@ -109,9 +121,11 @@ class EmotionRecognition:
 
 
 class EmotionalMemory:
-    def store(self, emotion: str, data: Any):
-        """Store emotion-related data to a pickle file."""
-        with open(f'{emotion}.pickle', 'wb') as handle:
+    def store(self, emotional_state, data):
+        # Create a valid filename by removing non-alphanumeric characters and limiting the length
+        valid_filename = re.sub(r'[^a-zA-Z0-9]', '', emotional_state)[:15] + '.pickle'
+        
+        with open(valid_filename, 'wb') as handle:
             pickle.dump(data, handle, protocol=pickle.HIGHEST_PROTOCOL)
             
     def retrieve(self, emotion: str) -> Any:
@@ -131,7 +145,8 @@ class DecisionMaking:
         
         response = openai.Completion.create(
             model=model, 
-            prompt=prompt, 
+            prompt=prompt,
+            max_tokens=MAX_TOKENS,
             temperature=temperature
         )
         return response.choices[0].text.strip()
@@ -158,7 +173,7 @@ class SocialInteraction:
     def process(self, input_data: str) -> str:
         """Generate human-like social interaction based on the input data using GPT-3."""
         prompt = f"Generate a human-like social interaction based on: '{input_data}'"
-        response = openai.Completion.create(model=model, prompt=prompt)
+        response = openai.Completion.create(model=model, prompt=prompt, max_tokens=MAX_TOKENS)
         return response.choices[0].text.strip()
 
 class InterfaceNode:
@@ -179,7 +194,7 @@ class InterfaceNode:
     def generate_response(self, input_data: str) -> str:
         """Generate a response based on mood and user input using GPT-3."""
         prompt = f"Given a mood score of {MoodModulation.mood_score}, how should I respond to: '{input_data}'?"
-        response = openai.Completion.create(model=model, prompt=prompt)
+        response = openai.Completion.create(model=model, prompt=prompt, max_tokens=MAX_TOKENS)
         return response.choices[0].text.strip()
 
 
@@ -194,7 +209,10 @@ class ActionSuggestion:
 class VectorStorage:
     def store_vector(self, emotion: str, vector: Any):
         """Store emotion vector to a pickle file."""
-        with open(f'vector_{emotion}.pickle', 'wb') as handle:
+        sanitized_emotion = sanitize_filename(emotion)
+
+        with open(f'vector_{sanitized_emotion}.pickle', 'wb') as handle:
+
             pickle.dump(vector, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
     def retrieve_vector(self, emotion: str) -> Any:
@@ -342,9 +360,6 @@ def process_input(input_data: str) -> Dict[str, Any]:
         "final_response": final_response,
         "description": f"Description of the {emotional_state} state"
     }
-
-
-# ... [Your existing code here] ...
 
 if __name__ == "__main__":
     # Wait for user input
