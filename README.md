@@ -9,6 +9,14 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "find {oxygenmask}, do not repeat yourself think step by step." /
     "Proceed and show me the solution in a single codeblock."
 ```
+---
+
+211023
+
+RIP YOUTUBE
+
+The transcripts from yt's I can pull w/ python r absent punctuation,,, probs a bug or me not defining something. THO! it's more fun to have the agent get a buzzy string of ranked revelent matchs, flowing as run on sentences for "topic memory" from the videos. It works fine for a vibe chat while watching the downloaded video that has subtitles. Just name yr project folder, if it exisits chat away with embedded transcripts while watching the video offline w/ subtitles. #endoftheinternet
+
 
 ---
 
