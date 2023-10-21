@@ -19,7 +19,7 @@ RIP YOUTUBE
 
 The transcripts from yt's I can pull w/ python r absent punctuation,,, probs a bug or me not defining something. THO! it's more fun to have the agent get a buzzy string of ranked revelent matchs, flowing as run on sentences for "topic memory" from the videos. It works fine for a vibe chat while watching the downloaded video that has subtitles. Just name yr project folder, if it exisits chat away with embedded transcripts while watching the video offline w/ subtitles. #endoftheinternet
 
-CODE BLOAT WARNING it will take ages extracting a synced tts .mp3 unless you comment out it in the mainloop. x
+It has a TTS from transcript function commented out. It worksish but will take a long time to gen speech and try glue it according to timestamps. Best left off unless you want to try on a short video. 
 
 
 ---
