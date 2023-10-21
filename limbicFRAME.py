@@ -44,7 +44,7 @@
 In essence, this system is an attempt to computationally model and simulate some aspects of human emotional processing and decision-making. By integrating various cognitive and emotional elements, it seeks to generate human-like responses to given inputs.
 '''
 
-# WORK IN PROGRESS, THIS IS A DRAFT THAT ISN'T YET WORKING RIGHT
+# WORK IN PROGRESS, THIS IS A DRAFT THAT ISN'T YET WORKING RIGHT, TBH I WAS V HIGH. LOVE MY EMO VECTORS IDEA THO EVEN IF NOT IMPLEMENTED RIGHT 🤪
 
 import pickle
 import os
