@@ -10,6 +10,9 @@ from gtts import gTTS
 import time
 from pydub import AudioSegment
 
+
+# sort of insync tts of the transcript, for saving an mp3 to listen along side instead of video audio. 🤷‍♂️
+# commented out in the mainloop 'cause it takes ages to glue the track together
 def transcript_to_audio(transcript_path, output_folder, total_duration_seconds):
     with open(transcript_path, 'r') as file:
         transcript_data = json.load(file)
@@ -262,7 +265,7 @@ if __name__ == '__main__':
         video_duration = download_video(video_url, output_folder)
         
         # Convert the transcript to audio
-        transcript_to_audio(transcript_path, output_folder, video_duration)
+        #transcript_to_audio(transcript_path, output_folder, video_duration)
     
     else:
         print(f"Found existing project folder named '{project_name}'.")
