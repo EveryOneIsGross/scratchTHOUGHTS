@@ -15,6 +15,8 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 RIP YOUTUBE
 
+[💀](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/ripYT.py)
+
 The transcripts from yt's I can pull w/ python r absent punctuation,,, probs a bug or me not defining something. THO! it's more fun to have the agent get a buzzy string of ranked revelent matchs, flowing as run on sentences for "topic memory" from the videos. It works fine for a vibe chat while watching the downloaded video that has subtitles. Just name yr project folder, if it exisits chat away with embedded transcripts while watching the video offline w/ subtitles. #endoftheinternet
 
 I'll put the code here soon, getting carried away having tts replace the audio track of a video. 
