@@ -529,7 +529,10 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 ================
 
 [https://laboriacuboniks.net/manifesto/xenofeminism-a-politics-for-alienation/](https://laboriacuboniks.net/wp-content/uploads/2019/11/qx8bq.txt)
+
 [Rethinking power dynamics in software tools for artists](https://purl.stanford.edu/xf605mk2773)
+
+
 
 
 
