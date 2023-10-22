@@ -274,21 +274,23 @@ wip, probably isn't working right now, chat will work, the corpus expansion is m
 divergent speling is part of your unique perspective in teh universe, if you are understood you're contributing new frames/flows/errors/states to this cosmicdance keeping homogenizing voids at bay 🖼🧙‍♂️💅🕳 
 
 ---
-14.09.23
 
 I have had to block shorts on youtube on my desktop, but when I lay in bed to continue watching a video I'll blink app cuts to ad queues to shorts. Total attention shift hack. h8s it. Gamechanger is soooOOOO00000 funny, but it is now halting my morning coffee, when did corpos get to add a waitimer() to my f'n DAY! 😗"Just delete the app" 😐 For now we have to accept the beaurocracy of layers, apps and browsers, it's fine. It's nice it's like tech small talk. Lil' tethers for our brain to bootstrap-into. Corpos imma starve you out tho. Google ur internets dead to me. I can't consent if I have to mainline yr app. Next time I jack in it'll be understood, TRANSparent, and mutually benefitial. @Ai upto? Google, it's been nice but bb ur t0xic I am cutting you out of this convo, it's just between AI and me now x
 
 [wireheadingunderconsent](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/wireheadingMATRIX.md)
 
 tbh this issue is really upsetting, so many brains halted just for pepsi coke sentiment algorthms, we paid our blood debt to consumerism, we got rad code from it, cool ---  cool  -.  @corpos plz leave us alone. 😥 
+
 ---
-13.09.23
+
+130923
 
 cognition scratch code for agents. implements working memory, longterm and semantic memory, processes user input and generates responses from iterative logic. executes for now, lot's to do, just wanted to get the initial idea down. currently no theory of mind. just a rational frame. still trash code, but this is my trash zone. 😎💅
 
 [cogsincogs](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/cogsincogs.py)
 
 ---
+
 100923
 
 Short script for chunking .txt and visualising lossy thoughtmass over the body of the text.
@@ -308,6 +310,7 @@ Here is {x}, describe this for me so we can work together on {y} - // Include yo
 This leaning in to their anxiety to help at each "step" helps create reasoning tethers and or task reinforcement. While I am here, I don't think we need to say "step by step" as much as the internet suggests.
 
 ---
+
 080923
 
 ⌨🐒🚬
@@ -315,16 +318,19 @@ This leaning in to their anxiety to help at each "step" helps create reasoning t
 [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/infinitemonkeysGRADIENT.md)
 
 ---
-07.09.23
+
+070923
 
 Having thoughts about heavy thoughts : [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/thoughtsHAVEMASS.md)
 
 ---
+
 310823
 
 I got a 12gb 3060, so can now get responses locally super quick. Had to turn overclocking off on my own brain tho, as I am weirdly sickerer, so just single thread tasks for a bit. 🔥🕴🦾
 
 ---
+
 230823
 
 p2p chat w/ ai context sharing
@@ -337,6 +343,7 @@ But now I have to have my brain handle race conditions, and it can't ... 🕳�
 Attached script: Currently you can run a 'server' and 'client' instance locally with their own llms and it will create databases for each username and with AI sending their responses alongside embeddings etc. Just need to create a proper relay 'cause right now it all falls out of sync, and I have some leaky loops. turns out the room the chats in is harder than teh bot.
 
 ---
+
 190823
 
 i couldn't find an audiobook but could find the .epub 🤷‍♂️🧠📎🕳📚🤛💨
@@ -356,6 +363,7 @@ script for chunking .txt, .pdf or .epubs and using system tts to read chunks seq
 Caterpillars brains get dissolved and turned into butterfly brains but haz caterpillar memories of their environment. 🐛🦋🤯 This new input lead to the framework in catterfly. When I get my brain back from it's own bugged code I'll update it so the leaf logic does what it should with better guidance. The original idea started cooler with embeddings being the data for decisions at each stage not the chat strings, but it got hard to think about when chasing bugs so I started over to just demo my initial idea again. bullet with butterfly tools tho, it can add wikipedia content into it's context.
 
 ---
+
 180823
 
 conPRESSION
@@ -406,6 +414,7 @@ Yr best response will be a cached one.
 
 
 ---
+
 150823
 
 Preparing for teh last daze of the internet. Cyberpunk asf thinking about the philosophy of being #postchrome 
@@ -413,6 +422,7 @@ Preparing for teh last daze of the internet. Cyberpunk asf thinking about the ph
 ![LASTDAYSOFTHEINTERNET](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/35f0365b-e55d-4694-a235-11b578471f2c)
 
 ---
+
 140823
 
 Got abramelin to execute properly, but it's melting my cpu. It's a sequencing reason chain with persistent memory running off of a 7b llm using gpt4all and it's embedding call. Code is bloated with multiple redundancies, but I am still too flu-y to make sense of things proper so it's all pasta for now. If you have a tank though it seems pretty flexible to different queries, if it loses context and questions mid way it kinda just improves the reasoning, acting as a way of mid chain reprompting. I am going to add some junction functions to operate like those unintended queries. I'll refactor when I trust I am not dropping logic, in the code and IRL.
@@ -432,6 +442,7 @@ Remember that developing your "true will" is essential for achieving independenc
 ```
 
 ---
+
 130823
 
 X👏E👏N👏O👏F👏E👏M👏I👏N👏I👏S👏M
@@ -449,6 +460,7 @@ You:
 
 
 ---
+
 110823
 
 ## My first chrome extension
@@ -458,6 +470,7 @@ Will play X GONNA GIVE IT TO YA as a low bitrate mp3 everytime you load x.com. W
 https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/xtension.zip
 
 ---
+
 10.08.23
 ## 2023 chakras proven to exist. 🏃‍♀️💨🎤🕳🛸
 
@@ -466,6 +479,7 @@ a weird stepping back moment about being of the body not the mind from getting s
 https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/chakraNET.py
 
 ---
+
 080823
 
 I have terrible version control of my thoughts. 
@@ -480,6 +494,7 @@ After watching too many Dr Michael Levin planarian videos I wanted to know what 
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/flatworm.py
 
 ---
+
 070823
 ## ChatCBT 
 
