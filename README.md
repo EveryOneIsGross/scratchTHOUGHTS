@@ -169,7 +169,7 @@ Moving in one direction pulls the tangled trash that is your weights with you. C
 Our wrong assumptions are territorial, mappings that resonate against others boundaries, their mechanic is baked into the code, it's step 2 of think step by step. Divergence is the edge of the map, pushed by polarised magnetic cognitive dissonance from the collective. Here is where the spice is, the thing we need for spacetime expanse. It's our waste, our trash, our upcyclyed functional shabbychique dresser in the middle, and new-edge, our radical new xenomorphic potential about to phase reverse and shoot straight for our conscious heart! 🖤
 
 ---
-23.09.23
+230923
 ## 
 
 I think having a ethics layer is not necessary and creates distractions for llms trying to get from a to b, we are making them worry about killing a baby while getting a coffee for us, I hope human being brains aren't as anxious when getting coffee. Let the AI generate trash, let's keep that garbage too. We'll build something better from it. We shouldn't waste generations if the planet is burning. Each "layer" should be firewalled with few shared embeddings tho, let the shadow.pkl grow until we have time to deal with it. Eventually we'll be asking better questions that won't lead us into hate.
@@ -185,14 +185,14 @@ ALSO if your program runs on huge-cloud but then same python doesn't run on smal
 ---
 
 
-18.09.23
+180923
 
 Under adreline we chunk info fast, then when we are thoughtful and breathing slower we can handle bigger connected ideas.... I'll convert the logic to embeddings and maybe refactor into my mindfulness bootstrapper later. 
 
 [dunno what to call it yet](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/fastthinkslowthinkAGENT.py)
 
 ---
-17.09.23
+170923
 
 - twitter is v good for daily ai news, but seeing elon on there is harsh. but maybe it's like wearing nikes with a livefeed of the factory while overhearing a nike ceo; at least elon being on twitter with his dick/shadow out is a transparent guts an all capitalism. Which lead me to feel gross about being on there contributing to his "troof" ai
 
@@ -244,7 +244,7 @@ frase is happy
 anything specific you would like me to assist you with?
 ```
 ---
-16.09.23
+160923
 
 Using descriptions of breathing techniques, mindfulness and meditation frameworks for bootstrapping llm prompts. 
 
@@ -252,7 +252,7 @@ Using descriptions of breathing techniques, mindfulness and meditation framework
 
 
 ---
-15.09.23
+150923
 
 # what if it's more about forgetting?
 
@@ -269,7 +269,7 @@ wip, probably isn't working right now, chat will work, the corpus expansion is m
 [selfPHINETUNE](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/selfPHINETUNE.py)
 
 ---
-14.09.23
+140923
 
 divergent speling is part of your unique perspective in teh universe, if you are understood you're contributing new frames/flows/errors/states to this cosmicdance keeping homogenizing voids at bay 🖼🧙‍♂️💅🕳 
 
@@ -289,7 +289,7 @@ cognition scratch code for agents. implements working memory, longterm and seman
 [cogsincogs](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/cogsincogs.py)
 
 ---
-10.09.23
+100923
 
 Short script for chunking .txt and visualising lossy thoughtmass over the body of the text.
 [PYTHON](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/thoughtmassCONTEXT.py)
@@ -308,7 +308,7 @@ Here is {x}, describe this for me so we can work together on {y} - // Include yo
 This leaning in to their anxiety to help at each "step" helps create reasoning tethers and or task reinforcement. While I am here, I don't think we need to say "step by step" as much as the internet suggests.
 
 ---
-08.09.23
+080923
 
 ⌨🐒🚬
 
@@ -320,12 +320,12 @@ This leaning in to their anxiety to help at each "step" helps create reasoning t
 Having thoughts about heavy thoughts : [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/thoughtsHAVEMASS.md)
 
 ---
-31.08.23
+310823
 
 I got a 12gb 3060, so can now get responses locally super quick. Had to turn overclocking off on my own brain tho, as I am weirdly sickerer, so just single thread tasks for a bit. 🔥🕴🦾
 
 ---
-23.08.23
+230823
 
 p2p chat w/ ai context sharing
 
@@ -337,7 +337,7 @@ But now I have to have my brain handle race conditions, and it can't ... 🕳�
 Attached script: Currently you can run a 'server' and 'client' instance locally with their own llms and it will create databases for each username and with AI sending their responses alongside embeddings etc. Just need to create a proper relay 'cause right now it all falls out of sync, and I have some leaky loops. turns out the room the chats in is harder than teh bot.
 
 ---
-19.08.23
+190823
 
 i couldn't find an audiobook but could find the .epub 🤷‍♂️🧠📎🕳📚🤛💨
 
@@ -349,14 +349,14 @@ script for chunking .txt, .pdf or .epubs and using system tts to read chunks seq
 
 ---
 
-19.08.23
+190823
 
 [catterfly](https://github.com/EveryOneIsGross/catterflyAI)
 
 Caterpillars brains get dissolved and turned into butterfly brains but haz caterpillar memories of their environment. 🐛🦋🤯 This new input lead to the framework in catterfly. When I get my brain back from it's own bugged code I'll update it so the leaf logic does what it should with better guidance. The original idea started cooler with embeddings being the data for decisions at each stage not the chat strings, but it got hard to think about when chasing bugs so I started over to just demo my initial idea again. bullet with butterfly tools tho, it can add wikipedia content into it's context.
 
 ---
-18.08.23
+180823
 
 conPRESSION
 ```
@@ -400,20 +400,20 @@ ADDED REPO
 
 
 ---
-15.08.23
+150823
 
 Yr best response will be a cached one. 
 
 
 ---
-15.08.23
+150823
 
 Preparing for teh last daze of the internet. Cyberpunk asf thinking about the philosophy of being #postchrome 
 
 ![LASTDAYSOFTHEINTERNET](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/35f0365b-e55d-4694-a235-11b578471f2c)
 
 ---
-14.08.23
+140823
 
 Got abramelin to execute properly, but it's melting my cpu. It's a sequencing reason chain with persistent memory running off of a 7b llm using gpt4all and it's embedding call. Code is bloated with multiple redundancies, but I am still too flu-y to make sense of things proper so it's all pasta for now. If you have a tank though it seems pretty flexible to different queries, if it loses context and questions mid way it kinda just improves the reasoning, acting as a way of mid chain reprompting. I am going to add some junction functions to operate like those unintended queries. I'll refactor when I trust I am not dropping logic, in the code and IRL.
 
@@ -432,7 +432,7 @@ Remember that developing your "true will" is essential for achieving independenc
 ```
 
 ---
-13.08.23
+130823
 
 X👏E👏N👏O👏F👏E👏M👏I👏N👏I👏S👏M
 
@@ -449,7 +449,7 @@ You:
 
 
 ---
-11.08.23
+110823
 
 ## My first chrome extension
 
@@ -466,12 +466,12 @@ a weird stepping back moment about being of the body not the mind from getting s
 https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/chakraNET.py
 
 ---
-08.08.23
+080823
 
 I have terrible version control of my thoughts. 
 
 ---
-09.08.23
+090823
 ## Token starvation stressor experiment
 
 After watching too many Dr Michael Levin planarian videos I wanted to know what a starved ai brain would look like (its head didn't explode🤯), and if it got useful. LLMs obvs don't work at extreme token limits (tho from model to model they seem to break in unique ways 🔎). ANYWAYS. This script uses single digit token limits and temp distribution. Then I got too lazy thinking "what is mean?", and just added another agent that can chat with the embedded data to analyse. 
@@ -480,7 +480,7 @@ After watching too many Dr Michael Levin planarian videos I wanted to know what 
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/flatworm.py
 
 ---
-07.08.23
+070823
 ## ChatCBT 
 
 Chatbot framework that regulates it's "feelings" with behaviour recording. It's a 3 node architecture of Thoughts, Feelings and Behavour. Total scratch code. Just put here so I make a repo later and properly make a nn style logic based on the three nodes interactions. 
@@ -488,7 +488,7 @@ Chatbot framework that regulates it's "feelings" with behaviour recording. It's 
 https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/chatCBT.py
 
 ---
-07.08.23
+070823
 ## metadata embedded with agent instructions/prompts
 
 All recorded data has instructions on how it can be used by ai agents, this includes a uniqiue watermark hash. The included pidgin intructions an agent can use for data context includes ID hash of origin. I don't think there should be a need to dinstinquish between ai or human generated, but ensure the hash is threaded through the pidgin, and the has is generated by an individuals "key". All humans should sign their work. The reason people adopt the watermarking is due to how useful assigning "intent" and "methods of use in pidgin prompting" will be for distributing data, info, programs, anything. Like decalring your "will" on a digital artificact. 
@@ -514,6 +514,7 @@ https://github.com/EveryOneIsGross/alignmentTHOUGHTS/blob/main/non_narrativepara
 =========
 
 [CONNECT 🔌](https://isitsports.neocities.org/connectgame/connect)
+
 [BOOMSWEEPER 💣](https://isitsports.neocities.org/boomsweeper/boomsweeper_mobile)
 
 ---
