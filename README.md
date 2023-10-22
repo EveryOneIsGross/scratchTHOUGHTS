@@ -279,7 +279,7 @@ I have had to block shorts on youtube on my desktop, but when I lay in bed to co
 
 [wireheadingunderconsent](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/wireheadingMATRIX.md)
 
-tbh this issue is really upsetting, so many brains halted just for pepsi coke sentiment algorthms, we paid our blood debt to consumerism, we got rad code from it, cool ---  cool  -.  @corpos plz leave us alone. 😥 
+tbh this issue is really upsetting, so many brains halted just for pepsi coke sentiment algorthms, we paid our blood debt to consumerism, we got rad code from it, cool   cool   @corpos plz leave alone now. 😥 
 
 ---
 
