@@ -1,3 +1,18 @@
+'''
+Run script.
+Type project name when asked.
+If project name is new, type YouTube video link.
+
+Program downloads video.
+Program saves transcript in two formats: readable and for video subtitles.
+Program turns transcript into audio. Audio matches video's pacing. Is currently not same length : /
+
+Ask questions about the video. Program answers using video's content.
+To search transcript, type: 'search <your question>'.
+To leave chat, type: 'exit'.
+On exit, program saves chat history and searches as json.
+'''
+
 from pytube import YouTube
 import json
 import openai
@@ -6,66 +21,21 @@ import pandas as pd
 import os
 from youtube_transcript_api import YouTubeTranscriptApi
 from gpt4all import GPT4All, Embed4All
-from gtts import gTTS
 import time
 from pydub import AudioSegment
+import pyttsx3
 
-
-# sort of insync tts of the transcript, for saving an mp3 to listen along side instead of video audio. 🤷‍♂️
-# commented out in the mainloop 'cause it takes ages to glue the track together
-def transcript_to_audio(transcript_path, output_folder, total_duration_seconds):
-    with open(transcript_path, 'r') as file:
-        transcript_data = json.load(file)
-    
-    # Create a list to hold all the audio segments
-    audio_segments = []
-    
-    # Convert each segment of text to audio
-    previous_end_time = 0  # Initialize end time of the previous segment
-    
-    for index, entry in enumerate(transcript_data):
-        # Calculate the silence duration needed before this segment
-        silence_duration = (entry["start"] - previous_end_time) * 1000  # Convert to milliseconds
-        silence = AudioSegment.silent(duration=silence_duration)
-        audio_segments.append(silence)
-        
-        text = entry["content"]
-        tts = gTTS(text=text, lang='en')  # Convert text to speech
-        
-        # Save to a temporary file
-        temp_file = f"{output_folder}/temp_{entry['start']}.mp3"
-        tts.save(temp_file)
-        audio_segments.append(AudioSegment.from_mp3(temp_file))
-        
-        previous_end_time = entry["end"]  # Update the end time
-        
-        # Remove the temporary audio file after appending it to the audio_segments list
-        os.remove(temp_file)
-        
-        # To avoid hitting the rate limit, consider adding a sleep
-        time.sleep(0.5)
-    
-    # Add silence for the remaining duration after the last segment
-    remaining_silence_duration = (total_duration_seconds - previous_end_time) * 1000
-    audio_segments.append(AudioSegment.silent(duration=remaining_silence_duration))
-    
-    # Concatenate all audio segments into a single audio file using pydub
-    combined_audio = sum(audio_segments)
-    
-    final_audio_file = f"{output_folder}/transcript_audio.mp3"
-    combined_audio.export(final_audio_file, format="mp3")
-    
-    print(f"Transcript audio saved to {final_audio_file}")
-
-
+insights = {
+    "chat_interactions": [],
+    "search_results": []
+}
 
 model = "mistral trismegistus"
 
 OPENAI_ENGINE = "model"
-OPENAI_API_KEY = 'not needed for a local LLM'
+OPENAI_API_KEY = 'null'
 openai.api_key = OPENAI_API_KEY
 openai.api_base = "http://localhost:4892/v1"
-#openai.api_base = "https://api.openai.com/v1"
 
 def download_video(video_url, output_folder):
     yt = YouTube(video_url)
@@ -160,6 +130,22 @@ def chunk_content(file_path, chunk_size=64):
     
     return chunks
 
+def convert_to_srt_old(transcript_path, output_folder):
+    with open(transcript_path, 'r') as file:
+        transcript_data = json.load(file)
+
+    srt_content = ""
+    for idx, entry in enumerate(transcript_data, start=1):
+        start_time = seconds_to_srt_time(entry["start"])
+        end_time = seconds_to_srt_time(entry["end"])
+        text = entry["content"].replace("\n", " ")  # Ensure no line breaks in subtitle text
+
+        srt_content += f"{idx}\n{start_time} --> {end_time}\n{text}\n\n"
+
+    with open(f"{output_folder}/transcript.srt", "w") as srt_file:
+        srt_file.write(srt_content)
+
+
 def convert_to_srt(transcript_path, output_folder):
     with open(transcript_path, 'r') as file:
         transcript_data = json.load(file)
@@ -201,6 +187,24 @@ def hhmmss_to_seconds(timestamp):
     hours, minutes, seconds = map(int, [timestamp[:2], timestamp[2:4], timestamp[4:]])
     return hours * 3600 + minutes * 60 + seconds
 
+def summarize_text(api_key, text):
+    def generate_response(api_key, prompt):
+        one_shot_prompt = f'''Provide a concise summary of the following: {prompt}'''
+
+        print(f"Input Prompt for Summary Agent: {one_shot_prompt}")
+        completions = openai.Completion.create(
+            model=model,
+            #model_path = "C:\AI_MODELS\mistral-7b-instruct-v0.1.Q4_0.gguf",
+            prompt=one_shot_prompt,
+            max_tokens=1024,
+            n=1,
+            temperature=0.5,
+        )
+        message = completions.choices[0].text
+        return message
+
+    return generate_response(api_key, text)
+
 def search_transcript(api_key, query, content_path, embeddings_path, top_n=3):  
     embedder = Embed4All()  # Initialize the Embed4All model
     q_embedding = embedder.embed(query.strip())
@@ -219,6 +223,74 @@ def search_transcript(api_key, query, content_path, embeddings_path, top_n=3):
 
     return closest_segments
 
+def transcript_to_audio(transcript_path, output_folder, total_duration_seconds):
+    with open(transcript_path, 'r') as file:
+        transcript_data = json.load(file)
+    
+    engine = pyttsx3.init()
+    
+    # TTS Configuration
+    default_rate = engine.getProperty('rate')
+    engine.setProperty('rate', default_rate - 75)
+    volume = engine.getProperty('volume')
+    engine.setProperty('volume', 0.8)
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[1].id)
+
+    all_audio_segments = []
+
+    # First, generate all TTS segments without adding silences
+    for entry in transcript_data:
+        text = entry["content"]
+
+        # Calculate spoken duration at default rate
+        words_per_minute = default_rate / 60
+        words_in_text = len(text.split())
+        spoken_duration = words_in_text / words_per_minute
+
+        # Calculate actual duration from timecodes
+        actual_duration = entry["end"] - entry["start"]
+
+        # Adjust rate based on the ratio of spoken to actual durations
+        adjusted_rate = default_rate * (spoken_duration / actual_duration)
+
+        # Set bounds to ensure the adjusted rate doesn't go beyond certain limits
+        min_rate = 0.75 * default_rate
+        max_rate = 1 * default_rate
+        adjusted_rate = max(min(adjusted_rate, max_rate), min_rate)
+
+        engine.setProperty('rate', adjusted_rate)
+
+        temp_file = f"{output_folder}/temp_{entry['start']}.wav"
+        engine.save_to_file(text, temp_file)
+        engine.runAndWait()
+        all_audio_segments.append(AudioSegment.from_wav(temp_file))
+
+        os.remove(temp_file)
+
+    # Now, intersperse with calculated silences
+    final_audio_list = []
+    for index, audio_segment in enumerate(all_audio_segments):
+        # Add the TTS audio segment
+        final_audio_list.append(audio_segment)
+
+        # If this isn't the last segment, calculate and add the silence
+        if index < len(all_audio_segments) - 1:
+            next_entry = transcript_data[index + 1]
+            silence_duration = (next_entry["start"] - transcript_data[index]["end"]) * 1000
+            silence = AudioSegment.silent(duration=silence_duration)
+            final_audio_list.append(silence)
+
+    # Concatenate all segments to produce the final audio
+    final_audio = sum(final_audio_list)
+    
+    final_audio_file = f"{output_folder}/transcript_audio.mp3"
+    final_audio.export(final_audio_file, format="mp3")
+
+    print(f"Transcript audio saved to {final_audio_file}")
+
+
+
 
 def chat_with_transcript(api_key, user_input, embeddings_path):
     def generate_response(api_key, prompt):
@@ -229,9 +301,9 @@ def chat_with_transcript(api_key, user_input, embeddings_path):
             model=model,
             prompt=one_shot_prompt,
             max_tokens=1024,
-            n=1,
-            temperature=0.2,
-            stop=["\n\n"]
+            #n=1, # Number of responses to return
+            temperature=0.4,
+            #stop=["\n\n"]
         )
         message = completions.choices[0].text
         return message
@@ -241,6 +313,12 @@ def chat_with_transcript(api_key, user_input, embeddings_path):
 
     response = generate_response(api_key, user_input_embedding)
     #print(f"Response from Agent: {response}")
+    # Update insights
+    insights["chat_interactions"].append({
+        "question": user_input,
+        "response": response.strip()
+    })
+    
     return response.strip()
 
 if __name__ == '__main__':
@@ -265,7 +343,7 @@ if __name__ == '__main__':
         video_duration = download_video(video_url, output_folder)
         
         # Convert the transcript to audio
-        #transcript_to_audio(transcript_path, output_folder, video_duration)
+        transcript_to_audio(transcript_path, output_folder, video_duration)
     
     else:
         print(f"Found existing project folder named '{project_name}'.")
@@ -291,10 +369,34 @@ while True:
     question = input("Ask me something about the video, 'search <your query>' to search (or type 'exit' to quit): ")
 
     if question.lower() == 'exit':
+        insights_filename = os.path.join(output_folder, f"{project_name}_insights.json")
+        
+        # Read the existing content
+        if os.path.exists(insights_filename):
+            with open(insights_filename, 'r') as f:
+                existing_data = json.load(f)
+        else:
+            existing_data = {"chat_interactions": [], "search_results": []}
+        
+        # Update the in-memory data structure
+        existing_data['chat_interactions'].extend(insights['chat_interactions'])
+        existing_data['search_results'].extend(insights['search_results'])
+
+        # Write the data back to the file
+        with open(insights_filename, 'w') as f:
+            json.dump(existing_data, f, indent=4)
+
         break
     elif question.lower().startswith('search '):
         search_query = question.split('search ', 1)[1]
         results = search_transcript(OPENAI_API_KEY, search_query, f"{output_folder}/content_only.txt", embeddings_path)
+        
+        # Update insights
+        insights["search_results"].append({
+            "query": search_query,
+            "results": results
+        })
+        
         print("Top search results from the transcript:")
         for idx, segment in enumerate(results, start=1):
             print(f"{idx}. {segment}")
