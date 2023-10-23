@@ -15,6 +15,8 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 
 [WHATAMIFEELING?!](https://isitsports.neocities.org/WHATAMIFEELING/start)
 
+![Automaton for Rule C73 w 30M29M](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/883026df-d869-4227-82fe-e6bde55461b6)
+![Automaton for Rule C73 w 30M29M2](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/e5c49c6c-e181-4fae-abdb-1a452170e357)
 ![Automaton for Rule 54 wo Mod00](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/bef43a28-b33d-4f16-8002-4ba966e324a6)
 ![Automaton for Rule 54 w Mod01](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/1ef48f7e-a604-4c12-8165-dc4009958f50)
 ![Automaton for Rule 54 w Mod00](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/bd9745bf-e197-424f-bac4-616429f2df02)
