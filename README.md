@@ -11,6 +11,18 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ```
 ---
 
+231023
+
+[WHATAMIFEELING?!](https://isitsports.neocities.org/WHATAMIFEELING/start)
+
+![Automaton for Rule 54 wo Mod00](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/bef43a28-b33d-4f16-8002-4ba966e324a6)
+![Automaton for Rule 54 w Mod01](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/1ef48f7e-a604-4c12-8165-dc4009958f50)
+![Automaton for Rule 54 w Mod00](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/bd9745bf-e197-424f-bac4-616429f2df02)
+![Automaton for Rule 54 w Mod](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/885bdd41-247b-4707-ac43-589fa581f5a5)
+![66022eac-6a59-432c-9e58-f803ae915a06](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/c0c6a894-68ee-4f78-b7e3-751067173597)
+![63851cfd-d6ee-4b45-9d39-c410eefb5d39](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/90dd1877-bb78-4f3e-9ecd-021624889ab0)
+
+
 211023
 
 RIP YOUTUBE
