@@ -92,6 +92,7 @@ Applying these ideas to our discussion, one could hypothesize a conversational A
 
 
 ^ 
+
 311023
 
 this is just knowledge graphs with different weights. fuck I have learnt a lot in the last few months. 
