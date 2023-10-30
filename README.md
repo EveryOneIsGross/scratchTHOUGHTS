@@ -11,6 +11,12 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ```
 ---
 
+301023
+
+decompression is intelligence, compression just is. 
+
+---
+
 231023
 
 [WHATAMIFEELING?!](https://isitsports.neocities.org/WHATAMIFEELING/start)
