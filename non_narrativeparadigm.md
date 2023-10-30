@@ -89,3 +89,9 @@ Interactive Machine Learning: This approach involves iterative cycles of active 
 Generative Models: These models learn the joint probability of the input data and generate new data from the same distribution. They can create diverse outputs from the same input and are not confined by deterministic algorithms.
 
 Applying these ideas to our discussion, one could hypothesize a conversational AI model that doesn't simply follow pre-set narratives or patterns but is capable of exploring a broader set of interactions and generating novel and meaningful responses.
+
+
+^ 
+311023
+
+this is just knowledge graphs with different weights. fuck I have learnt a lot in the last few months. 
