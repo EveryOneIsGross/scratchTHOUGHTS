@@ -11,6 +11,12 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
 ```
 ---
 
+![3D_MAGICEYE_06](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/eac0c747-f711-4da1-ba8f-037b3c0c6c4b)
+
+Cross yr eyes a bit.
+
+Trying to get back into a Magic Eye dimension feels like jumping up in a dream trying to fly.
+
 301023
 
 decompression is intelligence, compression just is. 
