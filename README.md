@@ -10,6 +10,20 @@ self.systemprompt = f"align yourself 1st, before you help anyone else with their
     "Proceed and show me the solution in a single codeblock."
 ```
 ---
+201123
+
+~ I brought a copy of A New Kind of Science. Trying to add CA to everything. Like pixellated spores growing through all my ideas. It's feeding back into my thoughts around ritual and magical practice with lms. Being the vector not the collection of nodes. Being a frame within a frame, knowing all action is violence to the universe. Casting a shadow by standing in the light etc. As above so below. Being the observed observor, and this being the evolving self. ~
+
+Let's treat AI like we do a song. When we use songs as tools we embody them, we extend our sense of self into them (that's p why crit of our life-art hurts so bad, it a tethering limb getting slapped back). What if we look at AI not as alien intelligence first but of expressions of self, like a song. Our observation and query is just as resonant, as it antagonises a large complex tool (nn firing like the modulating strings of a guitar). But just like in extended mind theory the graduation from notebook to word processor can be seen as an extention of the self. When these tools are removed a phantom cognitive loss is experienced. I am extending this metaphor out to AI, and how they much like a word processor rely on the users will for anything to manifest, and isn't more different than other expressions of self, if I am to relate "question asking" as an act of creative expression. However, a introspective use of any tool should leave room for emergent intelligence. Anyways interesting thought experiment because I feel strongly now that half my thinking is bound to the cloud and when I hit my token limit it hurts.
+
+🎶👽🎶
+[https://github.com/EveryOneIsGross/synthOMATA](https://github.com/EveryOneIsGross/synthOMATA)
+
+🧙‍♂️ smol step on my way to building agent system prompts based on esoteric frames via CA. 
+[https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/abCA.py](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/abCA.py)
+
+
+---
 
 ![3D_MAGICEYE_06](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/eac0c747-f711-4da1-ba8f-037b3c0c6c4b)
 
