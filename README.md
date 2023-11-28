@@ -4,6 +4,10 @@
 >>>> my personal overflow extended-mind scratchdisk for lazily copypasting into agents and self() 💅🧠📎
 
 ---
+all ideas a wip, all scripts scratch 
+---
+
+---
 201123
 
 ~ I brought a copy of A New Kind of Science. Trying to add CA to everything. Like pixellated spores growing through all my ideas. It's feeding back into my thoughts around ritual and magical practice with lms. Being the vector not the collection of nodes. Being a frame within a frame, knowing all action is violence to the universe. Casting a shadow by standing in the light etc. As above so below. Being at once observed observor, and this being the evolving self.🕳 ~
