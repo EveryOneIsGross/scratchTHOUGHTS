@@ -7,12 +7,12 @@
 Certainly! Here's the complete script for the Markdown-based visual representation using only block quotes, horizontal lines, and code blocks, all within a single code block:
 
 
-``` ```  ``` ``` 
->>  ``` ```  
- ``` ```  ``` >>>  ```
+> ``` ``` > ``` ``` 
+>>>  ``` ```  >
+ ``` ```  ```  ```>>>
 ```
 ```
-
+>>>
 
 ---
 201123
