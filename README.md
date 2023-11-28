@@ -2,8 +2,8 @@
 # 🤘// welcome to my ideascape //🤘
 
 >>>> my personal overflow extended-mind scratchdisk for lazily copypasting into agents and self() 💅🧠📎
-
->>> ``` ```  ``` ```   ``` ```   ``` ``` >>>  
+>>>
+>>> ``` ```  ``` ```   ``` ```   ``` ```   
 >>> ``` ```  ``` ``` 
 >>>  ``` ```  
  ``` ```   
