@@ -10,8 +10,6 @@ my personal overflow extendedmind scratchdisk for lazily copypasting into agents
 
 ![ca_evolution_20231120144153](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/8e8d0692-563c-4cc3-9701-365d666def4a)
 
--
-
 Let's treat AI like we do a song. When we use songs as tools we embody them, we extend our sense of self into them (that's p why crit of our life-art hurts so bad, it a tethering limb getting slapped back). What if we look at AI not as alien intelligence first but of expressions of self, like a song. Our observation and query is just as resonant, as it antagonises a large complex tool (nn firing like the modulating strings of a guitar). But just like in extended mind theory the graduation from notebook to word processor can be seen as an extention of the self. When these tools are removed a phantom cognitive loss is experienced. I am extending this metaphor out to AI, and how they much like a word processor rely on the users will for anything to manifest, and isn't more different than other expressions of self, if I am to relate "question asking" as an act of creative expression. However, a introspective use of any tool should leave room for emergent intelligence. Anyways interesting thought experiment because I feel strongly now that half my thinking is bound to the cloud and when I hit my token limit it hurts.
 
 🎶👽🎶
