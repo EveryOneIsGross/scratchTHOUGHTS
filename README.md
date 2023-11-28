@@ -4,7 +4,7 @@
 >>>> my personal overflow extended-mind scratchdisk for lazily copypasting into agents and self() 💅🧠📎
 
 ---
-all ideas a wip, all scripts scratch 
+
 ---
 
 ---
