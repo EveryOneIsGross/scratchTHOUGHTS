@@ -1,6 +1,14 @@
 
 # 🤘// welcome to my ideascape //🤘
 
+> **1** 0 **1** 0 0 **1** **1** 0
+> 0 **1** 0 **1** **1** 0 0 **1**
+> **1** 0 **1** 0 0 **1** **1** 0
+> 0 **1** 0 **1** **1** 0 0 **1**
+> **1** 0 **1** 0 0 **1** **1** 0
+> 0 **1** 0 **1** **1** 0 0 **1**
+
+
 >>>> my personal overflow extended-mind scratchdisk for lazily copypasting into agents and self() 💅🧠📎
 
 ---
