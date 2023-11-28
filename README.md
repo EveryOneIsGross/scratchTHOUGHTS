@@ -1,7 +1,7 @@
 
-# 🤘// welcome to my homepage //🤘
+# 🤘// welcome to my ideascape //🤘
 
->>>> my personal overflow extendedmind scratchdisk for lazily copypasting into agents and self() 💅🧠📎
+>>>> my personal overflow extended-mind scratchdisk for lazily copypasting into agents and self() 💅🧠📎
 
 ---
 201123
