@@ -3,6 +3,17 @@
 ---
 my personal overflow extended-mind scratchdisk for lazily copypasting into agents and self() 💅🧠📎
 
+
+---
+081223
+
+![frame_1](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/c3cbb2f6-efba-490e-a633-b3bcee06b51a)
+
+
+ALL MY RECENT CA, STATESPACE AND DITHERING PROJECTS IN ONE PLACE :
+
+[https://github.com/EveryOneIsGross/CellularAutomata](https://github.com/EveryOneIsGross/CellularAutomata)
+
 ---
 201123
 
