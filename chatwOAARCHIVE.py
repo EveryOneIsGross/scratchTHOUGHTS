@@ -68,7 +68,6 @@ Safe URLs: A list of URLs marked safe during the conversation.
 ID: A redundant field, probably the same as the conversation ID, for unique identification.
 
 '''
-
 import json
 from gpt4all import Embed4All
 from typing import List
@@ -252,52 +251,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-
-        query_embedding = embedder.embed(user_query)
-
-        # Open the embeddings file and calculate cosine similarities
-        max_similarity = -1
-        best_match = None
-        with open(embeddings_file, 'rb') as f:
-            try:
-                while True:
-                    item = pickle.load(f)
-                    # Filter by role if specified (other than 'all')
-                    if user_role != 'all' and item.get('role') != user_role:
-                        continue
-
-                    conversation_embedding = item.get("embedding", [])
-                    similarity = cosine_similarity(query_embedding, conversation_embedding)
-                    if similarity > max_similarity:
-                        max_similarity = similarity
-                        best_match = item
-            except EOFError:
-                # End of file reached
-                pass
-
-        if best_match:
-            print(f"Title: {best_match['title']}\nRole: {best_match['role']}, \nText: {best_match['text']}\nSimilarity: {max_similarity}")
-
-            # Prompt to retrieve all conversations with the same title
-            retrieve_all = input(f"Do you want to see all conversations with the title '{best_match['title']}'? (yes/no): ").lower()
-            if retrieve_all == 'yes':
-                all_conversations = get_conversations_by_title(best_match['title'], embeddings_file)
-                for conversation in all_conversations:
-                    print(f"\nTitle: {conversation['title']}\nRole: {conversation['role']}, \nText: {conversation['text']}")
-
-            # Ask if the user wants to summarize
-            summarize = input("Do you want to summarize this conversation? (yes/no): ").lower()
-            if summarize == 'yes':
-                # Process text for LLM input
-                processed_text = chunk_and_condense_text(best_match['text'], chunk_size=100, n_chunks=3)
-                agent_response = call_agent(processed_text)
-                print(f"Agent response: {agent_response}")
-            else:
-                print("Summarization skipped.")
-        else:
-            print("No matching conversation found.")
-
-if __name__ == "__main__":
-    main()
-
-    
