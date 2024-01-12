@@ -1,7 +1,7 @@
 
 '''
-DOWNLOAD YOUR OPENAI ARCHIVE EXCTRACT 'conversations.json'
-GROUND A LOCAL AGENT WITH RETRIVAL ON YOUR OLD CHATS FROM GPT4
+DOWNLOAD YOUR OPENAI ARCHIVE & EXTRACT 'conversations.json'
+NOW GROUND A LOCAL AGENT WITH RETRIVAL W YOUR OLD CHATS FROM GPT4 
 
 The following script embeds your conversations.json file and allows you to search for conversations by keyword.
 It also allows you to summarize a conversation using a LLM. 
