@@ -25,7 +25,7 @@ def read_and_preprocess(file_path, chunk_size=CHUNK_SIZE):
                 yield chunk
                 chunk = []
 
-# Function to train Word2Vec model on the document, this is boring
+# Function to train Word2Vec model on the document
 def train_word2vec(corpus):
     return Word2Vec(sentences=corpus, vector_size=100, window=5, min_count=1, workers=4)
 
@@ -37,27 +37,22 @@ def get_sentence_vector(model, sentence):
         return np.zeros(model.vector_size)
     return np.mean(word_vectors, axis=0)
 
-# Load the document and process it
-file_path = 'content_only.txt'  # Replace with your file path
+# Function to find the most relevant chunk given an input string and file path
+def find_most_relevant_chunk(input_sentence, file_path):
+    corpus = list(read_and_preprocess(file_path))
+    model = train_word2vec(corpus)
 
-corpus = list(read_and_preprocess(file_path))
-w2v_model = train_word2vec(corpus)
+    user_vector = get_sentence_vector(model, input_sentence)
+    corpus_vectors = [get_sentence_vector(model, ' '.join(chunk)) for chunk in corpus]
 
-# Example usage
-while True:
-    user_input = input("Input: ")
-
-    if user_input.lower() == "exit":
-        break
-    
-    # Get the vector representation of the user input
-    user_vector = get_sentence_vector(w2v_model, user_input)
-    corpus_vectors = [get_sentence_vector(w2v_model, ' '.join(chunk)) for chunk in corpus]
-    # Calculate cosine similarity between the user input and each chunk
     cosine_results = sorted([(i, cosine_similarity(user_vector, doc_vector)) 
                              for i, doc_vector in enumerate(corpus_vectors)], 
                              key=lambda x: x[1], reverse=True)[:TOP_K]
 
-    # Print the most relevant chunk
-    most_relevant_chunk = ' '.join(corpus[cosine_results[0][0]])
-    print("Output chunk:", most_relevant_chunk)
+    return ' '.join(corpus[cosine_results[0][0]])
+
+# Example Usage
+file_path = 'SOMETHING.txt'  # Replace with your file path
+input_sentence = "Your input string here"
+output_chunk = find_most_relevant_chunk(input_sentence, file_path)
+print(output_chunk)
