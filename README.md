@@ -1,8 +1,51 @@
-
-# 🤘 welcome to my ideascape 🤘
 ---
-my personal overflow extended-mind scratchdisk for lazily copypasting into agents and self() 💅🧠📎
+260124
 
+HAPPY NEW YEAR! 
+
+I have been busy stretching my brain out into new spaces. Got distracted learning pathfinding algorithms ironically, they will come handy when I start creating statespaces for my agents tho. There are so many ideas swirling around in there, I'm waiting for them to coalesce in a new framework. Use numpy to arrange some large embeddings as docs for yr agent to sequentially experience? These could be anything from reasoning, info to grok in certain a order or emotional states I guess? Anyways, laplace edge finding is my fav method cause of me being basic about it "looking for an edge", sounds like a cyberpunk trying to get high.
+
+Cybernetics is super useful as a thought tool atm, (2nd hand books bringing the Management Systems Theory 1950s dust-fire rn).
+Symbolic representative languages... totally usefull too, thanks alphaGEOMETERY, I think maybe yr code implementation is overcooked, but yr prompting insight, syntax  and dictionary were sick \m/
+
+---
+
+Sometimes I can't tell if I have done something significant or just had a tetris block snaps in places and clears a line and I forget what the pieces were. Wrote an embedding search that increases and decreases the weights of matches, and if there are no matches in the embedding it calls a smol llm to add it in and re-search. Regardless of the expansion of the embedding when there are no significant matches. The decreasing significance to matched chunk or increasing it could give frameworks a really cool scratch space. Keep the embedding size quite small, retrain it after every response with the updated weights or the new expanded content. 
+
+Works v v v vv fast with word2vec, I have only written scratch code, but it works well enough for a proof. 
+
+Usage example idea:
+
+Dynamic Corpus Adjustment and Search Enhancement in Semantic Query Processing
+
+A query processing system that dynamically adjusts a semantic corpus based on the strength of search matches. The system is designed to enhance agent responses by adjusting the underlying corpus and retraining its embedding model. The process flow is as follows:
+
+1. **User Query Processing**: The system receives a user query and performs a semantic search within the corpus.
+
+2. **Search Result Evaluation**: 
+    - **Strong Matches**: If the search yields strong matches (highly relevant results), these matches are added to the agent's context, enriching the data used for generating responses.
+    - **Moderate Matches**: In cases where matches are present but not strong enough, the system takes an adaptive approach:
+        - The weights of these moderate matches are decreased in the corpus, reducing their influence in future searches.
+        - The embedding model is then retrained on this updated corpus. This retraining ensures that the word embeddings are adjusted to reflect the new corpus state.
+        - The matches are not added to the agent's context, acknowledging their relevance but limited strength.
+        - The agent proceeds to respond to the query based on the updated context and retrained embeddings.
+    - **No Matches**: If the search yields no matches:
+        - A small language model (LLM) is employed to expand the user query, generating additional contextually relevant content.
+        - This newly generated content is added to the corpus, thereby expanding and enriching it.
+        - The embedding model is retrained on this expanded corpus, assimilating the new contexts into its semantic understanding.
+        - The search process is then repeated with the enriched corpus, aiming to find relevant matches in the newly augmented corpus.
+
+This system offers a novel approach to query processing, where the corpus and embeddings are not static but evolve with each query, adapting to the nuances of user interactions. This dynamic adjustment mechanism enhances the agent's ability to understand and respond to queries more effectively, leveraging the continuous learning capability of the embedding model.
+
+---
+
+Previous to the thought above which was today, and written while suffering some pretty yuck back pain, I have been doing a lot more search algorithm stuff. Get an embedding of wikipedia to 1gb, and being able to extract articles in 0 time is v cool, and I will use it as grounding for most of my local agents moving forward. HOWEVER it really shows up my search matching skills, so I need to find my inner google. 
+
+FRACTAL CHUNKING. You find a semantic matched chunk then find all the surrounding matches to that chunk, divide them by 1/3 the original and cosine search the fractals and add them to the context, then step out further and divide that by 1/3 again, and do the same n many times, until you get down to word pairs... then you should stop. But I think it's cool, and I made it and it works great and fractals are cool. Even if these aren't fractals but chunks but still.... 
+
+What else did I do over the last month that was worth reflecting on.... I did a lot of generative art stuff for myself. 
+
+2024 Be your own screensaver I guess. 
 
 ---
 081223
