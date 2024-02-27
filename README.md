@@ -1,4 +1,14 @@
 ---
+280224
+
+gm all. I need to do a serious audit on my projects to get new repos up. Finally got setup for local finetuning on my 3060; a fine tune on my chat style from gchat archives, phi 2 on my openai chat archives and another cooking for translate te reo to english and back. Still fleshing out my tool set, lots of chunking experiments. Just tidying up a graph chunking and clustering script for agents. Currently the script just clusters n chunks in a w2v embedding for searching, summaries chunk and displays the top k strings inside it. Could be any shape to any node tho. 
+Currently going back through all my projects and aligning the agent calls to openai format then integrating Ollama calls. I need to move my embedding gen from gpt4all to Ollama. 
+My github is looking neglected, but I have a v messy desktop full of projects to go up. Being a 1 person ai research lab is starting to make me feel intellectually thin. 
+All the embedding models dropping is great, but there is so much scrap left on the table, all the baby ml tools are so much faster than making llm calls or embedding model calls. w2v can make tiny module models of your RAG pipeline, they can be dynamic too you can add and remove and retrain in seconds. Think of it like everynode in your pipeline having their own cache....
+
+Anyways, no goals no projects just build for now.  
+
+---
 160224
 
 I got introuble in primary school for replacing the windows 3.1 default sounds with streetfighter 2 sounds. I just now got hit with the memory and my state of dumbfounded confusion at the time, why were the principle and teacher of room 9 so mad? I'd made it better.
