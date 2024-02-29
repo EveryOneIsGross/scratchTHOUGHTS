@@ -1,4 +1,11 @@
 ---
+010324
+
+![2024-02-29_23-34-41_2024](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/e30b3749-9243-4821-92be-dee0d798e73f)
+
+Trying to use my pocketMIKU as a TTS. I have it converting a text string of phenomes into sysex and it playback from python, then had to create a eng2j phenome db and use w2v to match extracted letter pairs from the english string. INPUT ENGLISH SENTENCE -> SPLIT INTO LETTER PAIRS ("hello" becomes "he" "ll" "o") -> EMBEDDED -> MATCHED TO EMBEDDED ENG PHENOME -> RETRIVE PAIRED JAPANESE PHENOME FROM EMBEDDING ("he" "ro" "o") -> PRINT STRING -> CONVERT STRING TO SYSEX -> ENGRISH SENTENCE PLAYBACK ON DEVICE. 
+
+---
 280224
 
 gm all. I need to do a serious audit on my projects to get new repos up. Finally got setup for local finetuning on my 3060; a fine tune on my chat style from gchat archives, phi 2 on my openai chat archives and another cooking for translate te reo to english and back. Still fleshing out my tool set, lots of chunking experiments. Just tidying up a graph chunking and clustering script for agents. Currently the script just clusters n chunks in a w2v embedding for searching, summaries chunk and displays the top k strings inside it. Could be any shape to any node tho. 
