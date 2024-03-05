@@ -1,8 +1,10 @@
 ---
-010324
+060324
 
 ![image](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/75c9d033-c76c-404f-bb05-1bff6f9ab21b)
 
+---
+010324
 
 ![2024-02-29_23-34-41_2024](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/e30b3749-9243-4821-92be-dee0d798e73f)
 
