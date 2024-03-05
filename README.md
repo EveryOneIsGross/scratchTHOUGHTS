@@ -1,6 +1,9 @@
 ---
 010324
 
+![image](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/75c9d033-c76c-404f-bb05-1bff6f9ab21b)
+
+
 ![2024-02-29_23-34-41_2024](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/e30b3749-9243-4821-92be-dee0d798e73f)
 
 Trying to use my pocketMIKU as a TTS. I have it converting a text string of phenomes into sysex and it playback from python, then had to create a eng2j phenome db and use w2v to match extracted letter pairs from the english string. INPUT ENGLISH SENTENCE -> SPLIT INTO LETTER PAIRS ("hello" becomes "he" "ll" "o") -> EMBEDDED -> MATCHED TO EMBEDDED ENG PHENOME -> RETRIVE PAIRED JAPANESE PHENOME FROM EMBEDDING ("he" "ro" "o") -> PRINT STRING -> CONVERT STRING TO SYSEX -> ENGRISH SENTENCE PLAYBACK ON DEVICE. 
