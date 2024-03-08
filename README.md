@@ -437,14 +437,6 @@ This leaning in to their anxiety to help at each "step" helps create reasoning t
 
 ---
 
-080923
-
-⌨🐒🚬
-
-[idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/infinitemonkeysGRADIENT.md)
-
----
-
 070923
 
 Having thoughts about heavy thoughts : [idea](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/thoughtsHAVEMASS.md)
