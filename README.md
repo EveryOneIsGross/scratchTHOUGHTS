@@ -1,4 +1,16 @@
 ---
+090324
+
+![thresholded_dithered_image](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/62d0d04b-a8b3-4a14-90d4-45216f4864b9)
+
+
+Today is housework day, I am going to upload all my chunking/embedding experiments and doc them. I need to clear some psychic space to see the path again. I should try to remember that these abstractions can be uplifted from any framework, eg fractal chunking can be done in the semantic space flowering from the initial node match and branching out via euclydian / cos sine space OR space of text on a page, and get the surrounding contexts.  
+
+Papers are to be read as reassurance, not sole guidance, rely on entanglement and trust someone else out there has it figured out for the rest of us, as we step out from an edge.
+
+🖇
+
+---
 060324
 
 ![image](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/75c9d033-c76c-404f-bb05-1bff6f9ab21b)
