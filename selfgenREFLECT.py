@@ -20,6 +20,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import spacy
 import numpy as np
 import ollama
+import re
+
 
 # Load the SpaCy model for English
 nlp = spacy.load("en_core_web_sm")
@@ -29,12 +31,18 @@ client = OpenAI(
     base_url='http://localhost:11434/v1',
     api_key='ollama',
 )
+def clean_text(text):
+    text = re.sub(r"\n\d+\.\s", "\n", text, flags=re.MULTILINE) # Remove list numerals at the beginning of a new line
+    # remove special characters
+    text = re.sub(r"[^a-zA-Z0-9.,!? ]", "", text)
+    return text
 
-class CustomConversationalAgent:
+
+class multiagentREFLECT:
     def __init__(self, default_model="mistral:instruct", w2v_model_path='w2v_model.pkl', save_file='conversation_history.json'):
         self.default_model = default_model  # Store the default model
         self.current_model = default_model  # Reflects the model currently in use, allows dynamic switching
-        #self.genstruct_model = "genstruct"  # Name of the new model for enhanced responses
+        #self.genstruct_model = "genstruct"  # Name of the new model for reflection responses
 
         self.w2v_model_path = w2v_model_path
         self.save_file = save_file
@@ -64,6 +72,7 @@ class CustomConversationalAgent:
             top_p=1.5,
             messages=self.history
         )
+
         assistant_response = response.choices[0].message.content
         self.history.append({"role": "assistant", "content": assistant_response})
         self.save_history()
@@ -96,22 +105,27 @@ class CustomConversationalAgent:
         persistent_file_path = 'genstruct_outputs.json'
         structured_response = None  # Default response
 
+        # strip the content text of special characters and list numerals from the start of a new line
+        content = clean_text(content)
+
         # Constructing the prompt for Ollama's generate mode
-        genstruct_prompt = f"[[[Title]]]\n {title}\n[[[Content]]]\n {content}\nThe following is an interaction between a user and an AI assistant that is related to the above text.\n[[[User]]]\n"
+        genstruct_prompt = f"[[[Title]]]\n {title}\n[[[Content]]]\n {content}\nThe following is an interaction between a user and an AI assistant that is related to the above text.\n [[[User]]] "
 
         try:
             # Using Ollama's generate function instead of the previous client.chat.completions.create
             response = ollama.generate(model='genstruct', prompt=genstruct_prompt)
             gen_text = response['response']  # Extracting the generated text
-            
+            # Prepend "[[[User]]]" to the response
+            addusertag_gen_text = "[[[User]]] " + gen_text
             structured_response = {
                 "title": title,
                 "content": content,
-                "response": gen_text  # Storing the generated response directly
+                "response": addusertag_gen_text  # Storing the generated response directly
             }
 
         except Exception as e:
             structured_response = {"error": f"An error occurred: {e}"}
+
 
         # Update the persistent JSON storage with the new structure
         try:
@@ -120,8 +134,11 @@ class CustomConversationalAgent:
                     data = json.load(file)
             else:
                 data = {}
-
-            data_key = f"Title: {title} | Content: {content}"
+            # strip datakey of {title} of the appeneded [[[Title]]]
+            clean_key = title.replace("[[[Title]]]\n", "")
+                
+                
+            data_key = f"{clean_key}"
             if data_key not in data:
                 data[data_key] = []
             data[data_key].append(structured_response)
@@ -142,7 +159,8 @@ class CustomConversationalAgent:
 
         last_response = self.history[-1]['content'] if self.history and self.history[-1]['role'] == 'assistant' else None
         if not last_response:
-            return "I don't have anything to reflect on yet."
+            print("I don't have anything to reflect on yet.")
+            return
 
         last_response_vector = self.sentence_vector(last_response)
         similarities = []
@@ -154,14 +172,16 @@ class CustomConversationalAgent:
         top_matches = sorted(similarities, key=lambda x: x[1], reverse=True)[:5]
         top_sentences = [match[0] for match in top_matches]
 
+        # Formatting the input with the necessary headers
         title = next((item['content'] for item in reversed(self.history) if item['role'] == 'user'), "No recent user input found.")
-        content = f"{last_response}\n\n These are your immediate thoughts on the content:\n {' '.join(top_sentences)}."
+        content = f"{last_response}\n\nThese are your immediate thoughts on the content:\n{' '.join(top_sentences)}"
+        formatted_title = f"[[[Title]]]\n{title}"
+        formatted_content = f"[[[Content]]]\n{content}"
 
-        # Now, correctly passing both title and content to process_with_genstruct
-        enhanced_response = self.process_with_genstruct(title, content)
+        # Sending the formatted input to the process_with_genstruct method
+        reflection_response = self.process_with_genstruct(formatted_title, formatted_content)
 
-        return enhanced_response or "Unable to enhance response due to processing error."
-
+        return reflection_response or "Unable to enhance response due to processing error."
 
 
     def save_history(self):
@@ -220,13 +240,12 @@ def main():
             print(f"File '{text_file_path}' not found. Please enter a valid file path.")
 
     # Instantiate the conversational agent
-    agent = CustomConversationalAgent()
+    agent = multiagentREFLECT()
 
     # Ensure that the corpus is also prepared for reflection
     corpus_path = text_file_path
     agent.prepare_corpus_sentences(corpus_path)
 
-    # Continue with the conversational loop
     while True:
         print("\n---\nYou: ", end="")
         user_input = input().strip()
@@ -238,19 +257,11 @@ def main():
         direct_response = agent.ask(user_input)
         print("\nAssistant's Initial Response:\n" + direct_response + "\n")
 
-        # Generate the enhanced response
-        enhanced_response = agent.reflect_and_enhance()
+        # Generate the reflection response
+        reflection_response = agent.reflect_and_enhance()
+        
+        print("\nReflection Response:\n" + reflection_response['response'])
 
-        # Handle and format the enhanced response directly
-        if enhanced_response:
-            if isinstance(enhanced_response, list) or isinstance(enhanced_response, dict):
-                formatted_response = json.dumps(enhanced_response, indent=4)
-            else:
-                formatted_response = enhanced_response
-        else:
-            formatted_response = "Unable to enhance response due to processing error or invalid response format."
-
-        print("\nEnhanced Response:\n" + formatted_response)
 
 if __name__ == "__main__":
     main()
