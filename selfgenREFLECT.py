@@ -31,12 +31,6 @@ client = OpenAI(
     base_url='http://localhost:11434/v1',
     api_key='ollama',
 )
-def clean_text(text):
-    text = re.sub(r"\n\d+\.\s", "\n", text, flags=re.MULTILINE) # Remove list numerals at the beginning of a new line
-    # remove special characters
-    text = re.sub(r"[^a-zA-Z0-9.,!? ]", "", text)
-    return text
-
 
 class multiagentREFLECT:
     def __init__(self, default_model="mistral:instruct", w2v_model_path='w2v_model.pkl', save_file='conversation_history.json'):
@@ -105,18 +99,16 @@ class multiagentREFLECT:
         persistent_file_path = 'genstruct_outputs.json'
         structured_response = None  # Default response
 
-        # strip the content text of special characters and list numerals from the start of a new line
-        content = clean_text(content)
 
         # Constructing the prompt for Ollama's generate mode
-        genstruct_prompt = f"[[[Title]]]\n {title}\n[[[Content]]]\n {content}\nThe following is an interaction between a user and an AI assistant that is related to the above text.\n [[[User]]] "
-
+        genstruct_prompt = f"{title}\n {content}\nThe following is an interaction between a user and an AI assistant that is related to the above text.\n [[[User]]]"
+        print(f"Prompt: {genstruct_prompt}")
         try:
             # Using Ollama's generate function instead of the previous client.chat.completions.create
             response = ollama.generate(model='genstruct', prompt=genstruct_prompt)
             gen_text = response['response']  # Extracting the generated text
-            # Prepend "[[[User]]]" to the response
             addusertag_gen_text = "[[[User]]] " + gen_text
+
             structured_response = {
                 "title": title,
                 "content": content,
@@ -174,7 +166,7 @@ class multiagentREFLECT:
 
         # Formatting the input with the necessary headers
         title = next((item['content'] for item in reversed(self.history) if item['role'] == 'user'), "No recent user input found.")
-        content = f"{last_response}\n\nThese are your immediate thoughts on the content:\n{' '.join(top_sentences)}"
+        content = f"{last_response}\n\n[[[Thoughts]]]\n{' '.join(top_sentences)}"
         formatted_title = f"[[[Title]]]\n{title}"
         formatted_content = f"[[[Content]]]\n{content}"
 
