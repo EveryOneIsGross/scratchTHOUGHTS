@@ -1,5 +1,5 @@
 300424
-
+```
 graph TD
     A[Sensory Evidence] --> B[Neural Activity]
     B --> C[Decision Variable]
@@ -18,7 +18,7 @@ graph TD
     J[4D Space-Time Manifold] --> K[Morphic Transformations]
     K --> L[Quantitative Analysis]
     L --> M[Modeling and Prediction]
-
+```
 ```
                                                     
                        ░▒▓▓▓▓▒░                     
