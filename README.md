@@ -1,4 +1,24 @@
 300424
+
+graph TD
+    A[Sensory Evidence] --> B[Neural Activity]
+    B --> C[Decision Variable]
+    C --> D{Decision Horizon}
+    D -->|Above Threshold| E[Decision Commitment]
+    D -->|Below Threshold| F[Decision Continued]
+    F --> B
+    E --> G[Decision Outcome]
+
+    H[Confidence] --> C
+    H --> D
+    I[Time] --> B
+    I --> C
+    I --> H
+
+    J[4D Space-Time Manifold] --> K[Morphic Transformations]
+    K --> L[Quantitative Analysis]
+    L --> M[Modeling and Prediction]
+
 ```
                                                     
                        ░▒▓▓▓▓▒░                     
