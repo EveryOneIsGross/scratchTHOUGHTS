@@ -16,7 +16,7 @@ graph TD
     I --> H
 ```
 ```mermaid
-graph LD
+graph TD
     J[4D Space-Time Manifold] --> K[Morphic Transformations]
     K --> L[Quantitative Analysis]
     L --> M[Modeling and Prediction]
