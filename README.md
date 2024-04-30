@@ -1,5 +1,5 @@
 300424
-```
+```mermaid
 graph TD
     A[Sensory Evidence] --> B[Neural Activity]
     B --> C[Decision Variable]
