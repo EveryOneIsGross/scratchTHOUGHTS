@@ -1,3 +1,31 @@
+010524
+```mermaid
+graph TD
+    A[Receive Input String] --> B[Determine Chunk Size]
+    B --> C[Break Down Into Chunks]
+
+    C --> D[Apply Semantic Shuffling]
+    C --> E[Apply Contextual Reinterpretation]
+    C --> F[Apply Sentiment Analysis]
+    C --> G[Apply Subjectivity Shifting]
+
+    D --> H[Generate Output Strings]
+    E --> H
+    F --> H
+    G --> H
+
+    H --> I[Validate Token Integrity]
+    I --> J[Output Coherent & Grammatically Correct Strings]
+    J --> K[Analysis of Techniques Used]
+    K --> L[Present Outputs & Analyses]
+
+    I -.-> M[Discard & Retry if Token Integrity Fails]
+    M -.-> D
+    M -.-> E
+    M -.-> F
+    M -.-> G
+```
+
 300424
 ```mermaid
 graph TD
