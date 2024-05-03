@@ -2,14 +2,14 @@
 
 ```mermaid
 graph TD
-    subgraph Projection-Slice Theorem
-        I1(Input: 2D function f(r))
-        I2(Input: Projections of f(r) at various angles)
-        P1(Process: 1D Fourier transform of projection at angle θ)
-        P2(Process: Result of P1 equals slice of 2D Fourier transform of f(r) at angle θ)
-        P3(Process: Repeat P1 and P2 for multiple angles to fill Fourier domain)
-        P4(Process: Apply 2D inverse Fourier transform to reconstruct f(r))
-        O1(Output: Reconstructed 2D object function f(r))
+    subgraph ProjectionSliceTheorem
+        I1[Input: 2D function f(r)]
+        I2[Input: Projections of f(r) at various angles]
+        P1[Process: 1D Fourier transform of projection at angle θ]
+        P2[Process: Result of P1 equals slice of 2D Fourier transform of f(r) at angle θ]
+        P3[Process: Repeat P1 and P2 for multiple angles to fill Fourier domain]
+        P4[Process: Apply 2D inverse Fourier transform to reconstruct f(r)]
+        O1[Output: Reconstructed 2D object function f(r)]
 
         I1 & I2 --> P1
         P1 --> P2
@@ -19,79 +19,50 @@ graph TD
     end
 
     subgraph Limitations
-        L1(Limitation: Non-uniform sampling in Fourier domain)
-        L2(Limitation: Higher sampling density near origin)
+        L1[Limitation: Non-uniform sampling in Fourier domain]
+        L2[Limitation: Higher sampling density near origin]
         L1 --> P4
         L2 --> P4
     end
 
-    subgraph Filtered Backprojection
-        FBP1(Process: Introduce additional filtering step)
-        FBP2(Process: Replace inverse Fourier transform with different operation)
+    subgraph FilteredBackprojection
+        FBP1[Process: Introduce additional filtering step]
+        FBP2[Process: Replace inverse Fourier transform with different operation]
 
-        Projection-Slice Theorem --> FBP1
-        Projection-Slice Theorem --> FBP2
+        ProjectionSliceTheorem --> FBP1
+        ProjectionSliceTheorem --> FBP2
         FBP1 & FBP2 --> O1
     end
 
-    subgraph Tomographic Reconstruction Techniques
-        RT1(Technique: Computed Tomography (CT))
-        RT2(Technique: Magnetic Resonance Imaging (MRI))
-        RT3(Technique: Positron Emission Tomography (PET))
+    subgraph TomographicReconstructionTechniques
+        RT1[Technique: Computed Tomography (CT)]
+        RT2[Technique: Magnetic Resonance Imaging (MRI)]
+        RT3[Technique: Positron Emission Tomography (PET)]
 
-        Projection-Slice Theorem -.-> RT1
-        Projection-Slice Theorem -.-> RT2
-        Projection-Slice Theorem -.-> RT3
+        ProjectionSliceTheorem -.-> RT1
+        ProjectionSliceTheorem -.-> RT2
+        ProjectionSliceTheorem -.-> RT3
     end
 
-    subgraph Fourier Analysis
-        FA1(Concept: Fourier Transform)
-        FA2(Concept: Inverse Fourier Transform)
-        FA3(Concept: Fourier Domain)
+    subgraph FourierAnalysis
+        FA1[Concept: Fourier Transform]
+        FA2[Concept: Inverse Fourier Transform]
+        FA3[Concept: Fourier Domain]
 
-        Projection-Slice Theorem -.-> FA1
-        Projection-Slice Theorem -.-> FA2
-        Projection-Slice Theorem -.-> FA3
+        ProjectionSliceTheorem -.-> FA1
+        ProjectionSliceTheorem -.-> FA2
+        ProjectionSliceTheorem -.-> FA3
     end
 
-    subgraph Mathematical Foundations
-        MF1(Concept: Function Projection)
-        MF2(Concept: Radon Transform)
-        MF3(Concept: Fourier Slice Theorem in N dimensions)
+    subgraph MathematicalFoundations
+        MF1[Concept: Function Projection]
+        MF2[Concept: Radon Transform]
+        MF3[Concept: Fourier Slice Theorem in N dimensions]
 
-        Projection-Slice Theorem -.-> MF1
-        Projection-Slice Theorem -.-> MF2
-        Projection-Slice Theorem -.-> MF3
+        ProjectionSliceTheorem -.-> MF1
+        ProjectionSliceTheorem -.-> MF2
+        ProjectionSliceTheorem -.-> MF3
     end
-    ```
-
----
-010524
-```mermaid
-graph TD
-    A[Receive Input String] --> B[Determine Chunk Size]
-    B --> C[Break Down Into Chunks]
-
-    C --> D[Apply Semantic Shuffling]
-    C --> E[Apply Contextual Reinterpretation]
-    C --> F[Apply Sentiment Analysis]
-    C --> G[Apply Subjectivity Shifting]
-
-    D --> H[Generate Output Strings]
-    E --> H
-    F --> H
-    G --> H
-
-    H --> I[Validate Token Integrity]
-    I --> J[Output Coherent & Grammatically Correct Strings]
-    J --> K[Analysis of Techniques Used]
-    K --> L[Present Outputs & Analyses]
-
-    I -.-> M[Discard & Retry if Token Integrity Fails]
-    M -.-> D
-    M -.-> E
-    M -.-> F
-    M -.-> G
 ```
 Original Input:
 "How many tools can you make from this text?"
