@@ -1,3 +1,9 @@
+---
+030524
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Si214uD_pho/0.jpg)](https://www.youtube.com/watch?v=Si214uD_pho)
+
+---
 010524
 ```mermaid
 graph TD
