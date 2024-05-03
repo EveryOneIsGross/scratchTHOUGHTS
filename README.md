@@ -3,13 +3,13 @@
 ```mermaid
 graph TD
     subgraph ProjectionSliceTheorem
-        I1[Input: 2D function f(r)]
-        I2[Input: Projections of f(r) at various angles]
-        P1[Process: 1D Fourier transform of projection at angle θ]
-        P2[Process: Result of P1 equals slice of 2D Fourier transform of f(r) at angle θ]
-        P3[Process: Repeat P1 and P2 for multiple angles to fill Fourier domain]
-        P4[Process: Apply 2D inverse Fourier transform to reconstruct f(r)]
-        O1[Output: Reconstructed 2D object function f(r)]
+        I1(Input: 2D function f(r))
+        I2(Input: Projections of f(r) at various angles)
+        P1(Process: 1D Fourier transform of projection at angle θ)
+        P2(Process: Result of P1 equals slice of 2D Fourier transform of f(r) at angle θ)
+        P3(Process: Repeat P1 and P2 for multiple angles to fill Fourier domain)
+        P4(Process: Apply 2D inverse Fourier transform to reconstruct f(r))
+        O1(Output: Reconstructed 2D object function f(r))
 
         I1 & I2 --> P1
         P1 --> P2
@@ -19,48 +19,48 @@ graph TD
     end
 
     subgraph Limitations
-        L1[Limitation: Non-uniform sampling in Fourier domain]
-        L2[Limitation: Higher sampling density near origin]
+        L1(Limitation: Non-uniform sampling in Fourier domain)
+        L2(Limitation: Higher sampling density near origin)
         L1 --> P4
         L2 --> P4
     end
 
     subgraph FilteredBackprojection
-        FBP1[Process: Introduce additional filtering step]
-        FBP2[Process: Replace inverse Fourier transform with different operation]
+        FBP1(Process: Introduce additional filtering step)
+        FBP2(Process: Replace inverse Fourier transform with different operation)
 
-        ProjectionSliceTheorem --> FBP1
-        ProjectionSliceTheorem --> FBP2
+        P4 --> FBP1
+        P4 --> FBP2
         FBP1 & FBP2 --> O1
     end
 
     subgraph TomographicReconstructionTechniques
-        RT1[Technique: Computed Tomography (CT)]
-        RT2[Technique: Magnetic Resonance Imaging (MRI)]
-        RT3[Technique: Positron Emission Tomography (PET)]
+        RT1(Technique: Computed Tomography (CT))
+        RT2(Technique: Magnetic Resonance Imaging (MRI))
+        RT3(Technique: Positron Emission Tomography (PET))
 
-        ProjectionSliceTheorem -.-> RT1
-        ProjectionSliceTheorem -.-> RT2
-        ProjectionSliceTheorem -.-> RT3
+        O1 -.-> RT1
+        O1 -.-> RT2
+        O1 -.-> RT3
     end
 
     subgraph FourierAnalysis
-        FA1[Concept: Fourier Transform]
-        FA2[Concept: Inverse Fourier Transform]
-        FA3[Concept: Fourier Domain]
+        FA1(Concept: Fourier Transform)
+        FA2(Concept: Inverse Fourier Transform)
+        FA3(Concept: Fourier Domain)
 
-        ProjectionSliceTheorem -.-> FA1
-        ProjectionSliceTheorem -.-> FA2
-        ProjectionSliceTheorem -.-> FA3
+        P1 & P2 -.-> FA1
+        P4 -.-> FA2
+        P3 -.-> FA3
     end
 
     subgraph MathematicalFoundations
-        MF1[Concept: Function Projection]
-        MF2[Concept: Radon Transform]
-        MF3[Concept: Fourier Slice Theorem in N dimensions]
+        MF1(Concept: Function Projection)
+        MF2(Concept: Radon Transform)
+        MF3(Concept: Fourier Slice Theorem in N dimensions)
 
-        ProjectionSliceTheorem -.-> MF1
-        ProjectionSliceTheorem -.-> MF2
+        I2 -.-> MF1
+        I2 -.-> MF2
         ProjectionSliceTheorem -.-> MF3
     end
 ```
