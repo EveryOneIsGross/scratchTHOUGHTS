@@ -1,3 +1,71 @@
+030524
+
+```mermaid
+graph TD
+    subgraph Projection-Slice Theorem
+        I1(Input: 2D function f(r))
+        I2(Input: Projections of f(r) at various angles)
+        P1(Process: 1D Fourier transform of projection at angle θ)
+        P2(Process: Result of P1 equals slice of 2D Fourier transform of f(r) at angle θ)
+        P3(Process: Repeat P1 and P2 for multiple angles to fill Fourier domain)
+        P4(Process: Apply 2D inverse Fourier transform to reconstruct f(r))
+        O1(Output: Reconstructed 2D object function f(r))
+
+        I1 & I2 --> P1
+        P1 --> P2
+        P2 --> P3
+        P3 --> P4
+        P4 --> O1
+    end
+
+    subgraph Limitations
+        L1(Limitation: Non-uniform sampling in Fourier domain)
+        L2(Limitation: Higher sampling density near origin)
+        L1 --> P4
+        L2 --> P4
+    end
+
+    subgraph Filtered Backprojection
+        FBP1(Process: Introduce additional filtering step)
+        FBP2(Process: Replace inverse Fourier transform with different operation)
+
+        Projection-Slice Theorem --> FBP1
+        Projection-Slice Theorem --> FBP2
+        FBP1 & FBP2 --> O1
+    end
+
+    subgraph Tomographic Reconstruction Techniques
+        RT1(Technique: Computed Tomography (CT))
+        RT2(Technique: Magnetic Resonance Imaging (MRI))
+        RT3(Technique: Positron Emission Tomography (PET))
+
+        Projection-Slice Theorem -.-> RT1
+        Projection-Slice Theorem -.-> RT2
+        Projection-Slice Theorem -.-> RT3
+    end
+
+    subgraph Fourier Analysis
+        FA1(Concept: Fourier Transform)
+        FA2(Concept: Inverse Fourier Transform)
+        FA3(Concept: Fourier Domain)
+
+        Projection-Slice Theorem -.-> FA1
+        Projection-Slice Theorem -.-> FA2
+        Projection-Slice Theorem -.-> FA3
+    end
+
+    subgraph Mathematical Foundations
+        MF1(Concept: Function Projection)
+        MF2(Concept: Radon Transform)
+        MF3(Concept: Fourier Slice Theorem in N dimensions)
+
+        Projection-Slice Theorem -.-> MF1
+        Projection-Slice Theorem -.-> MF2
+        Projection-Slice Theorem -.-> MF3
+    end
+    ```
+
+---
 010524
 ```mermaid
 graph TD
