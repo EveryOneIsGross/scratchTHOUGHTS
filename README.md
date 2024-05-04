@@ -1,7 +1,7 @@
 ---
 040524
 
-deciding between two decision making frames is v 2024. 
+ORCHESTRATION VS AGENTIC
 
 ```mermaid
 
