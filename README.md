@@ -68,6 +68,17 @@ H --> I
 
 I --> C
 
+D <--> E
+D <--> F
+D <--> G
+D <--> H
+E <--> F
+E <--> G
+E <--> H
+F <--> G
+F <--> H
+G <--> H
+
 C --> J[Personalized Response Generator]
 J --> K[User-Friendly Output]
 K --> A
