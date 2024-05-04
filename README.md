@@ -3,7 +3,7 @@
 
 deciding between two decision making frames is v 2024. 
 
-structured flow
+# structured flow
 
 ```mermaid
 
@@ -49,7 +49,7 @@ class J output
 
 ```
 
-semantic flow
+# semantic flow
 
 ```mermaid
 
@@ -102,7 +102,9 @@ class I proposal
 class J generator
 class K output
 ```
-```
+
+# Reflect
+
 Let's reconsider the two systems, taking into account the Semantic Attribute Cosine Search system being contained within a single dynamic embedding and the Orchestrator-based system using a user-readable configuration format like JSON, XML, or YAML.
 
 Orchestrator-based System with JSON/XML/YAML Configuration:
