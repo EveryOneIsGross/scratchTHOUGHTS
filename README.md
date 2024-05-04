@@ -2,12 +2,8 @@
 040524
 
 deciding between two decision making frames is v 2024. 
-```
-# structured flow
-```
 
-```
-mermaid
+```mermaid
 
 graph TD
 A[User] --> B[Primary Chatbot Agent]
