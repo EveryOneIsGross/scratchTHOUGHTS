@@ -170,6 +170,7 @@ W --> X{Update relevance judgments}
 X --> H
 ```
 
+
 ```mermaid
 
 graph TD
@@ -233,6 +234,7 @@ Q --> W
 W --> X{Update relevance judgments}
 
 X --> H
+```
 
 1. Similarity Evaluation Feedback Loop:
    - After computing the WMD for textual similarity using Word2Vec and BERT embeddings, the similarity scores are evaluated.
