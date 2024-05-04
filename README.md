@@ -47,8 +47,6 @@ class J output
 
 ```
 
-# semantic flow
-
 ```mermaid
 
 graph TD
