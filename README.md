@@ -6,6 +6,7 @@ deciding between two decision making frames is v 2024.
 structured flow
 
 ```mermaid
+
 graph TD
 A[User] --> B[Primary Chatbot Agent]
 B --> C{Orchestrator}
@@ -45,11 +46,13 @@ class D,E,F,G module
 class H aggregator
 class I generator
 class J output
+
 ```
 
 semantic flow
 
 ```mermaid
+
 graph TD
 A[User] --> B[Primary Chatbot Agent]
 B --> C{Semantic Attribute Cosine Search}
@@ -98,6 +101,7 @@ class D,E,F,G,H agent
 class I proposal
 class J generator
 class K output
+
 ```
 
 
