@@ -18,6 +18,13 @@ H --> I[Personalized Response Generator]
 I --> J[User-Friendly Output]
 J --> A
 
+D <--> E
+D <--> F
+D <--> G
+E <--> F
+E <--> G
+F <--> G
+
 classDef user fill:#f9d423,stroke:#333,stroke-width:2px;
 classDef primary fill:#e66b00,stroke:#333,stroke-width:2px;
 classDef orchestrator fill:#1ba0e2,stroke:#333,stroke-width:2px;
