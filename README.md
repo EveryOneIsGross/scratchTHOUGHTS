@@ -134,6 +134,8 @@ The choice between the two approaches depends on factors such as the desired lev
 
 AT INFERENCE EVALUATION
 
+w2v doesn't have to be just word level, we can define the chunk and get the mean. this can also be a sliding windowed value. 
+
 ```mermaid
 graph TD
 A[Evaluating Textual Similarity] --> B(Word2Vec)
@@ -142,21 +144,30 @@ C --> D(Compute WMD)
 A --> E(BERT)
 E --> F{Contextual embeddings}
 F --> G(Compute WMD)
-
 H[Document Retrieval] --> I(Word2Vec)
 I --> J(Word embeddings for queries & documents)
 J --> K(Compute WMD)
 H --> L(BERT)
 L --> M(Contextual embeddings for queries & documents)
 M --> N(Compute WMD)
-
 O[Agent] --> A
 O --> H
 O --> P[Optimize WMD computation]
-
 Q[Agent] --> A
 Q --> H
 Q --> R[Incorporate relevance feedback with WMD]
+D --> S{Evaluate similarity scores}
+G --> S
+K --> T{Evaluate retrieval performance}
+N --> T
+S --> U{Adjust embeddings or similarity measure}
+T --> V{Adjust retrieval algorithm or parameters}
+U --> A
+V --> H
+O --> W{Collect user feedback}
+Q --> W
+W --> X{Update relevance judgments}
+X --> H
 ```
 
 ---
