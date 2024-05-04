@@ -103,7 +103,7 @@ class J generator
 class K output
 ```
 
-# Reflect
+# Reflection
 
 Let's reconsider the two systems, taking into account the Semantic Attribute Cosine Search system being contained within a single dynamic embedding and the Orchestrator-based system using a user-readable configuration format like JSON, XML, or YAML.
 
