@@ -132,6 +132,33 @@ Similarities:
 
 The choice between the two approaches depends on factors such as the desired level of user control and interpretability, the need for adaptability and learning, the complexity of the system, and the available computational resources. The Orchestrator-based system with JSON/XML/YAML configuration provides more explicit control and transparency, while the Semantic Attribute Cosine Search system in a dynamic embedding offers greater adaptability and efficient similarity-based collaboration.
 
+AT INFERENCE EVALUATION
+
+```mermaid
+graph TD
+A[Evaluating Textual Similarity] --> B(Word2Vec)
+B --> C{Word embeddings}
+C --> D(Compute WMD)
+A --> E(BERT)
+E --> F{Contextual embeddings}
+F --> G(Compute WMD)
+
+H[Document Retrieval] --> I(Word2Vec)
+I --> J(Word embeddings for queries & documents)
+J --> K(Compute WMD)
+H --> L(BERT)
+L --> M(Contextual embeddings for queries & documents)
+M --> N(Compute WMD)
+
+O[Agent] --> A
+O --> H
+O --> P[Optimize WMD computation]
+
+Q[Agent] --> A
+Q --> H
+Q --> R[Incorporate relevance feedback with WMD]
+```
+
 ---
 030524
 
