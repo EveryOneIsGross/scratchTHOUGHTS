@@ -170,7 +170,7 @@ W --> X{Update relevance judgments}
 X --> H
 ```
 
-You're right. Let's add the feedback loops to enhance the evaluation process. Here's the updated graph with the feedback loops:
+
 
 graph TD
 
