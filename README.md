@@ -3,7 +3,7 @@
 
 deciding between two decision making frames is v 2024. 
 
-# structured flow
+structured flow
 
 ```mermaid
 graph TD
@@ -47,7 +47,7 @@ class I generator
 class J output
 ```
 
-# semantic flow
+semantic flow
 
 ```mermaid
 graph TD
