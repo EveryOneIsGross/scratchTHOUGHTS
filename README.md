@@ -1,4 +1,41 @@
 ---
+040524
+```mermaid
+graph TD
+A[User] --> B[Primary Chatbot Agent]
+B --> C{Orchestrator}
+C --> D[Semantic Search Module]
+C --> E[Sentiment Analysis Module]
+C --> F[Knowledge Graph Module]
+C --> G[Other Specialized Modules]
+
+D --> H{Results Aggregator}
+E --> H
+F --> H
+G --> H
+
+H --> I[Personalized Response Generator]
+I --> J[User-Friendly Output]
+J --> A
+
+classDef user fill:#f9d423,stroke:#333,stroke-width:2px;
+classDef primary fill:#e66b00,stroke:#333,stroke-width:2px;
+classDef orchestrator fill:#1ba0e2,stroke:#333,stroke-width:2px;
+classDef module fill:#7ac143,stroke:#333,stroke-width:2px;
+classDef aggregator fill:#ff8c42,stroke:#333,stroke-width:2px;
+classDef generator fill:#ff6b9d,stroke:#333,stroke-width:2px;
+classDef output fill:#9b59b6,stroke:#333,stroke-width:2px;
+
+class A user
+class B primary
+class C orchestrator
+class D,E,F,G module
+class H aggregator
+class I generator
+class J output
+```
+
+---
 030524
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Si214uD_pho/0.jpg)](https://www.youtube.com/watch?v=Si214uD_pho)
