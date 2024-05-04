@@ -132,9 +132,9 @@ Similarities:
 
 The choice between the two approaches depends on factors such as the desired level of user control and interpretability, the need for adaptability and learning, the complexity of the system, and the available computational resources. The Orchestrator-based system with JSON/XML/YAML configuration provides more explicit control and transparency, while the Semantic Attribute Cosine Search system in a dynamic embedding offers greater adaptability and efficient similarity-based collaboration.
 
-AT INFERENCE EVALUATION
+Evaluation:
 
-w2v doesn't have to be just word level, we can define the chunk and get the mean. this can also be a sliding windowed value. 
+w2v doesn't have to be just word level, we can define the chunk and get the mean. this can also be a sliding windowed value. This can be built on top of pre clustered embeddings to further help with compute. Or hell cluster at inference.
 
 ```mermaid
 graph TD
@@ -169,6 +169,87 @@ Q --> W
 W --> X{Update relevance judgments}
 X --> H
 ```
+
+You're right. Let's add the feedback loops to enhance the evaluation process. Here's the updated graph with the feedback loops:
+
+graph TD
+
+A\[Evaluating Textual Similarity\] --> B(Word2Vec)
+
+B --> C{Word embeddings}
+
+C --> D(Compute WMD)
+
+A --> E(BERT)
+
+E --> F{Contextual embeddings}
+
+F --> G(Compute WMD)
+
+H\[Document Retrieval\] --> I(Word2Vec)
+
+I --> J(Word embeddings for queries & documents)
+
+J --> K(Compute WMD)
+
+H --> L(BERT)
+
+L --> M(Contextual embeddings for queries & documents)
+
+M --> N(Compute WMD)
+
+O\[Agent\] --> A
+
+O --> H
+
+O --> P\[Optimize WMD computation\]
+
+Q\[Agent\] --> A
+
+Q --> H
+
+Q --> R\[Incorporate relevance feedback with WMD\]
+
+D --> S{Evaluate similarity scores}
+
+G --> S
+
+K --> T{Evaluate retrieval performance}
+
+N --> T
+
+S --> U{Adjust embeddings or similarity measure}
+
+T --> V{Adjust retrieval algorithm or parameters}
+
+U --> A
+
+V --> H
+
+O --> W{Collect user feedback}
+
+Q --> W
+
+W --> X{Update relevance judgments}
+
+X --> H
+
+1. Similarity Evaluation Feedback Loop:
+   - After computing the WMD for textual similarity using Word2Vec and BERT embeddings, the similarity scores are evaluated.
+   - Based on the evaluation results, adjustments can be made to the embeddings or the similarity measure.
+   - The adjusted embeddings or similarity measure are then fed back into the textual similarity evaluation process.
+
+2. Retrieval Performance Feedback Loop:
+   - After computing the WMD for document retrieval using Word2Vec and BERT embeddings, the retrieval performance is evaluated.
+   - Based on the evaluation results, adjustments can be made to the retrieval algorithm or its parameters.
+   - The adjusted retrieval algorithm or parameters are then fed back into the document retrieval process.
+
+3. User/Agent Feedback Loop:
+   - User/Agent feedback is collected by both Agent O and Agent Q.
+   - The user feedback is used to update the relevance judgments.
+   - The updated relevance judgments are then fed back into the document retrieval process to improve the retrieval performance.
+
+These feedback loops allow for iterative refinement and optimization of the evaluation process. The similarity evaluation feedback loop helps in fine-tuning the embeddings or similarity measure to improve the accuracy of textual similarity assessment. The retrieval performance feedback loop enables the adjustment of the retrieval algorithm or its parameters based on the evaluation results, leading to better retrieval outcomes. 
 
 ---
 030524
