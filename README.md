@@ -1,5 +1,10 @@
 ---
 040524
+
+deciding between two decision making frames is v 2024. 
+
+# structured flow
+
 ```mermaid
 graph TD
 A[User] --> B[Primary Chatbot Agent]
@@ -42,6 +47,47 @@ class I generator
 class J output
 ```
 
+# semantic flow
+
+```mermaid
+graph TD
+A[User] --> B[Primary Chatbot Agent]
+B --> C{Semantic Attribute Cosine Search}
+
+C --> D[Agent 1]
+C --> E[Agent 2]
+C --> F[Agent 3]
+C --> G[Agent 4]
+C --> H[Agent 5]
+
+D --> I{Next Steps Proposal}
+E --> I
+F --> I
+G --> I
+H --> I
+
+I --> C
+
+C --> J[Personalized Response Generator]
+J --> K[User-Friendly Output]
+K --> A
+
+classDef user fill:#f9d423,stroke:#333,stroke-width:2px;
+classDef primary fill:#e66b00,stroke:#333,stroke-width:2px;
+classDef search fill:#1ba0e2,stroke:#333,stroke-width:2px;
+classDef agent fill:#7ac143,stroke:#333,stroke-width:2px;
+classDef proposal fill:#ff8c42,stroke:#333,stroke-width:2px;
+classDef generator fill:#ff6b9d,stroke:#333,stroke-width:2px;
+classDef output fill:#9b59b6,stroke:#333,stroke-width:2px;
+
+class A user
+class B primary
+class C search
+class D,E,F,G,H agent
+class I proposal
+class J generator
+class K output
+```
 ---
 030524
 
