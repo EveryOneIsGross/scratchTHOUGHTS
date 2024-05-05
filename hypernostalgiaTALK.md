@@ -133,6 +133,8 @@ Conclusion (2-3 minutes)
 
 Throughout the presentation, use your personal experiences and insights to illustrate the challenges and opportunities artists face in this compressed world. Engage the audience by asking rhetorical questions and encouraging them to consider the implications of these technological developments on the creative process, the art world, and the formation of artistic identities.
 
+
+```mermaid
 graph TD
 
 Presentation[Presentation: Remix(((Remix)Remix)Remix)]
@@ -171,11 +173,13 @@ Conclusion[Conclusion]
 Conclusion --> KeyPoints[Summary of Key Points]
 Conclusion --> FutureReflection[Reflection on Artistic Identity and Creative Processes]
 Conclusion --> ProvokeThoughts[Thought-Provoking Questions about Art, Identity, and Aesthetics]
-
+```
 
 ---
 META CONTENT:
 
+
+```mermaid
 graph LR
 
 A1[Plunderphonics and Vaporwave] -->|Reframing Nostalgia for Liminal Spaces| B[Personal Nostalgia]
@@ -223,7 +227,7 @@ style A2 fill:#f9f,stroke:#333,stroke-width:4px
 style A3 fill:#f9f,stroke:#333,stroke-width:4px
 style A4 fill:#f9f,stroke:#333,stroke-width:4px
 style A5 fill:#f9f,stroke:#333,stroke-width:4px
-
+```
 
 Abstract 1: Plunderphonics and Vaporwave: Reframing Personal Nostalgia for Liminal Lost Spaces
 
@@ -247,6 +251,8 @@ In a world where the journey of art can be reduced to matrix multiplication oper
 
 # SLIDES TO CONTRUCT
 
+
+```mermaid
 graph TD
 
 TitleSlide[1. Title Slide] --> Introduction
@@ -321,6 +327,7 @@ AcceleratedArt[10. Accelerated Art and the Organic Alternative] --> HumanMachine
 AcceleratedArt --> OrganicCreativity
 
 HumanMachineCreativity[Blurring Lines Between Human and Machine Creativity] --> EarlyPiracyAndDemoscene
+```
 Or
 
 AESTHETIC WILL BE MONOSPACED WHITE ON BLACK TERMINAL STYLE. IMAGES WILL BE ANSI RENDERS. fixed 80 col. IRC CHAT / SIMPLE TEXT DOCS / .NFO / KG AS SCRIPT / GIF FLOW CHARTS
