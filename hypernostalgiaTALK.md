@@ -311,78 +311,115 @@ In a world where the journey of art can be reduced to matrix multiplication oper
 ```mermaid
 graph TD
 
-TitleSlide[1. Title Slide] --> Introduction
+TitleSlide["1. Title Slide"]
 
-Introduction[2. Introduction] --> PersonalStory
-Introduction --> CoreAnalogy
-Introduction --> VaporwaveAesthetics
+Introduction["2. Introduction"]
+Introduction --> PersonalStory["Personal Story: Running a Vaporwave Label"]
+Introduction --> CoreAnalogy["Core Analogy: Compression Journey"]
+Introduction --> VaporwaveAesthetics["Vaporwave and Music Genre Aesthetics"]
 
-PersonalStory[Personal Story: Running a Vaporwave Label] --> CompressionJourneyOfMusic
-CoreAnalogy[Core Analogy: Compression Journey] --> CompressionJourneyOfMusic
-VaporwaveAesthetics[Vaporwave and Music Genre Aesthetics] --> CompressionJourneyOfMusic
+PersonalStory --> CompressionJourneyOfMusic["3. The Compression Journey of Music"]
+CoreAnalogy --> CompressionJourneyOfMusic
+VaporwaveAesthetics --> CompressionJourneyOfMusic
 
-CompressionJourneyOfMusic[3. The Compression Journey of Music] --> LiveToRecorded
-CompressionJourneyOfMusic --> DigitalFormats
-CompressionJourneyOfMusic --> AestheticsAndIdentity
-CompressionJourneyOfMusic --> StudioInfrastructure
+CompressionJourneyOfMusic --> LiveToRecorded["Live Performances to Recorded Media"]
+CompressionJourneyOfMusic --> DigitalFormats["Shift to Digital Formats like MP3s"]
+CompressionJourneyOfMusic --> AestheticsAndIdentity["Aesthetics of Compressed Music and Identity"]
+CompressionJourneyOfMusic --> StudioInfrastructure["Software and Studio Infrastructure Accessibility"]
 
-LiveToRecorded[Live Performances to Recorded Media] --> AestheticsOfCompressedMusic
-DigitalFormats[Shift to Digital Formats like MP3s] --> AestheticsOfCompressedMusic
-AestheticsAndIdentity[Aesthetics of Compressed Music and Identity] --> AestheticsOfCompressedMusic
-StudioInfrastructure[Software and Studio Infrastructure Accessibility] --> AestheticsOfCompressedMusic
+LiveToRecorded --> AestheticsOfCompressedMusic["4. The Aesthetics of Compressed Music"]
+DigitalFormats --> AestheticsOfCompressedMusic
+AestheticsAndIdentity --> AestheticsOfCompressedMusic
+StudioInfrastructure --> AestheticsOfCompressedMusic
 
-AestheticsOfCompressedMusic[4. The Aesthetics of Compressed Music] --> InternetCompression
+AestheticsOfCompressedMusic --> InternetCompression["5. The Internet's Compression of All Media"]
 
-InternetCompression[5. The Internet's Compression of All Media] --> AllMediaCompression
-InternetCompression --> CompressedMediaAesthetics
-InternetCompression --> MediaInteraction
-InternetCompression --> OnlineIdentities
+InternetCompression --> AllMediaCompression["Compression Impact on Various Media Formats"]
+InternetCompression --> CompressedMediaAesthetics["Compressed Media Aesthetics Examples"]
+InternetCompression --> MediaInteraction["Implications on Media Interaction and Sharing"]
+InternetCompression --> OnlineIdentities["Shaping Online Communities and Identities"]
 
-AllMediaCompression[Compression Impact on Various Media Formats] --> PlunderphonicsAndVaporwave
-CompressedMediaAesthetics[Compressed Media Aesthetics Examples] --> PlunderphonicsAndVaporwave
-MediaInteraction[Implications on Media Interaction and Sharing] --> PlunderphonicsAndVaporwave
-OnlineIdentities[Shaping Online Communities and Identities] --> PlunderphonicsAndVaporwave
+AllMediaCompression --> PlunderphonicsAndVaporwave["6. Plunderphonics and Vaporwave"]
+CompressedMediaAesthetics --> PlunderphonicsAndVaporwave
+MediaInteraction --> PlunderphonicsAndVaporwave
+OnlineIdentities --> PlunderphonicsAndVaporwave
 
-PlunderphonicsAndVaporwave[6. Plunderphonics and Vaporwave] --> LiminalSpaces
-PlunderphonicsAndVaporwave --> PoliticalAndPersonal
+PlunderphonicsAndVaporwave --> LiminalSpaces["Reframing Personal Nostalgia for Liminal Spaces"]
+PlunderphonicsAndVaporwave --> PoliticalAndPersonal["Political and Personal Dimensions"]
 
-LiminalSpaces[Reframing Personal Nostalgia for Liminal Spaces] --> SampleAttribution
-PoliticalAndPersonal[Political and Personal Dimensions] --> SampleAttribution
+LiminalSpaces --> SampleAttribution["7. The Impossibility of Sample Attribution"]
+PoliticalAndPersonal --> SampleAttribution
 
-SampleAttribution[7. The Impossibility of Sample Attribution] --> HyperNodes
-SampleAttribution --> HyperNostalgia
-SampleAttribution --> Authorship
+SampleAttribution --> HyperNodes["Concept of 'Hyper-Nodes'"]
+SampleAttribution --> HyperNostalgia["Rise of 'Hyper-Nostalgia'"]
+SampleAttribution --> Authorship["Authorship and Ownership in the Digital Age"]
 
-HyperNodes[Concept of "Hyper-Nodes"] --> ArtistIdentity
-HyperNostalgia[Rise of "Hyper-Nostalgia"] --> ArtistIdentity
-Authorship[Authorship and Ownership in the Digital Age] --> ArtistIdentity
+HyperNodes --> ArtistIdentity["8. The Artist's Identity in the Age of Compression"]
+HyperNostalgia --> ArtistIdentity
+Authorship --> ArtistIdentity
 
-ArtistIdentity[8. The Artist's Identity in the Age of Compression] --> ArtistCreativeSystems
-ArtistIdentity --> GPUTime
-ArtistIdentity --> ArtisticValueAndRole
-ArtistIdentity --> RapidIteration
+ArtistIdentity --> ArtistCreativeSystems["Compression of Art, Artist, and Creative Systems"]
+ArtistIdentity --> GPUTime["Artist's Labor Compressed into GPU Time"]
+ArtistIdentity --> ArtisticValueAndRole["Artistic Value and Role in Creative Process"]
+ArtistIdentity --> RapidIteration["Rapid Production of Similar Works"]
 ArtistIdentity --> AestheticsAndIdentity
 
-ArtistCreativeSystems[Compression of Art, Artist, and Creative Systems] --> OrganicVsHyperNostalgia
-GPUTime[Artist's Labor Compressed into GPU Time] --> OrganicVsHyperNostalgia
-ArtisticValueAndRole[Artistic Value and Role in Creative Process] --> OrganicVsHyperNostalgia
-RapidIteration[Rapid Production of Similar Works] --> OrganicVsHyperNostalgia
-AestheticsAndIdentity[Aesthetics and Machine Learning Influence on Identity] --> OrganicVsHyperNostalgia
+ArtistCreativeSystems --> OrganicVsHyperNostalgia["9. Navigating the Future: Organic vs. Hyper-Nostalgia"]
+GPUTime --> OrganicVsHyperNostalgia
+ArtisticValueAndRole --> OrganicVsHyperNostalgia
+RapidIteration --> OrganicVsHyperNostalgia
+AestheticsAndIdentity --> OrganicVsHyperNostalgia
 
-OrganicVsHyperNostalgia[9. Navigating the Future: Organic vs. Hyper-Nostalgia] --> OrganicArt
-OrganicVsHyperNostalgia --> HyperNostalgiaAesthetic
-OrganicVsHyperNostalgia --> CompressionAsWarmth
-OrganicVsHyperNostalgia --> ArtMovementsAndIdentities
+OrganicVsHyperNostalgia --> OrganicArt["Organic Art: Human Touch and Authentic Experience"]
+OrganicVsHyperNostalgia --> HyperNostalgiaAesthetic["Hyper-Nostalgia: Compression as Aesthetic and Emotional Tool"]
+OrganicVsHyperNostalgia --> CompressionAsWarmth["Compression Mistaken for Warmth"]
+OrganicVsHyperNostalgia --> ArtMovementsAndIdentities["Shaping Future Art Movements and Identities"]
 
-OrganicArt[Organic Art: Human Touch and Authentic Experience] --> AcceleratedArt
-HyperNostalgiaAesthetic[Hyper-Nostalgia: Compression as Aesthetic and Emotional Tool] --> AcceleratedArt
-CompressionAsWarmth[Compression Mistaken for Warmth] --> AcceleratedArt
-ArtMovementsAndIdentities[Shaping Future Art Movements and Identities] --> AcceleratedArt
+OrganicArt --> AcceleratedArt["10. Accelerated Art and the Organic Alternative"]
+HyperNostalgiaAesthetic --> AcceleratedArt
+CompressionAsWarmth --> AcceleratedArt
+ArtMovementsAndIdentities --> AcceleratedArt
 
-AcceleratedArt[10. Accelerated Art and the Organic Alternative] --> HumanMachineCreativity
-AcceleratedArt --> OrganicCreativity
+AcceleratedArt --> HumanMachineCreativity["Blurring Lines Between Human and Machine Creativity"]
+AcceleratedArt --> OrganicCreativity["Organic Human Creativity"]
 
-HumanMachineCreativity[Blurring Lines Between Human and Machine Creativity] --> EarlyPiracyAndDemoscene
+HumanMachineCreativity --> EarlyPiracyAndDemoscene["11. Early Internet Piracy and Demoscene Compression"]
+OrganicCreativity --> EarlyPiracyAndDemoscene
+
+EarlyPiracyAndDemoscene --> DigitalSubversion["The Craft of Digital Subversion"]
+EarlyPiracyAndDemoscene --> DemosceneArtifacts["Demoscene Productions and Piracy Artifacts"]
+
+DigitalSubversion --> ValueOfArt["12. The Value of Art in a Compressed World"]
+DemosceneArtifacts --> ValueOfArt
+
+ValueOfArt --> BeyondArtifacts["Beyond Traditional Artifacts and Narratives"]
+ValueOfArt --> NewMeaningAndExperience["New Forms of Meaning and Experience"]
+
+BeyondArtifacts --> Conclusion["13. Conclusion"]
+NewMeaningAndExperience --> Conclusion
+
+Conclusion --> KeyPoints["Summary of Key Points"]
+Conclusion --> FutureReflection["Reflection on Artistic Identity and Creative Processes"]
+Conclusion --> ProvokeThoughts["Thought-Provoking Questions about Art, Identity, and Aesthetics"]
+
+KeyPoints --> QuestionsAndDiscussion["14. Questions & Discussion"]
+FutureReflection --> QuestionsAndDiscussion
+ProvokeThoughts --> QuestionsAndDiscussion
+
+style TitleSlide fill:#000000,stroke:#00ff00,stroke-width:2px
+style Introduction fill:#000000,stroke:#00ff00,stroke-width:2px
+style CompressionJourneyOfMusic fill:#000000,stroke:#00ff00,stroke-width:2px
+style AestheticsOfCompressedMusic fill:#000000,stroke:#00ff00,stroke-width:2px
+style InternetCompression fill:#000000,stroke:#00ff00,stroke-width:2px
+style PlunderphonicsAndVaporwave fill:#000000,stroke:#00ff00,stroke-width:2px
+style SampleAttribution fill:#000000,stroke:#00ff00,stroke-width:2px
+style ArtistIdentity fill:#000000,stroke:#00ff00,stroke-width:2px
+style OrganicVsHyperNostalgia fill:#000000,stroke:#00ff00,stroke-width:2px
+style AcceleratedArt fill:#000000,stroke:#00ff00,stroke-width:2px
+style EarlyPiracyAndDemoscene fill:#000000,stroke:#00ff00,stroke-width:2px
+style ValueOfArt fill:#000000,stroke:#00ff00,stroke-width:2px
+style Conclusion fill:#000000,stroke:#00ff00,stroke-width:2px
+style QuestionsAndDiscussion fill:#000000,stroke:#00ff00,stroke-width:2px
 ```
 Or
 
