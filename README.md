@@ -50,12 +50,12 @@ T <--> U
 
 W(Thematic Focus) <--> X(Autonomy)
 W <--> Y(Adaptability)
-W <--> Z(Fluid Boundaries: Mind, Body, Environment)
-W <--> AA(Decentralized, Self-Organizing Systems)
+W <--> Z(Fluid Boundaries: Mind Body Environment)
+W <--> AA(Decentralized Self-Organizing Systems)
 AA <--> AB(Explore Principles of Embodiment)
 AA <--> AC(Active Inference)
 AA <--> AD(Morphogenesis)
-AA <--> AE(Create Robust, Context-Aware AI Agents)
+AA <--> AE(Create Robust Context-Aware AI Agents)
 X <--> Y
 X <--> Z
 X <--> AA
@@ -86,7 +86,7 @@ AH <--> AJ
 AH <--> AK
 AH <--> AL
 AI <--> AJ
-AI <--> AK
+AI <--> AK 
 AI <--> AL
 AJ <--> AK
 AJ <--> AL
@@ -94,7 +94,7 @@ AK <--> AL
 A <--> AF
 
 AM(Persona: Restless Intellect) <--> AN(Probe Limits of Possible with AI)
-AM <--> AO(Navigator Role)
+AM <--> AO(Navigator Role) 
 AO <--> AP(Steer Field Away from Staid Orthodoxies)
 AO <--> AQ(Towards Uncharted Territories with Transformative Potential)
 AM <--> AR(Idiosyncratic Research Agenda)
