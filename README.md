@@ -1,7 +1,7 @@
 ---
 080524
 
-<br>
+LARGE SENTENCE
 
 ```mermaid
 graph TD
