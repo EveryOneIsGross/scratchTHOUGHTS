@@ -1,4 +1,54 @@
 ---
+070524
+
+```mermaid
+graph TD
+
+Input[Input Tokens] --> Vector[Encoded Vectors]
+Vector --> Path[Trace Path Through Space]
+Path --> Landscape[Defined Topography]
+Landscape --> Path
+
+Weights[Weights & Biases] --> Topology[Valleys, Ridges, Basins]
+Topology --> Landscape
+Topology --> Computation[Guide Computation]
+Computation --> Topology
+Weights --> Computation
+
+Training[Influenced by Training Data] --> Weights
+Training --> LandscapeUpdate[Reshape Landscape]
+LandscapeUpdate --> Landscape
+Landscape --> LandscapeUpdate
+Weights --> Training
+Landscape --> Training
+
+InputNew[New Prompt] --> Explore[Explore Nearby Topography]
+Landscape --> Explore
+Explore --> Probe[Probe Valleys & Ridges]
+Topology --> Probe
+Probe --> Generate[Generate Response]
+Computation --> Generate
+Generate --> Response[Response Tokens]
+Response --> User[Deliver to User]
+
+User --> Feedback[Feedback from User]
+Feedback --> Training
+Training --> Feedback
+
+classDef influence stroke-dasharray: 5 5;
+
+class Topology influence;
+class Training influence;
+class Landscape influence;
+class Computation influence;
+class Weights influence;
+class Path influence;
+class Probe influence;
+class Generate influence;
+class Feedback influence;
+```
+
+---
 040524
 
 ORCHESTRATION VS AGENTIC
