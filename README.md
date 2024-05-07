@@ -1,7 +1,8 @@
+
 ---
 070524
-
-.
+```
+```
 
 ```mermaid
 graph TD
@@ -50,7 +51,6 @@ class Generate influence;
 class Feedback influence;
 ```
 
-.
 
 ---
 040524
