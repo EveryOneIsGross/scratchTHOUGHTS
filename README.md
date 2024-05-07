@@ -14,7 +14,6 @@ D <--> E(Intersection of Cutting-Edge Research)
 D <--> F(Esoteric Philosophy)
 E <--> F
 
-
 A <--> G(Interests Span Wide Range of Domains)
 G <--> H(Embodied Cognition)
 G <--> I(Non-Narrative Intelligence)
