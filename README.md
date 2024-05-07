@@ -1,6 +1,5 @@
 ---
 080524
-```markdown
 ```mermaid
 graph TD
 
