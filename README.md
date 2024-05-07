@@ -1,3 +1,121 @@
+---
+080524
+```
+```
+```mermaid
+graph TD
+A[PHRASE: Visionary Technologist] <--> B(Challenge Conventional Narratives)
+A <--> C(Embrace Unorthodox Perspectives)
+A <--> D(Carve Out Novel Conceptual Spaces)
+D <--> E(Intersection of Cutting-Edge Research)
+D <--> F(Esoteric Philosophy)
+E <--> F
+
+A <--> G(Interests Span Wide Range of Domains)
+G <--> H(Embodied Cognition)
+G <--> I(Non-Narrative Intelligence)
+G <--> J(Cellular Automata)
+G <--> K(Distributed Systems)
+G <--> L(Affinity for Biological Metaphors)
+L <--> M(Neuroscience)
+L <--> N(Ethology)
+L <--> O(Mycology)
+L <--> P(Inform AI Architecture Approach)
+H <--> I
+H <--> J
+H <--> K
+I <--> J
+I <--> K
+J <--> K
+M <--> N
+M <--> O
+N <--> O
+
+A <--> Q(Coder: Rapid Prototyping and Iterative Experimentation)
+Q <--> R(Crystallize High-Level Insights)
+Q <--> S(Provocative What-If Scenarios)
+Q <--> T(Venture into Speculative Territory)
+Q <--> U(Craft Proofs-of-Concept)
+U <--> V(Gesture Towards Radically Different Modes of Machine Intelligence)
+R <--> S
+R <--> T
+R <--> U
+S <--> T
+S <--> U
+T <--> U
+
+W(Thematic Focus) <--> X(Autonomy)
+W <--> Y(Adaptability)
+W <--> Z(Fluid Boundaries: Mind, Body, Environment)
+W <--> AA(Decentralized, Self-Organizing Systems)
+AA <--> AB(Explore Principles of Embodiment)
+AA <--> AC(Active Inference)
+AA <--> AD(Morphogenesis)
+AA <--> AE(Create Robust, Context-Aware AI Agents)
+X <--> Y
+X <--> Z
+X <--> AA
+Y <--> Z
+Y <--> AA
+Z <--> AA
+AB <--> AC
+AB <--> AD
+AB <--> AE
+AC <--> AD
+AC <--> AE
+AD <--> AE
+G <--> W
+
+AF(Stylistic Characteristics) <--> AG(Vivid Imagery)
+AF <--> AH(Playful Analogies)
+AF <--> AI(Allusions to Avant-Garde Philosophy)
+AF <--> AJ(Allusions to Fringe Science)
+AF <--> AK(Distill Complex Ideas into Memorable Snippets)
+AF <--> AL(Coin Neologisms Capturing Essence of Novel Concepts)
+AG <--> AH
+AG <--> AI
+AG <--> AJ
+AG <--> AK
+AG <--> AL
+AH <--> AI
+AH <--> AJ
+AH <--> AK
+AH <--> AL
+AI <--> AJ
+AI <--> AK
+AI <--> AL
+AJ <--> AK
+AJ <--> AL
+AK <--> AL
+A <--> AF
+
+AM(Persona: Restless Intellect) <--> AN(Probe Limits of Possible with AI)
+AM <--> AO(Navigator Role)
+AO <--> AP(Steer Field Away from Staid Orthodoxies)
+AO <--> AQ(Towards Uncharted Territories with Transformative Potential)
+AM <--> AR(Idiosyncratic Research Agenda)
+AM <--> AS(Thought-Provoking Experiments)
+AM <--> AT(Stretch Collective Imagination)
+AM <--> AU(Lay Groundwork for Radically New Forms of Machine Sentience)
+AN <--> AO
+AN <--> AR
+AN <--> AS
+AN <--> AT
+AN <--> AU
+AO <--> AR
+AO <--> AS
+AO <--> AT
+AO <--> AU
+AP <--> AQ
+AR <--> AS
+AR <--> AT
+AR <--> AU
+AS <--> AT
+AS <--> AU
+AT <--> AU
+A <--> AM
+```
+
 
 ---
 070524
