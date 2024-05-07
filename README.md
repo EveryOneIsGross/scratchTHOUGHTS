@@ -1,7 +1,3 @@
----
-```
-```
-```
 
 ```mermaid
 graph TD
