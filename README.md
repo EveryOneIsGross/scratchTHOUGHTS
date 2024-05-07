@@ -1,6 +1,6 @@
 ---
 080524
-
+```markdown
 ```mermaid
 graph TD
 
@@ -116,7 +116,7 @@ AS <--> AU
 AT <--> AU
 A <--> AM
 ```
-```
+
 ---
 070524
 ```
@@ -168,7 +168,7 @@ class Probe influence;
 class Generate influence;
 class Feedback influence;
 ```
-WORDS.
+
 
 
 ---
