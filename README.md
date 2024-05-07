@@ -2,8 +2,6 @@
 ---
 080524
 
-LARGE SENTENCE
-
 ```mermaid
 graph TD
 
