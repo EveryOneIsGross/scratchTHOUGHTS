@@ -37,6 +37,74 @@
                           │  Idea 4 (Node)        │                            
                           └────────────────────────┘
 ```
+```mermaid
+graph LR
+    subgraph cluster_etho[Etho-Agents]
+        E1["Etho-Agent 1<br>Behavioral Plasticity"]
+        E2["Etho-Agent 2<br>Social Learning"]
+        E3["Etho-Agent 3<br>Predator-Prey Dynamics"]
+    end
+
+    subgraph cluster_myco[Myco-Agents]
+        M1["Myco-Agent 1<br>Decentralized Network"]
+        M2["Myco-Agent 2<br>Resource Allocation"]
+        M3["Myco-Agent 3<br>Chemical Signaling"]
+    end
+
+    subgraph cluster_neuro[Neuro-Agents]
+        N1["Neuro-Agent 1<br>Spiking Neural Networks"]
+        N2["Neuro-Agent 2<br>Synaptic Plasticity"]
+        N3["Neuro-Agent 3<br>Collective Intelligence"]
+    end
+
+    AP[Adaptive Protocols]
+    FL[Feedback Loops]
+    CR[Conflict Resolution]
+
+    E1 --> M1
+    E2 --> M2
+    E3 --> M3
+
+    M1 --> N1
+    M2 --> N2
+    M3 --> N3
+
+    E1 --> AP
+    E2 --> AP
+    E3 --> AP
+
+    M1 --> AP
+    M2 --> AP
+    M3 --> AP
+
+    N1 --> AP
+    N2 --> AP
+    N3 --> AP
+
+    E1 --> FL
+    E2 --> FL
+    E3 --> FL
+
+    M1 --> FL
+    M2 --> FL
+    M3 --> FL
+
+    N1 --> FL
+    N2 --> FL
+    N3 --> FL
+
+    E1 --> CR
+    E2 --> CR
+    E3 --> CR
+
+    M1 --> CR
+    M2 --> CR
+    M3 --> CR
+
+    N1 --> CR
+    N2 --> CR
+    N3 --> CR
+```
 
 ---
 080524
