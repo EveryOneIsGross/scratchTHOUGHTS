@@ -4,6 +4,87 @@
 
 [SCRATCH AGENT FRAMESWORK](https://github.com/EveryOneIsGross/hyperFLOW)
 
+```mermaid
+graph TD
+    %% Define the Agents
+    Agent[("Agent<br/>(Base Class)")]
+    TextAnalysisAgent["Text Analysis Agent"]
+    WebScrapingAgent["Web Scraping Agent"]
+    KnowledgeGraphAgent["Knowledge Graph Agent"]
+    DatabaseInteractionAgent["Database Interaction Agent"]
+    SemanticSearchAgent["Semantic Search Agent"]
+
+    %% Connect Agents to the base Agent
+    Agent --> TextAnalysisAgent
+    Agent --> WebScrapingAgent
+    Agent --> KnowledgeGraphAgent
+    Agent --> DatabaseInteractionAgent
+    Agent --> SemanticSearchAgent
+
+    %% Define Tools and Resources
+    Resources["Resources"]
+    TextCleaner["Text Cleaner"]
+    NERExtractionTool["NER Extraction Tool"]
+    SemanticAnalysisTool["Semantic Analysis Tool"]
+    WebScraperTool["Web Scraper Tool"]
+    KnowledgeGraphTool["Knowledge Graph Tool"]
+    SQLTool["SQL Tool"]
+    SemanticFileSearchTool["Semantic File Search Tool"]
+    TextChunker["Text Chunker"]
+
+    %% Connect Agents to Tools and Resources
+    TextAnalysisAgent -->|uses| TextCleaner
+    TextAnalysisAgent -->|uses| NERExtractionTool
+    TextAnalysisAgent -->|uses| SemanticAnalysisTool
+    TextAnalysisAgent -->|uses| Resources
+
+    WebScrapingAgent -->|uses| WebScraperTool
+    WebScrapingAgent -->|uses| TextChunker
+    WebScrapingAgent -->|uses| Resources
+
+    KnowledgeGraphAgent -->|uses| KnowledgeGraphTool
+
+    DatabaseInteractionAgent -->|uses| SQLTool
+
+    SemanticSearchAgent -->|uses| SemanticFileSearchTool
+    SemanticSearchAgent -->|uses| TextChunker
+
+    %% Define additional components and connections
+    TextChunker -->|used by| WebScraperTool
+    TextChunker -->|used by| SemanticFileSearchTool
+
+    %% Define high-level operations and data flows
+    subgraph " "
+        TextAnalysisAgentFlow["Text Analysis Agent Flow"]
+        WebScrapingAgentFlow["Web Scraping Agent Flow"]
+        KnowledgeGraphAgentFlow["Knowledge Graph Agent Flow"]
+        DatabaseInteractionAgentFlow["Database Interaction Agent Flow"]
+        SemanticSearchAgentFlow["Semantic Search Agent Flow"]
+    end
+
+    %% Connect high-level flows to agents
+    TextAnalysisAgent --> TextAnalysisAgentFlow
+    WebScrapingAgent --> WebScrapingAgentFlow
+    KnowledgeGraphAgent --> KnowledgeGraphAgentFlow
+    DatabaseInteractionAgent --> DatabaseInteractionAgentFlow
+    SemanticSearchAgent --> SemanticSearchAgentFlow
+
+    %% Annotations for high-level flows
+    TextAnalysisAgentFlow -->|"analyze"| TextCleaner
+    TextAnalysisAgentFlow -->|"extract entities"| NERExtractionTool
+    TextAnalysisAgentFlow -->|"analyze sentiment"| SemanticAnalysisTool
+
+    WebScrapingAgentFlow -->|"scrape text"| WebScraperTool
+    WebScrapingAgentFlow -->|"chunk text"| TextChunker
+
+    KnowledgeGraphAgentFlow -->|"build graph"| KnowledgeGraphTool
+
+    DatabaseInteractionAgentFlow -->|"interact with DB"| SQLTool
+
+    SemanticSearchAgentFlow -->|"search documents"| SemanticFileSearchTool
+    SemanticSearchAgentFlow -->|"chunk and embed"| TextChunker
+```
+
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
 │                          Agent Interaction Flow                      │
