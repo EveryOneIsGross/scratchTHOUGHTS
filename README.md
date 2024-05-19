@@ -8,12 +8,12 @@ graph TD
     B --> C{Fractal Recursive Chunking}
     C --> D[Sentence-Level Dataframe]
     D --> E{Memory Retrieval}
-    E --> F[System 1 Memory (Immediacy)]
-    E --> G[System 2 Memory (Deep Thought and Reflection)]
+    E --> F[System 1 Memory Immediacy]
+    E --> G[System 2 Memory Deep Thought and Reflection]
     F --> H{Semantic Similarity}
     G --> I{Hybrid Search Methods}
-    H --> J[Retrieve Smaller, Relevant Chunks]
-    I --> K[Retrieve Larger, Comprehensive Chunks]
+    H --> J[Retrieve Smaller Relevant Chunks]
+    I --> K[Retrieve Larger Comprehensive Chunks]
     J --> L{Decision-Making and Response Generation}
     K --> L
     L --> M{Semantic Memory Pruning}
