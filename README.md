@@ -2,6 +2,9 @@
 ---
 190524
 
+Thoughts back on track re thoughts. I'll return to work on my agent frameworks soon. Just on a brief ego drag... 
+Saying this to myself not you, but I want to work on the memories again next. I have an idea. W2V dynamic db for sys 1 memories, could even make teh short term memories clustered for domains... the long term memories will be using a bigger embedding model. actions will be determinded by SYS1 and SYS2 will be part of logic/reasoning/planning/imagining.   
+
 ```mermaid
 graph TD
     A[Agent's Responses] --> B(Train Word2Vec Embedding Model)
@@ -41,6 +44,22 @@ graph TD
     Y --> A
     L --> A
 ```
+
+The semantic memory pruning framework with Word2Vec embeddings and fractal recursive chunking is a comprehensive approach to efficiently store, retrieve, and utilize relevant information for an agent's cognitive processes. The framework consists of the following key components:
+
+1. Word2Vec Embedding Model: Trained on the agent's responses to capture semantic relationships between words.
+2. Fractal Recursive Chunking: A novel method that recursively divides the agent's responses into smaller chunks for efficient storage and retrieval.
+3. Sentence-Level Dataframe: Stores sentences from the agent's responses along with their corresponding Word2Vec embeddings and fractal recursive chunk information.
+4. Dual-Memory System: Consists of System 1 Memory for quick thinking and immediate retrieval, and System 2 Memory for deep thought and reflection.
+5. Memory Retrieval: Utilizes semantic similarity and hybrid search methods to retrieve relevant chunks from System 1 and System 2 memories based on the current context.
+6. Decision-Making and Response Generation: Integrates retrieved chunks into the agent's cognitive processes to generate contextually appropriate responses.
+7. Semantic Memory Pruning: Applies techniques like relevance filtering, dynamic masking, and selective attention to optimize storage and retrieval of information.
+8. Continuous Learning and Adaptation: Allows the agent to learn and adapt its memory framework based on new experiences and interactions.
+9. Edge Cases and Mitigation Strategies: Handles scenarios such as limited data, ambiguous responses, and domain-specific adaptations through fallback mechanisms, uncertainty handling, and transfer learning.
+
+The framework forms an enclosed loop where the generated responses and mitigation strategies feed back into the agent's responses, enabling continuous improvement and refinement.
+
+Overall, this framework provides a robust and efficient approach to managing an agent's semantic memory, optimizing cognitive load, and enhancing decision-making capabilities. By leveraging Word2Vec embeddings, fractal recursive chunking, and semantic memory pruning techniques, the agent can effectively store, retrieve, and utilize relevant information for both immediate thinking and deep reflection.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
