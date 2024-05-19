@@ -2,7 +2,7 @@
 ---
 190524
 
-```
+```mermaid
 graph TD
     A[Agent's Responses] --> B(Train Word2Vec Embedding Model)
     B --> C{Fractal Recursive Chunking}
