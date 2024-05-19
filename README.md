@@ -36,6 +36,10 @@ graph TD
     X --> Y[Fallback Mechanisms]
     X --> Z[Uncertainty Handling]
     X --> AA[Transfer Learning]
+    AA --> A
+    Z --> A
+    Y --> A
+    L --> A
 ```
 
 ```
