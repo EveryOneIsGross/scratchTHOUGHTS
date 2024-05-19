@@ -2,6 +2,22 @@
 ---
 190524
 
+                ________                
+               |        |               
+               |  _     |               
+               | (_)    |               
+               |        |               
+               |  ____  |               
+               | |    | |               
+               | |____| |               
+               |________|               
+          ____//________\\____          
+         |       HDD         |         
+         |    Soul Storage   |         
+         |___________________|         
+          \__________________/          
+
+
 Thoughts back on track re thoughts. I'll return to work on my agent frameworks soon. Just on a brief ego drag... 
 Saying this to myself not you, but I want to work on the memories again next. I have an idea. W2V dynamic db for sys 1 memories, could even make teh short term memories clustered for domains... the long term memories will be using a bigger embedding model. actions will be determinded by SYS1 and SYS2 will be part of logic/reasoning/planning/imagining.   
 
