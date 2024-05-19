@@ -1,6 +1,43 @@
 ##
 ---
-19052024
+190524
+
+```mermaid
+graph TD
+    A[Agent's Responses] --> B(Train Word2Vec Embedding Model)
+    B --> C{Fractal Recursive Chunking}
+    C --> D[Sentence-Level Dataframe]
+    D --> E{Memory Retrieval}
+    E --> F[System 1 Memory (Immediacy)]
+    E --> G[System 2 Memory (Deep Thought and Reflection)]
+    F --> H{Semantic Similarity}
+    G --> I{Hybrid Search Methods}
+    H --> J[Retrieve Smaller, Relevant Chunks]
+    I --> K[Retrieve Larger, Comprehensive Chunks]
+    J --> L{Decision-Making and Response Generation}
+    K --> L
+    L --> M{Semantic Memory Pruning}
+    M --> N[Relevance Filtering and Pruning]
+    M --> O[Dynamic Masking and Selective Attention]
+    N --> P{Continuous Learning and Adaptation}
+    O --> P
+    P --> Q[Update Word2Vec Embeddings]
+    P --> R[Update Fractal Recursive Chunks]
+    P --> S[Fine-tune Retrieval and Pruning Strategies]
+    Q --> T{Edge Cases}
+    R --> T
+    S --> T
+    T --> U[Limited Data Scenarios]
+    T --> V[Ambiguous or Noisy Responses]
+    T --> W[Domain-Specific Adaptations]
+    U --> X{Mitigation Strategies}
+    V --> X
+    W --> X
+    X --> Y[Fallback Mechanisms]
+    X --> Z[Uncertainty Handling]
+    X --> AA[Transfer Learning]
+```
+
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
