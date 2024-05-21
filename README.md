@@ -1,6 +1,9 @@
 ##
 ---
 ```ASCII
+TM SYNTHESIS
+
+
 Tinnitus Pitch
           Waveform
             ^
