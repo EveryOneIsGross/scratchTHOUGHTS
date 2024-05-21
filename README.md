@@ -2,6 +2,22 @@
 ---
 210524
 
+```thought
+'good vibes only' amended to all sys prompts.
+```
+
+```thought
+thoughts on TOOl-USE (don't dictate how to hold the hammer when you see someone doing sumthing new).
+implications of this for model eval...
+when the use of the tool isn't the task, the output should be turing-blind. what is ? what does.
+100% vibe check passed.
+```
+
+```thought
+ACCESS...
+access shouldn't mean j accessible for purchase. it should be an activity of drying out the mout, looking for new access ramps and structurally sound portals, for a more pourous exchange. 
+```
+
 Tinnitus is an 'attention' issue?
 
 ```ASCII
