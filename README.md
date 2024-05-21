@@ -23,7 +23,7 @@ when the use of the tool isn't the task, the output should be turing-blind. what
 
 ```thought
 ACCESS...
-access shouldn't mean j accessible for purchase. it should be an activity of drying out the mout, looking for new access ramps and structurally sound portals, for a more pourous exchange. 
+access shouldn't mean j accessible for purchase. it should be an activity of drying out the moat, looking to install new access ramps and structurally sound portals, for a more pourous exchange. 
 ```
 
 Tinnitus is an 'attention' issue?
