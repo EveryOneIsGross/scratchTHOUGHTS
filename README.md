@@ -3,7 +3,7 @@
 210524
 
 ```thought
-"Fragmenting Realities: The Paradox of Personal AI Agents in Interpersonal Communication" delves into the paradoxical impact of increasingly personalized AI agents on human interaction. Frase posits that as these AI intermediaries become more tailored to individual preferences, they risk creating 'fragmented realities' - highly personalized bubbles that may hinder broader, diverse human connections. To address this, they propose an 'agentic layer' where personal AIs translate and contextualize experiences between individuals. [LINK]()
+"Fragmenting Realities: The Paradox of Personal AI Agents in Interpersonal Communication" delves into the paradoxical impact of increasingly personalized AI agents on human interaction. Frase posits that as these AI intermediaries become more tailored to individual preferences, they risk creating 'fragmented realities' - highly personalized bubbles that may hinder broader, diverse human connections. To address this, they propose an 'agentic layer' where personal AIs translate and contextualize experiences between individuals. [LINK]
 ```
 
 ```thought
