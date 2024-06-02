@@ -2,6 +2,16 @@
 ---
 030624
 
+```text
+thought2VEC:
+------------
+an at inference vector embedding for pruning/expanding a corpus.
+currently has human in the loop to demonstrate generation and pruning of loaded corpus.
+currently adding a guidance corpus for semantic matching for agent determined "memory" control. 
+
+```
+[LINK](https://github.com/EveryOneIsGross/thought2VEC)
+
 ![image](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/c81f57eb-9b9c-4027-a70c-5e7a00af2e43)
 
 
