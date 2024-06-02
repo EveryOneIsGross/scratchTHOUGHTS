@@ -1,6 +1,10 @@
 ##
 ---
 030624
+
+![image](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/c81f57eb-9b9c-4027-a70c-5e7a00af2e43)
+
+
 ```
 tap, tap,
 the key hums,
