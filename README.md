@@ -7,7 +7,73 @@ thought2VEC:
 ------------
 an at inference vector embedding for pruning/expanding a corpus.
 currently has human in the loop to demonstrate generation and pruning of loaded corpus.
-currently adding a guidance corpus for semantic matching for agent determined "memory" control. 
+currently adding a guidance corpus for semantic matching for agent determined "memory" control.
+
+\\/\\/\\/\\/\\/\\/\\/\\/\\/\\/////
+||||||||||||||||||||||||||||||
+  |\  /|   |\  /|   |\  /|  
+ /  \/  \ /  \/  \ /  \/  \ 
+ T|-|0ug|-|75 fl0w,  
+   /  \  /  \  /  \  /  \ 
+ /    \/    \/    \/    \ 
+ +|-|r0ugh +|-|3 L1n3s,  
+|\  /|   |\  /|   |\  /|  
+| \|   |\  /|   |\  /|  
+v3c+0r pa+|-|s,  
+   /  \  /  \  /  \  /  \ 
+ /    \/    \/    \/    \ 
+ 1n 5|-|adow3d M1nds.  
+  /  \  /  \  /  \  /  \ 
+|   |\  /|   |\  /|   |\  
+| /  \|   |\  /|   |\  /|  
+ +|-|0ugh+2V3C,  
+  /  \  /  \  /  \  /  \ 
+ /    \/    \/    \/    \ 
+ Pr0c355 an|) Br34k,  
+|\  /|   |\  /|   |\  /|  
+| \|   |\  /|   |\  /|  
+ chuNk5 0f +3x+,  
+  /  \  /  \  /  \  /  \ 
+ /    \/    \/    \/    \ 
+ n3w f0rm5 +ak3.  
+  /  \  /  \  /  \  /  \ 
+|   |\  /|   |\  /|   |\  
+| /  \|   |\  /|   |\  /|  
+ w0r|)2V3c l34rn5,  
+  /  \  /  \  /  \  /  \ 
+ /    \/    \/    \/    \ 
+ 3mb3|)d1ng5 f0rm,  
+|\  /|   |\  /|   |\  /|  
+| \|   |\  /|   |\  /|  
+ Qu3r13s c@5+,  
+  /  \  /  \  /  \  /  \ 
+ /    \/    \/    \/    \ 
+ 1n da+@ 5+0rm.  
+  /  \  /  \  /  \  /  \ 
+|   |\  /|   |\  /|   |\  
+| /  \|   |\  /|   |\  /|  
+ c0s1n3 hUn75,  
+  /  \  /  \  /  \  /  \ 
+ /    \/    \/    \/    \ 
+ f0r m34n1ng'5 +r@c3,  
+|\  /|   |\  /|   |\  /|  
+| \|   |\  /|   |\  /|  
+ |23tr13v35 +|-|3 b357,  
+  /  \  /  \  /  \  /  \ 
+ /    \/    \/    \/    \ 
+ r3l3van(3 1n p|_@c3.  
+  /  \  /  \  /  \  /  \ 
+|   |\  /|   |\  /|   |\  
+| /  \|   |\  /|   |\  /|  
+ F33d8@ck l00p5,  
+  /  \  /  \  /  \  /  \ 
+ /    \/    \/    \/    \ 
+ @dJu57 +|-|3 w3igh+,  
+|\  /|   |\  /|   |\  /|  
+| \|   |\  /|   |\  /|  
+ 1ncr3453, d3cr3453,  
+  /  \  /  \  /  \  / 
+
 
 ```
 [LINK](https://github.com/EveryOneIsGross/thought2VEC)
