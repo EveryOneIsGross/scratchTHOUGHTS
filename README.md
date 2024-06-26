@@ -1,5 +1,11 @@
 ##
 ---
+270624
+
+![image](https://github.com/EveryOneIsGross/scratchTHOUGHTS/assets/23621140/0dc37655-3297-4403-813b-3ad3988b8455)
+
+
+---
 030624
 
 ```text
