@@ -592,3 +592,30 @@ function simulateStep() {
 }
 ```
 
+TLDR;
+
+Here's a concise summary of the proposed integration of the Dice Choice System into your automated sim demo:
+
+1. Focus: The dice system is applied primarily to work and market interactions.
+
+2. Work System:
+   - Risk level determined by sim's condition
+   - Dice rolls decide work success
+   - Successful work earns money and produces items for the market
+   - Failed work decreases sim's condition
+
+3. Market System:
+   - Transactions use dice rolls
+   - Risk based on item price volatility
+   - Successful transactions may yield better prices
+   - Failed transactions increase market volatility
+
+4. Resource Simulation:
+   - Work produces items, simulating supply
+   - Market transactions simulate demand
+   - Prices fluctuate based on supply, demand, and dice roll outcomes
+
+5. Implementation:
+   - Add new dice-based functions
+   - Modify existing work and market functions
+   - Update main simulation loop
