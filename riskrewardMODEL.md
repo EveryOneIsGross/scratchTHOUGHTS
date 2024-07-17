@@ -1,7 +1,7 @@
 # Dice Choice System for LLMs
 
 ## Core Mechanics
-- Players receive 1-5 dice each cycle, based on their character's condition
+- LLM receive 1-5 dice each cycle, based on their character's condition
 - Dice are numbered 1-6, with higher numbers generally offering better odds of success
 - Dice are spent on actions, with the outcome determined by the die's value and action's difficulty
 
@@ -25,13 +25,14 @@
 - Higher risk levels can result in loss of condition, energy, or resources on failed or neutral outcomes
 
 ## Resource Management
-- Players must balance condition, energy, and other resources
+- LLM must balance condition, energy, and other resources
 - Maintaining good condition is crucial for having more dice available each cycle
 
 ## Strategic Elements
 - Choosing which actions to attempt with which dice
 - Balancing risk and reward
 
+```python
 import json
 import random
 from openai import OpenAI
@@ -132,6 +133,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
 
 # LLM Dice Choice Cybernetic System
 
