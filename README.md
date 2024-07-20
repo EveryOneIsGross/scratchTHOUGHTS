@@ -1,5 +1,14 @@
 ##
 ---
+200724
+
+Graphs, I only just realised something so base about graphs. I feel like skill acquisition in ai is kinda like it is in oblivion, just keep clicking on a thing and eventually you have an inverted graph index on yr embeddings.
+
+other idea, drones. a defense drone or projectile that fires a sticky helium (something cheaper) gas einflatable that mgs5 extracts the drone to a higher altertitude so it can explode clear off the ground. or goes out of radio range it might auto return home... then you can see which direction signal they came from.
+
+
+
+---
 150724
 
 ```
