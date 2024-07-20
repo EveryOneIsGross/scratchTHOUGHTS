@@ -1,4 +1,8 @@
-# Hyperholographic Semantic Theory-based Context Construction: I <3 Graphs
+# Hyperholographic Semantic Theory-based Context Construction: 
+## I <3 Graphs
+
+![image](https://github.com/user-attachments/assets/591254e1-1f3e-4ff9-92a9-f0b4d422bd07)
+
 
 I propose HYPERHOLOGRAPHS, everything is connected. We are defined by our connections. 
 
