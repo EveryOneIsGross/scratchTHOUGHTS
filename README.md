@@ -1,5 +1,12 @@
 ##
 ---
+230724
+
+I am doing too many things at once. Almost finished my personas grounded in wikipedia articles pipeline. My reasoning RAG corpus generator is ready to brrr. All these need datacleaning and shaping, so I am a bit distracted formatting/cleaning information for ingest. Knowledge Acquisition, all rag needs to be. sota llms still get caught out trying to do datacleaning or schema reshaping. Still a lot of bespoke handling required. Anyways, I should have two unique datasets by the end of the week, the Reasoning RAG and the Grounded Personas. 
+
+Made a pretty good pipeline of synthetic persona generation which then downloads a corpus wikipeida pages and formats them to md of their "interests", it generates a corpus of queries. Build time will be running these personas with ragging in their wikipedias from a clustered embedding. Raptor but with multi wikipage reasoning, as <thoughts>.
+
+---
 200724
 
 Graphs, I only just realised something so base about graphs. I feel like skill acquisition in ai is kinda like it is in oblivion, just keep clicking on a thing and eventually you have an inverted graph index on yr embeddings.
