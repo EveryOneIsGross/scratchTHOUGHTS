@@ -1,5 +1,10 @@
 ##
 ---
+080824
+
+EVAL is the reward function still trapped in my skull.
+
+---
 230724
 
 I am doing too many things at once. Almost finished my personas grounded in wikipedia articles pipeline. My reasoning RAG corpus generator is ready to brrr. All these need datacleaning and shaping, so I am a bit distracted formatting/cleaning information for ingest. Knowledge Acquisition, all rag needs to be. sota llms still get caught out trying to do datacleaning or schema reshaping. Still a lot of bespoke handling required. Anyways, I should have two unique datasets by the end of the week, the Reasoning RAG and the Grounded Personas. 
