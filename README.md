@@ -1,5 +1,10 @@
 ##
 ---
+110824
+
+tfw your rag pipeline consumes its own tail and regenerates the whole youtube video.
+
+---
 080824
 
 EVAL is the reward function still trapped in my skull.
