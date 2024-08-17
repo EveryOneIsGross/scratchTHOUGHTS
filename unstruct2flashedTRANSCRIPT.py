@@ -41,8 +41,9 @@ def create_model():
         "temperature": 1,
         "top_p": 0.95,
         "top_k": 64,
-        "max_output_tokens": 24000,
+        "max_output_tokens": 8000,
         "response_mime_type": "text/plain",
+        "stop_sequences": ["</reconstructed_conversation>"]
     }
     
     return genai.GenerativeModel(
