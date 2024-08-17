@@ -2,46 +2,25 @@
 ---
 170824
 
+```
 multiagentdisco
 
-## Dance 24
+--- Iteration 1 ---
+Song: {
+  "Title": "Electronic Fever",
+  "Genre": "Electro-Pop/Dance",
+  "Tempo": "128 Beats Per Minute (BPM)",
+  "Mood": "Upbeat, Energy-Filled, Joyful"
+}
+Dance Pairs:
+  Agent 5 (Tango, vanilj/hermes-3-llama-3.1-8b:latest) with Agent 0 (Tango, vanilj/hermes-3-llama-3.1-8b:latest)
+  Agent 2 (Contemporary, mistral:v0.3) with Agent 1 (Tango, llama3.1:latest)
+  Agent 4 (Waltz, mistral:v0.3) with Agent 3 (Tango, mistral:v0.3)
 
-### Pair
-- Agent 2 (Hip-hop)
-- Agent 5 (Hip-hop)
+Dance Routine for Agent 5 and Agent 0:
 
-### Routine
-Dancer 2: "The Dab"
-Dancer 5: "Snap"
-Dancer 2: As the energetic tune picks up pace, Dancer 2 takes it up a notch with the "Goblin Shimmy"! This rapid-fire move involves a series of quick, staccato hip swivels and arm waves, with a dash of attitude and sass thrown in for good measure. The move begins with a slight squat position, before Dancer 2 rapidly undulates their hips, throwing in a hard-hitting arm wave to punctuate the move. The energy is palpable as Dancer 2 seamlessly transitions into the next move, keeping the crowd electrified!
-Dancer 5: As the beat drops, Dancer 5 bursts into an explosive "Headspin"!
-
-### Score
-8
-
-### Feedback
-Feedback: Great energy and execution from both dancers! Dancer 2's "Goblin Shimmy" is impressive, showcasing impressive hip control and arm movement. The transitions are smooth and engaging, keeping the crowd energized. Dancer 5's "Headspin" is equally impressive, demonstrating impressive upper body control and coordination. However, I'd like to see more musicality from both dancers, as the choreography feels slightly disconnected from the music at times.
-
----
-
-## Dance 25
-
-### Pair
-- Agent 0 (Hip-hop)
-- Agent 4 (Waltz)
-
-### Routine
-Dancer 0: "Robot Arms"
-Dancer 4: "Chassé"
-Dancer 0: "Ice Cream Freezes"
-Dancer 4: "Pivot Turn"
-
-### Score
-6
-
-### Feedback
-The "Robot Arms" were a bit stiff and uncoordinated, but the timing was decent. The "Chassé" was well-executed and showcased strong technique. The "Ice Cream Freezes" were awkward and lacked control. The "Pivot Turn" was well-done, but slightly rushed. Overall, the routine needed more fluidity and control.
-
+TBC...
+```
 
 ```mermaid
 graph TD
