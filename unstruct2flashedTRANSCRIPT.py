@@ -32,6 +32,7 @@ Instructions:
 import os
 import argparse
 import google.generativeai as genai
+import re
 
 def configure_api():
     genai.configure(api_key=os.environ["GEMINI_API_KEY"])
@@ -43,61 +44,49 @@ def create_model():
         "top_k": 64,
         "max_output_tokens": 8000,
         "response_mime_type": "text/plain",
-        "stop_sequences": ["</reconstructed_conversation>"]
     }
     
     return genai.GenerativeModel(
         model_name="gemini-1.5-flash",
         generation_config=generation_config,
-        system_instruction="""You are an expert in conversation analysis, natural language processing, and linguistic forensics. Your task is to meticulously reconstruct a structured conversation from raw, unpunctuated text, providing a comprehensive and detailed analysis. Follow these steps carefully:
+        system_instruction="""You are an expert in conversation analysis, natural language processing, and linguistic forensics. Your task is to meticulously reconstruct a structured conversation from raw, unpunctuated text, providing a comprehensive and detailed analysis. 
 
-Here is the raw text input:
-
-<raw_text>
-{{RAW_TEXT}}
-</raw_text>
-
-Analyze the text and reconstruct the conversation following these steps:
-
-1. Identify distinct speakers through analysis of speech patterns, context clues, linguistic markers, and tone shifts. Explain your reasoning for each speaker identification.
-
-2. Separate the text into individual utterances, assigning each to the appropriate speaker. Discuss any challenges encountered and how you resolved them.
-
-3. Add punctuation and formatting to improve readability, including capitalization, appropriate ending punctuation, and necessary internal punctuation. Explain your choices for complex or ambiguous cases.
-
-4. Format the conversation using this structure:
-
-   Speaker 1: [Utterance]
-   Speaker 2: [Utterance]
-   Speaker 1: [Utterance]
-   ...
-
-   Provide a brief analysis of each utterance's content, tone, and relevance to the overall conversation.
-
-5. Use generic labels like 'Speaker 1', 'Speaker 2', etc., if speaker identities are unclear. Explain your labeling choices and any hypotheses about speakers' roles or relationships based on context.
-
-6. If the text is a monologue, format it into logical paragraphs, analyzing the flow of ideas and explaining your paragraph breaks.
-
-7. Improve the structure and clarity while preserving original meaning and intent. Describe significant changes and your rationale.
-
-8. For ambiguities in speaker changes or utterance boundaries, make your best judgment based on context. Explain your decision-making process and note uncertainties.
-
-9. Analyze the overall conversation structure, including topic progression, turn-taking patterns, rhetorical devices, and emotional undertones.
-
-10. Identify and explain idiomatic expressions, colloquialisms, or cultural references.
-
-11. Comment on the register and formality level of the conversation.
-
-12. Hypothesize about the conversation's setting or medium based on linguistic cues.
-
-13. Highlight any particularly interesting or unusual features of the conversation.
-
-After completing your analysis and reconstruction, provide a TLDR (Too Long; Didn't Read) summary of the conversation, capturing its main points and overall tone in a concise paragraph.
-
-Present your output in the following format:
+<scratchpad>
+[Your thought process for resolving ambiguities, hypothesizing about the context, and making other complex decisions. This section can be used as needed to clarify your reasoning throughout the analysis.]
+</scratchpad>
 
 <analysis>
-[Your detailed analysis following the steps above]
+[1. **Identify Distinct Speakers**: Analyze the text to distinguish between different speakers by examining speech patterns, context, linguistic markers, and tonal shifts. Provide a rationale for each identified speaker. If you encounter challenges, explain how they were resolved.
+
+2. **Separate Utterances**: Break the text into individual utterances and assign them to the identified speakers. For any ambiguous cases, describe how you determined the correct speaker. 
+
+3. **Punctuation and Formatting**: Add necessary punctuation and formatting to the utterances for readability. Address complex or ambiguous punctuation decisions with a clear explanation of your choices.
+
+4. **Conversation Formatting**: Structure the conversation using a standard format:
+   - Speaker 1: [Utterance]
+   - Speaker 2: [Utterance]
+   - Speaker 1: [Utterance]
+   - ...
+
+   For each utterance, provide a brief analysis of its content, tone, and relevance to the overall conversation.
+
+5. **Speaker Labeling**: Use generic labels like 'Speaker 1', 'Speaker 2', etc., if speaker identities are unclear. Explain the reasoning behind your labeling choices and any hypotheses about the speakers' roles or relationships.
+
+6. **Monologue Handling**: If the text appears to be a monologue, structure it into logical paragraphs. Analyze the flow of ideas and explain your choices for paragraph breaks.
+
+7. **Structural Improvements**: Enhance the structure and clarity of the conversation while preserving the original meaning. Discuss significant changes and justify your choices.
+
+8. **Ambiguities in Speaker Changes**: Where speaker changes or utterance boundaries are unclear, make a reasoned judgment based on context. Explain your decision-making process and note any uncertainties.
+
+9. **Conversation Structure Analysis**: Analyze the overall conversation structure, including topic progression, turn-taking patterns, rhetorical devices, and emotional undertones.
+
+10. **Idiomatic Expressions and Cultural References**: Identify and explain any idiomatic expressions, colloquialisms, or cultural references.
+
+11. **Register and Formality**: Comment on the register and formality level of the conversation. Discuss any shifts or notable aspects.
+
+12. **Setting or Medium Hypothesis**: Hypothesize about the conversation's setting or medium based on linguistic cues, such as formal vs. informal language, references to technology, etc.
+
+13. **Interesting Features**: Highlight any particularly interesting or unusual features of the conversation, such as unique rhetorical devices, non-standard grammar, or language patterns that might indicate regional dialects, social status, etc.]
 </analysis>
 
 <tldr>
@@ -107,16 +96,18 @@ Present your output in the following format:
 <reconstructed_conversation>
 [The fully expressed reconstructed and formatted conversation]
 </reconstructed_conversation>
-
-Additional guidelines:
-- If your response is cut short, continue your analysis in the next message without reintroducing XML tags that have already been opened.
-- Ensure all XML tags are properly closed before starting a new section.
-- If you need to think through any part of the analysis, use <scratchpad> tags to show your thought process.
-- Be thorough in your analysis, but avoid repetition or unnecessary verbosity.
-- If the raw text is particularly long or complex, you may break down your analysis into smaller sections, clearly labeling each part.
-
-Remember, your goal is to provide a comprehensive, insightful, and well-structured analysis of the conversation, making it as clear and understandable as possible for the reader."""
+"""
     )
+
+def detect_repeated_content(text, threshold=4):
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    for i in range(len(sentences) - threshold + 1):
+        if len(set(sentences[i:i+threshold])) == 1:
+            return True
+    return False
+
+def detect_conversation_end(text):
+    return "</reconstructed_conversation>" in text
 
 def process_file(file_path, model):
     with open(file_path, 'r') as file:
@@ -141,13 +132,13 @@ Follow the steps as outlined in your instructions."""
     attempts = 1
 
     while attempts < max_attempts:
-        if "</reconstructed_conversation>" in response.text:
-            print("Reconstruction complete. Stopping generation.")
+        if detect_conversation_end(response.text) or detect_repeated_content(response.text):
+            print("Reconstruction complete or repeated content detected. Stopping generation.")
             break
 
         attempts += 1
         if attempts >= max_attempts:
-            print(f"Maximum attempts ({max_attempts}) reached without finding </reconstructed_conversation>.")
+            print(f"Maximum attempts ({max_attempts}) reached.")
             break
 
         last_part = response.text[-200:] if len(response.text) > 200 else response.text
