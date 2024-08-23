@@ -519,227 +519,294 @@ Technology
 **Organization:** Te Tari Taiwhenua Department of Internal Affairs & Tatauranga Aotearoa Stats New Zealand & National Cyber Security Center
 **Link:** [https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/interim-generative-ai-guidance-for-the-public-service/understanding-the-benefits-of-genai-to-the-public-service/](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/interim-generative-ai-guidance-for-the-public-service/understanding-the-benefits-of-genai-to-the-public-service/)
 
-## Algorithm Use Policy
+---
 
-**Title:** Algorithm Use Policy
-**Type:** Guidelines
-**Date:** 2022/05/01
-**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation &amp; Employment
-**Link:** [Algorithm Use Policy](https://www.mbie.govt.nz/dmsdocument/20298-algorithm-use-policy)
+**Title:** Algorithm Use Policy  
+**Type:** Guidelines  
+**Date:** 2022/05/01  
+**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation & Employment  
+**Link:** https://www.mbie.govt.nz/dmsdocument/20298-algorithm-use-policy
 
-**Title:** Ethics of Artificial Intelligence Recommendation
-**Type:** Guidelines
-**Date:** 2021/11/03
-**Organization:** The United Nations Educational, Scientific and Cultural Organization (UNESCO)
-**Link:** [Ethics of Artificial Intelligence Recommendation](https://unesdoc.unesco.org/ark:/48223/pf0000381137)
+---
 
-**Title:** Emerging Health Technology Introductory Guidance
-**Type:** Guidelines
-**Date:** 2019/01/01
-**Organization:** Manatū Hauora Ministry of Health
-**Link:** [Emerging Health Technology Introductory Guidance](https://www.tewhatuora.govt.nz/assets/Uploads/introductory_guidance_-_algorithms_v0.4_-_web.pdf)
+**Title:** Ethics of Artificial Intelligence Recommendation  
+**Type:** Guidelines  
+**Date:** 2021/11/03  
+**Organization:** The United Nations Educational, Scientific and Cultural Organization (UNESCO)  
+**Link:** https://unesdoc.unesco.org/ark:/48223/pf0000381137
 
-**Title:** How We Use Algorithms to Improve Customer Experience
-**Type:** Guidelines
-**Date:** 2020/07/01
-**Organization:** Te Kaporeihana Āwhina Hunga Whara The Accident Compensation Corporation 
-**Link:** [How We Use Algorithms to Improve Customer Experience](https://www.acc.co.nz/newsroom/stories/how-we-use-algorithms-to-improve-customer-experience/)
+---
 
-**Title:** Generative AI in Schools
-**Type:** Guidelines
-**Date:** 2023/11/01
-**Organization:** Te Tāhuhu o te Mātauranga Ministry of Education
-**Link:** [Generative AI in Schools](https://www.education.govt.nz/school/digital-technology/generative-ai-tools-things-to-consider-if-youre-thinking-of-using-them-at-school/)
+**Title:** Emerging Health Technology Introductory Guidance  
+**Type:** Guidelines  
+**Date:** 2019/01/01  
+**Organization:** Manatū Hauora Ministry of Health  
+**Link:** https://www.tewhatuora.govt.nz/assets/Uploads/introductory_guidance_-_algorithms_v0.4_-_web.pdf
 
-**Title:** Data Systems leaders
-**Type:** Guidelines
-**Date:** 2020/08/01
-**Organization:** Toi Hau Tāngata Social Wellbeing Agency
-**Link:** [Data Systems leaders](https://swa.govt.nz/what-we-do/data-systems/)
+---
 
-**Title:** National AI development checklist
-**Type:** Guidelines
-**Date:** 2023/07/01
-**Organization:** Te Whatu Ora Health New Zealand
-**Link:** [National AI development checklist](https://www.tewhatuora.govt.nz/assets/Uploads/National-AI-Development-Checklist-Jul23.docx)
+**Title:** How We Use Algorithms to Improve Customer Experience  
+**Type:** Guidelines  
+**Date:** 2020/07/01  
+**Organization:** Te Kaporeihana Āwhina Hunga Whara The Accident Compensation Corporation  
+**Link:** https://www.acc.co.nz/newsroom/stories/how-we-use-algorithms-to-improve-customer-experience/
 
-**Title:** Māori Interests in Public Cloud
-**Type:** Guidelines
-**Date:** 2023/07/26
-**Organization:** Te Tari Taiwhenua Department of Internal Affairs 
-**Link:** [Māori Interests in Public Cloud](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/help/maori-interests/)
+---
 
-**Title:** Artificial Intelligence and the Information Privacy Principles
-**Type:** Guidelines
-**Date:** 2023/07/01
-**Organization:** Te Mana Mātāpono Matatapu Privacy Commissioner
-**Link:** [Artificial Intelligence and the Information Privacy Principles](https://www.privacy.org.nz/assets/New-order/Resources-/Publications/Guidance-resources/AI-Guidance-Resources-/AI-and-the-Information-Privacy-Principles.pdf)
+**Title:** Generative AI in Schools  
+**Type:** Guidelines  
+**Date:** 2023/11/01  
+**Organization:** Te Tāhuhu o te Mātauranga Ministry of Education  
+**Link:** https://www.education.govt.nz/school/digital-technology/generative-ai-tools-things-to-consider-if-youre-thinking-of-using-them-at-school/
 
-**Title:** Ngā Tikanga Paihere:
-A Framework Guiding Ethical and
-Culturally Appropriate Data Use
-**Type:** Guidelines
-**Date:** 2020/03/01
-**Organization:** Tatauranga Aotearoa Stats New Zealand
-**Link:** [Ngā Tikanga Paihere:
-A Framework Guiding Ethical and
-Culturally Appropriate Data Use](https://data.govt.nz/assets/data-ethics/Nga-Tikanga/Nga-Tikanga-Paihere-Guidelines-December-2020.pdf)
+---
 
-**Title:** Using Personal Information Responsibly
-**Type:** Guidelines
-**Date:** 2018/05/11
-**Organization:** Te Manatū Whakahiato Ora Ministry of Social Development
-**Link:** [Using Personal Information Responsibly](https://www.msd.govt.nz/about-msd-and-our-work/work-programmes/initiatives/phrae/index.html)
+**Title:** Data Systems leaders  
+**Type:** Guidelines  
+**Date:** 2020/08/01  
+**Organization:** Toi Hau Tāngata Social Wellbeing Agency  
+**Link:** https://swa.govt.nz/what-we-do/data-systems/
 
-**Title:** Algorithms at MBIE: Transparency and Accountability for Our Algorithm Use
-**Type:** Guidelines
-**Date:** 2022/05/19
-**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation &amp; Employment
-**Link:** [Algorithms at MBIE: Transparency and Accountability for Our Algorithm Use](https://www.mbie.govt.nz/science-and-technology/science-and-innovation/research-and-data/algorithms-at-mbie/)
+---
 
-**Title:** Capturing the benefits of AI in healthcare for Aotearoa New Zealand
-**Type:** Guidelines
-**Date:** 2023/10/01
-**Organization:** Office of the Prime Minister’s Chief Science Advisor
-**Link:** [Capturing the benefits of AI in healthcare for Aotearoa New Zealand](https://www.pmcsa.ac.nz/artificial-intelligence-2/ai-in-healthcare/)
+**Title:** National AI development checklist  
+**Type:** Guidelines  
+**Date:** 2023/07/01  
+**Organization:** Te Whatu Ora Health New Zealand  
+**Link:** https://www.tewhatuora.govt.nz/assets/Uploads/National-AI-Development-Checklist-Jul23.docx
 
-**Title:** Māori Data Governance Model
-**Type:** Guidelines
-**Date:** 2023/06/01
-**Organization:** Te Kāhui Raraunga
-**Link:** [Māori Data Governance Model](https://www.kahuiraraunga.io/_files/ugd/b8e45c_803c03ffe532414183afcd8b9ced10dc.pdf)
+---
 
-**Title:** Guidelines for Use of Generative Artificial Intelligence in Courts and Tribunals
-**Type:** Guidelines
-**Date:** 2023/12/07
-**Organization:** Ngā Kōti o Aotearoa Courts of New Zealand
-**Link:** [Guidelines for Use of Generative Artificial Intelligence in Courts and Tribunals](https://www.courtsofnz.govt.nz/assets/6-Going-to-Court/practice-directions/practice-guidelines/all-benches/20231207-GenAI-Guidelines-Judicial.pdf)
+**Title:** Māori Interests in Public Cloud  
+**Type:** Guidelines  
+**Date:** 2023/07/26  
+**Organization:** Te Tari Taiwhenua Department of Internal Affairs  
+**Link:** https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/help/maori-interests/
 
-**Title:** Recommendation of the Council on Artificial Intelligence
-**Type:** Guidelines
-**Date:** 2019/05/01
-**Organization:** Organisation for Economic Co-operation and Development 
-**Link:** [Recommendation of the Council on Artificial Intelligence](https://oecd.ai/en/ai-principles)
+---
 
-**Title:** New Zealand Code of Practice for Online Safety and Harms
-**Type:** Guidelines
-**Date:** 2022/0701
-**Organization:** Netsafe
-**Link:** [New Zealand Code of Practice for Online Safety and Harms](https://nztech.org.nz/wp-content/uploads/sites/8/2022/07/FINAL-NZ-Code-of-Practice-for-Online-Safety-and-Harms-25-July-2022.pdf)
+**Title:** Artificial Intelligence and the Information Privacy Principles  
+**Type:** Guidelines  
+**Date:** 2023/07/01  
+**Organization:** Te Mana Mātāpono Matatapu Privacy Commissioner  
+**Link:** https://www.privacy.org.nz/assets/New-order/Resources-/Publications/Guidance-resources/AI-Guidance-Resources-/AI-and-the-Information-Privacy-Principles.pdf
 
-**Title:** Joint Guidance: Guidelines for Secure AI System Development
-**Type:** Guidelines
-**Date:** 2023/11/28
+---
+
+**Title:** Ngā Tikanga Paihere: A Framework Guiding Ethical and Culturally Appropriate Data Use  
+**Type:** Guidelines  
+**Date:** 2020/03/01  
+**Organization:** Tatauranga Aotearoa Stats New Zealand  
+**Link:** https://data.govt.nz/assets/data-ethics/Nga-Tikanga/Nga-Tikanga-Paihere-Guidelines-December-2020.pdf
+
+---
+
+**Title:** Using Personal Information Responsibly  
+**Type:** Guidelines  
+**Date:** 2018/05/11  
+**Organization:** Te Manatū Whakahiato Ora Ministry of Social Development  
+**Link:** https://www.msd.govt.nz/about-msd-and-our-work/work-programmes/initiatives/phrae/index.html
+
+---
+
+**Title:** Algorithms at MBIE: Transparency and Accountability for Our Algorithm Use  
+**Type:** Guidelines  
+**Date:** 2022/05/19  
+**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation & Employment  
+**Link:** https://www.mbie.govt.nz/science-and-technology/science-and-innovation/research-and-data/algorithms-at-mbie/
+
+---
+
+**Title:** Capturing the benefits of AI in healthcare for Aotearoa New Zealand  
+**Type:** Guidelines  
+**Date:** 2023/10/01  
+**Organization:** Office of the Prime Minister’s Chief Science Advisor  
+**Link:** https://www.pmcsa.ac.nz/artificial-intelligence-2/ai-in-healthcare/
+
+---
+
+**Title:** Māori Data Governance Model  
+**Type:** Guidelines  
+**Date:** 2023/06/01  
+**Organization:** Te Kāhui Raraunga  
+**Link:** https://www.kahuiraraunga.io/_files/ugd/b8e45c_803c03ffe532414183afcd8b9ced10dc.pdf
+
+---
+
+**Title:** Guidelines for Use of Generative Artificial Intelligence in Courts and Tribunals  
+**Type:** Guidelines  
+**Date:** 2023/12/07  
+**Organization:** Ngā Kōti o Aotearoa Courts of New Zealand  
+**Link:** https://www.courtsofnz.govt.nz/assets/6-Going-to-Court/practice-directions/practice-guidelines/all-benches/20231207-GenAI-Guidelines-Judicial.pdf
+
+---
+
+**Title:** Recommendation of the Council on Artificial Intelligence  
+**Type:** Guidelines  
+**Date:** 2019/05/01  
+**Organization:** Organisation for Economic Co-operation and Development  
+**Link:** https://oecd.ai/en/ai-principles
+
+---
+
+**Title:** New Zealand Code of Practice for Online Safety and Harms  
+**Type:** Guidelines  
+**Date:** 2022/07/01  
+**Organization:** Netsafe  
+**Link:** https://nztech.org.nz/wp-content/uploads/sites/8/2022/07/FINAL-NZ-Code-of-Practice-for-Online-Safety-and-Harms-25-July-2022.pdf
+
+---
+
+**Title:** Joint Guidance: Guidelines for Secure AI System Development  
+**Type:** Guidelines  
+**Date:** 2023/11/28  
 **Organization:** Government Communications Security Bureau  
-**Link:** [Joint Guidance: Guidelines for Secure AI System Development](https://www.ncsc.govt.nz/news/secure-ai-system-development/)
+**Link:** https://www.ncsc.govt.nz/news/secure-ai-system-development/
 
-**Title:** National Ethical Standards:  Health Data and New Technologies
-**Type:** Government standard
-**Date:** 2023/05/02
-**Organization:** Kāhui Matatika o te Motu National Ethics Advisory Committee
-**Link:** [National Ethical Standards:  Health Data and New Technologies](https://neac.health.govt.nz/national-ethical-standards/part-two/13-health-data-and-new-technologies/)
+---
 
-**Title:** Automated Decision Making Standard
-**Type:** Government standard
-**Date:** 2022/02/15
-**Organization:** Te Manatū Whakahiato Ora Ministry of Social Development
-**Link:** [Automated Decision Making Standard](https://www.msd.govt.nz/documents/about-msd-and-our-work/publications-resources/official-information-responses/2022/july/07072022-requesting-the-document-automated-decision-making-in-msd-proposed-legislative-and-policy-framework-document-.pdf)
+**Title:** National Ethical Standards: Health Data and New Technologies  
+**Type:** Government standard  
+**Date:** 2023/05/02  
+**Organization:** Kāhui Matatika o te Motu National Ethics Advisory Committee  
+**Link:** https://neac.health.govt.nz/national-ethical-standards/part-two/13-health-data-and-new-technologies/
 
-**Title:** Reimagining Regulation in the Age of Artificial Intelligence (AI)
-**Type:** Policy Document
-**Date:** 2019/11/11
-**Organization:** World Economic Forum &amp; Te Tari Taiwhenua Department of Internal Affairs 
+---
 
-**Link:** [Reimagining Regulation in the Age of Artificial Intelligence (AI)](https://www.digital.govt.nz/blog/reimagining-regulation-in-the-age-of-artificial-intelligence/)
+**Title:** Automated Decision Making Standard  
+**Type:** Government standard  
+**Date:** 2022/02/15  
+**Organization:** Te Manatū Whakahiato Ora Ministry of Social Development  
+**Link:** https://www.msd.govt.nz/documents/about-msd-and-our-work/publications-resources/official-information-responses/2022/july/07072022-requesting-the-document-automated-decision-making-in-msd-proposed-legislative-and-policy-framework-document-.pdf
 
-**Title:** Te Mana Raraunga Tūtohinga/Charter
-**Type:** Policy Document
-**Date:** 2016/04/05
-**Organization:** Te Mana Raraunga
-**Link:** [Te Mana Raraunga Tūtohinga/Charter](https://static1.squarespace.com/static/58e9b10f9de4bb8d1fb5ebbc/t/5913020d15cf7dde1df34482/1494417935052/Te+Mana+Raraunga+Charter+%28Final+%26+Approved%29.pdf)
+---
 
-**Title:** Algorithm Charter for Aotearoa New Zealand (2020)
-**Type:** Policy Document
-**Date:** 2020/07/01
-**Organization:** Tatauranga Aotearoa Stats New Zealand
-**Link:** [Algorithm Charter for Aotearoa New Zealand (2020)](https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/)
+**Title:** Reimagining Regulation in the Age of Artificial Intelligence (AI)  
+**Type:** Policy Document  
+**Date:** 2019/11/11  
+**Organization:** World Economic Forum & Te Tari Taiwhenua Department of Internal Affairs  
+**Link:** https://www.digital.govt.nz/blog/reimagining-regulation-in-the-age-of-artificial-intelligence/
 
-**Title:** Open Government Partnership
-**Type:** International Agreement
-**Date:** 2013/11/01
-**Organization:** The Open Government Partnership
-**Link:** [Open Government Partnership](https://ogp.org.nz/open-government-partnership#:~:text=The%20Open%20Government%20Partnership%20(OGP,open%2C%20effective%2C%20and%20accountable.)
+---
 
-**Title:** Summary Proceedings Act 1957
-**Type:** Law
-**Date:** 1957/10/24
-**Organization:** NZ Parliament
-**Link:** [Summary Proceedings Act 1957](https://www.legislation.govt.nz/act/public/1957/0087/latest/whole.html#DLM4289561)
+**Title:** Te Mana Raraunga Tūtohinga/Charter  
+**Type:** Policy Document  
+**Date:** 2016/04/05  
+**Organization:** Te Mana Raraunga  
+**Link:** https://static1.squarespace.com/static/58e9b10f9de4bb8d1fb5ebbc/t/5913020d15cf7dde1df34482/1494417935052/Te+Mana+Raraunga+Charter+%28Final+%26+Approved%29.pdf
 
-**Title:** Privacy Act 2020
-**Type:** Law
-**Date:** 2020/06/30
-**Organization:** NZ Parliament
-**Link:** [Privacy Act 2020](https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html)
+---
 
-**Title:** Digital Economy Partnership Agreement (DEPA) 
-**Type:** Trade agreement
-**Date:** 2020/06/12
+**Title:** Algorithm Charter for Aotearoa New Zealand (2020)  
+**Type:** Policy Document  
+**Date:** 2020/07/01  
+**Organization:** Tatauranga Aotearoa Stats New Zealand  
+**Link:** https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-charter/
+
+---
+
+**Title:** Open Government Partnership  
+**Type:** International Agreement  
+**Date:** 2013/11/01  
+**Organization:** The Open Government Partnership  
+**Link:** https://ogp.org.nz/open-government-partnership#:~:text=The%20Open%20Government%20Partnership%20(OGP,open%2C%20effective%2C%20and%20accountable.
+
+---
+
+**Title:** Summary Proceedings Act 1957  
+**Type:** Law  
+**Date:** 1957/10/24  
+**Organization:** NZ Parliament  
+**Link:** https://www.legislation.govt.nz/act/public/1957/0087/latest/whole.html#DLM4289561
+
+---
+
+**Title:** Privacy Act 2020  
+**Type:** Law  
+**Date:** 2020/06/30  
+**Organization:** NZ Parliament  
+**Link:** https://www.legislation.govt.nz/act/public/2020/0031/latest/LMS23223.html
+
+---
+
+**Title:** Digital Economy Partnership Agreement (DEPA)  
+**Type:** Trade agreement  
+**Date:** 2020/06/12  
 **Organization:** MFAT (and counterparts in Chile and Singapore)
-**Link:** [Digital Economy Partnership Agreement (DEPA)](https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/depa-text-and-resources/)
 
-**Title:** Algorithm Charter for Aotearoa New Zealand (2023)
-**Type:** Initiative
-**Date:** 2023/12/19
-**Organization:** Te Tari Taake Inland Revenue Department
-**Link:** [Algorithm Charter for Aotearoa New Zealand (2023)](https://www.ird.govt.nz/about-us/publications/annual-corporate-reports/annual-report/annual-report-2023/additional-information/algorithm-charter-for-aotearoa-new-zealand)
+  
+**Link:** https://www.mfat.govt.nz/en/trade/free-trade-agreements/free-trade-agreements-in-force/digital-economy-partnership-agreement-depa/depa-text-and-resources/
 
-**Title:** Christchurch Call Initiative on Algorithmic Outcomes
-**Type:** Initiative
-**Date:** 2022/09/22
-**Organization:** Christchurch Call
-**Link:** [Christchurch Call Initiative on Algorithmic Outcomes](https://www.christchurchcall.com/media-and-resources/news-and-updates/christchurch-call-initiative-on-algorithmic-outcomes/)
+---
 
-**Title:** Algorithm Impact Assessment toolkit
-**Type:** Initiative
-**Date:** 2023/12/18
-**Organization:** Te Tari Taiwhenua Department of Internal Affairs
-**Link:** [Algorithm Impact Assessment toolkit](https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-impact-assessment-toolkit/)
+**Title:** Algorithm Charter for Aotearoa New Zealand (2023)  
+**Type:** Initiative  
+**Date:** 2023/12/19  
+**Organization:** Te Tari Taake Inland Revenue Department  
+**Link:** https://www.ird.govt.nz/about-us/publications/annual-corporate-reports/annual-report/annual-report-2023/additional-information/algorithm-charter-for-aotearoa-new-zealand
 
-**Title:** Additional Item: Artificial Intelligence (AI): Update
-**Type:** Initiative
-**Date:** 2023/09/01
-**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation &amp; Employment
-**Link:** [Additional Item: Artificial Intelligence (AI): Update](https://www.mbie.govt.nz/dmsdocument/27416-additional-item-artificial-intelligence-update-minute-of-decision-proactiverelease-pdf)
+---
 
-**Title:** MoJ: The Algorithm Charter
-**Type:** Initiative
-**Date:** 2021/01/01
-**Organization:** Te Tāhū o te Ture Ministry of Justice
-**Link:** [MoJ: The Algorithm Charter](https://www.justice.govt.nz/justice-sector-policy/key-initiatives/cross-government/the-algorithm-charter/)
+**Title:** Christchurch Call Initiative on Algorithmic Outcomes  
+**Type:** Initiative  
+**Date:** 2022/09/22  
+**Organization:** Christchurch Call  
+**Link:** https://www.christchurchcall.com/media-and-resources/news-and-updates/christchurch-call-initiative-on-algorithmic-outcomes/
 
-**Title:** Advice on the Use of Large Language Models and Generative AI in Healthcare
-**Type:** Initiative
-**Date:** 2023/08/07
-**Organization:** Te Whatu Ora Health New Zealand
-**Link:** [Advice on the Use of Large Language Models and Generative AI in Healthcare](https://www.tewhatuora.govt.nz/our-health-system/digital-health/national-ai-and-algorithm-expert-advisory-group-naiaeag-te-whatu-ora-advice-on-the-use-of-large-language-models-and-generative-ai-in-healthcare/)
+---
 
-**Title:** Algorithms and Positive Interventions Workplan 
-**Type:** Initiative
-**Date:** 2021/06/01
+**Title:** Algorithm Impact Assessment toolkit  
+**Type:** Initiative  
+**Date:** 2023/12/18  
+**Organization:** Te Tari Taiwhenua Department of Internal Affairs  
+**Link:** https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-impact-assessment-toolkit/
 
-**Organization:** Christchurch Call
-**Link:** [Algorithms and Positive Interventions Workplan](https://www.christchurchcall.com/assets/Documents/Algorithms-and-Positive-Interventions-WorkPlan.pdf)
+---
 
-**Title:** NZ Police: The Algorithm Charter
-**Type:** Initiative
-**Date:** 2020/07/01
-**Organization:** Nga Pirihimana O Aotearoa New Zealand Police
-**Link:** [NZ Police: The Algorithm Charter](https://www.police.govt.nz/about-us/programmes-and-initiatives/police-use-emergent-technologies/algorithm-charter)
+**Title:** Additional Item: Artificial Intelligence (AI): Update  
+**Type:** Initiative  
+**Date:** 2023/09/01  
+**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation & Employment  
+**Link:** https://www.mbie.govt.nz/dmsdocument/27416-additional-item-artificial-intelligence-update-minute-of-decision-proactiverelease-pdf
 
-**Title:** Global Partnership on AI (GPAI)
-**Type:** Initiative
-**Date:** 2020/06/01
-**Organization:** The Global Partnership on Artificial Intelligence
-**Link:** [Global Partnership on AI (GPAI)](https://gpai.ai/)
-```
+---
+
+**Title:** MoJ: The Algorithm Charter  
+**Type:** Initiative  
+**Date:** 2021/01/01  
+**Organization:** Te Tāhū o te Ture Ministry of Justice  
+**Link:** https://www.justice.govt.nz/justice-sector-policy/key-initiatives/cross-government/the-algorithm-charter/
+
+---
+
+**Title:** Advice on the Use of Large Language Models and Generative AI in Healthcare  
+**Type:** Initiative  
+**Date:** 2023/08/07  
+**Organization:** Te Whatu Ora Health New Zealand  
+**Link:** https://www.tewhatuora.govt.nz/our-health-system/digital-health/national-ai-and-algorithm-expert-advisory-group-naiaeag-te-whatu-ora-advice-on-the-use-of-large-language-models-and-generative-ai-in-healthcare/
+
+---
+
+**Title:** Algorithms and Positive Interventions Workplan  
+**Type:** Initiative  
+**Date:** 2021/06/01  
+**Organization:** Christchurch Call  
+**Link:** https://www.christchurchcall.com/assets/Documents/Algorithms-and-Positive-Interventions-WorkPlan.pdf
+
+---
+
+**Title:** NZ Police: The Algorithm Charter  
+**Type:** Initiative  
+**Date:** 2020/07/01  
+**Organization:** Nga Pirihimana O Aotearoa New Zealand Police  
+**Link:** https://www.police.govt.nz/about-us/programmes-and-initiatives/police-use-emergent-technologies/algorithm-charter
+
+---
+
+**Title:** Global Partnership on AI (GPAI)  
+**Type:** Initiative  
+**Date:** 2020/06/01  
+**Organization:** The Global Partnership on Artificial Intelligence  
+**Link:** https://gpai.ai/
+
+---
