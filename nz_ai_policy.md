@@ -11,7 +11,7 @@
 **Type:** Research Report
 **Date:** 2021/05/25
 **Organization:** New Zealand Law Foundation & Otago University
-**PDF:** [WEB](https://www.otago.ac.nz/__data/assets/pdf_file/0012/312060/https-wwwotagoacnz-caipp-otago828396pdf-828396.pdf)
+**Link:** [PDF](https://www.otago.ac.nz/__data/assets/pdf_file/0012/312060/https-wwwotagoacnz-caipp-otago828396pdf-828396.pdf)
 
 
 ## AI & Society Seminar Series, Victoria University of Wellington
@@ -44,8 +44,6 @@
 **Date:** 2013/02/01
 **Organization:** Hīkina Whakatutuki Ministry of Business, Innovation & Employment
 **Link:** [WEB](https://www.callaghaninnovation.govt.nz/)
-
-New Zealand Algorithm Hub
 
 ## Te Pokapū Hātepe o Aotearoa
 
@@ -134,8 +132,7 @@ New Zealand Algorithm Hub
 **Type:** Research Center
 **Date:** 2020/06/01
 **Organization:** Massey University
-**Link:** [WEB]ai-digital-business-special-interest-group/]
-(https://www.massey.ac.nz/about/colleges-schools-and-institutes/massey-business-school/research-at-massey-business-school/business-research-centres-groups-special-interest-groups/ai-digital-business-special-interest-group/)
+**Link:** [WEB](https://www.massey.ac.nz/about/colleges-schools-and-institutes/massey-business-school/research-at-massey-business-school/business-research-centres-groups-special-interest-groups/ai-digital-business-special-interest-group/)
 
 
 ## Centre for Artificial Intelligence and Public Policy (CAIPP)
@@ -231,7 +228,7 @@ New Zealand Algorithm Hub
 **Type:** Research Report
 **Date:** 2019/06/12
 **Organization:** New Zealand Law Foundation & Otago University
-**PDF:** [WEB](https://www.otago.ac.nz/__data/assets/pdf_file/0027/312588/https-wwwotagoacnz-caipp-otago711816pdf-711816.pdf)
+**Link:** [PDF](https://www.otago.ac.nz/__data/assets/pdf_file/0027/312588/https-wwwotagoacnz-caipp-otago711816pdf-711816.pdf)
 
 
 ## Building a Digital Nation
@@ -239,7 +236,7 @@ New Zealand Algorithm Hub
 **Type:** Research Report
 **Date:** 2017/03/01
 **Organization:** Ministry for Business, Innovation, and Employment 
-**PDF:** [WEB](https://www.mbie.govt.nz/assets/247943bfa5/building-a-digital-nation-bga.pdf)
+**Link:** [PDF](https://www.mbie.govt.nz/assets/247943bfa5/building-a-digital-nation-bga.pdf)
 
 
 ## The International Regulatory Landscape for AI
@@ -247,7 +244,7 @@ New Zealand Algorithm Hub
 **Type:** Research Report
 **Date:** 2023/12/01
 **Organization:** Department of the Prime Minister and Cabinet
-**PDF:** [WEB](https://bpb-ap-se2.wpmucdn.com/blogs.auckland.ac.nz/dist/f/688/files/2023/07/Regulatory-landscape.pdf)
+**Link:** [PDF](https://bpb-ap-se2.wpmucdn.com/blogs.auckland.ac.nz/dist/f/688/files/2023/07/Regulatory-landscape.pdf)
 
 
 ## Algorithm Assessment Report
@@ -271,17 +268,15 @@ New Zealand Algorithm Hub
 **Type:** Research Report
 **Date:** 2022/05/01
 **Organization:** Artificial Intelligence Forum of New Zealand
-**PDF:** [WEB](https://aiforum.org.nz/wp-content/uploads/2022/05/AI-for-the-Environment-Report-2022-1.pdf)
-
+**Link:** [PDF](https://aiforum.org.nz/wp-content/uploads/2022/05/AI-for-the-Environment-Report-2022-1.pdf)
 
 ## Mana Whakaora | Equity Report
 
 A Review of the Contact Tracing Technologies
-
 **Type:** Research Report
 **Date:** 2020/12/07
 **Organization:** Manatū Hauora Ministry of Health & University of Waikato
-**PDF:** [WEB](https://www.health.govt.nz/system/files/documents/pages/20201207-te-whatu-equity-report.pdf)
+**Link:** [PDF](https://www.health.govt.nz/system/files/documents/pages/20201207-te-whatu-equity-report.pdf)
 
 
 ## Public Consultation: Safer Online Services and Media Platforms (SOSMP)
@@ -297,7 +292,7 @@ A Review of the Contact Tracing Technologies
 **Type:** Internal Policy
 **Date:** 2018/05/16
 **Organization:** Te Mana Mātāpono Matatapu Privacy Commissioner & Tatauranga Aotearoa Stats New Zealand
-**PDF:** [WEB](https://www.privacy.org.nz/assets/New-order/Resources-/Publications/Guidance-resources/Principles-for-the-safe-and-effective-use-of-data-and-analytics-guidance3.pdf)
+**Link:** [PDF](https://www.privacy.org.nz/assets/New-order/Resources-/Publications/Guidance-resources/Principles-for-the-safe-and-effective-use-of-data-and-analytics-guidance3.pdf)
 
 
 ## Data Protection and Use Policy 
@@ -305,7 +300,7 @@ A Review of the Contact Tracing Technologies
 **Type:** Internal Policy
 **Date:** 2022/01/01
 **Organization:** Toi Hau Tāngata Social Wellbeing Agency
-**PDF:** [WEB](https://www.digital.govt.nz/assets/Standards-guidance/Privacy/Data-Protection-and-Use-Policy-DPUP-January-2022-Version-1.2.pdf)
+**Link:** [PDF](https://www.digital.govt.nz/assets/Standards-guidance/Privacy/Data-Protection-and-Use-Policy-DPUP-January-2022-Version-1.2.pdf)
 
 
 ## Māori Data Sovereignty and Privacy Tikanga in Technology Discussion Paper
@@ -313,17 +308,14 @@ A Review of the Contact Tracing Technologies
 **Type:** Commentary
 **Date:** 2023/03/01
 **Organization:** Te Ngira Institute for Population Research - University of Waikato
-**PDF:** [WEB](https://tengira.waikato.ac.nz/__data/assets/pdf_file/0004/961645/MDSov-and-Privacy_20March2023_v2.pdf)
+**Link:** [PDF](https://tengira.waikato.ac.nz/__data/assets/pdf_file/0004/961645/MDSov-and-Privacy_20March2023_v2.pdf)
 
+## Taiuru & Associates with Dr Karaitiana Taiuru MInstD Māori AI, Data Sovereignty, IP and Emerging Tech Ethicist & Researcher
 
-## Taiuru &amp; Associates with Dr Karaitiana Taiuru MInstD
-
-Māori AI, Data Sovereignty, IP and Emerging Tech Ethicist &amp; Researcher
 **Type:** Commentary
 **Date:** 2002/06/01
 **Organization:** Dr Karaitiana Taiuru
 **Link:** [WEB](https://taiuru.co.nz/)
-
 
 ## Responsible AI for Social Media
 
@@ -331,7 +323,7 @@ Governance
 **Type:** Commentary
 **Date:** 2021/11/01
 **Organization:** Global Partnership on Artificial Intelligence
-**PDF:** [WEB](https://gpai.ai/projects/responsible-ai/social-media-governance/responsible-ai-for-social-media-governance.pdf)
+**Link:** [PDF](https://gpai.ai/projects/responsible-ai/social-media-governance/responsible-ai-for-social-media-governance.pdf)
 
 
 ## Building Better AI in Aotearoa
@@ -371,7 +363,7 @@ Governance
 **Type:** Commentary
 **Date:** 2020/03/04
 **Organization:** Artificial Intelligence Forum of New Zealand
-**PDF:** [WEB](https://aiforum.org.nz/wp-content/uploads/2020/03/Trustworthy-AI-in-Aotearoa-March-2020.pdf)
+**Link:** [PDF](https://aiforum.org.nz/wp-content/uploads/2020/03/Trustworthy-AI-in-Aotearoa-March-2020.pdf)
 
 
 ## Artificial Intelligence
@@ -395,7 +387,7 @@ Governance
 **Type:** White Paper
 **Date:** 2020/06/29
 **Organization:** World Economic Forum
-**PDF:** [WEB](https://www3.weforum.org/docs/WEF_Reimagining_Regulation_Age_AI_2020.pdf)
+**Link:** [PDF](https://www3.weforum.org/docs/WEF_Reimagining_Regulation_Age_AI_2020.pdf)
 
 
 ## The Digital Inclusion Blueprint Te Maher Mo te Whakaurung Matihiko
@@ -411,7 +403,7 @@ Governance
 **Type:** OIA Response
 **Date:** 2023/11/01
 **Organization:** Te Tāhū o te Ture Ministry of Justice 
-**PDF:** [WEB](https://www.justice.govt.nz/assets/Documents/Publications/OIA-107633.pdf)
+**Link:** [PDF](https://www.justice.govt.nz/assets/Documents/Publications/OIA-107633.pdf)
 
 
 ## OIA 1302815 
@@ -419,7 +411,7 @@ Governance
 **Type:** OIA Response
 **Date:** 2023/03/03
 **Organization:** Te Tāhuhu o te Mātauranga Ministry of Education
-**PDF:** [WEB](https://assets.education.govt.nz/public/Documents/our-work/information-releases/responses-to-Official-Information-Act-requests/1302815-Response.pdf)
+**Link:** [PDF](https://assets.education.govt.nz/public/Documents/our-work/information-releases/responses-to-Official-Information-Act-requests/1302815-Response.pdf)
 
 
 ## Technology Advisory Groups at IRD
@@ -445,15 +437,12 @@ Governance
 **Organization:** A cross-agency team with representatives from Hīkina Whakatutuki Ministry of Business, Innovation & Employment, Te Tari Taiwhenua Department of Internal Affairs , Te Tari o Te Pirimia Me Te Komiti Matua Department of the Prime Minister and Cabinet, Tatauranga Aotearoa Stats New Zealand
 **Link:** [WEB](https://www.digital.govt.nz/dmsdocument/237~the-digital-strategy-for-aotearoa/html)
 
-## Public Participation
-
-in Government in
-the Future
+## Public Participation in Government in the Future
 
 **Type:** Strategy
 **Date:** 2022/06/30
 **Organization:** Te Kawa Mataaho Public Service Commission 
-**PDF:** [WEB](https://www.publicservice.govt.nz/assets/DirectoryFile/Public-Participation-in-Government-in-the-Future-Draft-for-Consultation.pdf)
+**Link:** [PDF](https://www.publicservice.govt.nz/assets/DirectoryFile/Public-Participation-in-Government-in-the-Future-Draft-for-Consultation.pdf)
 
 
 ## System Map and Work Programme: AI and Data Ethics
@@ -461,7 +450,7 @@ the Future
 **Type:** Strategy
 **Date:** 2023/07/18
 **Organization:** Tatauranga Aotearoa Stats New Zealand
-**Link:** [WEB](https://www.stats.govt.nz/assets/Uploads/Corporate/Cabinet-papers/Cabinet-papers-Establishment-of-the-Interim-Centre-for-Data-Ethics-and-Innovation/**PDF:**p-AI-and-Data-Ethics-18-July-2023-MM2656.pdf)
+**Link:** [PDF](https://www.stats.govt.nz/assets/Uploads/Corporate/Cabinet-papers/Cabinet-papers-Establishment-of-the-Interim-Centre-for-Data-Ethics-and-Innovation/System-Map-AI-and-Data-Ethics-18-July-2023-MM2656.pdf)
 
 
 ## The Digital Technologies Industry Transformation Plan 
@@ -469,14 +458,12 @@ the Future
 **Type:** Strategy
 **Date:** 2023/04/15
 **Organization:** Hīkina Whakatutuki Ministry of Business, Innovation & Employment & NZTech 
-**PDF:** [WEB](https://www.mbie.govt.nz/assets/digital-technologies-industry-transformation-plan.pdf)
-
+**Link:** [PDF](https://www.mbie.govt.nz/assets/digital-technologies-industry-transformation-plan.pdf)
 
 
 ## NZ Vision for Health
 
 Technology
-
 **Type:** Strategy
 **Date:** 2020/08/10
 **Organization:** Te Whatu Ora Health New Zealand
@@ -488,7 +475,7 @@ Technology
 **Type:** Strategy
 **Date:** 2021/11/10
 **Organization:** Tatauranga Aotearoa Stats New Zealand 
-**PDF:** [WEB](https://www.stats.govt.nz/assets/Uploads/2023-Long-term-insights-briefing/LTIB-final-Report-April-2023-Update.pdf) 
+**Link:** [PDF](https://www.stats.govt.nz/assets/Uploads/2023-Long-term-insights-briefing/LTIB-final-Report-April-2023-Update.pdf) 
 
 
 ## Model Development Life-Cycle
@@ -519,7 +506,7 @@ Technology
 
 **Type:** Guidelines
 **Date:** 2022/05/01
-**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation &amp; Employment
+**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation & Employment
 **Link:** [WEB](https://www.mbie.govt.nz/dmsdocument/20298-algorithm-use-policy)
 
 ## Ethics of Artificial Intelligence Recommendation
@@ -534,7 +521,7 @@ Technology
 **Type:** Guidelines
 **Date:** 2019/01/01
 **Organization:** Manatū Hauora Ministry of Health
-**PDF:** [WEB](https://www.tewhatuora.govt.nz/assets/Uploads/introductory_guidance_-_algorithms_v0.4_-_web.pdf)
+**Link:** [PDF](https://www.tewhatuora.govt.nz/assets/Uploads/introductory_guidance_-_algorithms_v0.4_-_web.pdf)
 
 ## How We Use Algorithms to Improve Customer Experience
 
@@ -576,18 +563,14 @@ Technology
 **Type:** Guidelines
 **Date:** 2023/07/01
 **Organization:** Te Mana Mātāpono Matatapu Privacy Commissioner
-**PDF:** [WEB](https://www.privacy.org.nz/assets/New-order/Resources-/Publications/Guidance-resources/AI-Guidance-Resources-/AI-and-the-Information-Privacy-Principles.pdf)
+**Link:** [PDF](https://www.privacy.org.nz/assets/New-order/Resources-/Publications/Guidance-resources/AI-Guidance-Resources-/AI-and-the-Information-Privacy-Principles.pdf)
 
-## Ngā Tikanga Paihere:
-
-A Framework Guiding Ethical and Culturally Appropriate Data Use
+## Ngā Tikanga Paihere: A Framework Guiding Ethical and Culturally Appropriate Data Use
 
 **Type:** Guidelines
 **Date:** 2020/03/01
 **Organization:** Tatauranga Aotearoa Stats New Zealand
-**Link:** [WEB]A Framework Guiding Ethical and
-Culturally Appropriate Data Use]
-**PDF:**data.govt.nz/assets/data-ethics/Nga-Tikanga/Nga-Tikanga-Paihere-Guidelines-December-2020.pdf)
+**Link:** [PDF](https://data.govt.nz/assets/data-ethics/Nga-Tikanga/Nga-Tikanga-Paihere-Guidelines-December-2020.pdf)
 
 ## Using Personal Information Responsibly
 
@@ -600,7 +583,7 @@ Culturally Appropriate Data Use]
 
 **Type:** Guidelines
 **Date:** 2022/05/19
-**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation &amp; Employment
+**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation & Employment
 **Link:** [WEB](https://www.mbie.govt.nz/science-and-technology/science-and-innovation/research-and-data/algorithms-at-mbie/)
 
 ## Capturing the benefits of AI in healthcare for Aotearoa New Zealand
@@ -615,14 +598,14 @@ Culturally Appropriate Data Use]
 **Type:** Guidelines
 **Date:** 2023/06/01
 **Organization:** Te Kāhui Raraunga
-**PDF:** [WEB](https://www.kahuiraraunga.io/_files/ugd/b8e45c_803c03ffe532414183afcd8b9ced10dc.pdf)
+**Link:** [PDF](https://www.kahuiraraunga.io/_files/ugd/b8e45c_803c03ffe532414183afcd8b9ced10dc.pdf)
 
 ## Guidelines for Use of Generative Artificial Intelligence in Courts and Tribunals
 
 **Type:** Guidelines
 **Date:** 2023/12/07
 **Organization:** Ngā Kōti o Aotearoa Courts of New Zealand
-**PDF:** [WEB](https://www.courtsofnz.govt.nz/assets/6-Going-to-Court/practice-directions/practice-guidelines/all-benches/20231207-GenAI-Guidelines-Judicial.pdf)
+**Link:** [PDF](https://www.courtsofnz.govt.nz/assets/6-Going-to-Court/practice-directions/practice-guidelines/all-benches/20231207-GenAI-Guidelines-Judicial.pdf)
 
 ## Recommendation of the Council on Artificial Intelligence
 
@@ -636,7 +619,7 @@ Culturally Appropriate Data Use]
 **Type:** Guidelines
 **Date:** 2022/0701
 **Organization:** Netsafe
-**PDF:** [WEB](https://nztech.org.nz/wp-content/uploads/sites/8/2022/07/FINAL-NZ-Code-of-Practice-for-Online-Safety-and-Harms-25-July-2022.pdf)
+**Link:** [PDF](https://nztech.org.nz/wp-content/uploads/sites/8/2022/07/FINAL-NZ-Code-of-Practice-for-Online-Safety-and-Harms-25-July-2022.pdf)
 
 ## Joint Guidance: Guidelines for Secure AI System Development
 
@@ -657,13 +640,13 @@ Culturally Appropriate Data Use]
 **Type:** Government standard
 **Date:** 2022/02/15
 **Organization:** Te Manatū Whakahiato Ora Ministry of Social Development
-**Link:** [WEB](https://www.msd.govt.nz/documents/about-msd-and-our-work/publications-resources/official-information-responses/2022/july/**PDF:**requesting-the-document-automated-decision-making-in-msd-proposed-legislative-and-policy-framework-document-.pdf)
+**Link:** [PDF](https://www.msd.govt.nz/documents/about-msd-and-our-work/publications-resources/official-information-responses/2022/july/07072022-requesting-the-document-automated-decision-making-in-msd-proposed-legislative-and-policy-framework-document-.pdf)
 
 ## Reimagining Regulation in the Age of Artificial Intelligence (AI)
 
 **Type:** Policy Document
 **Date:** 2019/11/11
-**Organization:** World Economic Forum &amp; Te Tari Taiwhenua Department of Internal Affairs 
+**Organization:** World Economic Forum & Te Tari Taiwhenua Department of Internal Affairs 
 
 **Link:** [WEB](https://www.digital.govt.nz/blog/reimagining-regulation-in-the-age-of-artificial-intelligence/)
 
@@ -672,7 +655,7 @@ Culturally Appropriate Data Use]
 **Type:** Policy Document
 **Date:** 2016/04/05
 **Organization:** Te Mana Raraunga
-**PDF:** [WEB](https://static1.squarespace.com/static/58e9b10f9de4bb8d1fb5ebbc/t/5913020d15cf7dde1df34482/1494417935052/Te+Mana+Raraunga+Charter+%28Final+%26+Approved%29.pdf)
+**Link:** [PDF](https://static1.squarespace.com/static/58e9b10f9de4bb8d1fb5ebbc/t/5913020d15cf7dde1df34482/1494417935052/Te+Mana+Raraunga+Charter+%28Final+%26+Approved%29.pdf)
 
 ## Algorithm Charter for Aotearoa New Zealand (2020)
 
@@ -686,7 +669,7 @@ Culturally Appropriate Data Use]
 **Type:** International Agreement
 **Date:** 2013/11/01
 **Organization:** The Open Government Partnership
-**Link:** [WEB]("https://ogp.org.nz/open-government-partnership#:~:text=The%20Open%20Government%20Partnership%20(OGP,open%2C%20effective%2C%20and%20accountable.")
+**Link:** [WEB]('https://ogp.org.nz/open-government-partnership#:~:text=The%20Open%20Government%20Partnership%20(OGP,open%2C%20effective%2C%20and%20accountable')
 
 ## Summary Proceedings Act 1957
 
@@ -734,7 +717,7 @@ Culturally Appropriate Data Use]
 
 **Type:** Initiative
 **Date:** 2023/09/01
-**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation &amp; Employment
+**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation & Employment
 **Link:** [WEB](https://www.mbie.govt.nz/dmsdocument/27416-additional-item-artificial-intelligence-update-minute-of-decision-proactiverelease-pdf)
 
 ## MoJ: The Algorithm Charter
@@ -755,8 +738,9 @@ Culturally Appropriate Data Use]
 
 **Type:** Initiative
 **Date:** 2021/06/01
+
 **Organization:** Christchurch Call
-**PDF:** [WEB](https://www.christchurchcall.com/assets/Documents/Algorithms-and-Positive-Interventions-WorkPlan.pdf)
+**Link:** [PDF](https://www.christchurchcall.com/assets/Documents/Algorithms-and-Positive-Interventions-WorkPlan.pdf)
 
 ## NZ Police: The Algorithm Charter
 
