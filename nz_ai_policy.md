@@ -1,0 +1,536 @@
+```markdown
+## Artificial Intelligence Researchers Association (AIRA)
+
+**Title:** Artificial Intelligence Researchers Association (AIRA)
+**Type:** Group or body
+**Date:** 2021/11/16
+**Organization:** AIRA
+**Link:** [https://www.airesearchers.nz/](https://www.airesearchers.nz/)
+
+## The Impact of Artificial Intelligence on Jobs and Work in New Zealand
+
+**Title:** The Impact of Artificial Intelligence on Jobs and Work in New Zealand
+**Type:** Research Report
+**Date:** 2021/05/25
+**Organization:** New Zealand Law Foundation & Otago University
+**Link:** [https://www.otago.ac.nz/__data/assets/pdf_file/0012/312060/https-wwwotagoacnz-caipp-otago828396pdf-828396.pdf](https://www.otago.ac.nz/__data/assets/pdf_file/0012/312060/https-wwwotagoacnz-caipp-otago828396pdf-828396.pdf)
+
+## AI & Society Seminar Series, Victoria University of Wellington
+
+**Title:** AI & Society Seminar Series, Victoria University of Wellington
+**Type:** Group or body
+**Date:** 2022/01/01
+**Organization:** Prof Ali Knott
+**Link:** [https://ecs.wgtn.ac.nz/Groups/AI_and_Society/AI_and_Society_Seminars](https://ecs.wgtn.ac.nz/Groups/AI_and_Society/AI_and_Society_Seminars)
+
+## AI & Society Group, Victoria University of Wellington
+
+**Title:** AI & Society Group, Victoria University of Wellington
+**Type:** Group or body
+**Date:** 2022/01/01
+**Organization:** Victoria University of Wellington
+**Link:** [https://ecs.wgtn.ac.nz/Groups/AI_and_Society/](https://ecs.wgtn.ac.nz/Groups/AI_and_Society/)
+
+## AI Forum of New Zealand 
+
+**Title:** AI Forum of New Zealand 
+**Type:** Group or body
+**Date:** 2017/06/01
+**Organization:** Artificial Intelligence Forum of New Zealand
+**Link:** [https://aiforum.org.nz/](https://aiforum.org.nz/)
+
+## Callaghan Innovation
+
+**Title:** Callaghan Innovation
+**Type:** Group or body
+**Date:** 2013/02/01
+**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation & Employment
+**Link:** [https://www.callaghaninnovation.govt.nz/](https://www.callaghaninnovation.govt.nz/)
+
+## Te Pokapū Hātepe o Aotearoa
+New Zealand Algorithm Hub
+
+**Title:** Te Pokapū Hātepe o Aotearoa
+New Zealand Algorithm Hub
+**Type:** Group or body
+**Date:** 2020/11/01
+**Organization:** Te Pokapū Hātepe o Aotearoa
+New Zealand Algorithm Hub
+**Link:** [https://algorithmhub.co.nz/](https://algorithmhub.co.nz/)
+
+## Brainbox Institute
+
+**Title:** Brainbox Institute
+**Type:** Group or body
+**Date:** 2018/10/02
+**Organization:** Brainbox Institute
+**Link:** [https://www.brainbox.institute/](https://www.brainbox.institute/)
+
+## Te Kāhui Raraunga
+
+**Title:** Te Kāhui Raraunga
+**Type:** Group or body
+**Date:** 2019/06/01
+**Organization:** Te Kāhui Raraunga
+**Link:** [https://www.kahuiraraunga.io/](https://www.kahuiraraunga.io/)
+
+## Data Ethics Advisory Group
+
+**Title:** Data Ethics Advisory Group
+**Type:** Group or body
+**Date:** 2019/09/11
+**Organization:** Government Chief Data Steward 
+**Link:** [https://data.govt.nz/leadership/advisory-governance/data-ethics-advisory-group/](https://data.govt.nz/leadership/advisory-governance/data-ethics-advisory-group/)
+
+## Interim Centre for Data Ethics and Innovation
+
+**Title:** Interim Centre for Data Ethics and Innovation
+**Type:** Group or body
+**Date:** 2023/09/21
+**Organization:** The Cabinet of New Zealand
+**Link:** [https://data.govt.nz/leadership/the-interim-centre-for-data-ethics-and-innovation/](https://data.govt.nz/leadership/the-interim-centre-for-data-ethics-and-innovation/)
+
+## Koi Tū: The Centre for Informed Futures 
+
+**Title:** Koi Tū: The Centre for Informed Futures 
+**Type:** Research Center
+**Date:** 2020/03/04
+**Organization:** The University of Auckland 
+**Link:** [https://informedfutures.org/](https://informedfutures.org/)
+
+## Center for Data Science and Artificial Intelligence (CDSAI)
+
+**Title:** Center for Data Science and Artificial Intelligence (CDSAI)
+**Type:** Research Center
+**Date:** 2022/11/28
+**Organization:** Victoria University of Wellington
+**Link:** [https://www.wgtn.ac.nz/cdsai](https://www.wgtn.ac.nz/cdsai)
+
+## Data Science Research Centre
+
+**Title:** Data Science Research Centre
+**Type:** Research Center
+**Date:** 2022/07/01
+**Organization:** Auckland University of Technology
+**Link:** [https://dsrg.aut.ac.nz/](https://dsrg.aut.ac.nz/)
+
+## Industrial AI Group at UOA
+
+**Title:** Industrial AI Group at UOA
+**Type:** Research Center
+**Date:** 2019/02/01
+**Organization:** The University of Auckland 
+**Link:** [https://yuqianlu.xyz/](https://yuqianlu.xyz/)
+
+## Institute of Biomedical Technologies
+
+**Title:** Institute of Biomedical Technologies
+**Type:** Research Center
+**Date:** 1997/06/01
+**Organization:** Auckland University of Technology
+**Link:** [https://ibtec.aut.ac.nz/](https://ibtec.aut.ac.nz/)
+
+## AI and Digital Business Special Interest Group
+
+**Title:** AI and Digital Business Special Interest Group
+**Type:** Research Center
+**Date:** 2020/06/01
+**Organization:** Massey University
+**Link:** [https://www.massey.ac.nz/about/colleges-schools-and-institutes/massey-business-school/research-at-massey-business-school/business-research-centres-groups-special-interest-groups/ai-digital-business-special-interest-group/](https://www.massey.ac.nz/about/colleges-schools-and-institutes/massey-business-school/research-at-massey-business-school/business-research-centres-groups-special-interest-groups/ai-digital-business-special-interest-group/)
+
+## Centre for Artificial Intelligence and Public Policy (CAIPP)
+
+**Title:** Centre for Artificial Intelligence and Public Policy (CAIPP)
+**Type:** Research Center
+**Date:** 2018/06/01
+**Organization:** University of Otago
+**Link:** [https://www.otago.ac.nz/caipp](https://www.otago.ac.nz/caipp)
+
+## Artificial Intelligence Research Group
+
+**Title:** Artificial Intelligence Research Group
+**Type:** Research Center
+**Date:** 2023/10/30
+**Organization:** University of Canterbury
+**Link:** [https://www.canterbury.ac.nz/research/about-uc-research/research-groups-and-centres/artificial-intelligence-research-group](https://www.canterbury.ac.nz/research/about-uc-research/research-groups-and-centres/artificial-intelligence-research-group)
+
+## Nelson AI Institute (NAI)
+
+**Title:** Nelson AI Institute (NAI)
+**Type:** Research Center
+**Date:** 2019/06/01
+**Organization:** Nelson AI Institute (NAI)
+**Link:** [https://www.nai.org.nz/](https://www.nai.org.nz/)
+
+## Knowledge Engineering and Discovery Research Institute
+
+**Title:** Knowledge Engineering and Discovery Research Institute
+**Type:** Research Center
+**Date:** 2002/07/01
+**Organization:** Auckland University of Technology
+**Link:** [https://kedri.aut.ac.nz/](https://kedri.aut.ac.nz/)
+
+## NAOInstitute
+
+**Title:** NAOInstitute
+**Type:** Research Center
+**Date:** 2023/05/01
+**Organization:** The University of Auckland 
+**Link:** [https://www.auckland.ac.nz/en/science/our-research/naoinstitute.html](https://www.auckland.ac.nz/en/science/our-research/naoinstitute.html)
+
+## Centre for Sensor Network and Smart Environment
+
+**Title:** Centre for Sensor Network and Smart Environment
+**Type:** Research Center
+**Date:** 2006/11/01
+**Organization:** Auckland University of Technology
+**Link:** [https://sense.aut.ac.nz/SeNSe_Lab/](https://sense.aut.ac.nz/SeNSe_Lab/)
+
+## Centre for Social Data Analytics
+
+**Title:** Centre for Social Data Analytics
+**Type:** Research Center
+**Date:** 2016/01/01
+**Organization:** Auckland University of Technology
+**Link:** [https://csda.aut.ac.nz/](https://csda.aut.ac.nz/)
+
+## Centre for Robotics and Vision
+
+**Title:** Centre for Robotics and Vision
+**Type:** Research Center
+**Date:** 2015/03/01
+**Organization:** Auckland University of Technology
+**Link:** [https://cerv.aut.ac.nz/](https://cerv.aut.ac.nz/)
+
+## Artificial Intelligence Institute
+
+**Title:** Artificial Intelligence Institute
+**Type:** Research Center
+**Date:** 2021/04/01
+**Organization:** The University of Waikato
+**Link:** [https://ai.waikato.ac.nz/](https://ai.waikato.ac.nz/)
+
+## Centre for Artificial Intelligence Research (CAIR)
+
+**Title:** Centre for Artificial Intelligence Research (CAIR)
+**Type:** Research Center
+**Date:** 2000/06/01
+**Organization:** Auckland University of Technology
+**Link:** [https://www.aut.ac.nz/study/study-options/engineering-computer-and-mathematical-sciences/research/centre-for-artificial-intelligence-research-cair](https://www.aut.ac.nz/study/study-options/engineering-computer-and-mathematical-sciences/research/centre-for-artificial-intelligence-research-cair)
+
+## AiLab at AUT
+
+**Title:** AiLab at AUT
+**Type:** Research Center
+**Date:** 2020/01/28
+**Organization:** Auckland University of Technology
+**Link:** [https://www.aut.ac.nz/aut-artificial-intelligence-initiative/ai-related-research-across-aut-institutes,-centres-and-groups/ai-specialist-in-residence-and-the-ailab-at-aut](https://www.aut.ac.nz/aut-artificial-intelligence-initiative/ai-related-research-across-aut-institutes,-centres-and-groups/ai-specialist-in-residence-and-the-ailab-at-aut)
+
+## Government Use of Artificial Intelligence in New Zealand
+
+**Title:** Government Use of Artificial Intelligence in New Zealand
+**Type:** Research Report
+**Date:** 2019/06/12
+**Organization:** New Zealand Law Foundation & Otago University
+**Link:** [https://www.otago.ac.nz/__data/assets/pdf_file/0027/312588/https-wwwotagoacnz-caipp-otago711816pdf-711816.pdf](https://www.otago.ac.nz/__data/assets/pdf_file/0027/312588/https-wwwotagoacnz-caipp-otago711816pdf-711816.pdf)
+
+## Building a Digital Nation
+
+**Title:** Building a Digital Nation
+**Type:** Research Report
+**Date:** 2017/03/01
+**Organization:** Ministry for Business, Innovation, and Employment 
+**Link:** [https://www.mbie.govt.nz/assets/247943bfa5/building-a-digital-nation-bga.pdf](https://www.mbie.govt.nz/assets/247943bfa5/building-a-digital-nation-bga.pdf)
+
+## The International Regulatory Landscape for AI
+
+**Title:** The International Regulatory Landscape for AI
+**Type:** Research Report
+**Date:** 2023/12/01
+**Organization:** Department of the Prime Minister and Cabinet
+**Link:** [https://bpb-ap-se2.wpmucdn.com/blogs.auckland.ac.nz/dist/f/688/files/2023/07/Regulatory-landscape.pdf](https://bpb-ap-se2.wpmucdn.com/blogs.auckland.ac.nz/dist/f/688/files/2023/07/Regulatory-landscape.pdf)
+
+## Algorithm Assessment Report
+
+**Title:** Algorithm Assessment Report
+**Type:** Research Report
+**Date:** 2018/10/01
+**Organization:** Te Tari Taiwhenua Department of Internal Affairs & Tatauranga Aotearoa Stats New Zealand
+**Link:** [https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-assessment-report/](https://data.govt.nz/toolkit/data-ethics/government-algorithm-transparency-and-accountability/algorithm-assessment-report/)
+
+## Assessing Risk of Re-offending: Recalibration of the Department of Corrections’ Core Risk Assessment measure
+
+**Title:** Assessing Risk of Re-offending: Recalibration of the Department of Corrections’ Core Risk Assessment measure
+**Type:** Research Report
+**Date:** 2021/06/01
+**Organization:** Ara Poutama Aotearoa Department of Corrections
+**Link:** [https://www.corrections.govt.nz/resources/research/journal/volume_8_issue_1_june_2021/assessing_risk_of_re-offending_recalibration_of_the_department_of_corrections_core_risk_assessment_measure](https://www.corrections.govt.nz/resources/research/journal/volume_8_issue_1_june_2021/assessing_risk_of_re-offending_recalibration_of_the_department_of_corrections_core_risk_assessment_measure)
+
+## Artificial Intelligence for the Environment in Aotearoa New Zealand
+
+**Title:** Artificial Intelligence for the Environment in Aotearoa New Zealand
+**Type:** Research Report
+**Date:** 2022/05/01
+**Organization:** Artificial Intelligence Forum of New Zealand
+**Link:** [https://aiforum.org.nz/wp-content/uploads/2022/05/AI-for-the-Environment-Report-2022-1.pdf](https://aiforum.org.nz/wp-content/uploads/2022/05/AI-for-the-Environment-Report-2022-1.pdf)
+
+## Mana Whakaora | Equity Report
+A Review of the Contact Tracing Technologies
+
+**Title:** Mana Whakaora | Equity Report
+A Review of the Contact Tracing Technologies
+**Type:** Research Report
+**Date:** 2020/12/07
+**Organization:** Manatū Hauora Ministry of Health & University of Waikato
+**Link:** [https://www.health.govt.nz/system/files/documents/pages/20201207-te-whatu-equity-report.pdf](https://www.health.govt.nz/system/files/documents/pages/20201207-te-whatu-equity-report.pdf)
+
+## Public Consultation: Safer Online Services and Media Platforms (SOSMP)
+
+**Title:** Public Consultation: Safer Online Services and Media Platforms (SOSMP)
+**Type:** Public consultation
+**Date:** 2023/06/26
+**Organization:** Te Tari Taiwhenua Department of Internal Affairs 
+**Link:** [https://www.dia.govt.nz/safer-online-services-media-platforms-consultation](https://www.dia.govt.nz/safer-online-services-media-platforms-consultation)
+
+## Principles for the Safe and Effective Use of Data and Analytics 
+
+**Title:** Principles for the Safe and Effective Use of Data and Analytics 
+**Type:** Internal Policy
+**Date:** 2018/05/16
+**Organization:** Te Mana Mātāpono Matatapu Privacy Commissioner & Tatauranga Aotearoa Stats New Zealand
+**Link:** [https://www.privacy.org.nz/assets/New-order/Resources-/Publications/Guidance-resources/Principles-for-the-safe-and-effective-use-of-data-and-analytics-guidance3.pdf](https://www.privacy.org.nz/assets/New-order/Resources-/Publications/Guidance-resources/Principles-for-the-safe-and-effective-use-of-data-and-analytics-guidance3.pdf)
+
+## Data Protection and Use Policy 
+
+**Title:** Data Protection and Use Policy 
+**Type:** Internal Policy
+**Date:** 2022/01/01
+**Organization:** Toi Hau Tāngata Social Wellbeing Agency
+**Link:** [https://www.digital.govt.nz/assets/Standards-guidance/Privacy/Data-Protection-and-Use-Policy-DPUP-January-2022-Version-1.2.pdf](https://www.digital.govt.nz/assets/Standards-guidance/Privacy/Data-Protection-and-Use-Policy-DPUP-January-2022-Version-1.2.pdf)
+
+## Māori Data Sovereignty and Privacy Tikanga in Technology Discussion Paper
+
+**Title:** Māori Data Sovereignty and Privacy Tikanga in Technology Discussion Paper
+**Type:** Commentary
+**Date:** 2023/03/01
+**Organization:** Te Ngira Institute for Population Research - University of Waikato
+**Link:** [https://tengira.waikato.ac.nz/__data/assets/pdf_file/0004/961645/MDSov-and-Privacy_20March2023_v2.pdf](https://tengira.waikato.ac.nz/__data/assets/pdf_file/0004/961645/MDSov-and-Privacy_20March2023_v2.pdf)
+
+## Taiuru &amp; Associates with Dr Karaitiana Taiuru MInstD
+Māori AI, Data Sovereignty, IP and Emerging Tech Ethicist &amp; Researcher
+
+**Title:** Taiuru &amp; Associates with Dr Karaitiana Taiuru MInstD
+Māori AI, Data Sovereignty, IP and Emerging Tech Ethicist &amp; Researcher
+**Type:** Commentary
+**Date:** 2002/06/01
+**Organization:** Dr Karaitiana Taiuru
+**Link:** [https://taiuru.co.nz/](https://taiuru.co.nz/)
+
+## Responsible AI for Social Media
+Governance
+
+**Title:** Responsible AI for Social Media
+Governance
+**Type:** Commentary
+**Date:** 2021/11/01
+**Organization:** Global Partnership on Artificial Intelligence
+**Link:** [https://gpai.ai/projects/responsible-ai/social-media-governance/responsible-ai-for-social-media-governance.pdf](https://gpai.ai/projects/responsible-ai/social-media-governance/responsible-ai-for-social-media-governance.pdf)
+
+## Building Better AI in Aotearoa
+
+**Title:** Building Better AI in Aotearoa
+**Type:** Commentary
+**Date:** 2021/05/17
+**Organization:** Artificial Intelligence Forum of New Zealand
+**Link:** [https://aiforum.org.nz/2021/05/17/building-better-ai-in-aotearoa/#:~:text=The%20National%20AI%20Strategy%20is,and%20economically%20prosperous%20New%20Zealand.](https://aiforum.org.nz/2021/05/17/building-better-ai-in-aotearoa/#:~:text=The%20National%20AI%20Strategy%20is,and%20economically%20prosperous%20New%20Zealand.)
+
+## An Introduction to the Role of Artificial Intelligence in Classrooms and Schools
+
+**Title:** An Introduction to the Role of Artificial Intelligence in Classrooms and Schools
+**Type:** Commentary
+**Date:** 2023/03/20
+**Organization:** The Education Hub
+**Link:** [https://theeducationhub.org.nz/an-introduction-to-the-role-of-artificial-intelligence-in-classrooms-and-schools/](https://theeducationhub.org.nz/an-introduction-to-the-role-of-artificial-intelligence-in-classrooms-and-schools/)
+
+## Toi Hangarau a Report on Māori Technology Companies 2023
+
+**Title:** Toi Hangarau a Report on Māori Technology Companies 2023
+**Type:** Commentary
+**Date:** 2023/02/02
+**Organization:** Pāua Interface Ltd
+**Link:** [https://publuu.com/flip-book/75621/226497/page/1](https://publuu.com/flip-book/75621/226497/page/1)
+
+## Why is Regulating AI Such a Challenge
+
+**Title:** Why is Regulating AI Such a Challenge
+**Type:** Commentary
+**Date:** 2023/07/13
+**Organization:** Office of the Prime Minister’s Chief Science Advisor 
+**Link:** [https://www.pmcsa.ac.nz/2023/07/13/why-is-regulating-ai-such-a-challenge/#:~:text=There%20are%20no%20AI%2Dspecific,agencies%20have%20signed%20up%20to.](https://www.pmcsa.ac.nz/2023/07/13/why-is-regulating-ai-such-a-challenge/#:~:text=There%20are%20no%20AI%2Dspecific,agencies%20have%20signed%20up%20to.)
+
+## Trustworthy AI in Aotearoa 
+
+**Title:** Trustworthy AI in Aotearoa 
+**Type:** Commentary
+**Date:** 2020/03/04
+**Organization:** Artificial Intelligence Forum of New Zealand
+**Link:** [https://aiforum.org.nz/wp-content/uploads/2020/03/Trustworthy-AI-in-Aotearoa-March-2020.pdf](https://aiforum.org.nz/wp-content/uploads/2020/03/Trustworthy-AI-in-Aotearoa-March-2020.pdf)
+
+## Artificial Intelligence
+
+**Title:** Artificial Intelligence
+**Type:** Commentary
+**Date:** 2023/05/14
+**Organization:** Office of the Prime Minister’s Chief Science Advisor 
+**Link:** [https://www.pmcsa.ac.nz/topics/artificial-intelligence-2/](https://www.pmcsa.ac.nz/topics/artificial-intelligence-2/)
+
+## A Constructive Approach to AI
+
+**Title:** A Constructive Approach to AI
+**Type:** Commentary
+**Date:** 2023/10/25
+**Organization:** Te Mana Tautikanga o Aotearoa Standards New Zealand 
+**Link:** [https://www.standards.govt.nz/news-and-updates/a-constructive-approach-to-ai/](https://www.standards.govt.nz/news-and-updates/a-constructive-approach-to-ai/)
+
+## Reimagining Regulation for the Age of AI: New Zealand Pilot
+
+**Title:** Reimagining Regulation in the Age of AI: New Zealand Pilot
+**Type:** White Paper
+**Date:** 2020/06/29
+**Organization:** World Economic Forum
+**Link:** [https://www3.weforum.org/docs/WEF_Reimagining_Regulation_Age_AI_2020.pdf](https://www3.weforum.org/docs/WEF_Reimagining_Regulation_Age_AI_2020.pdf)
+
+## The Digital Inclusion Blueprint Te Maher Mo te Whakaurung Matihiko
+
+**Title:** The Digital Inclusion Blueprint Te Maher Mo te Whakaurung Matihiko
+**Type:** White Paper
+**Date:** 2019/05/03
+**Organization:** Te Tari Taiwhenua Department of Internal Affairs
+**Link:** [https://www.digital.govt.nz/digital-government/programmes-and-projects/digital-inclusion/governments-vision-the-digital-inclusion-blueprint/](https://www.digital.govt.nz/digital-government/programmes-and-projects/digital-inclusion/governments-vision-the-digital-inclusion-blueprint/)
+
+## OIA 107633
+
+**Title:** OIA 107633
+**Type:** OIA Response
+**Date:** 2023/11/01
+**Organization:** Te Tāhū o te Ture Ministry of Justice 
+**Link:** [https://www.justice.govt.nz/assets/Documents/Publications/OIA-107633.pdf](https://www.justice.govt.nz/assets/Documents/Publications/OIA-107633.pdf)
+
+## OIA 1302815 
+
+**Title:** OIA 1302815 
+**Type:** OIA Response
+**Date:** 2023/03/03
+**Organization:** Te Tāhuhu o te Mātauranga Ministry of Education
+**Link:** [https://assets.education.govt.nz/public/Documents/our-work/information-releases/responses-to-Official-Information-Act-requests/1302815-Response.pdf](https://assets.education.govt.nz/public/Documents/our-work/information-releases/responses-to-Official-Information-Act-requests/1302815-Response.pdf)
+
+## Technology Advisory Groups at IRD
+
+**Title:** Technology Advisory Groups at IRD
+**Type:** OIA Response
+**Date:** 2023/02/13
+**Organization:** Te Tari Taake Inland Revenue Department
+**Link:** [https://www.ird.govt.nz/-/media/project/ir/home/documents/oia-responses/february-2023/2023-02-13-technology-advisory-groups-at-inland-revenue.pdf?modified=20230308001235&amp;modified=20230308001235](https://www.ird.govt.nz/-/media/project/ir/home/documents/oia-responses/february-2023/2023-02-13-technology-advisory-groups-at-inland-revenue.pdf?modified=20230308001235&amp;modified=20230308001235)
+
+## The Government Data Strategy and Roadmap 
+
+**Title:** The Government Data Strategy and Roadmap 
+**Type:** Strategy
+**Date:** 2021/09/17
+**Organization:** Government Chief Data Steward
+**Link:** [https://data.govt.nz/leadership/strategy-and-roadmap/](https://data.govt.nz/leadership/strategy-and-roadmap/)
+
+## The Digital Strategy for Aotearoa
+
+**Title:** The Digital Strategy for Aotearoa
+**Type:** Strategy
+**Date:** 2020/07/14
+**Organization:** A cross-agency team with representatives from Hīkina Whakatutuki Ministry of Business, Innovation & Employment, Te Tari Taiwhenua Department of Internal Affairs , Te Tari o Te Pirimia Me Te Komiti Matua Department of the Prime Minister and Cabinet, Tatauranga Aotearoa Stats New Zealand
+**Link:** [https://www.digital.govt.nz/dmsdocument/237~the-digital-strategy-for-aotearoa/html](https://www.digital.govt.nz/dmsdocument/237~the-digital-strategy-for-aotearoa/html)
+
+## Public Participation
+in Government in
+the Future
+
+**Title:** Public Participation
+in Government in
+the Future
+
+**Type:** Strategy
+**Date:** 2022/06/30
+**Organization:** Te Kawa Mataaho Public Service Commission 
+**Link:** [https://www.publicservice.govt.nz/assets/DirectoryFile/Public-Participation-in-Government-in-the-Future-Draft-for-Consultation.pdf](https://www.publicservice.govt.nz/assets/DirectoryFile/Public-Participation-in-Government-in-the-Future-Draft-for-Consultation.pdf)
+
+## System Map and Work Programme: AI and Data Ethics
+
+**Title:** System Map and Work Programme: AI and Data Ethics
+**Type:** Strategy
+**Date:** 2023/07/18
+**Organization:** Tatauranga Aotearoa Stats New Zealand
+**Link:** [https://www.stats.govt.nz/assets/Uploads/Corporate/Cabinet-papers/Cabinet-papers-Establishment-of-the-Interim-Centre-for-Data-Ethics-and-Innovation/System-Map-AI-and-Data-Ethics-18-July-2023-MM2656.pdf](https://www.stats.govt.nz/assets/Uploads/Corporate/Cabinet-papers/Cabinet-papers-Establishment-of-the-Interim-Centre-for-Data-Ethics-and-Innovation/System-Map-AI-and-Data-Ethics-18-July-2023-MM2656.pdf)
+
+## The Digital Technologies Industry Transformation Plan 
+
+**Title:** The Digital Technologies Industry Transformation Plan 
+**Type:** Strategy
+**Date:** 2023/04/15
+**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation & Employment & NZTech 
+**Link:** [https://www.mbie.govt.nz/assets/digital-technologies-industry-transformation-plan.pdf](https://www.mbie.govt.nz/assets/digital-technologies-industry-transformation-plan.pdf)
+
+## NZ Vision for Health
+Technology
+
+**Title:** NZ Vision for Health
+Technology
+**Type:** Strategy
+**Date:** 2020/08/10
+**Organization:** Te Whatu Ora Health New Zealand
+**Link:** [https://www.tewhatuora.govt.nz/our-health-system/digital-health/vision-for-health-technology/](https://www.tewhatuora.govt.nz/our-health-system/digital-health/vision-for-health-technology/)
+
+## Long Term Insights Briefing 2022 - Aotearoa New Zealand Empowered by Data
+
+**Title:** Long Term Insights Briefing 2022 - Aotearoa New Zealand Empowered by Data
+**Type:** Strategy
+**Date:** 2021/11/10
+**Organization:** Tatauranga Aotearoa Stats New Zealand 
+**Link:** [https://www.stats.govt.nz/assets/Uploads/2023-Long-term-insights-briefing/LTIB-final-Report-April-2023-Update.pdf](https://www.stats.govt.nz/assets/Uploads/2023-Long-term-insights-briefing/LTIB-final-Report-April-2023-Update.pdf) 
+
+## Model Development Life-Cycle
+
+**Title:** Model Development Life-Cycle
+**Type:** Strategy
+**Date:** 2021/10/01
+**Organization:** Te Manatū Whakahiato Ora Ministry of Social Development
+**Link:** [https://www.msd.govt.nz/about-msd-and-our-work/work-programmes/initiatives/phrae/model-development-lifecycle.html](https://www.msd.govt.nz/about-msd-and-our-work/work-programmes/initiatives/phrae/model-development-lifecycle.html)
+
+## Analytics and Evidence
+
+**Title:** Analytics and Evidence
+**Type:** Guidelines
+**Date:** 2020/08/01
+**Organization:** Toi Hau Tāngata Social Wellbeing Agency
+**Link:** [https://swa.govt.nz/what-we-do/analytics/](https://swa.govt.nz/what-we-do/analytics/)
+
+## Interim Generative AI Guidance for the Public Service
+
+**Title:** Interim Generative AI Guidance for the Public Service
+**Type:** Guidelines
+**Date:** 2023/07/01
+**Organization:** Te Tari Taiwhenua Department of Internal Affairs & Tatauranga Aotearoa Stats New Zealand & National Cyber Security Center
+**Link:** [https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/interim-generative-ai-guidance-for-the-public-service/understanding-the-benefits-of-genai-to-the-public-service/](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/interim-generative-ai-guidance-for-the-public-service/understanding-the-benefits-of-genai-to-the-public-service/)
+
+## Algorithm Use Policy
+
+**Title:** Algorithm Use Policy
+**Type:** Guidelines
+**Date:** 2022/05/01
+**Organization:** Hīkina Whakatutuki Ministry of Business, Innovation & Employment
+**Link:** [https://www.mbie.govt.nz/dmsdocument/20298-algorithm-use-policy](https://www.mbie.govt.nz/dmsdocument/20298-algorithm-use-policy)
+
+## Ethics of Artificial Intelligence Recommendation
+
+**Title:** Ethics of Artificial Intelligence Recommendation
+**Type:** Guidelines
+**Date:** 2021/11/03
+**Organization:** The United Nations Educational, Scientific and Cultural Organization (UNESCO)
+**Link:** [https://unesdoc.unesco.org
