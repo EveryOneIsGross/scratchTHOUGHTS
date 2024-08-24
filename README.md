@@ -1,5 +1,10 @@
 ##
 ---
+240824
+
+copyright is j artificial scarcity 🕳🎤 why is this still such a fn hot take 😥
+
+---
 170824
 
 ```
