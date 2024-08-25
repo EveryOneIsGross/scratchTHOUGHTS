@@ -5,7 +5,7 @@
 
 ---
 
-**Code:** [TBD]  
+**Code:** [PD]  
 **Type:** Sociocultural Influence-Related Disorder
 
 **First Publication Date:** DSM-6 (2025)
