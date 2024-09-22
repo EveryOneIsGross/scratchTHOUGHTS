@@ -500,3 +500,232 @@ This sequence repeats infinitely until state collapse.
 3. **Initialization**: Determining the initial conditions for the first cycle, especially the initial Thought that combines with the first input.
 
 4. **Measurement and Observation**: Developing methods to observe and measure each step of the cycle, particularly the internal Trajectory and Thought processes.
+
+5. ---
+
+6. # Formalized ETAT Framework
+
+## 1. Components
+
+### 1.1 Experience (E)
+- **Definition**: The combination of new input and existing thoughts.
+- **Representation**: E = f(I, T_prev)
+  - Where I is the input from the environment
+  - T_prev is the previous thought state
+
+### 1.2 Trajectory (T)
+- **Definition**: The planning of a reaction based on the current experience.
+- **Representation**: T = g(E)
+  - Where g is a function that maps experiences to potential action paths
+
+### 1.3 Action (A)
+- **Definition**: The output of the system that affects the external environment.
+- **Representation**: A = h(T)
+  - Where h is a function that selects and executes an action based on the trajectory
+
+### 1.4 Thoughts (T)
+- **Definition**: The reflection and integration of information from the previous steps.
+- **Representation**: T_new = k(E, T, A)
+  - Where k is a function that integrates experience, trajectory, and action into new thoughts
+
+## 2. Process Flow
+
+The ETAT framework operates in a continuous cycle:
+
+1. E(t) = f(I(t), T(t-1))
+2. T(t) = g(E(t))
+3. A(t) = h(T(t))
+4. T(t) = k(E(t), T(t), A(t))
+
+Where t represents the current cycle, and (t-1) represents the previous cycle.
+
+## 3. System Dynamics
+
+### 3.1 Cycle Continuation
+The cycle repeats indefinitely until a state collapse occurs:
+
+```
+while not state_collapse:
+    E = experience(input, previous_thought)
+    T = trajectory(E)
+    A = action(T)
+    T = thoughts(E, T, A)
+    previous_thought = T
+```
+
+### 3.2 State Collapse
+- **Definition**: A significant change in the system's state or environment that interrupts the normal cycle.
+- **Representation**: state_collapse = c(E, T, A, T)
+  - Where c is a function that evaluates the current state for collapse conditions
+
+## 4. Key Properties
+
+### 4.1 Feedback Loop
+- Each cycle informs the next through the integration of new thoughts.
+- Represented by: T(t) → E(t+1)
+
+### 4.2 Adaptive Behavior
+- The system can modify its behavior based on past experiences and outcomes.
+- Adaptation function: a(T_1, T_2, ..., T_n)
+  - Where T_1 to T_n represent thought states over time
+
+### 4.3 Cognitive Boundedness
+- The system operates within defined cognitive limits.
+- Constraint function: b(E, T, A, T) ≤ L
+  - Where L represents the cognitive capacity limit
+
+## 5. Mathematical Formalization
+
+Let S be the state space of the system, then:
+
+- E: S × I → S (Experience function)
+- T: S → P(A) (Trajectory function, where P(A) is the power set of possible actions)
+- A: P(A) → A (Action selection function)
+- T: S × P(A) × A → S (Thought update function)
+
+The system evolution can be described as:
+
+S(t+1) = T(E(S(t), I(t)), T(S(t)), A(T(S(t))))
+
+```
+// Define system parameters
+struct SystemParameters {
+    L: float  // Cognitive capacity limit
+    τ_E: float  // Time constant for Experience
+    τ_T: float  // Time constant for Trajectory
+    τ_A: float  // Time constant for Action
+    τ_Th: float  // Time constant for Thoughts
+    collapse_threshold: float  // Threshold for state collapse
+}
+
+// Define system state
+struct State {
+    E: Experience
+    T: Trajectory
+    A: Action
+    Th: Thoughts
+}
+
+// Initialize system
+function initialize() -> State {
+    return State {
+        E: initial_experience(),
+        T: initial_trajectory(),
+        A: initial_action(),
+        Th: initial_thoughts()
+    }
+}
+
+// Experience function
+function experience(I: Input, Th_prev: Thoughts, τ_E: float) -> Experience {
+    return f(I, Th_prev, τ_E)
+}
+
+// Trajectory function
+function trajectory(E: Experience, τ_T: float) -> Trajectory {
+    return g(E, τ_T)
+}
+
+// Action function
+function action(T: Trajectory, τ_A: float) -> Action {
+    return h(T, τ_A)
+}
+
+// Thoughts function
+function thoughts(E: Experience, T: Trajectory, A: Action, τ_Th: float) -> Thoughts {
+    return k(E, T, A, τ_Th)
+}
+
+// Adaptation function
+function adapt(Th_history: List<Thoughts>) -> AdaptationFactor {
+    return a(Th_history)
+}
+
+// Constraint function
+function is_within_cognitive_bounds(S: State, L: float) -> bool {
+    return b(S.E, S.T, S.A, S.Th) <= L
+}
+
+// State collapse function
+function check_state_collapse(S: State, threshold: float) -> bool {
+    return c(S) > threshold
+}
+
+// Measurement functions
+function measure_experience(E: Experience) -> float {
+    return m_E(E)
+}
+
+function measure_trajectory(T: Trajectory) -> float {
+    return m_T(T)
+}
+
+function measure_action(A: Action) -> float {
+    return m_A(A)
+}
+
+function measure_thoughts(Th: Thoughts) -> float {
+    return m_Th(Th)
+}
+
+// Main ETAT cycle
+function ETAT_cycle(params: SystemParameters) {
+    S: State = initialize()
+    Th_history: List<Thoughts> = []
+    
+    while not check_state_collapse(S, params.collapse_threshold) {
+        // Experience
+        I: Input = get_input()
+        S.E = experience(I, S.Th, params.τ_E)
+        
+        // Trajectory
+        S.T = trajectory(S.E, params.τ_T)
+        
+        // Action
+        S.A = action(S.T, params.τ_A)
+        
+        // Thoughts
+        S.Th = thoughts(S.E, S.T, S.A, params.τ_Th)
+        
+        // Update thought history
+        Th_history.append(S.Th)
+        
+        // Apply adaptation
+        adaptation_factor = adapt(Th_history)
+        apply_adaptation(S, adaptation_factor)
+        
+        // Check cognitive bounds
+        if not is_within_cognitive_bounds(S, params.L) {
+            adjust_cognitive_load(S)
+        }
+        
+        // Measure and log system state
+        log_measurements(
+            measure_experience(S.E),
+            measure_trajectory(S.T),
+            measure_action(S.A),
+            measure_thoughts(S.Th)
+        )
+        
+        // Prepare for next cycle
+        wait(min(params.τ_E, params.τ_T, params.τ_A, params.τ_Th))
+    }
+    
+    // Handle state collapse
+    handle_collapse(S)
+}
+
+// Run the ETAT system
+function main() {
+    params = SystemParameters {
+        L: 100.0,
+        τ_E: 0.1,
+        τ_T: 0.2,
+        τ_A: 0.1,
+        τ_Th: 0.3,
+        collapse_threshold: 10.0
+    }
+    
+    ETAT_cycle(params)
+}
+```
