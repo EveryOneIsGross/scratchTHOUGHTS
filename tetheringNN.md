@@ -1,5 +1,394 @@
 DTNN architecture has tether nodes in each layer that can connect within and between models. 
 
+```python
+import torch
+import torch.nn as nn
+import torch.optim as optim
+import random
+import numpy as np
+import copy
+import os
+from matplotlib import cm
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+from torch.utils.data import TensorDataset, DataLoader
+
+# ================================
+# 1. Set Random Seeds for Reproducibility
+# ================================
+def set_seed(seed=42):
+    torch.manual_seed(seed)
+    np.random.seed(seed)
+    random.seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+
+set_seed(42)
+
+# ================================
+# 2. Hyperparameters and Configurations
+# ================================
+# Hyperparameters
+INPUT_SIZE = 128
+HIDDEN_SIZE = 64
+OUTPUT_SIZE = 10
+BATCH_SIZE = 32
+NUM_EPOCHS = 10
+LEARNING_RATE = 0.001
+
+# Tethering and Merging Parameters
+LOSS_THRESHOLD = 0.1         # Threshold for loss improvement
+GRADIENT_THRESHOLD = 0.1     # Threshold for gradient norm
+COMPATIBILITY_THRESHOLD = 50 # Threshold for tether compatibility
+MAX_TETHER_MERGES_PER_EPOCH = 5
+
+# Data and Tether File Paths
+DATA_FILE = 'data_input.txt'
+LABELS_FILE = 'labels_input.txt'
+TETHER_OTHER_MODEL_FILE = 'tether_other_model.txt'
+
+# Visualization Parameters
+MERGE_MARKER_COLOR = 'red'
+MERGE_MARKER_STYLE = 'x'
+
+# ================================
+# 3. Utility Functions
+# ================================
+
+def input_tether(shape):
+    """
+    Initialize a tether tensor with random values.
+    """
+    return torch.tensor(np.random.rand(*shape), dtype=torch.float32)
+
+def compatibility(tether_i, tether_j):
+    """
+    Calculate the compatibility between two tethers.
+    """
+    return torch.sum(tether_i * tether_j).item()
+
+def read_data_from_file(file_path, shape, default_data=None):
+    """
+    Read data from a text file and convert it to a PyTorch tensor.
+    If the file does not exist, create it with default data.
+    """
+    if not os.path.exists(file_path):
+        if default_data is not None:
+            with open(file_path, 'w') as f:
+                f.write(' '.join(map(str, default_data.view(-1).tolist())))
+            print(f"Created {file_path} with default data.")
+            return default_data
+        else:
+            raise FileNotFoundError(f"{file_path} does not exist and no default data provided.")
+    else:
+        with open(file_path, 'r') as f:
+            flat_list = list(map(float, f.read().strip().split()))
+            if not flat_list:
+                if default_data is not None:
+                    print(f"{file_path} is empty. Using default data.")
+                    return default_data
+                else:
+                    raise ValueError(f"{file_path} is empty and no default data provided.")
+            tensor_data = torch.tensor(flat_list, dtype=torch.float32).view(*shape)
+        return tensor_data
+
+def read_tether_from_file(file_path, shape, default_data=None):
+    """
+    Read tether tensor from a text file.
+    """
+    return read_data_from_file(file_path, shape, default_data)
+
+# ================================
+# 4. Define the Neural Network with Tethering
+# ================================
+class Net(nn.Module):
+    def __init__(self, n_inputs, n_hiddens, n_outputs):
+        super(Net, self).__init__()
+        
+        # Register tether tensors as buffers (non-trainable parameters)
+        self.register_buffer('tether_fc1', input_tether((n_hiddens, n_inputs)))
+        self.register_buffer('tether_fc2', input_tether((n_hiddens, n_hiddens)))
+        self.register_buffer('tether_out', input_tether((n_outputs, n_hiddens)))
+
+        # Initialize layers
+        self.fc1 = nn.Linear(n_inputs, n_hiddens)
+        self.fc2 = nn.Linear(n_hiddens, n_hiddens)
+        self.out = nn.Linear(n_hiddens, n_outputs)
+        
+    def forward(self, x):
+        # Apply tethering by modifying weights temporarily for the forward pass
+        fc1_weight = self.fc1.weight * self.tether_fc1
+        fc2_weight = self.fc2.weight * self.tether_fc2
+        out_weight = self.out.weight * self.tether_out
+
+        # Forward pass using functional API with tethered weights
+        x = torch.relu(nn.functional.linear(x, fc1_weight, self.fc1.bias))
+        x = torch.relu(nn.functional.linear(x, fc2_weight, self.fc2.bias))
+        x = nn.functional.linear(x, out_weight, self.out.bias)
+        return x
+
+# ================================
+# 5. Initialize Model, Loss Function, and Optimizer
+# ================================
+model = Net(n_inputs=INPUT_SIZE, n_hiddens=HIDDEN_SIZE, n_outputs=OUTPUT_SIZE)
+
+# Save initial tethers
+initial_tethers = copy.deepcopy(model.state_dict())
+tether_generations = [initial_tethers]
+print("Model and initial tethers saved.")
+
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
+
+# ================================
+# 6. Prepare Data
+# ================================
+# Define default data and labels for demonstration
+default_num_samples = 3200  # Total samples (e.g., 100 batches * 32)
+default_dataloader = torch.rand((default_num_samples, INPUT_SIZE))
+default_labels = torch.randint(0, OUTPUT_SIZE, (default_num_samples,))
+
+# Read or create data_input.txt
+try:
+    data = read_data_from_file(DATA_FILE, (default_num_samples, INPUT_SIZE), default_dataloader)
+except Exception as e:
+    print(e)
+    data = default_dataloader
+    with open(DATA_FILE, 'w') as f:
+        f.write(' '.join(map(str, data.view(-1).tolist())))
+    print(f"Created {DATA_FILE} with default data.")
+
+# Read or create labels_input.txt
+try:
+    labels = read_data_from_file(LABELS_FILE, (default_num_samples,), default_labels).long()
+except Exception as e:
+    print(e)
+    labels = default_labels.long()
+    with open(LABELS_FILE, 'w') as f:
+        f.write(' '.join(map(str, labels.view(-1).tolist())))
+    print(f"Created {LABELS_FILE} with default labels.")
+
+# Create TensorDataset and DataLoader
+dataset = TensorDataset(data, labels)
+dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
+
+# Read or create tether_other_model.txt
+default_tether_other_model = input_tether((HIDDEN_SIZE, HIDDEN_SIZE))
+try:
+    tether_tensor_other_model = read_tether_from_file(TETHER_OTHER_MODEL_FILE, (HIDDEN_SIZE, HIDDEN_SIZE), default_tether_other_model)
+except Exception as e:
+    print(e)
+    tether_tensor_other_model = default_tether_other_model
+    with open(TETHER_OTHER_MODEL_FILE, 'w') as f:
+        f.write(' '.join(map(str, tether_tensor_other_model.view(-1).tolist())))
+    print(f"Created {TETHER_OTHER_MODEL_FILE} with default tether tensor.")
+
+# ================================
+# 7. Initialize Tracking Variables for Visualization
+# ================================
+merge_points = []
+
+# Statistics Tracking
+mean_fc1_weights = []
+std_fc1_weights = []
+mean_fc2_weights = []
+std_fc2_weights = []
+epoch_numbers = []
+
+# Visualization Tracking
+loss_values = []
+param1_values = []
+param2_values = []
+
+# ================================
+# 8. Training Loop
+# ================================
+prev_loss = float('inf')
+
+for epoch in range(NUM_EPOCHS):
+    print(f"Epoch {epoch+1}/{NUM_EPOCHS} started.")
+    current_tether_merges = 0
+    epoch_loss = 0.0
+    for batch_idx, (batch_data, batch_labels) in enumerate(dataloader):
+        # Forward pass
+        outputs = model(batch_data)
+        loss = criterion(outputs, batch_labels)
+        epoch_loss += loss.item()
+
+        # Backward pass
+        optimizer.zero_grad()
+        loss.backward()
+
+        # Calculate gradient norm after backpropagation
+        total_grad_norm = sum(p.grad.data.norm(2).item() for p in model.parameters() if p.grad is not None)
+
+        # Optimizer step
+        optimizer.step()
+
+        # Extract specific parameters for visualization
+        param1 = model.fc1.weight.data[0, 0].item()
+        param2 = model.fc2.weight.data[0, 0].item()
+
+        # Store values for visualization
+        loss_values.append(loss.item())
+        param1_values.append(param1)
+        param2_values.append(param2)
+        epoch_numbers.append(epoch + 1)  # 1-indexed epochs
+
+        # Check for tether merging conditions
+        if (abs(prev_loss - loss.item()) < LOSS_THRESHOLD) or (total_grad_norm < GRADIENT_THRESHOLD):
+            # Calculate compatibility between tethers
+            comp = compatibility(model.tether_fc2, tether_tensor_other_model)
+            print(f"Batch {batch_idx+1}: Compatibility = {comp:.2f}")
+
+            # Check if compatibility exceeds threshold and merging limit not reached
+            if (comp > COMPATIBILITY_THRESHOLD) and (current_tether_merges < MAX_TETHER_MERGES_PER_EPOCH):
+                # Merge tethers by averaging
+                new_tether_fc2 = (model.tether_fc2 + tether_tensor_other_model) / 2
+                model.tether_fc2 = new_tether_fc2
+
+                # Save the updated state dict
+                tether_generations.append(copy.deepcopy(model.state_dict()))
+                print(f"Batch {batch_idx+1}: Tethers merged due to high compatibility. State saved.")
+
+                # Record the merge point for visualization
+                merge_points.append(len(loss_values) - 1)
+
+                # Increment the merge counter
+                current_tether_merges += 1
+
+        # Update previous loss
+        prev_loss = loss.item()
+
+    average_epoch_loss = epoch_loss / len(dataloader)
+    print(f"Epoch {epoch+1} completed. Average Loss: {average_epoch_loss:.4f}\n")
+
+# ================================
+# 9. Visualization
+# ================================
+
+# Create a color map based on the epoch number
+norm = plt.Normalize(min(epoch_numbers), max(epoch_numbers))
+cmap = cm.viridis
+
+# Initialize the 3D plot
+fig = plt.figure(figsize=(12, 8))
+ax = fig.add_subplot(111, projection='3d')
+
+# Scatter plot with color-coded epochs
+sc = ax.scatter(param1_values, loss_values, param2_values, 
+                c=epoch_numbers, cmap=cmap, norm=norm, alpha=0.7, s=50)
+
+# Highlight the merge points with a different marker and color
+if merge_points:
+    ax.scatter([param1_values[i] for i in merge_points], 
+               [loss_values[i] for i in merge_points], 
+               [param2_values[i] for i in merge_points], 
+               c=MERGE_MARKER_COLOR, marker=MERGE_MARKER_STYLE, 
+               s=100, label='Tether Merge Points')
+
+# Add a color bar to indicate epoch numbers
+cbar = plt.colorbar(sc, ax=ax)
+cbar.set_label('Epoch Number')
+
+# Set labels
+ax.set_xlabel('Parameter 1 (fc1.weight[0][0])')
+ax.set_ylabel('Loss')
+ax.set_zlabel('Parameter 2 (fc2.weight[0][0])')
+ax.set_title('Training Dynamics with Tether Merging')
+
+# Add legend if there are merge points
+if merge_points:
+    ax.legend()
+
+plt.show()
+
+# ================================
+# 10. Save Final Tethers (Optional)
+# ================================
+# Optionally, save the final tethers to a file for future use
+final_tethers = model.state_dict()
+torch.save(final_tethers, 'final_tethers.pth')
+print("Final tethers saved to 'final_tethers.pth'.")
+```
+
+### **Explanation of the Implemented Script**
+
+1. **Random Seed Initialization:**
+   - **Purpose:** Ensures reproducibility by setting the random seeds for `torch`, `numpy`, and `random`. This guarantees that the random operations produce the same results every time the script is run.
+   - **Function:** `set_seed(seed=42)`
+
+2. **Hyperparameters and Configurations:**
+   - **Defines:** All hyperparameters such as input size, hidden size, output size, batch size, number of epochs, learning rate, and tethering parameters.
+   - **File Paths:** Specifies the paths for data, labels, and tether tensors.
+
+3. **Utility Functions:**
+   - **`input_tether(shape)`:** Initializes tether tensors with random values.
+   - **`compatibility(tether_i, tether_j)`:** Computes the compatibility between two tethers by summing the element-wise products.
+   - **`read_data_from_file(...)`:** Reads data from a specified text file. If the file doesn't exist or is empty, it creates the file with default data.
+   - **`read_tether_from_file(...)`:** Similar to `read_data_from_file` but specifically for tether tensors.
+
+4. **Neural Network Definition (`Net` Class):**
+   - **Tethers as Buffers:** Tethers are registered as buffers using `self.register_buffer(...)`. Buffers are tensors that are part of the module's state but are not considered model parameters (i.e., they are not updated by the optimizer).
+   - **Forward Pass:** Instead of modifying the weights directly (which can interfere with autograd), the forward pass uses the tethered weights by multiplying the layer weights with their corresponding tethers. This is achieved using the functional API (`nn.functional.linear`).
+
+5. **Model Initialization:**
+   - **Model Creation:** Instantiates the `Net` class with the specified input, hidden, and output sizes.
+   - **Initial Tethers:** Saves the initial state of the model, including tethers, to `tether_generations`.
+   - **Loss and Optimizer:** Uses `CrossEntropyLoss` and the Adam optimizer.
+
+6. **Data Preparation:**
+   - **Default Data and Labels:** Generates default random data and labels for demonstration purposes.
+   - **Data Loading:** Attempts to read data and labels from text files. If the files do not exist or are empty, it creates them with the default data.
+   - **TensorDataset and DataLoader:** Wraps the data and labels into a `TensorDataset` and then into a `DataLoader` for batch processing.
+   - **Tether Tensor for Another Model:** Reads or creates a tether tensor from `tether_other_model.txt` to be used for compatibility checks and merging.
+
+7. **Tracking Variables for Visualization:**
+   - **Merge Points:** Keeps track of where tether merges occur.
+   - **Statistics Tracking:** Collects statistics like mean and standard deviation of weights (placeholder for further extension).
+   - **Visualization Tracking:** Records loss values and specific parameter values for 3D plotting.
+
+8. **Training Loop:**
+   - **Epoch Loop:** Iterates over the specified number of epochs.
+   - **Batch Processing:**
+     - **Forward Pass:** Computes the output of the model.
+     - **Loss Calculation:** Computes the loss using the criterion.
+     - **Backward Pass:** Performs backpropagation.
+     - **Gradient Norm Calculation:** Calculates the total gradient norm **after** backpropagation to ensure accurate measurement.
+     - **Optimizer Step:** Updates the model parameters.
+     - **Parameter Extraction:** Extracts specific weights (`fc1.weight[0][0]` and `fc2.weight[0][0]`) for visualization.
+     - **Tether Merging Logic:** Checks if the change in loss or gradient norm falls below thresholds. If so, it computes the compatibility between tethers. If compatibility exceeds the threshold and the maximum number of merges per epoch hasn't been reached, it merges the tethers by averaging them and records the merge point.
+   - **Epoch Loss Reporting:** Prints the average loss at the end of each epoch.
+
+9. **Visualization:**
+   - **3D Scatter Plot:** Plots `param1` vs. `loss` vs. `param2`, color-coded by epoch number.
+   - **Merge Points Highlighting:** Highlights points where tether merges occurred with a distinct marker and color.
+   - **Color Bar and Labels:** Adds a color bar to indicate epoch numbers and labels for axes.
+   - **Legend:** Adds a legend if merge points are present.
+   - **Display Plot:** Renders the plot using `plt.show()`.
+
+10. **Saving Final Tethers (Optional):**
+    - **Purpose:** Saves the final state of the model's tethers to a file (`final_tethers.pth`) for future use or analysis.
+
+### **Additional Notes and Recommendations**
+
+- **Data and Label Files:** Ensure that `data_input.txt` and `labels_input.txt` are properly formatted if you intend to use custom data. The script assumes that `data_input.txt` contains floating-point numbers separated by spaces, corresponding to the flattened data tensor, and similarly for `labels_input.txt`.
+
+- **Tethering Mechanism:** The tethering mechanism here multiplies the weights of specific layers by the tether tensors during the forward pass. This approach allows for dynamic modulation of weights based on external factors, which can be useful for various advanced training strategies.
+
+- **Tether Merging:** The script includes a tether merging strategy based on compatibility. This can help in scenarios where multiple models or tether tensors need to be integrated based on their compatibility metrics.
+
+- **Visualization:** The 3D scatter plot provides insights into how specific parameters and loss evolve over epochs, and how tether merges impact the training dynamics.
+
+- **Extensibility:** The script is structured to allow easy modifications. For example, you can extend the tracking of more parameters or statistics, adjust hyperparameters, or modify the tethering and merging logic as per your requirements.
+
+- **Error Handling:** The script includes basic error handling for file operations. Depending on your use case, you might want to enhance this further to handle more edge cases or provide more informative messages.
+
+- **Performance Considerations:** For larger datasets or more complex models, consider optimizing data loading and possibly integrating GPU acceleration by moving the model and data to CUDA devices.
+
+
+----
+
 1. Tethering Function with Layers
 
 - Certain nodes become "tether" nodes based on their importance. 
