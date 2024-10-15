@@ -3,7 +3,7 @@
 
 161024
 
-'''mermaid
+```mermaid
 graph TD
     subgraph Emergent Ethics System
         A((Emergent Ethics))
@@ -75,7 +75,7 @@ graph TD
     classDef default fill:#f9f,stroke:#333,stroke-width:2px;
     classDef feedbackNode fill:#bbf,stroke:#333,stroke-width:2px;
     class G,H,I,J,K,L,M,N,O feedbackNode;
-'''
+```
 
 ---
 300824
