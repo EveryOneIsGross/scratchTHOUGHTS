@@ -76,7 +76,52 @@ graph TD
     classDef feedbackNode fill:#bbf,stroke:#333,stroke-width:2px;
     class G,H,I,J,K,L,M,N,O feedbackNode;
 ```
+```
+This framework presents ethics (guidelines) in AI not as a static set of rules, but as a dynamic, emergent phenomenon arising from the complex interplay of AI development, human understanding, and collective social processes. It emphasizes the importance of including shadow aspects of cognition and suggests that the very process of developing AI systems can lead to deeper insights into human ethics and decision-making.
 
+The model proposes a symbiotic relationship between AI and human ethical development, where each informs and shapes the other through continuous feedback loops and iterative processes. This approach challenges traditional notions of ethics in AI and suggests a more fluid, adaptive approach to moral reasoning in the context of artificial intelligence.
+
+## 1. Fundamental Concept: Emergent Ethics
+
+- Ethics viewed as "emergent hallucinations" rather than top-down constructs
+- Ethical norms arise from collective interactions and diffusion
+- Limited individual internalization of ethical constructs
+
+## 2. AI and Shadow Integration
+
+- Incorporation of shadow aspects (unconscious, repressed elements) in AI systems
+- Shadow integration seen as crucial for comprehensive cognitive modeling
+- Potential for shadow elements to influence ethical emergence
+
+## 3. Multi-way Bounded System of Ethics
+
+- Ethics as a complex, interconnected system with feedback loops
+- Key components: Emergent Ethics, Collective Hallucination, Ethical Fluidity, Shadow Integration, AI Development, Human Interaction
+- Feedback loops connecting Ethical Emergence, Behavioral Adaptation, and Societal Impact
+
+## 4. AI Development and Understanding
+
+- Convergence of building and understanding in AI development
+- Bug-fixing and iteration as catalysts for deeper comprehension
+- Self-reflection as a crucial component in AI development process
+
+## 5. Ethical Qualia and Compressed Ethical Packets
+
+- Introduction of "ethical qualia" - subjective experience of moral decisions
+- Compressed ethical packets as a way of propagating ethical information
+- Potential bridge between computational and phenomenological aspects of ethics
+
+## 6. AI-Human Symbiosis in Ethical Development
+
+- Interdependence of AI development and human understanding
+- Emergent ethics as a product of AI-human interaction
+- Iterative process of development leading to evolving ethical frameworks
+
+## 7. Practical Implications
+
+- AI development as a form of ethical and cognitive exploration through play, trust and emergence
+
+```
 ---
 300824
 
