@@ -3,59 +3,53 @@
 
 ```mermaid
 flowchart LR
-    IN([IN])
-    OUT([OUT])
-    ATTENTION{{ATTENTION}}
-    WORKING_CONTEXT((("WORKING\nCONTEXT")))
-    STATE_CONTEXT(("STATE\nCONTEXT"))
-    MEMORY((MEMORY))
-    STORAGE(("STORAGE"))
-    PERSONA((PERSONA))
-    DEFAULT_MODE((DEFAULT\nMODE))
+    IN([IN]) --- ATTENTION[ATTENTION]
+    OUT([OUT]) --- ATTENTION
     
-    %% Input/Output with threshold attention
-    IN ==>|threshold| ATTENTION
-    ATTENTION ==>|threshold| OUT
+    subgraph CTX[CONTEXT]
+        direction TB
+        WORKING_CONTEXT((("WORKING\nCONTEXT")))
+        STATE_CONTEXT(("STATE\nCONTEXT"))
+    end
     
-    %% Attention to State Context for input
+    subgraph MEM[" "]
+        direction TB
+        MEMORY((MEMORY))
+        STORAGE(("STORAGE"))
+    end
+    
+    subgraph PERS[" "]
+        direction TB
+        PERSONA((PERSONA))
+        DEFAULT_MODE((DEFAULT\nMODE))
+    end
+    
+    %% Main flows
     ATTENTION --> STATE_CONTEXT
-    
-    %% Working Context to Attention (output only)
     WORKING_CONTEXT --> ATTENTION
     
-    %% Context hierarchy and relationships
-    WORKING_CONTEXT --- STATE_CONTEXT
-    
-    %% Memory and context interactions - Updated directionality
+    %% Memory flows
     WORKING_CONTEXT --> MEMORY
     MEMORY --> STATE_CONTEXT
-    
-    %% Storage system
     MEMORY <--> STORAGE
     
-    %% Persona and default mode recursion
+    %% Persona flows
     PERSONA <--> DEFAULT_MODE
-    
-    %% Default mode memory interaction
     DEFAULT_MODE <--> MEMORY
-    
-    %% Persona influencing state context
     PERSONA --> STATE_CONTEXT
     
+    %% Styling
     style STATE_CONTEXT stroke-dasharray: 5 5
     style STORAGE stroke-dasharray: 5 5
     
-    subgraph CONTEXT
-        WORKING_CONTEXT
-        STATE_CONTEXT
-    end
+    %% Layout
+    CTX ~~~ MEM ~~~ PERS
     
     %% Styling to emphasize relationships
-    linkStyle 0,1 stroke:#f66,stroke-width:2px %% Threshold connections
-    linkStyle 2 stroke:#f66,stroke-width:2px %% Attention to State Context
-    linkStyle 3 stroke:#66f,stroke-width:2px %% Working Context to Attention
-    linkStyle 8,9 stroke:#6f6,stroke-width:2px %% Recursion relationships
-    linkStyle 5,6 stroke:#f96,stroke-width:2px %% Memory-Context flows
+    linkStyle 0,1 stroke:#f66,stroke-width:2px %% IO connections
+    linkStyle 2,3 stroke:#66f,stroke-width:2px %% Attention flows
+    linkStyle 4,5 stroke:#f96,stroke-width:2px %% Memory-Context flows
+    linkStyle 7,8 stroke:#6f6,stroke-width:2px %% Recursion relationships
 ```
 
 
