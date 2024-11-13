@@ -21,7 +21,7 @@ flowchart LR
     ATTENTION --> STATE_CONTEXT
     
     %% Attention-Working Context interaction
-    ATTENTION <-- WORKING_CONTEXT
+    ATTENTION <--- WORKING_CONTEXT
     
     %% Context hierarchy and relationships
     WORKING_CONTEXT --- STATE_CONTEXT
