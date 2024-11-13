@@ -20,8 +20,8 @@ flowchart LR
     %% Attention to State Context for input
     ATTENTION --> STATE_CONTEXT
     
-    %% Attention-Working Context interaction
-    ATTENTION <-- WORKING_CONTEXT
+    %% Working Context to Attention (output only)
+    WORKING_CONTEXT --> ATTENTION
     
     %% Context hierarchy and relationships
     WORKING_CONTEXT --- STATE_CONTEXT
@@ -53,8 +53,8 @@ flowchart LR
     %% Styling to emphasize relationships
     linkStyle 0,1 stroke:#f66,stroke-width:2px %% Threshold connections
     linkStyle 2 stroke:#f66,stroke-width:2px %% Attention to State Context
+    linkStyle 3 stroke:#66f,stroke-width:2px %% Working Context to Attention
     linkStyle 8,9 stroke:#6f6,stroke-width:2px %% Recursion relationships
-    linkStyle 3 stroke:#66f,stroke-width:2px %% Attention-Working Context interaction
     linkStyle 5,6 stroke:#f96,stroke-width:2px %% Memory-Context flows
 ```
 
