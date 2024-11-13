@@ -1,6 +1,66 @@
 ##
 ---
 
+```mermaid
+flowchart LR
+    IN([IN])
+    OUT([OUT])
+    ATTENTION{{ATTENTION}}
+    WORKING_CONTEXT((("WORKING\nCONTEXT")))
+    STATE_CONTEXT(("STATE\nCONTEXT"))
+    MEMORY((MEMORY))
+    STORAGE(("STORAGE"))
+    PERSONA((PERSONA))
+    DEFAULT_MODE((DEFAULT\nMODE))
+    
+    %% Input/Output with threshold attention
+    IN ==>|threshold| ATTENTION
+    ATTENTION ==>|threshold| OUT
+    
+    %% Attention to State Context for input
+    ATTENTION --> STATE_CONTEXT
+    
+    %% Attention-Working Context interaction
+    ATTENTION <--- WORKING_CONTEXT
+    
+    %% Context hierarchy and relationships
+    WORKING_CONTEXT --- STATE_CONTEXT
+    
+    %% Memory and context interactions - Updated directionality
+    WORKING_CONTEXT --> MEMORY
+    MEMORY --> STATE_CONTEXT
+    
+    %% Storage system
+    MEMORY <--> STORAGE
+    
+    %% Persona and default mode recursion
+    PERSONA <--> DEFAULT_MODE
+    
+    %% Default mode memory interaction
+    DEFAULT_MODE <--> MEMORY
+    
+    %% Persona influencing state context
+    PERSONA --> STATE_CONTEXT
+    
+    style STATE_CONTEXT stroke-dasharray: 5 5
+    style STORAGE stroke-dasharray: 5 5
+    
+    subgraph CONTEXT
+        WORKING_CONTEXT
+        STATE_CONTEXT
+    end
+    
+    %% Styling to emphasize relationships
+    linkStyle 0,1 stroke:#f66,stroke-width:2px %% Threshold connections
+    linkStyle 2 stroke:#f66,stroke-width:2px %% Attention to State Context
+    linkStyle 8,9 stroke:#6f6,stroke-width:2px %% Recursion relationships
+    linkStyle 3 stroke:#66f,stroke-width:2px %% Attention-Working Context interaction
+    linkStyle 5,6 stroke:#f96,stroke-width:2px %% Memory-Context flows
+```
+
+
+---
+
 161024
 
 ```mermaid
