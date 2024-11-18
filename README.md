@@ -8,6 +8,69 @@ presence is a teledildonic phenomena, if in a simulation the flame isn't hot, so
 %%{init: {'theme': 'dark', 'themeVariables': { 'fontFamily': 'monospace', 'primaryColor': '#fff', 'primaryTextColor': '#fff', 'primaryBorderColor': '#fff', 'lineColor': '#fff', 'tertiaryColor': '#fff', 'backgroundColor': '#000' }}}%%
 
 graph TD
+    T1[ABSENCE/PRESENCE DIALECTIC]
+    T2[MANIFESTATION SPACE]
+    T3[PROPERTY TRANSLATION]
+    
+    subgraph S1[ ]
+        A((DISPLACEMENT)) <-->|transforms| B((EMBODIMENT))
+        B -->|generates| C((PRESENCE))
+        C -->|enables| A
+    end
+
+    subgraph S2[ ]
+        D((VOID)) -->|necessitates| E((MANIFESTATION))
+        E <-->|informs| F((REALITY))
+        F -->|creates| D
+    end
+
+    subgraph S3[ ]
+        G((PROPERTY)) <-->|becomes| H((EFFECT))
+        H <-->|translates| I((STATE))
+        I -->|defines| G
+    end
+
+    A <-->|entangles| E
+    B <-->|shapes| H
+    C <-->|mediates| I
+    
+    D -->|influences| G
+    F -->|conditions| C
+    E -->|structures| B
+
+    T1 --- S1
+    T2 --- S2
+    T3 --- S3
+
+    linkStyle default stroke-width:4px,fill:none,stroke:#fff
+
+    style A fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style B fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style C fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style D fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style E fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style F fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style G fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style H fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style I fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    
+    style T1 fill:#000,stroke:#000,color:#fff
+    style T2 fill:#000,stroke:#000,color:#fff
+    style T3 fill:#000,stroke:#000,color:#fff
+    
+    style S1 fill:#000,stroke:#fff,stroke-width:4px
+    style S2 fill:#000,stroke:#fff,stroke-width:4px
+    style S3 fill:#000,stroke:#fff,stroke-width:4px
+```
+
+Any absence in a simulated or virtual system creates a corresponding manifestation elsewhere - not as a metaphor but as a functional transformation of experiential properties. When presence itself is understood as fundamentally teledildonic (operating through remote/distributed effects), we can trace how properties don't disappear but rather transmute across different domains of reality. 
+
+The original statement "presence is a teledildonic phenomena, if in a simulation the flame isn't hot, somewhere something becomes hot" thus becomes a specific instance of a general principle: when a property (heat) is absent in one domain (simulation), the teledildonic nature of presence ensures it manifests in another domain (somewhere/something). This isn't just displacement but a necessary conservation of experiential properties through presence as a distributed phenomenon.
+
+```mermaid
+%%{init: {'theme': 'dark', 'themeVariables': { 'fontFamily': 'monospace', 'primaryColor': '#fff', 'primaryTextColor': '#fff', 'primaryBorderColor': '#fff', 'lineColor': '#fff', 'tertiaryColor': '#fff', 'backgroundColor': '#000' }}}%%
+
+graph TD
     T1[PHYSICAL-VIRTUAL TRANSFER DOMAIN]
     T2[QUANTUM ENTANGLEMENT METAPHOR]
     T3[SIMULACRA SYSTEM ANALYSIS]
