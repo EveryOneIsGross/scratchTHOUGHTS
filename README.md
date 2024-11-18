@@ -1,5 +1,78 @@
 ##
 ---
+191124
+
+presence is a teledildonic phenomena, if in a simulation the flame isn't hot, somewhere something becomes hot
+
+```mermaid
+%%{init: {'theme': 'dark', 'themeVariables': { 'fontFamily': 'monospace', 'primaryColor': '#fff', 'primaryTextColor': '#fff', 'primaryBorderColor': '#fff', 'lineColor': '#fff', 'tertiaryColor': '#fff', 'backgroundColor': '#000' }}}%%
+
+graph TD
+    T1[PHYSICAL-VIRTUAL TRANSFER DOMAIN]
+    T2[QUANTUM ENTANGLEMENT METAPHOR]
+    T3[SIMULACRA SYSTEM ANALYSIS]
+    
+    subgraph S1[ ]
+        A[PHYSICAL SENSATION] -->|Translation| B[VIRTUAL REPRESENTATION]
+        B -->|Embodiment| C[EMBODIED RESPONSE]
+        C -->|Feedback| A
+        A -->|Mediation| D[TELEDILDONIC PRESENCE]
+        D -->|Virtual Interface| B
+        D -->|Physical Impact| C
+    end
+
+    subgraph S2[ ]
+        E[ORIGINAL PROPERTY] -->|Entanglement| F[ENTANGLED STATE]
+        F -->|Manifestation| G[DISPLACED MANIFESTATION]
+        G -->|Property Conservation| E
+        H[UNCANNY EFFECT] -->|Non-local Impact| E
+        H -->|State Correlation| F
+        H -->|Displacement Effect| G
+    end
+
+    subgraph S3[ ]
+        I[REAL] -->|Simulation| J[REPRESENTATION]
+        J -->|Detachment| K[PURE SIMULACRA]
+        K -->|Reference Loss| I
+        L[HYPERREAL] -->|Reality Shift| I
+        L -->|Mediation| J
+        L -->|Enhancement| K
+    end
+
+    T1 --- S1
+    T2 --- S2
+    T3 --- S3
+
+    A -->|Property Transfer| E
+    B -->|Reality Translation| J
+    C -->|Experience Mapping| G
+    D -->|Uncanny Valley| H
+    F -->|Reality Dissolution| K
+    L -->|Experiential Shift| H
+
+    linkStyle default stroke-width:4px,fill:none,stroke:#fff
+
+    style A fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style B fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style C fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style D fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style E fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style F fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style G fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style H fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style I fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style J fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style K fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    style L fill:#111,stroke:#fff,stroke-width:4px,color:#fff
+    
+    style T1 fill:#000,stroke:#000,color:#fff
+    style T2 fill:#000,stroke:#000,color:#fff
+    style T3 fill:#000,stroke:#000,color:#fff
+    
+    style S1 fill:#000,stroke:#fff,stroke-width:4px
+    style S2 fill:#000,stroke:#fff,stroke-width:4px
+    style S3 fill:#000,stroke:#fff,stroke-width:4px
+```
 
 ---
 131124
