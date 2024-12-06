@@ -45,8 +45,8 @@ flowchart TB
     classDef state fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
     classDef decision fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
     classDef process fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
-    
 
+    linkStyle default stroke-width:4px,fill:none,stroke:#fff
 
     class Start,Complete state
     class Diverge,Valid,Diverse decision
