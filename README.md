@@ -20,6 +20,40 @@
       ▒▓▓▓▓▓█▓▓▓▓▓▓████▓█████████████████████
 ```
 ---
+071224
+
+```mermaid
+flowchart TB
+    Start([Initial Valid State]) --> Root[Root Node]
+    
+    
+        Root --> Diverge{Diverge?}
+        
+        Diverge -->|Yes| Spawn[Spawn Child Node]
+        Spawn --> Valid{Valid?}
+        
+        Valid -->|Yes| Store[Store Node]
+        Store --> Diverse{Enough<br>Diversity?}
+        
+        Diverse -->|No| Diverge
+        Valid -->|No| Diverge
+        
+        Diverse -->|Yes| Complete([Complete])
+    
+    
+    %% Styling
+    classDef state fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+    classDef decision fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+    classDef process fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+    
+
+
+    class Start,Complete state
+    class Diverge,Valid,Diverse decision
+    class Root,Spawn,Store process
+```
+
+---
 191124
 
 presence is a teledildonic phenomena, if in a simulation the flame isn't hot, somewhere something becomes hot
