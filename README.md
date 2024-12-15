@@ -20,6 +20,53 @@
       ▒▓▓▓▓▓█▓▓▓▓▓▓████▓█████████████████████
 ```
 ---
+151224
+
+Reflective Selfplay
+
+```mermaid
+flowchart TD
+    subgraph Challenge["Challenge Phase"]
+        A[Create Challenge] --> B[Sum Target/Sequence Match]
+        B --> C{Search Similar\nPast Reflections}
+        C -->|Found| D[Load Relevant\nPast Insights]
+        C -->|None Found| E[Start Fresh]
+    end
+
+    subgraph Solution["Solution Phase"]
+        D --> F[Attempt Solution]
+        E --> F
+        F --> G[Validate Solution]
+        G -->|Valid| H[Store Solution]
+        G -->|Invalid| I[Note Failure]
+    end
+
+    subgraph Learning["Learning Phase"]
+        H --> J[Generate Reflection via GPT-4]
+        I --> J
+        J --> K[Extract Key Insights]
+        K --> L[Generate Embedding]
+        L --> M[Store in Knowledge Base]
+    end
+
+    subgraph Memory["Memory Management"]
+        M --> N[Update Reflection History]
+        N --> O[Cache Embeddings]
+        O --> P[Save to Disk]
+        P --> Q[Available for\nNext Challenge]
+    end
+
+    Q --> C
+
+    %% Styling
+    classDef state fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+    classDef decision fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+    classDef process fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+
+    linkStyle default stroke-width:4px,fill:none,stroke:#fff
+```
+
+---
 071224
 
 ```mermaid
