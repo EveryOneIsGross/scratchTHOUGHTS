@@ -25,13 +25,29 @@
 Reflective Selfplay
 
 ```mermaid
-fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
-fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
-fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
 
-linkStyle default stroke-width:4px,fill:none,stroke:#fff
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'fontFamily': 'Comic Sans MS',
+    'primaryColor': '#333333',
+    'primaryTextColor': '#333333',
+    'primaryBorderColor': '#333333',
+    'lineColor': '#333333',
+    'secondaryColor': '#ffffff',
+    'tertiaryColor': '#ffffff'
+  },
+  'flowchart': {
+    'curve': 'basis',
+    'nodeSpacing': 50,
+    'rankSpacing': 50
+  }
+} }%%
 
 flowchart TD
+    classDef default fill:#fff,stroke:#333,stroke-width:2px,color:#333,font-family:'Comic Sans MS',font-weight:bold
+    classDef box fill:#f5f5f5,stroke:#333,stroke-width:2px,color:#333,font-family:'Comic Sans MS',font-weight:bold
+
     subgraph Challenge["Challenge Phase"]
         A[Create Challenge] --> B[Sum Target/Sequence Match]
         B --> C{Search Similar\nPast Reflections}
@@ -63,6 +79,8 @@ flowchart TD
     end
 
     Q --> C
+
+    class Challenge,Solution,Learning,Memory box
 
 
 ```
