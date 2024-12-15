@@ -64,7 +64,7 @@ flowchart TD
     end
 
     subgraph Learning["Learning Phase"]
-        H --> J[Generate Reflection via GPT-4]
+        H --> J[Generate Reflection]
         I --> J
         J --> K[Extract Key Insights]
         K --> L[Generate Embedding]
@@ -75,7 +75,7 @@ flowchart TD
         M --> N[Update Reflection History]
         N --> O[Cache Embeddings]
         O --> P[Save to Disk]
-        P --> Q[Available for\nNext Challenge]
+        P --> Q[Available for Next Challenge]
     end
 
     Q --> C
