@@ -25,6 +25,12 @@
 Reflective Selfplay
 
 ```mermaid
+fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
+
+linkStyle default stroke-width:4px,fill:none,stroke:#fff
+
 flowchart TD
     subgraph Challenge["Challenge Phase"]
         A[Create Challenge] --> B[Sum Target/Sequence Match]
@@ -58,12 +64,7 @@ flowchart TD
 
     Q --> C
 
-    %% Styling
-    classDef state fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
-    classDef decision fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
-    classDef process fill:#000,stroke:#fff,stroke-width:2px,font-family:Comic Sans MS,font-weight:bold
 
-    linkStyle default stroke-width:4px,fill:none,stroke:#fff
 ```
 
 ---
