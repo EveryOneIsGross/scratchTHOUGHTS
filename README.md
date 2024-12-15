@@ -50,8 +50,8 @@ flowchart TD
 
     subgraph Challenge["Challenge Phase"]
         A[Create Challenge] --> B[Sum Target/Sequence Match]
-        B --> C{Search Similar\nPast Reflections}
-        C -->|Found| D[Load Relevant\nPast Insights]
+        B --> C{Search Similar Past Reflections}
+        C -->|Found| D[Load Relevant Past Insights]
         C -->|None Found| E[Start Fresh]
     end
 
