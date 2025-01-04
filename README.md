@@ -21,6 +21,56 @@
 ```
 
 ---
+040124
+
+HELLO BERT
+
+```mermaid
+flowchart TD
+    subgraph V05["BiDirectionalGenerator"]
+        A1[Input Text] --> B1[BERT Tokenization]
+        B1 --> C1[Sliding Window Creation]
+        C1 --> D1[ModernBERT MLM]
+        D1 --> E1[Token Predictions]
+        
+        F1[Context Window] --> G1[Jina Embeddings]
+        E1 --> H1[Candidate Filtering]
+        G1 --> I1[Semantic Coherence]
+        
+        H1 --> J1[Score Combination]
+        I1 --> J1
+        J1 --> K1[Temperature Sampling]
+        K1 --> L1[Token Selection]
+        L1 --> M1[Update Context]
+        M1 --> |Next Token| C1
+    end
+
+    subgraph V02["ParallelBERTGenerator"]
+        A2[Input Text] --> B2[4D Matrix Initialization]
+        B2 --> C2[BERT Embeddings]
+        
+        C2 --> D2[Forward Projection]
+        C2 --> E2[Backward Projection]
+        
+        D2 --> F2[Forward Context Processing]
+        E2 --> G2[Backward Context Processing]
+        
+        F2 --> H2[Context Combination]
+        G2 --> H2
+        
+        H2 --> I2[BERT MLM Predictions]
+        
+        J2[Sentence Transformer] --> K2[Coherence Scoring]
+        I2 --> L2[Combined Sampling]
+        K2 --> L2
+        
+        L2 --> M2[Matrix Update]
+        M2 --> |Next Position| C2
+    end
+```
+
+---
+
 2025
 
 ASCII preview of 20000524_181418/MVC-003F.JPG:
