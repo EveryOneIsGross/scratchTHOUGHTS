@@ -21,7 +21,46 @@
 ```
 
 ---
-040124
+180125
+
+```mermaid
+flowchart TB
+    subgraph Traditional ["Traditional Approach"]
+        A[Static Priors] --> B[Predetermined Rules]
+        B --> C[Rigid Constraints]
+        C --> D[Limited Adaptation]
+    end
+
+    subgraph Evolutionary ["Evolutionary Approach"]
+        E[Environment Input] --> F[Boundary Detection]
+        F --> G[Found Restraints]
+        G --> H[Emergent Trust]
+        
+        I[User Interaction] --> F
+        I --> J[Memory Index]
+        J --> K[Interaction Patterns]
+        K --> H
+        
+        L[Exploratory Actions] --> M[Wall Licking 😄]
+        M --> N[Environmental Learning]
+        N --> G
+    end
+
+    subgraph Homeostasis ["System Homeostasis"]
+        O[Natural Boundaries] --> P[Adaptive Responses]
+        P --> Q[Dynamic Equilibrium]
+        Q --> R[Robust Problem Solving]
+        
+        S[Shadow Work] -.-> Q
+        T[Coherence Patterns] -.-> Q
+    end
+
+    Traditional --> Evolutionary
+    Evolutionary --> Homeostasis
+    ```
+
+---
+040125
 
 HELLO BERT
 
