@@ -57,7 +57,7 @@ flowchart TB
 
     Traditional --> Evolutionary
     Evolutionary --> Homeostasis
-    ```
+```
 
 ---
 040125
