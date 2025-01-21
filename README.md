@@ -19,6 +19,93 @@
        ▒▓▓▓▓▓▓▓▓▓▓█▓▒░░▒▒▒▒▒▓██████████████▓░       
       ▒▓▓▓▓▓█▓▓▓▓▓▓████▓█████████████████████
 ```
+---
+220125
+
+```mermaid
+flowchart LR
+    %% Input/Output Interface
+    subgraph IO["I/O Layer"]
+        IN[Input] --> INT[Interface]
+        INT --> OUT[Output]
+    end
+
+    %% Attention System
+    subgraph ATT["Attention System"]
+        direction TB
+        MP[Message Processor]
+        CS[Context Switcher]
+        RH[Request Handler]
+        
+        MP --> CS
+        CS --> RH
+    end
+
+    %% Context Management
+    subgraph CTX["Context System"]
+        direction TB
+        subgraph StateCtx["State Context"]
+            SC[State Controller]
+            SB[State Buffer]
+        end
+        
+        subgraph WorkCtx["Working Context"]
+            WC[Working Controller]
+            WB[Working Buffer]
+        end
+    end
+
+    %% Memory Management
+    subgraph MEM["Memory System"]
+        direction TB
+        subgraph Primary["Primary Memory"]
+            PM[Memory Manager]
+            PB[Memory Buffer]
+        end
+        
+        subgraph Storage["Storage Layer"]
+            ST[Storage Controller]
+            SL[Storage Logic]
+        end
+    end
+
+    %% Psyche System
+    subgraph PSY["Psyche System"]
+        direction TB
+        PI[Psyche Interface]
+        PC[Psyche Controller]
+    end
+
+    %% Default Mode
+    subgraph DM["Default Mode"]
+        direction TB
+        DMC[Mode Controller]
+        DMP[Mode Processor]
+    end
+
+    %% System Connections
+    IO --> ATT
+    ATT --> CTX
+    CTX --> MEM
+    MEM --> PSY
+    PSY --> DM
+    DM --> MEM
+
+    %% Feedback Loops
+    CTX -.-> ATT
+    MEM -.-> CTX
+    DM -.-> PSY
+
+    %% Styling
+    classDef default fill:#f5f5f5,stroke:#333,stroke-width:2px
+    classDef system fill:#e8e8e8,stroke:#333,stroke-width:3px
+    classDef subsystem fill:#fff,stroke:#333,stroke-width:2px
+    classDef io fill:#f0f0f0,stroke:#333,stroke-width:2px
+    
+    class IO,INT io
+    class ATT,CTX,MEM,PSY,DM system
+    class StateCtx,WorkCtx,Primary,Storage subsystem
+```
 
 ---
 180125
