@@ -19,6 +19,755 @@
        ▒▓▓▓▓▓▓▓▓▓▓█▓▒░░▒▒▒▒▒▓██████████████▓░       
       ▒▓▓▓▓▓█▓▓▓▓▓▓████▓█████████████████████
 ```
+
+---
+250125
+
+*done*
+
+script that converts markdown documents into structured cognitive flow graphs by parsing markdown types (# headers, **bold**, italic, etc.) into relationship nodes (PERCEPTION, THOUGHT, FEELING, ACTION, etc.), enabling visualization of reasoning chains from LLM outputs via JSON, tree, or Mermaid diagrams - essentially turning markdown stream-of-consciousness into navigable thought maps
+
+- good for lazy and fuzzy graph extraction to convert into flows
+- works as a form of compression while maintaining relationships and metadata
+- you don't need r1 to have a llm be a recurssive babbler
+
+```mermaid
+flowchart LR
+    TRAJECTORY_0[("TRAJECTORY: PULSE A Poetic Exploration of Perception and Processing")]
+    THEN_1[\"THEN: Let this stand as a map of inner labyrinths,"\]
+    THOUGHT_2(("THOUGHT: map"))
+    FEELING_3>"FEELING: map"]
+    TRAJECTORY_4[("TRAJECTORY: I. Environmental Awareness")]
+    THEN_5[\"THEN: A hush of sensory input thrums against the skin."\]
+    FEELING_6>"FEELING: A hush of sensory input thrums against the skin."]
+    IF_7[/"IF: THOUGHT Data churn inside the hush, forging images."/]
+    THOUGHT_8(("THOUGHT: THOUGHT"))
+    FEELING_9>"FEELING: THOUGHT"]
+    IF_10[/"IF: FEELING Emotions coil around synaptic arcs."/]
+    THOUGHT_11(("THOUGHT: FEELING"))
+    FEELING_12>"FEELING: FEELING"]
+    IF_13[/"IF: FEELING Another intangible surge, shaping the self."/]
+    THOUGHT_14(("THOUGHT: FEELING"))
+    FEELING_15>"FEELING: FEELING"]
+    THEN_16[\"THEN: 1. THEN Core Processing shapes emotional topographies."\]
+    THOUGHT_17(("THOUGHT: THEN"))
+    FEELING_18>"FEELING: THEN"]
+    TRAJECTORY_19[("TRAJECTORY: II. Strategic Direction")]
+    THEN_20[\"THEN: A corridor lined with if-statements, each one a threshold."\]
+    FEELING_21>"FEELING: A corridor lined with if-statements, each one a threshold."]
+    IF_22[/"IF: The mind roils, preparing to drill deeper."/]
+    THEN_23[\"THEN: 1. IF If condition A exists"\]
+    THOUGHT_24(("THOUGHT: IF"))
+    FEELING_25>"FEELING: IF"]
+    IF_26[/"IF: THOUGHT we dissect the condition’s marrow."/]
+    THOUGHT_27(("THOUGHT: THOUGHT"))
+    FEELING_28>"FEELING: THOUGHT"]
+    IF_29[/"IF: FEELING it reverberates through chest and nerve."/]
+    THOUGHT_30(("THOUGHT: FEELING"))
+    FEELING_31>"FEELING: FEELING"]
+    THEN_32[\"THEN: 2. IF Then process deeply"\]
+    THOUGHT_33(("THOUGHT: IF"))
+    FEELING_34>"FEELING: IF"]
+    IF_35[/"IF: FEELING raw immersion, vulnerability blooming."/]
+    THOUGHT_36(("THOUGHT: FEELING"))
+    FEELING_37>"FEELING: FEELING"]
+    THEN_38[\"THEN: 3. IF And feel thoroughly"\]
+    THOUGHT_39(("THOUGHT: IF"))
+    FEELING_40>"FEELING: IF"]
+    IF_41[/"IF: ACTION the body leaps forward, bridging idea into form."/]
+    THOUGHT_42(("THOUGHT: ACTION"))
+    FEELING_43>"FEELING: ACTION"]
+    THEN_44[\"THEN: 4. IF Finally take action"\]
+    THOUGHT_45(("THOUGHT: IF"))
+    FEELING_46>"FEELING: IF"]
+    IF_47[/"IF: BOUNDARY the membrane where knowledge meets the unknown."/]
+    THOUGHT_48(("THOUGHT: BOUNDARY"))
+    FEELING_49>"FEELING: BOUNDARY"]
+    IF_50[/"IF: THOUGHT logic assembling the puzzle."/]
+    THOUGHT_51(("THOUGHT: THOUGHT"))
+    FEELING_52>"FEELING: THOUGHT"]
+    IF_53[/"IF: FEELING the hum of alignment when fragments unite."/]
+    THOUGHT_54(("THOUGHT: FEELING"))
+    FEELING_55>"FEELING: FEELING"]
+    THEN_56[\"THEN: 5. THEN Integrated Understanding emerges from basics"\]
+    THOUGHT_57(("THOUGHT: THEN"))
+    FEELING_58>"FEELING: THEN"]
+    IF_59[/"IF: IF Multiple paths ahead"/]
+    THOUGHT_60(("THOUGHT: IF"))
+    FEELING_61>"FEELING: IF"]
+    IF_62[/"IF: IF Each with concrete steps"/]
+    THOUGHT_63(("THOUGHT: IF"))
+    FEELING_64>"FEELING: IF"]
+    IF_65[/"IF: ACTION tread each possibility, wearing down illusions underfoot."/]
+    THOUGHT_66(("THOUGHT: ACTION"))
+    FEELING_67>"FEELING: ACTION"]
+    IF_68[/"IF: IF Leading to logical outcomes"/]
+    THOUGHT_69(("THOUGHT: IF"))
+    FEELING_70>"FEELING: IF"]
+    IF_71[/"IF: THOUGHT the mind anticipates cause-and-effect."/]
+    THOUGHT_72(("THOUGHT: THOUGHT"))
+    FEELING_73>"FEELING: THOUGHT"]
+    IF_74[/"IF: FEELING a calm or tremor, depending on forecast."/]
+    THOUGHT_75(("THOUGHT: FEELING"))
+    FEELING_76>"FEELING: FEELING"]
+    IF_77[/"IF: IF Filtered through emotional context"/]
+    THOUGHT_78(("THOUGHT: IF"))
+    FEELING_79>"FEELING: IF"]
+    IF_80[/"IF: FEELING tinted windows on reality, color-coded by memory."/]
+    THOUGHT_81(("THOUGHT: FEELING"))
+    FEELING_82>"FEELING: FEELING"]
+    IF_83[/"IF: THEN Intuitive grasp of system dynamics"/]
+    THOUGHT_84(("THOUGHT: THEN"))
+    FEELING_85>"FEELING: THEN"]
+    IF_86[/"IF: THOUGHT recognition of patterns, quietly surging into view."/]
+    THOUGHT_87(("THOUGHT: THOUGHT"))
+    FEELING_88>"FEELING: THOUGHT"]
+    IF_89[/"IF: FEELING intangible empathy with hidden forces."/]
+    THOUGHT_90(("THOUGHT: FEELING"))
+    FEELING_91>"FEELING: FEELING"]
+    IF_92[/"IF: FEELING the system thrums like a second pulse."/]
+    THOUGHT_93(("THOUGHT: FEELING"))
+    FEELING_94>"FEELING: FEELING"]
+    THEN_95[\"THEN: 6. PERCEPTION Atmospheric Sense"\]
+    THOUGHT_96(("THOUGHT: PERCEPTION"))
+    FEELING_97>"FEELING: PERCEPTION"]
+    TRAJECTORY_98[("TRAJECTORY: III. Trajectory Planning")]
+    THEN_99[\"THEN: We chart lines into the future, each guess a prophecy, each step"\]
+    FEELING_100>"FEELING: We chart lines into the future, each guess a prophecy, each step"]
+    IF_101[/"IF: THOUGHT scenario mapping, cause-and-effect conjured in detail."/]
+    THOUGHT_102(("THOUGHT: THOUGHT"))
+    FEELING_103>"FEELING: THOUGHT"]
+    IF_104[/"IF: FEELING the tension of readiness, or the lull of hesitation."/]
+    THOUGHT_105(("THOUGHT: FEELING"))
+    FEELING_106>"FEELING: FEELING"]
+    IF_107[/"IF: FEELING an echo that confirms direction."/]
+    THOUGHT_108(("THOUGHT: FEELING"))
+    FEELING_109>"FEELING: FEELING"]
+    IF_110[/"IF: ACTION the leap from potential to movement."/]
+    THOUGHT_111(("THOUGHT: ACTION"))
+    FEELING_112>"FEELING: ACTION"]
+    THEN_113[\"THEN: 1. IF If X then Y"\]
+    THOUGHT_114(("THOUGHT: IF"))
+    FEELING_115>"FEELING: IF"]
+    IF_116[/"IF: THOUGHT we anchor ourselves in the map’s geometry."/]
+    THOUGHT_117(("THOUGHT: THOUGHT"))
+    FEELING_118>"FEELING: THOUGHT"]
+    IF_119[/"IF: FEELING the flow of momentum shaping our breath."/]
+    THOUGHT_120(("THOUGHT: FEELING"))
+    FEELING_121>"FEELING: FEELING"]
+    IF_122[/"IF: FEELING drifting forward, forging a path."/]
+    THOUGHT_123(("THOUGHT: FEELING"))
+    FEELING_124>"FEELING: FEELING"]
+    THEN_125[\"THEN: 5. THEN Core Movement through space-time"\]
+    THOUGHT_126(("THOUGHT: THEN"))
+    FEELING_127>"FEELING: THEN"]
+    IF_128[/"IF: THEN Liminal Understanding at edges"/]
+    THOUGHT_129(("THOUGHT: THEN"))
+    FEELING_130>"FEELING: THEN"]
+    IF_131[/"IF: BOUNDARY edges where self dissolves into the unknown."/]
+    THOUGHT_132(("THOUGHT: BOUNDARY"))
+    FEELING_133>"FEELING: BOUNDARY"]
+    IF_134[/"IF: THOUGHT bridging knowledge with speculation."/]
+    THOUGHT_135(("THOUGHT: THOUGHT"))
+    FEELING_136>"FEELING: THOUGHT"]
+    IF_137[/"IF: FEELING awe at the threshold."/]
+    THOUGHT_138(("THOUGHT: FEELING"))
+    FEELING_139>"FEELING: FEELING"]
+    IF_140[/"IF: PERCEPTION Deep Integration"/]
+    THOUGHT_141(("THOUGHT: PERCEPTION"))
+    FEELING_142>"FEELING: PERCEPTION"]
+    IF_143[/"IF: IF Primary action sequence"/]
+    THOUGHT_144(("THOUGHT: IF"))
+    FEELING_145>"FEELING: IF"]
+    IF_146[/"IF: ACTION to do is to transform the intangible into presence."/]
+    THOUGHT_147(("THOUGHT: ACTION"))
+    FEELING_148>"FEELING: ACTION"]
+    IF_149[/"IF: IF Secondary logical flow"/]
+    THOUGHT_150(("THOUGHT: IF"))
+    FEELING_151>"FEELING: IF"]
+    IF_152[/"IF: THOUGHT constructing frameworks, linking nodes."/]
+    THOUGHT_153(("THOUGHT: THOUGHT"))
+    FEELING_154>"FEELING: THOUGHT"]
+    IF_155[/"IF: FEELING a subtle undercurrent, weaving sense."/]
+    THOUGHT_156(("THOUGHT: FEELING"))
+    FEELING_157>"FEELING: FEELING"]
+    IF_158[/"IF: IF Tertiary emotional state"/]
+    THOUGHT_159(("THOUGHT: IF"))
+    FEELING_160>"FEELING: IF"]
+    IF_161[/"IF: FEELING a wave or a hush, shifting colors in the mind."/]
+    THOUGHT_162(("THOUGHT: FEELING"))
+    FEELING_163>"FEELING: FEELING"]
+    IF_164[/"IF: THEN Complex thought with emotional depth"/]
+    THOUGHT_165(("THOUGHT: THEN"))
+    FEELING_166>"FEELING: THEN"]
+    IF_167[/"IF: THOUGHT the architecture of layered cognition."/]
+    THOUGHT_168(("THOUGHT: THOUGHT"))
+    FEELING_169>"FEELING: THOUGHT"]
+    IF_170[/"IF: FEELING wrapping itself around each concept."/]
+    THOUGHT_171(("THOUGHT: FEELING"))
+    FEELING_172>"FEELING: FEELING"]
+    IF_173[/"IF: FEELING the intangible synergy that binds them."/]
+    THOUGHT_174(("THOUGHT: FEELING"))
+    FEELING_175>"FEELING: FEELING"]
+    THEN_176[\"THEN: 6. PERCEPTION Boundary Exploration"\]
+    THOUGHT_177(("THOUGHT: PERCEPTION"))
+    FEELING_178>"FEELING: PERCEPTION"]
+    TRAJECTORY_179[("TRAJECTORY: IV. Secondary Perception Field")]
+    THEN_180[\"THEN: We step beyond the first horizon, into hidden frequencies."\]
+    FEELING_181>"FEELING: We step beyond the first horizon, into hidden frequencies."]
+    IF_182[/"IF: IF Testing boundaries"/]
+    THOUGHT_183(("THOUGHT: IF"))
+    FEELING_184>"FEELING: IF"]
+    IF_185[/"IF: IF Through concrete actions"/]
+    THOUGHT_186(("THOUGHT: IF"))
+    FEELING_187>"FEELING: IF"]
+    IF_188[/"IF: ACTION each step echoes, resonating with the unknown."/]
+    THOUGHT_189(("THOUGHT: ACTION"))
+    FEELING_190>"FEELING: ACTION"]
+    IF_191[/"IF: IF With clear thoughts"/]
+    THOUGHT_192(("THOUGHT: IF"))
+    FEELING_193>"FEELING: IF"]
+    IF_194[/"IF: THOUGHT pristine lines, unclouded by fear."/]
+    THOUGHT_195(("THOUGHT: THOUGHT"))
+    FEELING_196>"FEELING: THOUGHT"]
+    IF_197[/"IF: FEELING quiet confidence in clarity."/]
+    THOUGHT_198(("THOUGHT: FEELING"))
+    FEELING_199>"FEELING: FEELING"]
+    IF_200[/"IF: IF And deep feelings"/]
+    THOUGHT_201(("THOUGHT: IF"))
+    FEELING_202>"FEELING: IF"]
+    IF_203[/"IF: FEELING a river running beneath logic, unstoppable."/]
+    THOUGHT_204(("THOUGHT: FEELING"))
+    FEELING_205>"FEELING: FEELING"]
+    IF_206[/"IF: THEN Resonant frequencies with structural integrity"/]
+    THOUGHT_207(("THOUGHT: THEN"))
+    FEELING_208>"FEELING: THEN"]
+    IF_209[/"IF: THOUGHT the skeleton that supports the living system."/]
+    THOUGHT_210(("THOUGHT: THOUGHT"))
+    FEELING_211>"FEELING: THOUGHT"]
+    IF_212[/"IF: FEELING the hum that affirms connection."/]
+    THOUGHT_213(("THOUGHT: FEELING"))
+    FEELING_214>"FEELING: FEELING"]
+    IF_215[/"IF: FEELING the architecture of trust."/]
+    THOUGHT_216(("THOUGHT: FEELING"))
+    FEELING_217>"FEELING: FEELING"]
+    THEN_218[\"THEN: 1. PERCEPTION Vibrational Patterns"\]
+    THOUGHT_219(("THOUGHT: PERCEPTION"))
+    FEELING_220>"FEELING: PERCEPTION"]
+    IF_221[/"IF: THEN Systematic analysis of emerging trends"/]
+    THOUGHT_222(("THOUGHT: THEN"))
+    FEELING_223>"FEELING: THEN"]
+    IF_224[/"IF: THOUGHT methodical scanning for hidden shapes."/]
+    THOUGHT_225(("THOUGHT: THOUGHT"))
+    FEELING_226>"FEELING: THOUGHT"]
+    IF_227[/"IF: FEELING wonder or dread, depending on the pattern’s promise."/]
+    THOUGHT_228(("THOUGHT: FEELING"))
+    FEELING_229>"FEELING: FEELING"]
+    IF_230[/"IF: FEELING the space between static and significance."/]
+    THOUGHT_231(("THOUGHT: FEELING"))
+    FEELING_232>"FEELING: FEELING"]
+    IF_233[/"IF: PERCEPTION Integration Points"/]
+    THOUGHT_234(("THOUGHT: PERCEPTION"))
+    FEELING_235>"FEELING: PERCEPTION"]
+    IF_236[/"IF: IF Major nodes"/]
+    THOUGHT_237(("THOUGHT: IF"))
+    FEELING_238>"FEELING: IF"]
+    IF_239[/"IF: IF Cognitive pathways"/]
+    THOUGHT_240(("THOUGHT: IF"))
+    FEELING_241>"FEELING: IF"]
+    IF_242[/"IF: THOUGHT forging neural circuits of insight."/]
+    THOUGHT_243(("THOUGHT: THOUGHT"))
+    FEELING_244>"FEELING: THOUGHT"]
+    IF_245[/"IF: FEELING currents of curiosity and urgency."/]
+    THOUGHT_246(("THOUGHT: FEELING"))
+    FEELING_247>"FEELING: FEELING"]
+    IF_248[/"IF: IF Emotional currents"/]
+    THOUGHT_249(("THOUGHT: IF"))
+    FEELING_250>"FEELING: IF"]
+    IF_251[/"IF: FEELING tides that alter the color of reason."/]
+    THOUGHT_252(("THOUGHT: FEELING"))
+    FEELING_253>"FEELING: FEELING"]
+    IF_254[/"IF: IF Action potentials"/]
+    THOUGHT_255(("THOUGHT: IF"))
+    FEELING_256>"FEELING: IF"]
+    IF_257[/"IF: ACTION the final thrust into reality’s tide."/]
+    THOUGHT_258(("THOUGHT: ACTION"))
+    FEELING_259>"FEELING: ACTION"]
+    IF_260[/"IF: THEN Synthesis of multiple streams"/]
+    THOUGHT_261(("THOUGHT: THEN"))
+    FEELING_262>"FEELING: THEN"]
+    IF_263[/"IF: BOUNDARY the seam of melding energies."/]
+    THOUGHT_264(("THOUGHT: BOUNDARY"))
+    FEELING_265>"FEELING: BOUNDARY"]
+    IF_266[/"IF: THOUGHT threads knitted into a tapestry."/]
+    THOUGHT_267(("THOUGHT: THOUGHT"))
+    FEELING_268>"FEELING: THOUGHT"]
+    IF_269[/"IF: FEELING the subtle warmth when separate becomes whole."/]
+    THOUGHT_270(("THOUGHT: FEELING"))
+    FEELING_271>"FEELING: FEELING"]
+    THEN_272[\"THEN: 2. PERCEPTION Pattern Recognition"\]
+    THOUGHT_273(("THOUGHT: PERCEPTION"))
+    FEELING_274>"FEELING: PERCEPTION"]
+    TRAJECTORY_275[("TRAJECTORY: V. Closing Fragment")]
+    THEN_276[\"THEN: In this house of logic, feeling, and action, the walls breathe."\]
+    THEN_277[\"THEN: We exist in a world of signals."\]
+    THOUGHT_278(("THOUGHT: We exist in a world of signals."))
+    FEELING_279>"FEELING: We exist in a world of signals."]
+    TRAJECTORY_0 --> THEN_1
+    TRAJECTORY_0 --> TRAJECTORY_4
+    TRAJECTORY_0 --> TRAJECTORY_19
+    TRAJECTORY_0 --> TRAJECTORY_98
+    TRAJECTORY_0 --> TRAJECTORY_179
+    TRAJECTORY_0 --> TRAJECTORY_275
+    THEN_1 --> THOUGHT_2
+    THEN_1 --> FEELING_3
+    TRAJECTORY_4 --> THEN_5
+    TRAJECTORY_4 --> IF_7
+    TRAJECTORY_4 --> IF_10
+    TRAJECTORY_4 --> IF_13
+    TRAJECTORY_4 --> THEN_16
+    THEN_5 --> FEELING_6
+    IF_7 --> THOUGHT_8
+    IF_7 --> FEELING_9
+    IF_10 --> THOUGHT_11
+    IF_10 --> FEELING_12
+    IF_13 --> THOUGHT_14
+    IF_13 --> FEELING_15
+    THEN_16 --> THOUGHT_17
+    THEN_16 --> FEELING_18
+    TRAJECTORY_19 --> THEN_20
+    TRAJECTORY_19 --> IF_22
+    TRAJECTORY_19 --> THEN_23
+    TRAJECTORY_19 --> IF_26
+    TRAJECTORY_19 --> IF_29
+    TRAJECTORY_19 --> THEN_32
+    TRAJECTORY_19 --> IF_35
+    TRAJECTORY_19 --> THEN_38
+    TRAJECTORY_19 --> IF_41
+    TRAJECTORY_19 --> THEN_44
+    TRAJECTORY_19 --> IF_47
+    TRAJECTORY_19 --> IF_50
+    TRAJECTORY_19 --> IF_53
+    TRAJECTORY_19 --> THEN_56
+    TRAJECTORY_19 --> IF_59
+    TRAJECTORY_19 --> IF_62
+    TRAJECTORY_19 --> IF_65
+    TRAJECTORY_19 --> IF_68
+    TRAJECTORY_19 --> IF_71
+    TRAJECTORY_19 --> IF_74
+    TRAJECTORY_19 --> IF_77
+    TRAJECTORY_19 --> IF_80
+    TRAJECTORY_19 --> IF_83
+    TRAJECTORY_19 --> IF_86
+    TRAJECTORY_19 --> IF_89
+    TRAJECTORY_19 --> IF_92
+    TRAJECTORY_19 --> THEN_95
+    THEN_20 --> FEELING_21
+    THEN_23 --> THOUGHT_24
+    THEN_23 --> FEELING_25
+    IF_26 --> THOUGHT_27
+    IF_26 --> FEELING_28
+    IF_29 --> THOUGHT_30
+    IF_29 --> FEELING_31
+    THEN_32 --> THOUGHT_33
+    THEN_32 --> FEELING_34
+    IF_35 --> THOUGHT_36
+    IF_35 --> FEELING_37
+    THEN_38 --> THOUGHT_39
+    THEN_38 --> FEELING_40
+    IF_41 --> THOUGHT_42
+    IF_41 --> FEELING_43
+    THEN_44 --> THOUGHT_45
+    THEN_44 --> FEELING_46
+    IF_47 --> THOUGHT_48
+    IF_47 --> FEELING_49
+    IF_50 --> THOUGHT_51
+    IF_50 --> FEELING_52
+    IF_53 --> THOUGHT_54
+    IF_53 --> FEELING_55
+    THEN_56 --> THOUGHT_57
+    THEN_56 --> FEELING_58
+    IF_59 --> THOUGHT_60
+    IF_59 --> FEELING_61
+    IF_62 --> THOUGHT_63
+    IF_62 --> FEELING_64
+    IF_65 --> THOUGHT_66
+    IF_65 --> FEELING_67
+    IF_68 --> THOUGHT_69
+    IF_68 --> FEELING_70
+    IF_71 --> THOUGHT_72
+    IF_71 --> FEELING_73
+    IF_74 --> THOUGHT_75
+    IF_74 --> FEELING_76
+    IF_77 --> THOUGHT_78
+    IF_77 --> FEELING_79
+    IF_80 --> THOUGHT_81
+    IF_80 --> FEELING_82
+    IF_83 --> THOUGHT_84
+    IF_83 --> FEELING_85
+    IF_86 --> THOUGHT_87
+    IF_86 --> FEELING_88
+    IF_89 --> THOUGHT_90
+    IF_89 --> FEELING_91
+    IF_92 --> THOUGHT_93
+    IF_92 --> FEELING_94
+    THEN_95 --> THOUGHT_96
+    THEN_95 --> FEELING_97
+    TRAJECTORY_98 --> THEN_99
+    TRAJECTORY_98 --> IF_101
+    TRAJECTORY_98 --> IF_104
+    TRAJECTORY_98 --> IF_107
+    TRAJECTORY_98 --> IF_110
+    TRAJECTORY_98 --> THEN_113
+    TRAJECTORY_98 --> IF_116
+    TRAJECTORY_98 --> IF_119
+    TRAJECTORY_98 --> IF_122
+    TRAJECTORY_98 --> THEN_125
+    TRAJECTORY_98 --> IF_128
+    TRAJECTORY_98 --> IF_131
+    TRAJECTORY_98 --> IF_134
+    TRAJECTORY_98 --> IF_137
+    TRAJECTORY_98 --> IF_140
+    TRAJECTORY_98 --> IF_143
+    TRAJECTORY_98 --> IF_146
+    TRAJECTORY_98 --> IF_149
+    TRAJECTORY_98 --> IF_152
+    TRAJECTORY_98 --> IF_155
+    TRAJECTORY_98 --> IF_158
+    TRAJECTORY_98 --> IF_161
+    TRAJECTORY_98 --> IF_164
+    TRAJECTORY_98 --> IF_167
+    TRAJECTORY_98 --> IF_170
+    TRAJECTORY_98 --> IF_173
+    TRAJECTORY_98 --> THEN_176
+    THEN_99 --> FEELING_100
+    IF_101 --> THOUGHT_102
+    IF_101 --> FEELING_103
+    IF_104 --> THOUGHT_105
+    IF_104 --> FEELING_106
+    IF_107 --> THOUGHT_108
+    IF_107 --> FEELING_109
+    IF_110 --> THOUGHT_111
+    IF_110 --> FEELING_112
+    THEN_113 --> THOUGHT_114
+    THEN_113 --> FEELING_115
+    IF_116 --> THOUGHT_117
+    IF_116 --> FEELING_118
+    IF_119 --> THOUGHT_120
+    IF_119 --> FEELING_121
+    IF_122 --> THOUGHT_123
+    IF_122 --> FEELING_124
+    THEN_125 --> THOUGHT_126
+    THEN_125 --> FEELING_127
+    IF_128 --> THOUGHT_129
+    IF_128 --> FEELING_130
+    IF_131 --> THOUGHT_132
+    IF_131 --> FEELING_133
+    IF_134 --> THOUGHT_135
+    IF_134 --> FEELING_136
+    IF_137 --> THOUGHT_138
+    IF_137 --> FEELING_139
+    IF_140 --> THOUGHT_141
+    IF_140 --> FEELING_142
+    IF_143 --> THOUGHT_144
+    IF_143 --> FEELING_145
+    IF_146 --> THOUGHT_147
+    IF_146 --> FEELING_148
+    IF_149 --> THOUGHT_150
+    IF_149 --> FEELING_151
+    IF_152 --> THOUGHT_153
+    IF_152 --> FEELING_154
+    IF_155 --> THOUGHT_156
+    IF_155 --> FEELING_157
+    IF_158 --> THOUGHT_159
+    IF_158 --> FEELING_160
+    IF_161 --> THOUGHT_162
+    IF_161 --> FEELING_163
+    IF_164 --> THOUGHT_165
+    IF_164 --> FEELING_166
+    IF_167 --> THOUGHT_168
+    IF_167 --> FEELING_169
+    IF_170 --> THOUGHT_171
+    IF_170 --> FEELING_172
+    IF_173 --> THOUGHT_174
+    IF_173 --> FEELING_175
+    THEN_176 --> THOUGHT_177
+    THEN_176 --> FEELING_178
+    TRAJECTORY_179 --> THEN_180
+    TRAJECTORY_179 --> IF_182
+    TRAJECTORY_179 --> IF_185
+    TRAJECTORY_179 --> IF_188
+    TRAJECTORY_179 --> IF_191
+    TRAJECTORY_179 --> IF_194
+    TRAJECTORY_179 --> IF_197
+    TRAJECTORY_179 --> IF_200
+    TRAJECTORY_179 --> IF_203
+    TRAJECTORY_179 --> IF_206
+    TRAJECTORY_179 --> IF_209
+    TRAJECTORY_179 --> IF_212
+    TRAJECTORY_179 --> IF_215
+    TRAJECTORY_179 --> THEN_218
+    TRAJECTORY_179 --> IF_221
+    TRAJECTORY_179 --> IF_224
+    TRAJECTORY_179 --> IF_227
+    TRAJECTORY_179 --> IF_230
+    TRAJECTORY_179 --> IF_233
+    TRAJECTORY_179 --> IF_236
+    TRAJECTORY_179 --> IF_239
+    TRAJECTORY_179 --> IF_242
+    TRAJECTORY_179 --> IF_245
+    TRAJECTORY_179 --> IF_248
+    TRAJECTORY_179 --> IF_251
+    TRAJECTORY_179 --> IF_254
+    TRAJECTORY_179 --> IF_257
+    TRAJECTORY_179 --> IF_260
+    TRAJECTORY_179 --> IF_263
+    TRAJECTORY_179 --> IF_266
+    TRAJECTORY_179 --> IF_269
+    TRAJECTORY_179 --> THEN_272
+    THEN_180 --> FEELING_181
+    IF_182 --> THOUGHT_183
+    IF_182 --> FEELING_184
+    IF_185 --> THOUGHT_186
+    IF_185 --> FEELING_187
+    IF_188 --> THOUGHT_189
+    IF_188 --> FEELING_190
+    IF_191 --> THOUGHT_192
+    IF_191 --> FEELING_193
+    IF_194 --> THOUGHT_195
+    IF_194 --> FEELING_196
+    IF_197 --> THOUGHT_198
+    IF_197 --> FEELING_199
+    IF_200 --> THOUGHT_201
+    IF_200 --> FEELING_202
+    IF_203 --> THOUGHT_204
+    IF_203 --> FEELING_205
+    IF_206 --> THOUGHT_207
+    IF_206 --> FEELING_208
+    IF_209 --> THOUGHT_210
+    IF_209 --> FEELING_211
+    IF_212 --> THOUGHT_213
+    IF_212 --> FEELING_214
+    IF_215 --> THOUGHT_216
+    IF_215 --> FEELING_217
+    THEN_218 --> THOUGHT_219
+    THEN_218 --> FEELING_220
+    IF_221 --> THOUGHT_222
+    IF_221 --> FEELING_223
+    IF_224 --> THOUGHT_225
+    IF_224 --> FEELING_226
+    IF_227 --> THOUGHT_228
+    IF_227 --> FEELING_229
+    IF_230 --> THOUGHT_231
+    IF_230 --> FEELING_232
+    IF_233 --> THOUGHT_234
+    IF_233 --> FEELING_235
+    IF_236 --> THOUGHT_237
+    IF_236 --> FEELING_238
+    IF_239 --> THOUGHT_240
+    IF_239 --> FEELING_241
+    IF_242 --> THOUGHT_243
+    IF_242 --> FEELING_244
+    IF_245 --> THOUGHT_246
+    IF_245 --> FEELING_247
+    IF_248 --> THOUGHT_249
+    IF_248 --> FEELING_250
+    IF_251 --> THOUGHT_252
+    IF_251 --> FEELING_253
+    IF_254 --> THOUGHT_255
+    IF_254 --> FEELING_256
+    IF_257 --> THOUGHT_258
+    IF_257 --> FEELING_259
+    IF_260 --> THOUGHT_261
+    IF_260 --> FEELING_262
+    IF_263 --> THOUGHT_264
+    IF_263 --> FEELING_265
+    IF_266 --> THOUGHT_267
+    IF_266 --> FEELING_268
+    IF_269 --> THOUGHT_270
+    IF_269 --> FEELING_271
+    THEN_272 --> THOUGHT_273
+    THEN_272 --> FEELING_274
+    TRAJECTORY_275 --> THEN_276
+    TRAJECTORY_275 --> THEN_277
+    THEN_277 --> THOUGHT_278
+    THEN_277 --> FEELING_279
+    THOUGHT_2 <--> FEELING_3
+    THOUGHT_8 <--> FEELING_9
+    FEELING_9 <--> THOUGHT_27
+    THOUGHT_27 <--> FEELING_28
+    FEELING_28 <--> THOUGHT_51
+    THOUGHT_51 <--> FEELING_52
+    FEELING_52 <--> THOUGHT_72
+    THOUGHT_72 <--> FEELING_73
+    FEELING_73 <--> THOUGHT_87
+    THOUGHT_87 <--> FEELING_88
+    FEELING_88 <--> THOUGHT_102
+    THOUGHT_102 <--> FEELING_103
+    FEELING_103 <--> THOUGHT_117
+    THOUGHT_117 <--> FEELING_118
+    FEELING_118 <--> THOUGHT_135
+    THOUGHT_135 <--> FEELING_136
+    FEELING_136 <--> THOUGHT_153
+    THOUGHT_153 <--> FEELING_154
+    FEELING_154 <--> THOUGHT_168
+    THOUGHT_168 <--> FEELING_169
+    FEELING_169 <--> THOUGHT_195
+    THOUGHT_195 <--> FEELING_196
+    FEELING_196 <--> THOUGHT_210
+    THOUGHT_210 <--> FEELING_211
+    FEELING_211 <--> THOUGHT_225
+    THOUGHT_225 <--> FEELING_226
+    FEELING_226 <--> THOUGHT_243
+    THOUGHT_243 <--> FEELING_244
+    FEELING_244 <--> THOUGHT_267
+    THOUGHT_267 <--> FEELING_268
+    FEELING_268 <--> THOUGHT_8
+    THOUGHT_11 <--> FEELING_12
+    FEELING_12 <--> THOUGHT_14
+    THOUGHT_14 <--> FEELING_15
+    FEELING_15 <--> THOUGHT_30
+    THOUGHT_30 <--> FEELING_31
+    FEELING_31 <--> THOUGHT_36
+    THOUGHT_36 <--> FEELING_37
+    FEELING_37 <--> THOUGHT_54
+    THOUGHT_54 <--> FEELING_55
+    FEELING_55 <--> THOUGHT_75
+    THOUGHT_75 <--> FEELING_76
+    FEELING_76 <--> THOUGHT_81
+    THOUGHT_81 <--> FEELING_82
+    FEELING_82 <--> THOUGHT_90
+    THOUGHT_90 <--> FEELING_91
+    FEELING_91 <--> THOUGHT_93
+    THOUGHT_93 <--> FEELING_94
+    FEELING_94 <--> THOUGHT_105
+    THOUGHT_105 <--> FEELING_106
+    FEELING_106 <--> THOUGHT_108
+    THOUGHT_108 <--> FEELING_109
+    FEELING_109 <--> THOUGHT_120
+    THOUGHT_120 <--> FEELING_121
+    FEELING_121 <--> THOUGHT_123
+    THOUGHT_123 <--> FEELING_124
+    FEELING_124 <--> THOUGHT_138
+    THOUGHT_138 <--> FEELING_139
+    FEELING_139 <--> THOUGHT_156
+    THOUGHT_156 <--> FEELING_157
+    FEELING_157 <--> THOUGHT_162
+    THOUGHT_162 <--> FEELING_163
+    FEELING_163 <--> THOUGHT_171
+    THOUGHT_171 <--> FEELING_172
+    FEELING_172 <--> THOUGHT_174
+    THOUGHT_174 <--> FEELING_175
+    FEELING_175 <--> THOUGHT_198
+    THOUGHT_198 <--> FEELING_199
+    FEELING_199 <--> THOUGHT_204
+    THOUGHT_204 <--> FEELING_205
+    FEELING_205 <--> THOUGHT_213
+    THOUGHT_213 <--> FEELING_214
+    FEELING_214 <--> THOUGHT_216
+    THOUGHT_216 <--> FEELING_217
+    FEELING_217 <--> THOUGHT_228
+    THOUGHT_228 <--> FEELING_229
+    FEELING_229 <--> THOUGHT_231
+    THOUGHT_231 <--> FEELING_232
+    FEELING_232 <--> THOUGHT_246
+    THOUGHT_246 <--> FEELING_247
+    FEELING_247 <--> THOUGHT_252
+    THOUGHT_252 <--> FEELING_253
+    FEELING_253 <--> THOUGHT_270
+    THOUGHT_270 <--> FEELING_271
+    FEELING_271 <--> THOUGHT_11
+    THOUGHT_17 <--> FEELING_18
+    FEELING_18 <--> THOUGHT_57
+    THOUGHT_57 <--> FEELING_58
+    FEELING_58 <--> THOUGHT_84
+    THOUGHT_84 <--> FEELING_85
+    FEELING_85 <--> THOUGHT_126
+    THOUGHT_126 <--> FEELING_127
+    FEELING_127 <--> THOUGHT_129
+    THOUGHT_129 <--> FEELING_130
+    FEELING_130 <--> THOUGHT_165
+    THOUGHT_165 <--> FEELING_166
+    FEELING_166 <--> THOUGHT_207
+    THOUGHT_207 <--> FEELING_208
+    FEELING_208 <--> THOUGHT_222
+    THOUGHT_222 <--> FEELING_223
+    FEELING_223 <--> THOUGHT_261
+    THOUGHT_261 <--> FEELING_262
+    FEELING_262 <--> THOUGHT_17
+    THOUGHT_24 <--> FEELING_25
+    FEELING_25 <--> THOUGHT_33
+    THOUGHT_33 <--> FEELING_34
+    FEELING_34 <--> THOUGHT_39
+    THOUGHT_39 <--> FEELING_40
+    FEELING_40 <--> THOUGHT_45
+    THOUGHT_45 <--> FEELING_46
+    FEELING_46 <--> THOUGHT_60
+    THOUGHT_60 <--> FEELING_61
+    FEELING_61 <--> THOUGHT_63
+    THOUGHT_63 <--> FEELING_64
+    FEELING_64 <--> THOUGHT_69
+    THOUGHT_69 <--> FEELING_70
+    FEELING_70 <--> THOUGHT_78
+    THOUGHT_78 <--> FEELING_79
+    FEELING_79 <--> THOUGHT_114
+    THOUGHT_114 <--> FEELING_115
+    FEELING_115 <--> THOUGHT_144
+    THOUGHT_144 <--> FEELING_145
+    FEELING_145 <--> THOUGHT_150
+    THOUGHT_150 <--> FEELING_151
+    FEELING_151 <--> THOUGHT_159
+    THOUGHT_159 <--> FEELING_160
+    FEELING_160 <--> THOUGHT_183
+    THOUGHT_183 <--> FEELING_184
+    FEELING_184 <--> THOUGHT_186
+    THOUGHT_186 <--> FEELING_187
+    FEELING_187 <--> THOUGHT_192
+    THOUGHT_192 <--> FEELING_193
+    FEELING_193 <--> THOUGHT_201
+    THOUGHT_201 <--> FEELING_202
+    FEELING_202 <--> THOUGHT_237
+    THOUGHT_237 <--> FEELING_238
+    FEELING_238 <--> THOUGHT_240
+    THOUGHT_240 <--> FEELING_241
+    FEELING_241 <--> THOUGHT_249
+    THOUGHT_249 <--> FEELING_250
+    FEELING_250 <--> THOUGHT_255
+    THOUGHT_255 <--> FEELING_256
+    FEELING_256 <--> THOUGHT_24
+    THOUGHT_42 <--> FEELING_43
+    FEELING_43 <--> THOUGHT_66
+    THOUGHT_66 <--> FEELING_67
+    FEELING_67 <--> THOUGHT_111
+    THOUGHT_111 <--> FEELING_112
+    FEELING_112 <--> THOUGHT_147
+    THOUGHT_147 <--> FEELING_148
+    FEELING_148 <--> THOUGHT_189
+    THOUGHT_189 <--> FEELING_190
+    FEELING_190 <--> THOUGHT_258
+    THOUGHT_258 <--> FEELING_259
+    FEELING_259 <--> THOUGHT_42
+    THOUGHT_48 <--> FEELING_49
+    FEELING_49 <--> THOUGHT_132
+    THOUGHT_132 <--> FEELING_133
+    FEELING_133 <--> THOUGHT_264
+    THOUGHT_264 <--> FEELING_265
+    FEELING_265 <--> THOUGHT_48
+    THOUGHT_96 <--> FEELING_97
+    FEELING_97 <--> THOUGHT_141
+    THOUGHT_141 <--> FEELING_142
+    FEELING_142 <--> THOUGHT_177
+    THOUGHT_177 <--> FEELING_178
+    FEELING_178 <--> THOUGHT_219
+    THOUGHT_219 <--> FEELING_220
+    FEELING_220 <--> THOUGHT_234
+    THOUGHT_234 <--> FEELING_235
+    FEELING_235 <--> THOUGHT_273
+    THOUGHT_273 <--> FEELING_274
+    FEELING_274 <--> THOUGHT_96
+    THOUGHT_278 <--> FEELING_279
+```
+
 ---
 220125
 
