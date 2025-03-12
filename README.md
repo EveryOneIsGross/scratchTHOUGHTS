@@ -23,9 +23,13 @@
 ---
 120325
 
+mystagogue/acolyte
+
 ![image](https://github.com/user-attachments/assets/45b0d608-2ada-413e-84b1-fb3097bc7150)
 
----
+![image](https://github.com/user-attachments/assets/7e09b2db-b677-4505-87ec-03576cee7a3a)
+
+![image](https://github.com/user-attachments/assets/8f4d2c16-a829-44f3-8b62-bc759846789e)
 
 ---
 250125
