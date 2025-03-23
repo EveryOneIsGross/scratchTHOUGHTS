@@ -1,7 +1,7 @@
 ##
 ---
 
-```md
+```bash
                                                     
                        ░▒▓▓▓▓▒░                     
                      ░▓████████▓░                   
@@ -19,6 +19,36 @@
        ▒▓▓▓▓▓▓▓▓▓▓█▓▒░░▒▒▒▒▒▓██████████████▓░       
       ▒▓▓▓▓▓█▓▓▓▓▓▓████▓█████████████████████
 ```
+
+
+---
+240325
+
+CURRENT WIP:
+- qBERT
+- defaultMODE
+- ytRIP
+- text2MIKU
+- finTUI
+
+qBERT is my attempt to turn off-the-shelf masking (encoder-only) BERT models into generative models using prob distributions of masks, then leveraging sentence embedding models to guide next token coherence using difference attn methods. exposing all hyperparameters and having another llm chat and adjust them at inference. It performs a lil bit like a base model atm...
+
+defaultMODE is my cognitive framework for agents giving them a ticker and persistent memory refinement using keyword pruning and inverted indexes. currently embodied in a discord environment but with abstractions designed to scale or shift platforms.
+
+ytRIP is a scratch demo for building up a tool for youtube 2 text-only language models, or for building KB from youtube content. focusing on open source vision models, because the big dogs are pretty good at this, but I want to pass the same content multiple times from multiple perspectives... so since I am poor, we are poor, we all need to be able to do this. minicpm-v is the best tool for that liberation so far....
+
+text2MIKU was something I did ages ago, there is scratch code in the above repo, but I returned to it to replace the w2v with and embedding model and add ollama structured output req to adjust the "emotional tones" dynamically based on the 1 shot agent outputs. works well. narrowest cast python endpoint for the 2 users who have a pocketMIKU.
+
+financial terminal needs to be able to trade for me... I need to move my portfolio somewhere I can access it with a free python endpoint...
+
+
+
+```
+
+
+
+```
+
 
 ---
 120325
