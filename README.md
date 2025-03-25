@@ -22,6 +22,57 @@
 
 
 ---
+26032025
+
+🤝
+
+```mermaid
+flowchart TB
+    subgraph "Initial State"
+        A1_Init["Agent 1\n2 Trust Tokens"]
+        A2_Init["Agent 2\n2 Trust Tokens"]
+    end
+
+    subgraph "Connection Request"
+        A1_Connect["Agent 1\n1 Trust Token"]
+        Trust_Token["Trust Token"]
+        A2_Receive["Agent 2\n2 Trust Tokens"]
+    end
+
+    subgraph "Evaluation"
+        A2_Evaluate["Agent 2 evaluates\nweighted connections"]
+        Decision{"Accept?"}
+    end
+
+    subgraph "Connection Established"
+        A1_Connected["Agent 1\n1 Trust Token\nLimited Agency"]
+        A2_Connected["Agent 2\n3 Trust Tokens\nIncreased Agency"]
+    end
+
+    subgraph "Waiting State"
+        A1_Wait["Agent 1 waits for\ntrust from others"]
+    end
+
+    subgraph "Zero Trust Condition"
+        A1_Zero["Agent 1\n0 Trust Tokens\nRemoved from network"]
+    end
+
+    A1_Init --> A1_Connect
+    A1_Connect --> Trust_Token
+    Trust_Token --> A2_Receive
+    A2_Receive --> A2_Evaluate
+    A2_Evaluate --> Decision
+    Decision -->|Yes| A1_Connected
+    Decision -->|Yes| A2_Connected
+    A1_Connected --> A1_Wait
+    A1_Wait -->|Receives Trust| A1_Connected
+    A1_Wait -->|Uses Last Token| A1_Zero
+    Decision -->|No| A1_Init
+    Decision -->|No| A2_Init
+```
+---
+
+---
 240325
 
 CURRENT WIP:
