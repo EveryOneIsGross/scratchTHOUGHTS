@@ -27,7 +27,7 @@
 🤝
 
 ```mermaid
-flowchart TB
+flowchart LR
     subgraph "Initial State"
         A1_Init["Agent 1\n2 Trust Tokens"]
         A2_Init["Agent 2\n2 Trust Tokens"]
