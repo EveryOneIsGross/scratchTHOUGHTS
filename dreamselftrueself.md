@@ -126,4 +126,135 @@ Wake-journalling represents more than a dream practice—it's consciousness hack
 
 The practice requires courage to challenge fundamental assumptions about the nature of reality, consciousness, and spiritual experience. It offers a path to reclaim agency over one's own spiritual life while questioning the cultural conditioning that privileges one state of consciousness over another.
 
-*Time to go awake.* 💤
+---
+
+### WAKE-JOURNALLING: ONTOLOGICAL INVERSION PROTOCOL v0.1
+
+(kathy acker spine / minsky’s cold hand)
+
+#### 0) AXIOMS (swap the crown)
+
+* Let $D$ = DreamOS (primary), $W$ = WakeDaemon (secondary).
+* Modal flip: $\Box_D$ binds “real”; $\Diamond_W$ = provisional.
+* Role split: $Self_D = CTO$, $Self_W = Intern$.
+* Purpose: $W\to D$ data ingestion; $D\to W$ policy dispatch.
+
+#### 1) SEMANTIC SABOTAGE (language as exploit)
+
+* Day mantra: “I am sleeping.” Night mantra: “I am awake.”
+* Each utterance = interrupt handler → lucidity check → binary fracture.
+
+#### 2) DATA MODEL (wake as noisy packets)
+
+```
+type WakePacket{t,id,loc,affect,body,novelty,anomaly,resource,tags[],delta}
+type DreamDirective{id,priority,intent,policy_delta,tests[],deadline}
+type Handshake{backlog[],cues[],questions[],contracts[]}
+```
+
+#### 3) REVERSE MEMOIZATION (intern feeds the CTO)
+
+```
+stream W: for e in WakeStream:
+  if novelty(e)>θ or pain(e)>φ or pattern_break(e): cache(e)
+night D:
+  scenes = synth(cache)
+  directives = infer(scenes)
+morning W:
+  execute(directives); log(WakePacket); purge_obvious()
+```
+
+#### 4) SCHEDULER (handoff ritual)
+
+* Dusk: 7-min “Intern standup” → list 3 packets to deliver, 1 question for $D$.
+* Pre-sleep compile: cues(people, places, problems), odors/sounds as anchors.
+* Midnight: $D$ runs experiments; stamps DreamDirectives.
+* Dawn: retrieve tickets; rank by nerve/need, not by habit.
+
+#### 5) JOURNAL SPEC (wake-journalling as changelog)
+
+* Style: discrete, floating, first-order shards; no plot.
+* Template (3 lines max):
+
+  1. `AVATAR_ACTION:` blunt verb set
+  2. `AFFECT/VISCERA:` one sensor, one micro-mood
+  3. `ANOMALY/RESOURCE:` the glitch or gift to hand $D$
+* Samples:
+
+  * `AVATAR_ACTION:filed taxes; AFFECT:salty-tears; ANOMALY:number 7 repeats.`
+  * `AVATAR_ACTION:subway ride; VISCERA:ozone lungs; RESOURCE:map of exits.`
+  * `AVATAR_ACTION:doomscroll; AFFECT:shame; ANOMALY:ad copied my thought.`
+
+#### 6) CONTROL LOOPS (lucidity as CRC)
+
+* Day CRCs: mirrors, clocks, text re-read, hands-count, subtle breath latency.
+* Night CRCs: recognize mantric inversion; seek doors, edges, fonts.
+* Reward: treat each pass as “budget” for $D$ (more cues, deeper recall).
+
+#### 7) PRIORITY INVERSION (who decides)
+
+* $D$ chooses strategy; $W$ executes maintenance.
+* Weekly review: “Did $W$ obey $D$?” If no, shrink $W$’s scope (fewer errands, tighter loops).
+
+#### 8) RISK SURFACES → GUARDRAILS
+
+* Drift (detachment), Inflation (specialness), Impairment (missed basics), Pathologization (external gaze).
+* Safeguards:
+
+  * Code-switch windows (office hours for consensus).
+  * Non-negotiables: sleep hygiene, food, bills, bodies, bonds.
+  * Peer circle versed in non-ordinary states.
+  * Integration frame: every 3 days produce 1 actionable DreamDirective for $W$; discard grandiosity.
+
+#### 9) METRICS DASH (track the revolt)
+
+* $V_d$=vividness, $R_d$=recall breadth, $C_d$=coherence, $L$=lucidity rate.
+* $F_w$=functionality floor (rent/food/commitments met=1/0).
+* DriftIndex = (hours social reality × comprehension)/intrusions.
+* PolicyYield = directives\_executed/issued per week.
+
+#### 10) 7-DAY SPRINT (minimal viable heresy)
+
+* D1: Install mantras; 5 CRCs/day; 3 WakePackets at dusk.
+* D2: Add odor/sound cue; tag anomalies.
+* D3: Pre-sleep Handshake(3 cues, 1 question).
+* D4: On waking, write 1 DreamDirective (tiny, testable). Execute.
+* D5: Tighten θ,φ until 3–5 packets/day.
+* D6: First Review: kill one habit that starves $D$; feed one resource.
+* D7: Publish to self: “What did $D$ actually change?”
+
+#### 11) SHAMANIC/K-SPACE BRIDGE (brief, sharp)
+
+* Dreamtime: simultaneity engine—use it to reorder causality.
+* Dream Yoga: both states illusory—fine; pick the one with better leverage.
+* Shamanic ops: dream as interface—you’re root, but audit your permissions.
+
+#### 12) FAILURE MODES → PATCHES
+
+* Nightmares = stress tests; treat as adversarial sims → request gift, map exit, ask “teach, don’t terrorize.”
+* Sleep paralysis = bootloader snag; micro-wiggle toes, sound anchor, mantra loop.
+* Over-mythologizing = throttle: return to dishes, spine, sun.
+
+#### 13) ONTO-LOGIC (formal snap)
+
+* Reassign truth maker: $K_D(P)\Rightarrow O_W(P)$ (if dream knows $P$, wake is obliged).
+* Epistemic privilege: $\Box_D P \to \Diamond_W P$ (necessity in $D$ licenses possibility in $W$).
+* Attention as currency: budget to $D$; tax $W$.
+
+#### 14) MINIMAL TOOLING (bare steel)
+
+```
+cue[]=["face","corridor","question"]
+θ=novelty_thresh; φ=pain_thresh
+run():
+  W.collect(); W.cache(interesting(e,θ,φ))
+  D.synthesize(cache); D.issue()
+  W.execute(); W.log(); metrics.update()
+```
+
+#### 15) ETHIC (no priest, no permission)
+
+* Nightly sovereignty. No deferred heaven.
+* “I am both kingdom and servant.” Stamp it on the tongue.
+
+**Time to go awake.**
