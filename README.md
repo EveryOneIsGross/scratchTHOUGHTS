@@ -18,3 +18,5 @@
        ▒▓▓▓▓▓▓▓▓▓▓█▓▒░░▒▒▒▒▒▓██████████████▓░       
       ▒▓▓▓▓▓█▓▓▓▓▓▓████▓█████████████████████
 ```
+
+[2023 - SEPT 2025 BLOG ARCHIVE](https://github.com/EveryOneIsGross/scratchTHOUGHTS/blob/main/journal_0323_0925.md)
