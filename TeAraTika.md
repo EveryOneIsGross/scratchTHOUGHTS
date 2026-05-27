@@ -1,5 +1,5 @@
 # Te Ara Tika, Responsible AI from the Ground Up
-**A practical framework for AI in Aotearoa, built from tikanga and manaakitanga**
+**A practical framework for AI in Aotearoa, based on tikanga, whanaungatanga and manaakitanga**
 *Draft 0.3, offered as koha, not crown*
 
 ---
