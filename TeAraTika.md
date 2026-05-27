@@ -1,6 +1,5 @@
 # Te Ara Tika, Responsible AI from the Ground Up
 **A practical framework for AI in Aotearoa, based on tikanga, whanaungatanga and manaakitanga**
-*Draft 0.3, offered as koha, not crown*
 
 ---
 
@@ -180,5 +179,4 @@ The path forward is infrastructure we control, governance with teeth, operators 
 
 ---
 
-*Draft 0.3, May 2026. Offered for critique, correction, and koha.*
-*Licensed CC BY-SA 4.0. Not crown copyright. Commons.*
+*living doc 0.3, May 2026. Offered as commons and koha.*
